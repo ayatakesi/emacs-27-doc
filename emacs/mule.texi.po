@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-03 21:15+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -2425,11 +2425,9 @@ msgstr "Intlfonts package, installation"
 
 #. type: Plain text
 #: original_texis/mule.texi:1354
-#, fuzzy
-#| msgid "Each fontset has a name, like a font.  However, while fonts are stored in the system and the available font names are defined by the system, fontsets are defined within Emacs itself.  Once you have defined a fontset, you can use it within Emacs by specifying its name, anywhere that you could use a single font.  Of course, Emacs fontsets can use only the fonts that the system supports.  If some characters appear on the screen as empty boxes or hex codes, this means that the fontset in use for them has no font for those characters.  In this case, or if the characters are shown, but not as well as you would like, you may need to install extra fonts.  Your operating system may have optional fonts that you can install; or you can install the GNU Intlfonts package, which includes fonts for most supported scripts.@footnote{If you run Emacs on X, you may need to inform the X server about the location of the newly installed fonts with commands such as: @example xset fp+ /usr/local/share/emacs/fonts xset fp rehash @end example }"
 msgid "Each fontset has a name, like a font.  However, while fonts are stored in the system and the available font names are defined by the system, fontsets are defined within Emacs itself.  Once you have defined a fontset, you can use it within Emacs by specifying its name, anywhere that you could use a single font.  Of course, Emacs fontsets can use only the fonts that your system supports.  If some characters appear on the screen as empty boxes or hex codes, this means that the fontset in use for them has no font for those characters.  In this case, or if the characters are shown, but not as well as you would like, you may need to install extra fonts or modify the fontset to use specific fonts already installed on your system (see below).  Your operating system may have optional fonts that you can install; or you can install the GNU Intlfonts package, which includes fonts for most supported scripts.@footnote{If you run Emacs on X, you may need to inform the X server about the location of the newly installed fonts with commands such as: @example xset fp+ /usr/local/share/emacs/fonts xset fp rehash @end example }"
 msgstr ""
-"それぞれのフォントセットは、フォントと同様に名前をもちます。しかしフォントはシステムに格納されていて、利用可能なフォント名はシステムで定義されていますが、フォントセットはEmacs自身で定義されます。1度フォントセットを定義したら、1つのフォントを使える場所ならどこでも、フォントセットを名前で指定して使用することができます。もちろんEmacsのフォントセットに使用できるのは、システムがサポートするフォントだけです。もしある文字がスクリーン上で空のボックスや16進コードで表示される場合、それは使用しているフォントセットがその文字にたいするフォントをもっていないことを意味します。このような場合や、文字は表示されるが、それが意図したものとは異なる場合、多分追加のフォントをインストールする必要があるでしょう。オペレーティングシステムにはインストールできるオプションのフォントがあるはずです。またはサポートされたスクリプトのほとんどのフォントを含むGNU Intlfontsパッケージをインストールすることもできます。@footnote{EmacsをXで実行している場合、以下のようにして新しくインストールしたフォントの場所を、X serverに指示する必要があるでしょう:\n"
+"それぞれのフォントセットは、フォントと同様に名前をもちます。しかしフォントはシステムに格納されていて、利用可能なフォント名はシステムで定義されていますが、フォントセットはEmacs自身で定義されます。1度フォントセットを定義したら、1つのフォントを使える場所ならどこでも、フォントセットを名前で指定して使用することができます。もちろんEmacsのフォントセットに使用できるのは、システムがサポートするフォントだけです。もしある文字がスクリーン上で空のボックスや16進コードで表示される場合、それは使用しているフォントセットがその文字にたいするフォントをもっていないことを意味します。このような場合や、文字は表示されるが、それが意図したものとは異なる場合、多分追加のフォントをインストールするか、システムにすでにインストールされた特定のフォントを使用するようにフォントセットを修正する必要があるでしょう(以下参照)。オペレーティングシステムにはインストールできるオプションのフォントがあるはずです。またはサポートされたスクリプトのほとんどのフォントを含むGNU Intlfontsパッケージをインストールすることもできます。@footnote{EmacsをXで実行している場合には、以下のようにして新しくインストールしたフォントの場所をX serverに指示する必要があるでしょう:\n"
 "@example\n"
 "xset fp+ /usr/local/share/emacs/fonts\n"
 "xset fp rehash\n"
