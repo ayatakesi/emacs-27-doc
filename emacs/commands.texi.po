@@ -1,38 +1,15 @@
-# #-#-#-#-#  commands.texi.po (26.1)  #-#-#-#-#
-# #-#-#-#-#  commands.texi.po (26.1)  #-#-#-#-#
-# Japanese translation of Emacs-26.1  editor manual
-# Copyright (C) 2016 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Emacs package.
-# Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
-#
-# #-#-#-#-#  compendium.po (26.1)  #-#-#-#-#
-# Japanese translation of Emacs-25.2 editor manual
-# Copyright (C) 2016 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Emacs package.
-# Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
-#
-# #-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#
-# Japanese translation of Emacs-25.2 editor manual
-# Copyright (C) 2016 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Emacs package.
-# Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2019-02-27 11:30+0900\n"
+"PO-Revision-Date: 2020-08-04 20:05+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  commands.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  commands.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
+"」"
 
 #. type: chapter
 #: original_texis/commands.texi:6
@@ -136,7 +113,7 @@ msgstr "M-"
 #: original_texis/commands.texi:45
 #, no-wrap
 msgid "Alt key, serving as Meta"
-msgstr ""
+msgstr "Alt key, serving as Meta"
 
 #. type: Plain text
 #: original_texis/commands.texi:56
@@ -157,7 +134,7 @@ msgstr "@key{ESC}で始まる2文字キーシーケンスを使って、Meta文�
 #. type: Plain text
 #: original_texis/commands.texi:69
 msgid "Emacs supports 3 additional modifier keys, see @ref{Modifier Keys}."
-msgstr ""
+msgstr "Emacsは追加の修飾キーをサポートします。@ref{Modifier Keys}を参照してください。"
 
 #. type: cindex
 #: original_texis/commands.texi:70
@@ -239,10 +216,8 @@ msgstr "コンプリートキーに入力イベントを付け加えることは
 
 #. type: Plain text
 #: original_texis/commands.texi:131
-#, fuzzy
-#| msgid "By default, the prefix keys in Emacs are @kbd{C-c}, @kbd{C-h}, @kbd{C-x}, @kbd{C-x @key{RET}}, @kbd{C-x @@}, @kbd{C-x a}, @kbd{C-x n}, @kbd{C-x r}, @kbd{C-x v}, @kbd{C-x 4}, @kbd{C-x 5}, @kbd{C-x 6}, @key{ESC}, @kbd{M-g}, and @kbd{M-o}.  (@key{F1} and @key{F2} are aliases for @kbd{C-h} and @kbd{C-x 6}.)  This list is not cast in stone; if you customize Emacs, you can make new prefix keys.  You could even eliminate some of the standard ones, though this is not recommended for most users; for example, if you remove the prefix definition of @kbd{C-x 4}, then @kbd{C-x 4 C-f} becomes an invalid key sequence.  @xref{Key Bindings}."
 msgid "By default, the prefix keys in Emacs are @kbd{C-c}, @kbd{C-h}, @kbd{C-x}, @kbd{C-x @key{RET}}, @kbd{C-x @@}, @kbd{C-x a}, @kbd{C-x n}, @kbd{C-x r}, @kbd{C-x t}, @kbd{C-x v}, @kbd{C-x 4}, @kbd{C-x 5}, @kbd{C-x 6}, @key{ESC}, @kbd{M-g}, and @kbd{M-o}.  (@key{F1} and @key{F2} are aliases for @kbd{C-h} and @kbd{C-x 6}.)  This list is not cast in stone; if you customize Emacs, you can make new prefix keys.  You could even eliminate some of the standard ones, though this is not recommended for most users; for example, if you remove the prefix definition of @kbd{C-x 4}, then @kbd{C-x 4 C-f} becomes an invalid key sequence.  @xref{Key Bindings}."
-msgstr "デフォルトではEmacsのプレフィクスキーは@kbd{C-c}、@kbd{C-h}、@kbd{C-x}、@kbd{C-x @key{RET}}、@kbd{C-x @@}、@kbd{C-x a}、@kbd{C-x n}、@kbd{C-x r}、@kbd{C-x v}、@kbd{C-x 4}、@kbd{C-x 5}、@kbd{C-x 6}、@key{ESC}、@kbd{M-g}、@kbd{M-o}です(@key{F1}と@key{F2}は、@kbd{C-h}と@kbd{C-x 6}のエイリアスです)。このリストは不変のものではありません。Emacsをカスタマイズすれば、新しいプレフィクスキーを作ることができます。標準のプレフィクスキーを無効にすることさえできますが、これはほとんどのユーザーにたいして推奨はできません。たとえばプレフィクス定義@kbd{C-x 4}を削除すると、@kbd{C-x 4 C-f}は無効なキーシーケンスになります。@ref{Key Bindings}を参照してください。"
+msgstr "デフォルトではEmacsのプレフィクスキーは@kbd{C-c}、@kbd{C-h}、@kbd{C-x}、@kbd{C-x @key{RET}}、@kbd{C-x @@}、@kbd{C-x a}、@kbd{C-x n}、@kbd{C-x r}、@kbd{C-x t}、@kbd{C-x v}、@kbd{C-x 4}、@kbd{C-x 5}、@kbd{C-x 6}、@key{ESC}、@kbd{M-g}、@kbd{M-o}です(@key{F1}と@key{F2}は@kbd{C-h}と@kbd{C-x 6}のエイリアス)。このリストは不変のものではありません。Emacsをカスタマイズすれば、新しいプレフィクスキーを作ることができます。標準のプレフィクスキーを無効にすることさえできますが、これはほとんどのユーザーにたいして推奨はできません。たとえばプレフィクス定義@kbd{C-x 4}を削除すると、@kbd{C-x 4 C-f}は無効なキーシーケンスになります。@ref{Key Bindings}を参照してください。"
 
 #. type: Plain text
 #: original_texis/commands.texi:137
