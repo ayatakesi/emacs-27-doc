@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-22 14:05+0900\n"
+"PO-Revision-Date: 2020-08-07 00:52+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  mini.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  mini.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.kULqet8xzj (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.pbcXSloWpM.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.PoXomePNQl.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/mini.texi:6
@@ -424,17 +416,14 @@ msgstr "enable-recursive-minibuffers"
 
 #. type: findex
 #: original_texis/mini.texi:225
-#, fuzzy, no-wrap
-#| msgid "minibuffer-inactive-mode"
+#, no-wrap
 msgid "minibuffer-depth-indicate-mode"
-msgstr "minibuffer-inactive-mode"
+msgstr "minibuffer-depth-indicate-mode"
 
 #. type: Plain text
 #: original_texis/mini.texi:232
-#, fuzzy
-#| msgid "Emacs normally disallows most commands that use the minibuffer while the minibuffer is active.  To allow such commands in the minibuffer, set the variable @code{enable-recursive-minibuffers} to @code{t}."
 msgid "Emacs normally disallows most commands that use the minibuffer while the minibuffer is active.  To allow such commands in the minibuffer, set the variable @code{enable-recursive-minibuffers} to @code{t}.  You might need also to enable @code{minibuffer-depth-indicate-mode} to show the current recursion depth in the minibuffer prompt on recursive use of the minibuffer."
-msgstr "通常Emacsはミニバッファーがアクティブのときは、ミニバッファーにたいして多くのコマンドを使用できないようにしています。ミニバッファーでこれらのコマンドを使えるようにするには、変数@code{enable-recursive-minibuffers}に@code{t}をセットしてください。"
+msgstr "Emacsではミニバッファーがアクティブのときには、通常はミニバッファーにたいして多くのコマンドが使用できないようになっています。ミニバッファーでこれらのコマンドを使えるようにするには、変数@code{enable-recursive-minibuffers}に@code{t}をセットしてください。ミニバッファーを再帰的に使用中にミニバッファーのプロンプトにカレントの再帰深さを表示するために、@code{minibuffer-depth-indicate-mode}も有効にする必要があるかもしれません。"
 
 #. type: findex
 #: original_texis/mini.texi:233
@@ -730,10 +719,8 @@ msgstr "RIGHT"
 
 #. type: table
 #: original_texis/mini.texi:373
-#, fuzzy
-#| msgid "While in the completion list buffer, this moves point to the following completion alternative (@code{next-completion})."
 msgid "While in the completion list buffer, these keys move point to the following completion alternative (@code{next-completion})."
-msgstr "補完候補リストのバッファー内では、次の補完候補にポイントを移動します(@code{next-completion})。"
+msgstr "補完候補リストのバッファー内では、これらのキーは次の補完候補にポイントを移動します(@code{next-completion})。"
 
 #. type: findex
 #: original_texis/mini.texi:374
@@ -745,7 +732,7 @@ msgstr "previous-completion"
 #: original_texis/mini.texi:375
 #, no-wrap
 msgid "S-TAB"
-msgstr ""
+msgstr "S-TAB"
 
 #. type: key{#1}
 #: original_texis/mini.texi:376
@@ -755,48 +742,42 @@ msgstr "LEFT"
 
 #. type: table
 #: original_texis/mini.texi:379
-#, fuzzy
-#| msgid "While in the completion list buffer, this moves point to the previous completion alternative (@code{previous-completion})."
 msgid "While in the completion list buffer, these keys move point to the previous completion alternative (@code{previous-completion})."
-msgstr "補完候補リストのバッファー内では、前の補完候補にポイントを移動します(@code{previous-completion})。"
+msgstr "補完候補リストのバッファー内では、これらのキーは前の補完候補にポイントを移動します(@code{previous-completion})。"
 
 #. type: findex
 #: original_texis/mini.texi:380
 #, no-wrap
 msgid "quit-window"
-msgstr ""
+msgstr "quit-window"
 
 #. type: kbd{#1}
 #: original_texis/mini.texi:381
 #, no-wrap
 msgid "q"
-msgstr ""
+msgstr "q"
 
 #. type: table
 #: original_texis/mini.texi:384
-#, fuzzy
-#| msgid "While in the completion list buffer, this moves point to the following completion alternative (@code{next-completion})."
 msgid "While in the completion list buffer, this quits the window showing it and selects the window showing the minibuffer (@code{quit-window})."
-msgstr "補完候補リストのバッファー内では、次の補完候補にポイントを移動します(@code{next-completion})。"
+msgstr "補完候補リストのバッファー内ではリストバッファーを表示中のウィンドウをquitして、ミニバッファーを表示中のウィンドウを選択します"
 
 #. type: findex
 #: original_texis/mini.texi:385
 #, no-wrap
 msgid "kill-current-buffer"
-msgstr ""
+msgstr "kill-current-buffer"
 
 #. type: kbd{#1}
 #: original_texis/mini.texi:386
 #, no-wrap
 msgid "z"
-msgstr ""
+msgstr "z"
 
 #. type: table
 #: original_texis/mini.texi:389
-#, fuzzy
-#| msgid "While in the completion list buffer, this chooses the completion at point (@code{choose-completion})."
 msgid "While in the completion list buffer, kill it and delete the window showing it (@code{kill-current-buffer})."
-msgstr "補完候補リストのバッファー内では、ポイント位置の補完候補を選択します(@code{choose-completion})。"
+msgstr "補完候補リストのバッファー内ではリストバッファーをkillしてそれを表示中のウィンドウを削除します(@code{kill-current-buffer})。"
 
 #. type: kindex
 #: original_texis/mini.texi:394
@@ -1475,10 +1456,8 @@ msgstr "y or n prompt"
 
 #. type: Plain text
 #: original_texis/mini.texi:821
-#, fuzzy
-#| msgid "For the first type of yes-or-no query, the prompt ends with @samp{(y or n)}.  Such a query does not actually use the minibuffer; the prompt appears in the echo area, and you answer by typing either @samp{y} or @samp{n}, which immediately delivers the response.  For example, if you type @kbd{C-x C-w} (@kbd{write-file}) to save a buffer, and enter the name of an existing file, Emacs issues a prompt like this:"
 msgid "For the first type of yes-or-no query, the prompt ends with @w{@samp{(y or n)}}.  You answer the query by typing a single key, either @samp{y} or @samp{n}, which immediately exits the minibuffer and delivers the response.  For example, if you type @kbd{C-x C-w} (@kbd{write-file}) to save a buffer, and enter the name of an existing file, Emacs issues a prompt like this:"
-msgstr "1番目のyes-or-no形式の質問は、@samp{(y or n)}で終わるプロンプトのものです。このような質問は、実際のところミニバッファーを使用しません。プロンプトがエコーエリアに表示され、答えを@samp{y}または@samp{n}で入力すると、ただちにそれが答えとなります。たとえばバッファーの保存で@kbd{C-x C-w} (@kbd{write-file})を入力して既存のファイル名を入力すると、Emacsは以下のようなプロンプトを表示します:"
+msgstr "1番目のyes-or-no形式の質問は@w{@samp{(y or n)}}で終わるプロンプトの質問です。@samp{y}か@samp{n}いずれかの単一キーをタイプして質問に応答して、それによりミニバッーを即座にexitして応答を伝えます。たとえばバッファーの保存で@kbd{C-x C-w} (@kbd{write-file})を入力して既存のファイル名を入力すると、Emacsは以下のようなプロンプトを表示します:"
 
 #. type: smallexample
 #: original_texis/mini.texi:824
@@ -1494,10 +1473,8 @@ msgstr "yes or no prompt"
 
 #. type: Plain text
 #: original_texis/mini.texi:833
-#, fuzzy
-#| msgid "The second type of yes-or-no query is typically employed if giving the wrong answer would have serious consequences; it uses the minibuffer, and features a prompt ending with @samp{(yes or no)}.  For example, if you invoke @kbd{C-x k} (@code{kill-buffer}) on a file-visiting buffer with unsaved changes, Emacs activates the minibuffer with a prompt like this:"
 msgid "The second type of yes-or-no query is typically employed if giving the wrong answer would have serious consequences; it thus features a longer prompt ending with @samp{(yes or no)}.  For example, if you invoke @kbd{C-x k} (@code{kill-buffer}) on a file-visiting buffer with unsaved changes, Emacs activates the minibuffer with a prompt like this:"
-msgstr "2番目のyes-or-no形式の質問は、間違った答えが深刻な事態を招くような場合に使用されます。これはミニバッファーを使い、@samp{(yes or no)}で終わるプロンプトという特徴があります。たとえば変更が保存されていないファイルをvisitしているバッファーで、@kbd{C-x k} (@code{kill-buffer})を呼び出すと、Emacsはミニバッファーをアクティブにして以下のようなプロンプトを表示します:"
+msgstr "2番目のyes-or-no形式の質問は間違った答えが深刻な事態を招くような場合に使用される質問形式で、@samp{(yes or no)}を編集する長いプロンプトが特徴です。たとえば変更が保存されていないファイルをvisitしているバッファーで@kbd{C-x k} (@code{kill-buffer})を呼び出すと、Emacsはミニバッファーをアクティブにして以下のようなプロンプトを表示します:"
 
 #. type: smallexample
 #: original_texis/mini.texi:836
@@ -1508,11 +1485,9 @@ msgstr "Buffer foo.el modified; kill anyway? (yes or no)\n"
 #. type: Plain text
 #: original_texis/mini.texi:841
 msgid "To answer, you must type @samp{yes} or @samp{no} into the minibuffer, followed by @key{RET}."
-msgstr ""
+msgstr "これに答えるにはミニバッファーで@samp{yes}か@samp{no}の後に@key{RET}をタイプしなければなりません。"
 
 #. type: Plain text
 #: original_texis/mini.texi:848
-#, fuzzy
-#| msgid "To answer, you must type @samp{yes} or @samp{no} into the minibuffer, followed by @key{RET}.  The minibuffer behaves as described in the previous sections; you can switch to another window with @kbd{C-x o}, use the history commands @kbd{M-p} and @kbd{M-n}, etc.  Type @kbd{C-g} to quit the minibuffer and the querying command."
 msgid "With both types of yes-or-no query the minibuffer behaves as described in the previous sections; you can recenter the selected window with @kbd{C-l}, scroll that window (@kbd{C-v} or @kbd{PageDown} scrolls forward, @kbd{M-v} or @kbd{PageUp} scrolls backward), switch to another window with @kbd{C-x o}, use the history commands @kbd{M-p} and @kbd{M-n}, etc.  Type @kbd{C-g} to dismiss the query, and quit the minibuffer and the querying command (@pxref{Quitting})."
-msgstr "これに答えるには、ミニバッファーに@samp{yes}または@samp{no}と入力してから、@key{RET}を押さなければなりません。ミニバッファーは前のセクションで説明したように動作します。@kbd{C-x o}による他のウィンドウへのスイッチ、ヒストリーコマンドの@kbd{M-p}や@kbd{M-n}などが使用できます。@kbd{C-g}でミニバッファーを閉じて、質問を発したコマンドを終了できます。"
+msgstr "これらのyes-or-noによる2つの質問形式では、前のセクションで説明したようにミニバッファーは振る舞います。@kbd{C-l}による選択されたウィンドウの再センタリング、ウィンドウのスクロール( @kbd{C-v}か@kbd{PageDown}で前方、@kbd{M-v}か@kbd{PageUp}で後方にスクロール)、@kbd{C-x o}による別ウィンドウへの切り替え、@kbd{M-p}と@kbd{M-n}によるヒストリーコマンドの使用等が可能です。質問を終了するためには@kbd{C-g}をタイプしてミニバッファーと問い合わせコマンドををquitします(@ref{Quitting}を参照)。これに答えるには、ミニバッファーに@samp{yes}または@samp{no}と入力してから、@key{RET}を押さなければなりません。ミニバッファーは前のセクションで説明したように動作します。@kbd{C-x o}による他のウィンドウへのスイッチ、ヒストリーコマンドの@kbd{M-p}や@kbd{M-n}などが使用できます。@kbd{C-g}でミニバッファーを閉じて、質問を発したコマンドを終了できます。"
