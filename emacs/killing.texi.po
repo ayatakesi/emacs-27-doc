@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-21 20:05+0900\n"
+"PO-Revision-Date: 2020-08-07 08:35+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -508,17 +508,14 @@ msgstr "次の@var{char}までをkillします(@code{zap-to-char})。"
 
 #. type: item
 #: original_texis/killing.texi:222
-#, fuzzy, no-wrap
-#| msgid "M-z @var{char}"
+#, no-wrap
 msgid "M-x zap-up-to-char @var{char}"
-msgstr "M-z @var{char}"
+msgstr "M-x zap-up-to-char @var{char}"
 
 #. type: table
 #: original_texis/killing.texi:224
-#, fuzzy
-#| msgid "Kill through the next occurrence of @var{char} (@code{zap-to-char})."
 msgid "Kill up to, but not including, the next occurrence of @var{char}."
-msgstr "次の@var{char}までをkillします(@code{zap-to-char})。"
+msgstr "次の@var{char}まで( @var{char}を含まず)をkillします。"
 
 #. type: findex
 #: original_texis/killing.texi:227
@@ -556,22 +553,19 @@ msgstr "zap-to-char"
 
 #. type: Plain text
 #: original_texis/killing.texi:253
-#, fuzzy
-#| msgid "The command @kbd{M-z} (@code{zap-to-char}) combines killing with searching: it reads a character and kills from point up to (and including) the next occurrence of that character in the buffer.  A numeric argument acts as a repeat count; a negative argument means to search backward and kill text before point."
 msgid "The command @kbd{M-z} (@code{zap-to-char}) combines killing with searching: it reads a character and kills from point up to (and including) the next occurrence of that character in the buffer.  A numeric argument acts as a repeat count; a negative argument means to search backward and kill text before point.  A history of previously used characters is maintained and can be accessed via the @kbd{M-p}/@kbd{M-n} keystrokes.  This is mainly useful if the character to be used has to be entered via a complicated input method."
-msgstr "コマンド@kbd{M-z} (@code{zap-to-char})は、killと検索が組み合わされています。これは文字を読み取り、ポイントからバッファー内の次にその文字が現れる場所までをkillします。数引数は繰り返し回数です。負の引数の場合は後方に検索することを意味し、ポイントの前のテキストをkillします。"
+msgstr "コマンド@kbd{M-z} (@code{zap-to-char})はkillと検索の組み合わせです。これは文字を読み取り、ポイントからバッファー内の次にその文字が現れる場所までをkillします。数引数は繰り返し回数です。負の引数の場合は後方に検索することを意味し、ポイントの前のテキストをkillします。以前に使用した文字のヒストリーが保守されていて@kbd{M-p}と@kbd{M-n}のキーストロークでアクセスできます。これは主に複雑な入力手段で入力する必要が文字の場合に有用です。"
 
 #. type: findex
 #: original_texis/killing.texi:253
-#, fuzzy, no-wrap
-#| msgid "zap-to-char"
+#, no-wrap
 msgid "zap-up-to-char"
-msgstr "zap-to-char"
+msgstr "zap-up-to-char"
 
 #. type: Plain text
 #: original_texis/killing.texi:257
 msgid "A similar command @code{zap-up-to-char} kills from point up to, but not including the next occurrence of a character, with numeric argument acting as a repeat count."
-msgstr ""
+msgstr "類似コマンドの@code{zap-up-to-char}はポイントから次の文字までkillしますがその文字は含みません。数引数は繰り返し回数として機能します。"
 
 #. type: subsection
 #: original_texis/killing.texi:259
@@ -1373,13 +1367,13 @@ msgstr "mark rectangle"
 #: original_texis/killing.texi:730
 #, no-wrap
 msgid "region-rectangle"
-msgstr ""
+msgstr "region-rectangle"
 
 #. type: cindex
 #: original_texis/killing.texi:731
 #, no-wrap
 msgid "rectangular region"
-msgstr ""
+msgstr "rectangular region"
 
 #. type: Plain text
 #: original_texis/killing.texi:737
@@ -1394,7 +1388,7 @@ msgstr "矩形リージョンは、リージョンの制御と大体同じ方法
 #. type: Plain text
 #: original_texis/killing.texi:745
 msgid "A rectangular region can also be marked using the mouse: click and drag @kbd{C-M-mouse-1} from one corner of the rectangle to the opposite."
-msgstr ""
+msgstr "矩形リージョンはマウスを使用してマークすることもできます。矩形の一方の隅を@kbd{C-M-mouse-1}でクリックして向かい側の隅までドラッグしてください。"
 
 #. type: kindex
 #: original_texis/killing.texi:747 original_texis/killing.texi:786
