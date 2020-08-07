@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-09-22 11:18+0900\n"
+"PO-Revision-Date: 2020-08-08 00:22+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -236,10 +236,8 @@ msgstr "jump-to-register"
 
 #. type: Plain text
 #: original_texis/regs.texi:88
-#, fuzzy
-#| msgid "The command @kbd{C-x r j @var{r}} switches to the buffer recorded in register @var{r}, and moves point to the recorded position.  The contents of the register are not changed, so you can jump to the saved position any number of times."
 msgid "The command @kbd{C-x r j @var{r}} switches to the buffer recorded in register @var{r}, pushes a mark, and moves point to the recorded position.  (The mark is not pushed if point was already at the recorded position, or in successive calls to the command.)  The contents of the register are not changed, so you can jump to the saved position any number of times."
-msgstr "コマンド@kbd{C-x r j @var{r}}は、@var{r}に記録されたバッファーに切り替えて、記録された位置にポイントを移動します。レジスターの内容は変わらないので、保存した位置に何度でもジャンプできます。"
+msgstr "コマンド@kbd{C-x r j @var{r}}は@var{r}に記録されたバッファーに切り替えて、マークをpushするとともに記録された位置にポイントを移動します(すでにポイントが記録された位置にあるとき、またはこのコマンドの連続呼び出し時にはマークはpushされない)。レジスターの内容は変わらないので、保存した位置に何度でもジャンプできます。"
 
 #. type: Plain text
 #: original_texis/regs.texi:93
@@ -823,22 +821,20 @@ msgstr "変数@code{bookmark-default-file}には、ブックマークを保存�
 
 #. type: vindex
 #: original_texis/regs.texi:362
-#, fuzzy, no-wrap
-#| msgid "bookmark-insert-location"
+#, no-wrap
 msgid "bookmark-use-annotations"
-msgstr "bookmark-insert-location"
+msgstr "bookmark-use-annotations"
 
 #. type: cindex
 #: original_texis/regs.texi:363
-#, fuzzy, no-wrap
-#| msgid "bookmark-insert-location"
+#, no-wrap
 msgid "bookmark annotations"
-msgstr "bookmark-insert-location"
+msgstr "bookmark annotations"
 
 #. type: Plain text
 #: original_texis/regs.texi:368
 msgid "If you set the variable @code{bookmark-use-annotations} to @code{t}, setting a bookmark will query for an annotation.  If a bookmark has an annotation, it is automatically shown in a separate window when you jump to the bookmark."
-msgstr ""
+msgstr "変数@code{bookmark-use-annotations}を@code{t}にセットすれば、ブックマークへの問い合わせは注釈について行われるようにセットされます。ブックマークに注釈があれば、ブックマークへのジャンプ時には別ウィンドウに注釈が自動的に表示されます。"
 
 #. type: vindex
 #: original_texis/regs.texi:369
