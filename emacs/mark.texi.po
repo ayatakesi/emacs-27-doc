@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-22 14:04+0900\n"
+"PO-Revision-Date: 2020-08-07 01:08+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -70,7 +70,7 @@ msgstr "テキストのある位置にマークをセットすると、マーク
 #. type: Plain text
 #: original_texis/mark.texi:30
 msgid "This is one of the few faces that has the @code{:extend t} attribute by default, which implies that the same face is used to highlight the text and space between end of line and the window border.  To highlight only the text you could set this attribute to @code{nil}."
-msgstr ""
+msgstr "これはテキスト、および行末よウィンドウボーダーの間のスペースのハイライトに同一フェイスを暗黙に使用する@code{:extend t}属性をもつ数少ないフェイスの1つです。テキストだけをハイライトするために、この属性に@code{nil}をセットすることもできます。"
 
 #. type: cindex
 #: original_texis/mark.texi:31
