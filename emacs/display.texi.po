@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-21 19:52+0900\n"
+"PO-Revision-Date: 2020-08-08 03:39+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -446,12 +446,12 @@ msgstr "ときどき、特に@kbd{C-v}や@kbd{M-v}のようなキーを押した
 #: original_texis/display.texi:144
 #, no-wrap
 msgid "jit-lock-defer-time"
-msgstr ""
+msgstr "jit-lock-defer-time"
 
 #. type: Plain text
 #: original_texis/display.texi:152
 msgid "As an alternative to setting @code{fast-but-imprecise-scrolling} you might prefer to enable jit-lock deferred fontification (@pxref{Font Lock}).  To do this, customize @code{jit-lock-defer-time} to a small positive number such as 0.25, or even 0.1 if you type quickly.  This gives you less jerky scrolling when you hold down @kbd{C-v}, but the window contents after any action which scrolls into a fresh portion of the buffer will be momentarily unfontified."
-msgstr ""
+msgstr "@code{fast-but-imprecise-scrolling}をセットするかわりにJIT Lockによる遅延されたフォント表示化の有効化のほうが好ましいと思うかもしれません(@ref{Font Lock}を参照)。これを行うには@code{jit-lock-defer-time}に0.25、タイプ速度が速い場合には0.1のように小さい正の数値をセットします。これにより@kbd{C-v}押下時のぎくしゃくしたスクロールが幾分改善されますが、バッファーの新たな部分へスクロールするようなアクション後のウィンドウのコンテンツは一時的に非フォント化されるでしょう。"
 
 #. type: vindex
 #: original_texis/display.texi:153
@@ -1120,10 +1120,9 @@ msgstr "フェイスには、さまざまなフォアグラウンドカラーと
 
 #. type: subsection
 #: original_texis/display.texi:574
-#, fuzzy, no-wrap
-#| msgid "color name"
+#, no-wrap
 msgid "Color Names"
-msgstr "color name"
+msgstr "Color Names"
 
 #. type: cindex
 #: original_texis/display.texi:575
@@ -1150,10 +1149,9 @@ msgstr "カラーネームとは、@samp{dark orange}や@samp{medium sea green}�
 
 #. type: subsection
 #: original_texis/display.texi:590
-#, fuzzy, no-wrap
-#| msgid "RGB triplet"
+#, no-wrap
 msgid "RGB Triplets"
-msgstr "RGB triplet"
+msgstr "RGB Triplets"
 
 #. type: cindex
 #: original_texis/display.texi:591
@@ -1163,10 +1161,8 @@ msgstr "RGB triplet"
 
 #. type: Plain text
 #: original_texis/display.texi:600
-#, fuzzy
-#| msgid "An RGB triplet is a string of the form @samp{#RRGGBB}.  Each of the R, G, and B components is a hexadecimal number specifying the component's relative intensity, one to four digits long (usually two digits are used).  The components must have the same number of digits.  For hexadecimal values A to F, either upper or lower case are acceptable."
 msgid "An RGB triplet is a string of the form @samp{#RRGGBB}.  Each of the primary color components is represented by a hexadecimal number between @samp{00} (intensity 0) and @samp{FF} (the maximum intensity).  It is also possible to use one, three, or four hex digits for each component, so @samp{red} can be represented as @samp{#F00}, @samp{#fff000000}, or @samp{#ffff00000000}.  The components must have the same number of digits.  For hexadecimal values A to F, either upper or lower case are acceptable."
-msgstr "RGBトリプレットは、@samp{#RRGGBB}という形式の文字列で指定します。R、G、Bの各コンポーネントは、そのそのコンポーネントに関連する色の強度を、1桁から4桁(通常は2桁)の16進数で指定します。各コンポーネントは同じ桁数でなければなりません。16進数のAからFは、大文字小文字を区別しません。"
+msgstr "RGBトリプレットは@samp{#RRGGBB}という形式の文字列で指定します。主要カラーコンポーネントはそれぞれ@samp{00} (色強度0)から@samp{FF} (最大強度)の16進数として表現されます。各コンポーネントにたいして1桁、3桁、あるいは4桁の16進数を使用することもできるので@samp{red}は@samp{#F00}、@samp{#fff000000}、あるいは@samp{#ffff00000000}と表すことができます。各コンポーネントは同じ桁数でなければなりません。16進数のAからFは、大文字小文字を区別しません。"
 
 #. type: Plain text
 #: original_texis/display.texi:604
@@ -1559,24 +1555,20 @@ msgstr "@code{highlight}や@code{mode-line-highlight}と似ていますが、ヘ
 
 #. type: item
 #: original_texis/display.texi:734
-#, fuzzy, no-wrap
-#| msgid "header-line"
+#, no-wrap
 msgid "tab-line"
-msgstr "header-line"
+msgstr "tab-line"
 
 #. type: cindex
 #: original_texis/display.texi:735
-#, fuzzy, no-wrap
-#| msgid "@code{header-line} face"
+#, no-wrap
 msgid "@code{tab-line} face"
-msgstr "@code{header-line} face"
+msgstr "@code{tab-line} face"
 
 #. type: table
 #: original_texis/display.texi:739
-#, fuzzy
-#| msgid "Similar to @code{mode-line} for a window's header line, which appears at the top of a window just as the mode line appears at the bottom.  Most windows do not have a header line---only some special modes, such Info mode, create one."
 msgid "Similar to @code{mode-line} for a window's tab line, which appears at the top of a window with tabs representing window buffers.  @xref{Tab Line}."
-msgstr "@code{mode-line}と似ていますが、ウィンドウのヘッダーラインのためのものです。モードラインがウィンドウの一番下に表示されるように、ヘッダーラインはウィンドウの一番上に表示されます。ほとんどのウィンドウはヘッダーラインを持ちません。Infoモードのような特別なモードだけがヘッダーラインを持ちます。"
+msgstr "@code{mode-line}と似ていますが、ウィンドウのタブラインのためのものです。タブラインはウィンドウのバッファーを表し、ウィンドウの上端に表示されます。@ref{Tab Line}を参照してください。"
 
 #. type: item
 #: original_texis/display.texi:739
@@ -1697,17 +1689,14 @@ msgstr "このフェイスは、ツールバーのアイコンのカラーを決
 
 #. type: item
 #: original_texis/display.texi:780
-#, fuzzy, no-wrap
-#| msgid "tab-mark"
+#, no-wrap
 msgid "tab-bar"
-msgstr "tab-mark"
+msgstr "tab-bar"
 
 #. type: table
 #: original_texis/display.texi:782
-#, fuzzy
-#| msgid "This face determines the color of tool bar icons.  @xref{Tool Bars}."
 msgid "This face determines the color of tab bar icons.  @xref{Tab Bars}."
-msgstr "このフェイスは、ツールバーのアイコンのカラーを決定します。@ref{Tool Bars}を参照してください。"
+msgstr "このフェイスはタブバーのアイコンのカラーを決定します。@ref{Tab Bars}を参照してください。"
 
 #. type: item
 #: original_texis/display.texi:782
@@ -1823,13 +1812,13 @@ msgstr "C-x C-0"
 #: original_texis/display.texi:810
 #, no-wrap
 msgid "C-wheel-down"
-msgstr ""
+msgstr "C-wheel-down"
 
 #. type: kindex
 #: original_texis/display.texi:811
 #, no-wrap
 msgid "C-wheel-up"
-msgstr ""
+msgstr "C-wheel-up"
 
 #. type: Plain text
 #: original_texis/display.texi:818
@@ -1839,7 +1828,7 @@ msgstr "現在のバッファーのデフォルトフェイスを大きくする
 #. type: Plain text
 #: original_texis/display.texi:823
 msgid "Similarly, scrolling the mouse wheel with the @kbd{Ctrl} modifier pressed, when the mouse pointer is above buffer text, will increase or decrease the height of the default face, depending on the direction of the scrolling."
-msgstr ""
+msgstr "同様にマウスポインターがバッファーテキスト上にある際に@kbd{Ctrl}修飾キーを押下してマウスホイールをスクロールすると、スクロール方向に応じてデフォルトフェイスの高さが増加あるいは減少されます。"
 
 #. type: Plain text
 #: original_texis/display.texi:831
@@ -2159,10 +2148,8 @@ msgstr "highlight-regexp"
 
 #. type: table
 #: original_texis/display.texi:1009
-#, fuzzy
-#| msgid "Highlight text that matches @var{regexp} using face @var{face} (@code{highlight-regexp}).  The highlighting will remain as long as the buffer is loaded.  For example, to highlight all occurrences of the word ``whim'' using the default face (a yellow background), type @kbd{M-s h r whim @key{RET} @key{RET}}.  Any face can be used for highlighting, Hi Lock provides several of its own and these are pre-loaded into a list of default values.  While being prompted for a face use @kbd{M-n} and @kbd{M-p} to cycle through them."
 msgid "Highlight text that matches @var{regexp} using face @var{face} (@code{highlight-regexp}).  The highlighting will remain as long as the buffer is loaded.  For example, to highlight all occurrences of the word ``whim'' using the default face (a yellow background), type @kbd{M-s h r whim @key{RET} @key{RET}}.  Any face can be used for highlighting, Hi Lock provides several of its own and these are pre-loaded into a list of default values.  While being prompted for a face use @kbd{M-n} and @kbd{M-p} to cycle through them.  A prefix numeric argument limits the highlighting to the corresponding subexpression."
-msgstr "@var{regexp}にマッチするテキストを、フェイス@var{face}を使ってハイライトします(@code{highlight-regexp})。ハイライトはバッファーがロードされている限り残ります。たとえば単語``whim''をデフォルトのフェイス(黄色いバックグラウンドカラー)でハイライトするには、@kbd{M-s h r whim @key{RET} @key{RET}}とタイプします。ハイライトには任意のフェイスを使うことができますが、Hi Lockモードはモード自身でいくつかのフェイスを提供しており、それらはデフォルト値のリストに事前ロードされています。フェイスの入力プロンプトで@kbd{M-n}と@kbd{M-p}を使うことにより、それらを巡回することができます。"
+msgstr "@var{regexp}にマッチするテキストを、フェイス@var{face}を使ってハイライトします(@code{highlight-regexp})。ハイライトはバッファーがロードされている限り残ります。たとえば単語``whim''をデフォルトのフェイス(黄色いバックグラウンドカラー)でハイライトするには、@kbd{M-s h r whim @key{RET} @key{RET}}とタイプします。ハイライトには任意のフェイスを使うことができますが、Hi Lockモードはモード自身でいくつかのフェイスを提供しており、それらはデフォルト値のリストに事前ロードされています。フェイスの入力プロンプトで@kbd{M-n}と@kbd{M-p}を使うことにより、それらを巡回することができます。プレフィクス数引数は対応する部分式にハイライトを制限します。"
 
 #. type: vindex
 #: original_texis/display.texi:1010
@@ -2487,84 +2474,82 @@ msgstr "表示されているウィンドウの片側、または両側のフリ
 #: original_texis/display.texi:1173
 #, no-wrap
 msgid "mode, display-fill-column-indicator"
-msgstr ""
+msgstr "mode, display-fill-column-indicator"
 
 #. type: findex
 #: original_texis/display.texi:1174
-#, fuzzy, no-wrap
-#| msgid "display-line-numbers-mode"
+#, no-wrap
 msgid "display-fill-column-indicator-mode"
-msgstr "display-line-numbers-mode"
+msgstr "display-fill-column-indicator-mode"
 
 #. type: findex
 #: original_texis/display.texi:1175
-#, fuzzy, no-wrap
-#| msgid "global-display-line-numbers-mode"
+#, no-wrap
 msgid "global-display-fill-column-indicator-mode"
-msgstr "global-display-line-numbers-mode"
+msgstr "global-display-fill-column-indicator-mode"
 
 #. type: Plain text
 #: original_texis/display.texi:1179
 msgid "Emacs can add an indicator to display a fill column position.  The fill column indicator is a useful functionality especially in @code{prog-mode} to indicate the position of a specific column."
-msgstr ""
+msgstr "Emacsはフィルの列位置を表示するインジケーターを追加できます。フィル列のインジケーターは特定の列位置を示すために特に@code{prog-mode}で有用な機能です。"
 
 #. type: Plain text
 #: original_texis/display.texi:1184
 msgid "You can set the buffer-local variables @code{display-fill-column-indicator} and @code{display-fill-column-indicator-character} to activate the indicator and control how it looks, respectively."
-msgstr ""
+msgstr "インジケーターの表示の制御と外観はバッファーローカル変数@code{display-fill-column-indicator}と@code{display-fill-column-indicator-character}で設定できます。"
 
 #. type: Plain text
 #: original_texis/display.texi:1191
 msgid "Alternatively you can type @w{@kbd{M-x display-fill-column-indicator-mode}} or @w{@kbd{M-x global-display-fill-column-indicator-mode}} which enables the indicator locally or globally, respectively, and also chooses the character to use if none is already set.  It is possible to use the first one to activate the indicator in a hook and the second one to enable it globally."
-msgstr ""
+msgstr "かわりにインジケーターをローカルあるいはグローバルに有効にして、までセットされていなければ文字を選択するために@w{@kbd{M-x display-fill-column-indicator-mode}}や@w{@kbd{M-x global-display-fill-column-indicator-mode}}とタイプすることも可能です。フックでインジケーターをアクティブにするには前者、グローバルに有効にするには後者の使用が可能です。"
 
 #. type: Plain text
 #: original_texis/display.texi:1193
 msgid "There are 2 buffer local variables and 1 face to customize this mode:"
-msgstr ""
+msgstr "このモードをカスタマイズするために2つのバッファーローカル変数と1つのフェイスがあります:"
 
 #. type: vindex
 #: original_texis/display.texi:1195 original_texis/display.texi:1196
 #, no-wrap
 msgid "display-fill-column-indicator-column"
-msgstr ""
+msgstr "display-fill-column-indicator-column"
 
 #. type: table
 #: original_texis/display.texi:1201
 msgid "Specifies the column number where the indicator should be set.  It can take positive numerical values for the column or the special value @code{t} which means that the variable @code{fill-column} will be used."
-msgstr ""
+msgstr "インジケーターをセットするべき列数を指定します。列にたいする正の数値、あるいは変数@code{fill-column}の使用を意味する@code{t}を指定できます。"
 
 #. type: table
 #: original_texis/display.texi:1203
 msgid "Any other value disables the indicator.  The default value is @code{t}."
-msgstr ""
+msgstr "それ以外の値ではインジケーターは無効になります。デフォルト値は@code{t}です。"
 
 #. type: vindex
 #: original_texis/display.texi:1204 original_texis/display.texi:1205
 #, no-wrap
 msgid "display-fill-column-indicator-character"
-msgstr ""
+msgstr "display-fill-column-indicator-character"
 
 #. type: table
 #: original_texis/display.texi:1208
 msgid "Specifies the character used for the indicator.  This character can be any valid character including Unicode ones if the font supports them."
-msgstr ""
+msgstr "インジケーターに使用する文字を指定します。フォントがサポートしていればUnicodeを含む有効なすべての文字が可能です。"
 
 #. type: table
 #: original_texis/display.texi:1214
 msgid "When the mode is enabled through the functions @code{display-fill-column-indicator-mode} or @code{global-display-fill-column-indicator-mode}, the initialization functions check if this variable is non-@code{nil}, otherwise the initialization tries to set it to @code{U+2502} or @samp{|}."
-msgstr ""
+msgstr "関数@code{display-fill-column-indicator-mode}や@code{global-display-fill-column-indicator-mode}を通じてモードが有効にされた際には、初期化関数はこの変数が非@code{nil}かをチェックして、@code{nil}なら@code{U+2502}か@samp{|}へのセットを試みます。"
 
 #. type: vindex
 #: original_texis/display.texi:1215 original_texis/display.texi:1216
 #, no-wrap
 msgid "fill-column-indicator"
-msgstr ""
+msgstr "fill-column-indicator"
 
 #. type: table
 #: original_texis/display.texi:1221
 msgid "Specifies the face used to display the indicator.  It inherits its default values from the face @code{shadow} but without background color.  To change the indicator color you need only set the foreground color of this face."
-msgstr ""
+msgstr "インジケーターの表示に使用するフェイスを指定します。これはバックグラウンドカラーを除くデフォルト値をフェイス@code{shadow}から継承します。インジケーターのカラーを変更するために必要なのは、このフェイスのフォアグラウンドカラーのセットだけです。"
 
 #. type: vindex
 #: original_texis/display.texi:1223
@@ -3270,10 +3255,8 @@ msgstr "ctl-arrow"
 
 #. type: Plain text
 #: original_texis/display.texi:1590
-#, fuzzy
-#| msgid "The raw bytes with codes @code{U+0080} (octal 200) through @code{U+009F} (octal 237) are displayed as @dfn{octal escape sequences}, with the @code{escape-glyph} face.  For instance, character code @code{U+0098} (octal 230) is displayed as @samp{\\230}.  If you change the buffer-local variable @code{ctl-arrow} to @code{nil}, the @acronym{ASCII} control characters are also displayed as octal escape sequences instead of caret escape sequences."
 msgid "The raw bytes with codes @code{U+0080} (octal 200) through @code{U+009F} (octal 237) are displayed as @dfn{octal escape sequences}, with the @code{escape-glyph} face.  For instance, character code @code{U+0098} (octal 230) is displayed as @samp{\\230}.  If you change the buffer-local variable @code{ctl-arrow} to @code{nil}, the @acronym{ASCII} control characters are also displayed as octal escape sequences instead of caret escape sequences.  (You can also request that raw bytes be shown in hex, @pxref{Display Custom, display-raw-bytes-as-hex}.)"
-msgstr "コード@code{U+0080}(8進の200)から@code{U+009F}(8進の237)までのrawバイトは、@code{escape-glyph}フェイスにより、@dfn{8進エスケープシーケンス(octal escape sequences)}で表示されます。たとえば文字コード@code{U+0098}(8進の230)は、@samp{\\230}と表示されます。バッファーローカルな変数@code{ctl-arrow}を@code{nil}に変更すると、@acronym{ASCII}制御文字も、カレットエスケープシーケンスではなく、8進エスケープシーケンスで表示されます。"
+msgstr "コード@code{U+0080}(8進の200)から@code{U+009F}(8進の237)までのrawバイトは、@code{escape-glyph}フェイスにより@dfn{8進エスケープシーケンス(octal escape sequences)}で表示されます。たとえば文字コード@code{U+0098}(8進の230)は@samp{\\230}と表示されます。バッファーローカルな変数@code{ctl-arrow}を@code{nil}に変更すると、@acronym{ASCII}制御文字もカレットエスケープシーケンスではなく8進エスケープシーケンスで表示されます(rawバイトを16進表示するように要求することも可能。@ref{Display Custom, display-raw-bytes-as-hex}を参照)。"
 
 #. type: vindex
 #: original_texis/display.texi:1591
@@ -3757,15 +3740,14 @@ msgstr "ナロー(@ref{Narrowing}を参照)されたバッファーでは通常�
 
 #. type: vindex
 #: original_texis/display.texi:1878
-#, fuzzy, no-wrap
-#| msgid "display-line-numbers-mode"
+#, no-wrap
 msgid "display-line-numbers-offset"
-msgstr "display-line-numbers-mode"
+msgstr "display-line-numbers-offset"
 
 #. type: Plain text
 #: original_texis/display.texi:1884
 msgid "If the value of @code{display-line-numbers-offset} is non-zero, it is added to each absolute line number, and lines are counted from the beginning of the buffer, as if @code{display-line-numbers-widen} were non-@code{nil}.  It has no effect when set to zero, or when line numbers are not absolute."
-msgstr ""
+msgstr "@code{display-line-numbers-offset}の値が非0なら、各絶対行番号に追加されて、行はあたかも@code{display-line-numbers-widen}が非@code{nil}であるかのようにバッファー先頭から計数されます。0にセットされた場合、あるいは行番号が絶対でない場合には影響はありません。"
 
 #. type: vindex
 #: original_texis/display.texi:1885
@@ -3798,10 +3780,8 @@ msgstr "@code{line-number} face"
 
 #. type: Plain text
 #: original_texis/display.texi:1907
-#, fuzzy
-#| msgid "The line numbers are displayed in a special face @code{line-number}.  The current line number is displayed in a different face, @code{line-number-current-line}, so you can make the current line's number have a distinct appearance, which will help locating the line showing point."
 msgid "The line numbers are displayed in a special face @code{line-number}.  The current line number is displayed in a different face, @code{line-number-current-line}, so you can make the current line's number have a distinct appearance, which will help locating the line showing point. Additional faces @code{line-number-major-tick} and @code{line-number-minor-tick} can be used to highlight the line numbers of lines which are a multiple of certain numbers.  Customize @code{display-line-numbers-major-tick} and @code{display-line-numbers-minor-tick} respectively to set those numbers."
-msgstr "行番号は、特別なフェイス@code{line-number}で表示されます。カレント行番号は異なるフェイス@code{line-number-current-line}で表示されるので、ポイントを表示する行を見つける助けとなるように、カレント行番号に異なる外観を与えることができます。"
+msgstr "行番号は特別なフェイス@code{line-number}で表示されます。カレント行番号は異なるフェイス@code{line-number-current-line}で表示されるので、ポイントを表示する行を見つける助けとなるようにカレント行番号に異なる外観を与えることができます。特定の数値の倍数であるような行番号をハイライトするために、追加フェイスの@code{line-number-major-tick}と@code{line-number-minor-tick}を使用できます。それらの数値に@code{display-line-numbers-major-tick}と@code{display-line-numbers-minor-tick}をカスタマイズしてください。"
 
 #. type: vindex
 #: original_texis/display.texi:1908
