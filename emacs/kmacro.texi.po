@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-21 20:24+0900\n"
+"PO-Revision-Date: 2020-08-08 17:30+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -200,10 +200,8 @@ msgstr "C-x ("
 
 #. type: table
 #: original_texis/kmacro.texi:69
-#, fuzzy
-#| msgid "Start defining a keyboard macro (@code{kmacro-start-macro-or-insert-counter})."
 msgid "Start defining a keyboard macro (old style)  (@code{kmacro-start-macro}); with a prefix argument, append keys to the last macro."
-msgstr "キーボードマクロの定義を開始します(@code{kmacro-start-macro-or-insert-counter})。"
+msgstr "(旧スタイル)キーボードマクロの定義を開始します(@code{kmacro-start-macro})。プレフィクスキーを与えると最後のマクロにキーを追加します。"
 
 #. type: kindex
 #: original_texis/kmacro.texi:69 original_texis/kmacro.texi:158
@@ -214,7 +212,7 @@ msgstr "C-x )"
 #. type: table
 #: original_texis/kmacro.texi:72
 msgid "End a macro definition (old style) (@code{kmacro-end-macro}); prefix argument serves as the repeat count for executing the macro."
-msgstr ""
+msgstr "(旧スタイル)マクロ定義を終了します(@code{kmacro-end-macro})。プレフィクス引数はそのマクロ自体を除外した繰り返し回数として機能します。"
 
 #. type: kindex
 #: original_texis/kmacro.texi:72 original_texis/kmacro.texi:159
@@ -225,7 +223,7 @@ msgstr "C-x e"
 #. type: table
 #: original_texis/kmacro.texi:76
 msgid "Execute the most recently defined keyboard macro (@code{kmacro-end-and-call-macro}); prefix argument serves as repeat count."
-msgstr ""
+msgstr "もっとも最後に定義したキーボードマクロを実行します(@code{kmacro-end-and-call-macro})。プレフィクス引数は繰り返し回数として機能します。"
 
 #. type: findex
 #: original_texis/kmacro.texi:80

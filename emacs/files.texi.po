@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-22 14:02+0900\n"
+"PO-Revision-Date: 2020-08-08 23:11+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  files.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  files.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.j1afqEIdoT (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.des9L54FjK.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.cTrQWlRyhA.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/files.texi:5
@@ -103,15 +95,14 @@ msgstr "保存されていないすべての変更を取り消して前の状態
 
 #. type: node
 #: original_texis/files.texi:44 original_texis/files.texi:964
-#, fuzzy, no-wrap
-#| msgid "Auto Revert mode"
+#, no-wrap
 msgid "Auto Revert"
-msgstr "Auto Revert mode"
+msgstr "Auto Revert"
 
 #. type: menuentry
 #: original_texis/files.texi:44
 msgid "Keeping buffers automatically up-to-date."
-msgstr ""
+msgstr "バッファーを自動的に最新に保つ。"
 
 #. type: node
 #: original_texis/files.texi:44 original_texis/files.texi:1045
@@ -259,8 +250,6 @@ msgstr "File Conveniences"
 
 #. type: menuentry
 #: original_texis/files.texi:44
-#, fuzzy
-#| msgid "Convenience Features for Finding Files."
 msgid "Convenience features for finding files."
 msgstr "ファイルを探すための便利な機能。"
 
@@ -268,12 +257,12 @@ msgstr "ファイルを探すための便利な機能。"
 #: original_texis/files.texi:44 original_texis/files.texi:2111
 #, no-wrap
 msgid "Image Mode"
-msgstr ""
+msgstr "Image Mode"
 
 #. type: menuentry
 #: original_texis/files.texi:44
 msgid "Viewing image files."
-msgstr ""
+msgstr "イメージファイルの閲覧。"
 
 #. type: section
 #: original_texis/files.texi:44 original_texis/files.texi:2223
@@ -566,10 +555,10 @@ msgstr "maximum buffer size exceeded, error message"
 
 #. type: Plain text
 #: original_texis/files.texi:217
-#, fuzzy
-#| msgid "If you try to visit a file larger than @code{large-file-warning-threshold} (the default is 10000000, which is about 10 megabytes), Emacs asks you for confirmation first.  You can answer @kbd{y} to proceed with visiting the file.  Note, however, that Emacs cannot visit files that are larger than the maximum Emacs buffer size, which is limited by the amount of memory Emacs can allocate and by the integers that Emacs can represent (@pxref{Buffers}).  If you try, Emacs displays an error message saying that the maximum buffer size has been exceeded."
 msgid "If you try to visit a file larger than @code{large-file-warning-threshold} (the default is 10000000, which is about 10 megabytes), Emacs asks you for confirmation first.  You can answer @kbd{y} to proceed with visiting the file or @kbd{l} to visit the file literally (see below).  Visiting large files literally speeds up navigation and editing of such files, because various potentially-expensive features are turned off.  Note, however, that Emacs cannot visit files that are larger than the maximum Emacs buffer size, which is limited by the amount of memory Emacs can allocate and by the integers that Emacs can represent (@pxref{Buffers}).  If you try, Emacs displays an error message saying that the maximum buffer size has been exceeded."
-msgstr "@code{large-file-warning-threshold} (デフォルトは10000000で、これは約10MB)より大きなファイルのvisitを試みると、Emacsは最初に確認を求めます。@kbd{y}を応えることにより、ファイルのvisitを続けます。しかしEmacsは、Emacsバッファーの最大サイズ(Emacsが割り当てられるメモリー量の制限と、Emacsが扱える整数により制限されます)を超えるバッファーは、visitできないことに注意してください。この場合、Emacsは最大バッファーサイズを超えた旨を知らせるエラーメッセージを表示します。"
+msgstr ""
+"@code{large-file-warning-threshold} (デフォルトは10000000で、これは約10MB)より大きなファイルのvisitを試みると、Emacsは最初に確認を求めます。@kbd{y}を応えることによりファイルのvisitを続けて、@kbd{l}ではファイルをリテラル(以下参照)にvisitします。\n"
+"巨大なファイルではリテラルにファイルをvisitすることにより、種々の潜在的に高価な機能がオフに切り替えられるので、操作や編集が高速化されます。しかしEmacsは、Emacsバッファーの最大サイズ(Emacsが割り当てられるメモリー量の制限と、Emacsが扱える整数により制限されます)を超えるバッファーは、visitできないことに注意してください。この場合、Emacsは最大バッファーサイズを超えた旨を知らせるエラーメッセージを表示します。"
 
 #. type: cindex
 #: original_texis/files.texi:218
@@ -913,7 +902,7 @@ msgstr "y"
 #: original_texis/files.texi:405
 #, no-wrap
 msgid "SPC"
-msgstr ""
+msgstr "SPC"
 
 #. type: table
 #: original_texis/files.texi:407
@@ -930,7 +919,7 @@ msgstr "n"
 #: original_texis/files.texi:408
 #, no-wrap
 msgid "DEL"
-msgstr ""
+msgstr "DEL"
 
 #. type: table
 #: original_texis/files.texi:410
@@ -989,15 +978,14 @@ msgstr "現在尋ねられているバッファーを閲覧します。Viewモ�
 
 #. type: item
 #: original_texis/files.texi:423
-#, fuzzy, no-wrap
-#| msgid "C-r"
+#, no-wrap
 msgid "C-f"
-msgstr "C-r"
+msgstr "C-f"
 
 #. type: table
 #: original_texis/files.texi:426
 msgid "Exit @code{save-some-buffers} and visit the buffer that you are currently being asked about."
-msgstr ""
+msgstr "@code{save-some-buffers}をexitして、カレントで問い合わせ中だったバッファーをvisitします。"
 
 #. type: item
 #: original_texis/files.texi:426
@@ -1460,10 +1448,8 @@ msgstr "上記以外の場合、変数@code{backup-by-copying-when-mismatch}が�
 
 #. type: itemize
 #: original_texis/files.texi:699
-#, fuzzy
-#| msgid "If you change @code{backup-by-copying-when-mismatch} to @code{nil}, Emacs checks the numeric user-id of the file's owner.  If this is higher than @code{backup-by-copying-when-privileged-mismatch}, then it behaves as though @code{backup-by-copying-when-mismatch} is non-@code{nil} anyway."
 msgid "If you change @code{backup-by-copying-when-mismatch} to @code{nil}, Emacs checks the numeric user-id of the file's owner and the numeric group-id of the file's group.  If either is no greater than @code{backup-by-copying-when-privileged-mismatch}, then it behaves as though @code{backup-by-copying-when-mismatch} is non-@code{nil} anyway."
-msgstr "@code{backup-by-copying-when-mismatch}を@code{nil}に変更すると、Emacsはファイルの所有者のユーザーIDの数字をチェックします。もしこの数字が@code{backup-by-copying-when-privileged-mismatch}の値より大きい場合、@code{backup-by-copying-when-mismatch}が非@code{nil}であるかのように振る舞います。"
+msgstr "@code{backup-by-copying-when-mismatch}を@code{nil}に変更すると、Emacsはファイルの所有者のユーザーIDとファイルのグループのグループIDのの数字をチェックします。もしいずれかの数字が@code{backup-by-copying-when-privileged-mismatch}の値より大きければ、@code{backup-by-copying-when-mismatch}が非@code{nil}であるかのように振る舞います。"
 
 #. type: itemize
 #: original_texis/files.texi:702
@@ -1897,13 +1883,13 @@ msgstr "自動的かつ頻繁に変更されるファイル、たとえば実行
 #. type: Plain text
 #: original_texis/files.texi:963
 msgid "You can also tell Emacs to revert buffers automatically when their visited files change on disk; @pxref{Auto Revert}."
-msgstr ""
+msgstr "visit中のファイルがディスク上で変更された際にバッファーを自動的にリバートするようにEmacsに指定できます。@ref{Auto Revert}を参照してください。"
 
 #. type: section
 #: original_texis/files.texi:965
 #, no-wrap
 msgid "Auto Revert: Keeping buffers automatically up-to-date"
-msgstr ""
+msgstr "Auto Revert: Keeping buffers automatically up-to-date"
 
 #. type: cindex
 #: original_texis/files.texi:966
@@ -1949,22 +1935,18 @@ msgstr "auto-revert-tail-mode"
 
 #. type: Plain text
 #: original_texis/files.texi:980
-#, fuzzy
-#| msgid "You can also tell Emacs to revert buffers periodically.  To do this for a specific buffer, enable the minor mode Auto-Revert mode by typing @kbd{M-x auto-revert-mode}.  This automatically reverts the current buffer when its visited file changes on disk.  To do the same for all file buffers, type @kbd{M-x global-auto-revert-mode} to enable Global Auto-Revert mode.  These minor modes do not check or revert remote files, because that is usually too slow.  This behavior can be changed by setting the variable @code{auto-revert-remote-files} to non-@code{nil}."
 msgid "A buffer can get out of sync with respect to its visited file on disk if that file is changed by another program.  To keep it up to date, you can enable Auto Revert mode by typing @kbd{M-x auto-revert-mode}.  This automatically reverts the buffer when its visited file changes on disk.  To do the same for all file buffers, type @kbd{M-x global-auto-revert-mode} to enable Global Auto Revert mode."
-msgstr "Emacsにバッファーを定期的にリバートするよう、指示することもできます。特定のバッファーにたいしてこれを行うには、@kbd{M-x auto-revert-mode}とタイプして、マイナーモードのAuto-Revertモードを有効にします。カレントバッファーがvisitしているファイルがディスク上で変更されたとき、自動的にリバートします。すべてのバッファーにたいして同じことを行うには、@kbd{M-x global-auto-revert-mode}とタイプして、Global Auto-Revertモードを有効にします。これらのマイナーモードはリモートのファイルにたいするチェックやリバートはしません。なぜならそれは通常とても遅いからです。この動作は、変数@code{auto-revert-remote-files}を非@code{nil}にセットすることにより変更できます。"
+msgstr "visit中のファイルを別プログラムが変更した場合には、バッファーがvisit中のファイルと同期しなくなる可能性があります。これを最新に保つために、@kbd{M-x auto-revert-mode}をタイプしてAuto Revertモードを有効にできます。これはvisit中のファイルがディスク上で変更された際に、バッファーを自動的にリバートします。すべてのファイルバッファーで同じことを行うには、@kbd{M-x global-auto-revert-mode}をタイプしてGlobal Auto Revertモードを有効にします。"
 
 #. type: Plain text
 #: original_texis/files.texi:983
 msgid "Auto Revert will not revert a buffer if it has unsaved changes, or if its file on disk is deleted or renamed."
-msgstr ""
+msgstr "Auto Revertはバッファーに未保存の変更があったり、ディスク上のファイルが削除やリネームされた場合にはバッファーをリバートしません。"
 
 #. type: Plain text
 #: original_texis/files.texi:992
-#, fuzzy
-#| msgid "One use of Auto-Revert mode is to ``tail'' a file such as a system log, so that changes made to that file by other programs are continuously displayed.  To do this, just move the point to the end of the buffer, and it will stay there as the file contents change.  However, if you are sure that the file will only change by growing at the end, use Auto-Revert Tail mode instead (@code{auto-revert-tail-mode}).  It is more efficient for this.  Auto-Revert Tail mode works also for remote files."
 msgid "One use of Auto Revert mode is to ``tail'' a file such as a system log, so that changes made to that file by other programs are continuously displayed.  To do this, just move the point to the end of the buffer, and it will stay there as the file contents change.  However, if you are sure that the file will only change by growing at the end, use Auto Revert Tail mode instead (@code{auto-revert-tail-mode}).  It is more efficient for this.  Auto Revert Tail mode also works for remote files."
-msgstr "Auto-Revertモードの1つの使い方は、システムログのようなファイルを``tail''することです。これにより、それらのファイルにたいする、他のプログラムによる変更を、継続的に表示できます。これを行うには、ポイントをバッファーの最後に移動します。そうすればファイル内容が変更されても、ポイントはその位置に留まります。しかし、ファイルがファイルの終端方向に向かって変更されるだけだと確信できるときは、かわりにAuto-Revert Tailモード(@code{auto-revert-tail-mode})を使います。このモードは、これをより効果的に行います。Auto-Revert Tailモードは、リモートのファイルにたいしても機能します。"
+msgstr "Auto Revertモードの1つの使い方は、システムログのようなファイルを``tail''することです。これにより、それらのファイルにたいする、他のプログラムによる変更を、継続的に表示できます。これを行うには、ポイントをバッファーの最後に移動します。そうすればファイル内容が変更されても、ポイントはその位置に留まります。しかし、ファイルがファイルの終端方向に向かって変更されるだけだと確信できるときは、かわりにAuto Revert Tailモード(@code{auto-revert-tail-mode})を使います。このモードは、これをより効果的に行います。Auto Revert Tailモードは、リモートのファイルにたいしても機能します。"
 
 #. type: vindex
 #: original_texis/files.texi:993
@@ -1986,7 +1968,7 @@ msgstr "auto-revert-remote-files"
 #. type: Plain text
 #: original_texis/files.texi:1001
 msgid "The Auto Revert modes do not check or revert remote files, because that is usually too slow.  This behavior can be changed by setting the variable @code{auto-revert-remote-files} to non-@code{nil}."
-msgstr ""
+msgstr "Auto Revertモードはリモートファイルのチェックやリバートは、通常は低速なので行いません。この挙動は変数@code{auto-revert-remote-files}を非@code{nil}にセットして変更できます。"
 
 #. type: cindex
 #: original_texis/files.texi:1002
@@ -2008,10 +1990,8 @@ msgstr "auto-revert-interval"
 
 #. type: Plain text
 #: original_texis/files.texi:1011
-#, fuzzy
-#| msgid "By default, Auto-Revert mode works using @dfn{file notifications}, whereby changes in the filesystem are reported to Emacs by the OS.  You can disable use of file notifications by customizing the variable @code{auto-revert-use-notify} to a @code{nil} value, then Emacs will check for file changes by polling every five seconds.  You can change the polling interval through the variable @code{auto-revert-interval}."
 msgid "By default, Auto Revert mode works using @dfn{file notifications}, whereby changes in the filesystem are reported to Emacs by the OS@.  You can disable use of file notifications by customizing the variable @code{auto-revert-use-notify} to a @code{nil} value, then Emacs will check for file changes by polling every five seconds.  You can change the polling interval through the variable @code{auto-revert-interval}."
-msgstr "デフォルトでは、Auto-Revertモードは@dfn{ファイル通知(file notifications)}を使用して機能します。これにより、ファイルシステムへの変更が、OSからEmacsに報告されます。変数@code{auto-revert-use-notify}を@code{nil}にカスタマイズして、ファイル通知を無効にできます。その場合、Emacsは5秒ごとにポーリングして、ファイルの変更をチェックするでしょう。変数@code{auto-revert-interval}を通じて、ポーリングの間隔を変更できます。"
+msgstr "デフォルトでは、Auto Revertモードは@dfn{ファイル通知(file notifications)}を使用して機能します。これにより、ファイルシステムへの変更が、OSからEmacsに報告されます。変数@code{auto-revert-use-notify}を@code{nil}にカスタマイズして、ファイル通知を無効にできます。その場合、Emacsは5秒ごとにポーリングして、ファイルの変更をチェックするでしょう。変数@code{auto-revert-interval}を通じて、ポーリングの間隔を変更できます。"
 
 #. type: Plain text
 #: original_texis/files.texi:1015
@@ -2020,29 +2000,25 @@ msgstr "すべてのシステムでファイル通知がサポートされてい
 
 #. type: vindex
 #: original_texis/files.texi:1016
-#, fuzzy, no-wrap
-#| msgid "auto-revert-tail-mode"
+#, no-wrap
 msgid "auto-revert-avoid-polling"
-msgstr "auto-revert-tail-mode"
+msgstr "auto-revert-avoid-polling"
 
 #. type: vindex
 #: original_texis/files.texi:1017
-#, fuzzy, no-wrap
-#| msgid "auto-revert-tail-mode"
+#, no-wrap
 msgid "auto-revert-notify-exclude-dir-regexp"
-msgstr "auto-revert-tail-mode"
+msgstr "auto-revert-notify-exclude-dir-regexp"
 
 #. type: Plain text
 #: original_texis/files.texi:1030
 msgid "By default, Auto Revert mode will poll files for changes periodically even when file notifications are used.  Polling is unnecessary in many cases, and turning it off may save power by relying on notifications only.  To do so, set the variable @code{auto-revert-avoid-polling} to non-@code{nil}.  However, notification is ineffective on certain file systems; mainly network file system on Unix-like machines, where files can be altered from other machines.  For such file systems, polling may be necessary.  To force polling when @code{auto-revert-avoid-polling} is non-@code{nil}, set @code{auto-revert-notify-exclude-dir-regexp} to match files that should be excluded from using notification."
-msgstr ""
+msgstr "デフォルトではAuto Revertモードは、たとえファイル通知の使用中でもファイル変更の定期的なポーリングは行いません。多くの場合にはポーリングは不要であり、ポーリングをオフにして通知だけを信頼することにより電力が節減できます。これを行うには変数@code{auto-revert-avoid-polling}に非@code{nil}をセットします。しかし別のマシンからファイルを変更可能なUnix系マシン上の主要なネットワークファイルシステムのように、特定のファイルシステムでは通知は効果がありません。そのようなファイルシステムではポーリングが必要かもしれません。@code{auto-revert-avoid-polling}が非@code{nil}のときにポーリングを強制するには、を通知を使用するファイルから除外すべきファイルにマッチするように@code{auto-revert-notify-exclude-dir-regexp}をセットします。"
 
 #. type: Plain text
 #: original_texis/files.texi:1033
-#, fuzzy
-#| msgid "In Dired buffers (@pxref{Dired}), Auto-Revert mode refreshes the buffer when a file is created or deleted in the buffer's directory."
 msgid "In Dired buffers (@pxref{Dired}), Auto Revert mode refreshes the buffer when a file is created or deleted in the buffer's directory."
-msgstr "Diredバッファー(@ref{Dired}を参照)では、Auto-Revertモードはそのバッファーのディレクトリーでファイルが作成、または削除されたとき更新を行います。"
+msgstr "Diredバッファー(@ref{Dired}を参照)では、Auto Revertモードはそのバッファーのディレクトリーでファイルが作成、または削除されたとき更新を行います。"
 
 #. type: Plain text
 #: original_texis/files.texi:1037
@@ -2052,14 +2028,12 @@ msgstr "バージョンコントロールシステムの下にあるファイル
 #. type: menuentry
 #: original_texis/files.texi:1041
 msgid "Non-File Buffers"
-msgstr ""
+msgstr "Non-File Buffers"
 
 #. type: menuentry
 #: original_texis/files.texi:1041
-#, fuzzy
-#| msgid "* Autorevert:: Auto Reverting non-file buffers."
 msgid "Auto Reverting Non-File Buffers."
-msgstr "* Autorevert:: 非ファイルバッファーの自動リバートについて。"
+msgstr "非ファイルバッファーの自動リバートについて。"
 
 #. type: include
 #: original_texis/files.texi:1042
@@ -2098,17 +2072,14 @@ msgstr "Emacsは定期的に、visitしているファイルを、実際に使�
 
 #. type: vindex
 #: original_texis/files.texi:1056
-#, fuzzy, no-wrap
-#| msgid "auto-save-mode"
+#, no-wrap
 msgid "auto-save-no-message"
-msgstr "auto-save-mode"
+msgstr "auto-save-no-message"
 
 #. type: Plain text
 #: original_texis/files.texi:1066
-#, fuzzy
-#| msgid "When Emacs determines that it is time for auto-saving, it considers each buffer, and each is auto-saved if auto-saving is enabled for it and it has been changed since the last time it was auto-saved.  The message @samp{Auto-saving...} is displayed in the echo area during auto-saving, if any files are actually auto-saved.  Errors occurring during auto-saving are caught so that they do not interfere with the execution of commands you have been typing."
 msgid "When Emacs determines that it is time for auto-saving, it considers each buffer, and each is auto-saved if auto-saving is enabled for it and it has been changed since the last time it was auto-saved.  When the @code{auto-save-no-message} variable is set to @code{nil} (the default), the message @samp{Auto-saving...} is displayed in the echo area during auto-saving, if any files are actually auto-saved; to disable these messages, customize the variable to a non-@code{nil} value.  Errors occurring during auto-saving are caught so that they do not interfere with the execution of commands you have been typing."
-msgstr "Emacsが自動保存するときだと決定すると、各バッファーを判断して、それらのバッファーの自動保存が有効で、最後に自動保存されてから変更されている場合は、自動保存します。ファイルが実際に自動保存されている場合は、自動保存の間、エコーエリアに@samp{Auto-saving...}というメッセージが表示されます。自動保存の間のエラーはキャッチされるので、ユーザーがタイプして実行したコマンドに、干渉することはありません。"
+msgstr "Emacsが自動保存するときだと決定すると、各バッファーを判断して、それらのバッファーの自動保存が有効で、最後に自動保存されてから変更されている場合には自動保存します。@code{auto-save-no-message}変数が@code{nil} (デフォルト)にセットされている際には、もし自動保存されているファイルが実際にあればエコーエリアに@samp{Auto-saving...}というメッセージが自動保存の間に表示されます。このメッセージを無効にするには、この変数を非@code{nil}にカスタマイズしてください。自動保存の間のエラーはキャッチされるので、ユーザーがタイプして実行したコマンドに、干渉することはありません。"
 
 #. type: menuentry
 #: original_texis/files.texi:1072
@@ -2162,7 +2133,7 @@ msgstr "自動保存は通常、visitしているファイルへの保存はし�
 #: original_texis/files.texi:1083
 #, no-wrap
 msgid "@file{#}, in auto-save file names"
-msgstr ""
+msgstr "@file{#}, in auto-save file names"
 
 #. type: Plain text
 #: original_texis/files.texi:1097
@@ -2574,7 +2545,7 @@ msgstr "ディレクトリーリストのテキストは、主に下位プロセ
 #. type: Plain text
 #: original_texis/files.texi:1355
 msgid "In verbose directory listings, Emacs adds information about the amount of free space on the disk that contains the directory."
-msgstr ""
+msgstr "詳細なディレクトリーのリストでは、Emacsはディレクトリーを含むディスク上のフリー領域サイズに関する情報を追加します。"
 
 #. type: Plain text
 #: original_texis/files.texi:1364
@@ -2638,15 +2609,14 @@ msgstr "コマンド@kbd{M-x diff-buffer-with-file}は指定されたバッフ�
 
 #. type: findex
 #: original_texis/files.texi:1400
-#, fuzzy, no-wrap
-#| msgid "diff-buffer-with-file"
+#, no-wrap
 msgid "diff-buffers"
-msgstr "diff-buffer-with-file"
+msgstr "diff-buffers"
 
 #. type: Plain text
 #: original_texis/files.texi:1403
 msgid "The command @kbd{M-x diff-buffers} compares the contents of two specified buffers."
-msgstr ""
+msgstr "コマンド@kbd{M-x diff-buffers}は指定した2つのバッファーのコンテンツを比較します。"
 
 #. type: findex
 #: original_texis/files.texi:1404
@@ -2783,10 +2753,8 @@ msgstr "他のバッファーと同様に、Diffモードのバッファーを�
 
 #. type: Plain text
 #: original_texis/files.texi:1490
-#, fuzzy
-#| msgid "Diff mode arranges for hunks to be treated as compiler error messages by @kbd{C-x `} and other commands that handle error messages (@pxref{Compilation Mode}).  Thus, you can use the compilation-mode commands to visit the corresponding source locations."
 msgid "Diff mode arranges for hunks to be treated as compiler error messages by @kbd{M-g M-n} and other commands that handle error messages (@pxref{Compilation Mode}).  Thus, you can use the compilation-mode commands to visit the corresponding source locations."
-msgstr "Diffモードは、@kbd{C-x `}やエラーメッセージを処理する他のコマンドによりコンパイラーのエラーメッセージとして扱われるようにhunkをアレンジします(@ref{Compilation Mode}を参照)。したがって、対応するソースの位置をvisitするために、Compilationモードのコマンドを使用できます。"
+msgstr "Diffモードは@kbd{M-g M-n}やエラーメッセージを処理する他のコマンドによりコンパイラーのエラーメッセージとして扱われるようにhunkをアレンジします(@ref{Compilation Mode}を参照)。したがって、対応するソースの位置をvisitするために、Compilationモードのコマンドを使用できます。"
 
 #. type: Plain text
 #: original_texis/files.texi:1493
@@ -2812,15 +2780,14 @@ msgstr "次のhunk-startに移動します(@code{diff-hunk-next})。プレフィ
 
 #. type: vindex
 #: original_texis/files.texi:1500 original_texis/files.texi:1550
-#, fuzzy, no-wrap
-#| msgid "diff-refine-hunk"
+#, no-wrap
 msgid "diff-refine"
-msgstr "diff-refine-hunk"
+msgstr "diff-refine"
 
 #. type: table
 #: original_texis/files.texi:1506
 msgid "By default, Diff mode @dfn{refines} hunks as Emacs displays them, highlighting their changes with better granularity.  Alternatively, if you set @code{diff-refine} to the symbol @code{navigation}, Diff mode only refines the hunk you move to with this command or with @code{diff-hunk-prev}."
-msgstr ""
+msgstr "デフォルトではDiffモードはEmacsが表示する際により良い粒度で変更をハイライトできるようにhunkを@dfn{リファイン(refine: 洗練する)}します。@code{diff-refine}にシンボル@code{navigation}をセットすると、Diffはこのコマンドや@code{diff-hunk-prev}で移動したhunkだけをリファインします。"
 
 #. type: item
 #: original_texis/files.texi:1507
@@ -2836,10 +2803,8 @@ msgstr "diff-hunk-prev"
 
 #. type: table
 #: original_texis/files.texi:1513
-#, fuzzy
-#| msgid "Move to the previous hunk-start (@code{diff-hunk-prev}).  With prefix argument @var{n}, move back to the @var{n}th previous hunk.  Like @kbd{M-n}, this has the side-effect of refining the hunk you move to, unless you disable Diff Auto-Refine mode."
 msgid "Move to the previous hunk-start (@code{diff-hunk-prev}).  With prefix argument @var{n}, move back to the @var{n}th previous hunk.  Like @kbd{M-n}, this command refines the hunk you move to if you set @code{diff-refine} to the symbol @code{navigation}."
-msgstr "前のhunkが開始される位置に移動します(@code{diff-hunk-prev})。プレフィクス引数を指定した場合は、前の@var{n}番目のhunkに後方へ移動します。これは@kbd{M-n}と同様、Diff Auto-Refineモードが無効でなければ、移動先のhunkをrefiningする副作用があります。"
+msgstr "前のhunkが開始される位置に移動します(@code{diff-hunk-prev})。プレフィクス引数を指定した場合には、前の@var{n}番目のhunkに後方へ移動します。@code{diff-refine}にシンボル@code{navigation}をセットしていれば、このコマンドは@kbd{M-n}と同様に移動先のhunkをリファインします。"
 
 #. type: item
 #: original_texis/files.texi:1514
@@ -2952,7 +2917,7 @@ msgstr "ポイント位置のhunkの変更を、よりよい粒度でハイラ�
 #. type: table
 #: original_texis/files.texi:1554
 msgid "By default, Diff mode refines hunks as Emacs displays them, so you may find this command useful if you customize @code{diff-refine} to a non-default value."
-msgstr ""
+msgstr "デフォルトではDiffモードはEmacsがhunkを表示する際にhunkをリファインするので、@code{diff-refine}を非デフォルト値にカスタマイズしている場合にはこのコマンドが有用だと思うかもしれません。"
 
 #. type: item
 #: original_texis/files.texi:1555
@@ -2974,10 +2939,8 @@ msgstr "diff-jump-to-old-file"
 
 #. type: table
 #: original_texis/files.texi:1571
-#, fuzzy
-#| msgid "Go to the source file and line corresponding to this hunk (@code{diff-goto-source}).  By default, this jumps to the ``new'' version of the file, the one shown first on the file header.  With a prefix argument, jump to the ``old'' version instead.  If @code{diff-jump-to-old-file} is non-@code{nil}, this command by default jumps to the ``old'' file, and the meaning of the prefix argument is reversed.  If the prefix argument is a number greater than 8 (e.g., if you type @kbd{C-u C-u C-c C-c}), then this command also sets @code{diff-jump-to-old-file} for the next invocation."
 msgid "Go to the source file and line corresponding to this hunk (@code{diff-goto-source}).  By default, this jumps to the ``new'' version of the file, the one shown first on the file header.  With a prefix argument, jump to the ``old'' version instead.  If @code{diff-jump-to-old-file} is non-@code{nil}, this command by default jumps to the ``old'' file, and the meaning of the prefix argument is reversed.  If the prefix argument is a number greater than 8 (e.g., if you type @kbd{C-u C-u C-c C-c}), then this command also sets @code{diff-jump-to-old-file} for the next invocation.  If the source file is under version control (@pxref{Version Control}), this jumps to the work file by default.  With a prefix argument, jump to the ``old'' revision of the file (@pxref{Old Revisions}), when point is on the old line, or otherwise jump to the ``new'' revision."
-msgstr "そのhunkに対応するソースファイルの該当行にジャンプします(@code{diff-goto-source})。デフォルトでは、ファイルヘッダーの最初に示される、``新しい''バージョンのファイルにジャンプします。プレフィクス引数を与えた場合は、かわりに``古い''バージョンにジャンプします。@code{diff-jump-to-old-file}が非@code{nil}なら、このコマンドはデフォルトで``古い''バージョンにジャンプし、プレフィクス引数の意味も逆になります。プレフィクス引数が8より大(たとえば@kbd{C-u C-u C-c C-c}とタイプした場合)なら、このコマンドは次回呼び出しにたいして@code{diff-jump-to-old-file}のセットも行います。"
+msgstr "そのhunkに対応するソースファイルの該当行にジャンプします(@code{diff-goto-source})。デフォルトではファイルヘッダーの最初に示される、``新しい''バージョンのファイルにジャンプします。プレフィクス引数を与えた場合には、かわりに``古い''バージョンにジャンプします。@code{diff-jump-to-old-file}が非@code{nil}なら、このコマンドはデフォルトで``古い''バージョンにジャンプして、プレフィクス引数の意味も逆になります。プレフィクス引数が8より大(たとえば@kbd{C-u C-u C-c C-c}とタイプした場合)なら、このコマンドは次回呼び出しにたいして@code{diff-jump-to-old-file}のセットも行います。ソースファイルがバージョンコントロール(@ref{Version Control}を参照)の配下にある場合には、デフォルトでは作業ファイルにジャンプします。プレフィクス引数を与えると、ポイントが古い行にあれば``旧''リビジョン(@ref{Old Revisions}を参照)、それ以外なら``新''リビジョンにジャンプします。"
 
 #. type: item
 #: original_texis/files.texi:1572
@@ -3142,12 +3105,12 @@ msgstr "patchには変更された行の行末に、無意識に入力された�
 #: original_texis/files.texi:1654
 #, no-wrap
 msgid "diff-font-lock-syntax"
-msgstr ""
+msgstr "diff-font-lock-syntax"
 
 #. type: Plain text
 #: original_texis/files.texi:1657
 msgid "If non-@code{nil}, fragments of source in hunks are highlighted according to the appropriate major mode."
-msgstr ""
+msgstr "非@code{nil}ならhunk内のソース断片は適切なメジャーモードに応じてハイライトされます。"
 
 #. type: section
 #: original_texis/files.texi:1659
@@ -3907,10 +3870,8 @@ msgstr "ファイル検索の便利な機能"
 
 #. type: Plain text
 #: original_texis/files.texi:2093
-#, fuzzy
-#| msgid "In this section, we introduce some convenient facilities for finding recently-opened files, reading file names from a buffer, and viewing image files."
 msgid "In this section, we introduce some convenient facilities for finding recently-opened files, reading file names from a buffer."
-msgstr "このセクションでは、最近開いたファイルの検索、バッファーからのファイル名の読み取り、イメージファイルの閲覧などの、便利な機能を紹介します。"
+msgstr "このセクションでは、最近開いたファイルの検索、バッファーからのファイル名の読み取りなどの便利な機能を紹介します。"
 
 #. type: vindex
 #: original_texis/files.texi:2094 original_texis/files.texi:2095
@@ -3932,10 +3893,8 @@ msgstr "recentf-edit-list"
 
 #. type: Plain text
 #: original_texis/files.texi:2103
-#, fuzzy
-#| msgid "If you enable Recentf mode, with @kbd{M-x recentf-mode}, the @samp{File} menu includes a submenu containing a list of recently opened files.  @kbd{M-x recentf-save-list} saves the current @code{recent-file-list} to a file, and @kbd{M-x recentf-edit-list} edits it."
 msgid "If you enable Recentf mode, with @kbd{M-x recentf-mode}, the @samp{File} menu includes a submenu containing a list of recently opened files.  @kbd{M-x recentf-save-list} saves the current @code{recentf-list} to a file, and @kbd{M-x recentf-edit-list} edits it."
-msgstr "@kbd{M-x recentf-mode}でRecentfモードを有効にすると、@samp{File}メニューに最近開いたファイルを含むサブメニューが含まれるようになります。@kbd{M-x recentf-save-list}は現在の@code{recent-file-list}をファイルに保存し、@kbd{M-x recentf-edit-list}でそれを編集できます。"
+msgstr "@kbd{M-x recentf-mode}でRecentfモードを有効にすると、@samp{File}メニューに最近開いたファイルを含むサブメニューが含まれるようになります。@kbd{M-x recentf-save-list}は現在の@code{recentf-list}をファイルに保存して、@kbd{M-x recentf-edit-list}でそれを編集できます。"
 
 #. type: Plain text
 #: original_texis/files.texi:2110
@@ -3944,10 +3903,9 @@ msgstr "@kbd{M-x ffap}コマンドは、@code{find-file}を一般化した、よ
 
 #. type: section
 #: original_texis/files.texi:2112
-#, fuzzy, no-wrap
-#| msgid "Visiting Files"
+#, no-wrap
 msgid "Viewing Image Files"
-msgstr "ファイルのvisit(訪問)"
+msgstr "Viewing Image Files"
 
 #. type: findex
 #: original_texis/files.texi:2114
@@ -3969,51 +3927,48 @@ msgstr "images, viewing"
 
 #. type: Plain text
 #: original_texis/files.texi:2126
-#, fuzzy
-#| msgid "Visiting image files automatically selects Image mode.  In this major mode, you can type @kbd{C-c C-c} (@code{image-toggle-display})  to toggle between displaying the file as an image in the Emacs buffer, and displaying its underlying text (or raw byte) representation.  Additionally you can type @kbd{C-c C-x} (@code{image-toggle-hex-display})  to toggle between displaying the file as an image in the Emacs buffer, and displaying it in hex representation.  Displaying the file as an image works only if Emacs is compiled with support for displaying such images.  If the displayed image is wider or taller than the frame, the usual point motion keys (@kbd{C-f}, @kbd{C-p}, and so forth) cause different parts of the image to be displayed.  You can press @kbd{n} (@code{image-next-file}) and @kbd{p} (@code{image-previous-file}) to visit the next image file and the previous image file in the same directory, respectively."
 msgid "Visiting image files automatically selects Image mode.  In this major mode, you can type @kbd{C-c C-c} (@code{image-toggle-display})  to toggle between displaying the file as an image in the Emacs buffer, and displaying its underlying text (or raw byte) representation.  Additionally you can type @kbd{C-c C-x} (@code{image-toggle-hex-display})  to toggle between displaying the file as an image in the Emacs buffer, and displaying it in hex representation.  Displaying the file as an image works only if Emacs is compiled with support for displaying such images."
-msgstr "イメージファイルをvisitすることにより、Imageモードが選択されます。このメジャーモードでは、@kbd{C-c C-c} (@code{image-toggle-display})とタイプすることにより、Emacsバッファーでファイルのイメージ表示と、イメージの元となるテキスト(またはraw byte)表示を切り替えることができます。さらに@kbd{C-c C-x} (@code{image-toggle-hex-display})とタイプすると、Emacsバッファー内でイメージとしてファイルを表示、または16進表記で表示を切り替えることができます。ファイルのイメージ表示は、Emacsがそのようなイメージの表示をサポートするようにコンパイルされているときだけ機能します。イメージがフレームの高さまたは幅より大きい場合、通常のポイント移動キー(@kbd{C-f}、@kbd{C-p}、...)は、イメージの他の部分の表示に使われます。@kbd{n} (@code{image-next-file})および@kbd{p} (@code{image-previous-file})を押すことにより、同じディレクトリーにある次または前のイメージをvisitします。"
+msgstr "イメージファイルをvisitすることによりImageモードが選択されます。このメジャーモードでは@kbd{C-c C-c} (@code{image-toggle-display})とタイプすることにより、Emacsバッファーでファイルのイメージ表示とイメージの元となるテキスト(またはraw byte)表示を切り替えることができます。さらに@kbd{C-c C-x} (@code{image-toggle-hex-display})とタイプすると、Emacsバッファー内でイメージとしてファイルを表示、または16進表記で表示を切り替えることができます。ファイルのイメージ表示は、Emacsがそのようなイメージの表示をサポートするようにコンパイルされているときだけ機能します。"
 
 #. type: vindex
 #: original_texis/files.texi:2127
 #, no-wrap
 msgid "image-auto-resize"
-msgstr ""
+msgstr "image-auto-resize"
 
 #. type: vindex
 #: original_texis/files.texi:2128
 #, no-wrap
 msgid "image-auto-resize-on-window-resize"
-msgstr ""
+msgstr "image-auto-resize-on-window-resize"
 
 #. type: Plain text
 #: original_texis/files.texi:2136
 msgid "If the displayed image is wider or taller than the window in which it is displayed, the usual point motion keys (@kbd{C-f}, @kbd{C-p}, and so forth) cause different parts of the image to be displayed.  However, by default images are resized automatically to fit the window, so this is only necessary if you customize the default behavior by using the options @code{image-auto-resize} and @code{image-auto-resize-on-window-resize}."
-msgstr ""
+msgstr "イメージを表示するウィンドウよりイメージの幅または高さが大きければ、通常のポイント移動キー(@kbd{C-f}、@kbd{C-p}、...)によりイメージの他の部分が表示されます。しかしデフォルトではイメージはウィンドウにフィットするように自動的にリサイズされるので、これはオプション@code{image-auto-resize}と@code{image-auto-resize}を使用してデフォルトの挙動をカスタマイズしている場合だけ必要になります。"
 
 #. type: findex
 #: original_texis/files.texi:2137
 #, no-wrap
 msgid "image-transform-fit-both"
-msgstr ""
+msgstr "image-transform-fit-both"
 
 #. type: findex
 #: original_texis/files.texi:2138
-#, fuzzy, no-wrap
-#| msgid "image-reset-speed"
+#, no-wrap
 msgid "image-transform-set-scale"
-msgstr "image-reset-speed"
+msgstr "image-transform-set-scale"
 
 #. type: findex
 #: original_texis/files.texi:2139
 #, no-wrap
 msgid "image-transform-reset"
-msgstr ""
+msgstr "image-transform-reset"
 
 #. type: Plain text
 #: original_texis/files.texi:2147
 msgid "To resize the image manually you can use the command @code{image-transform-fit-both} bound to @kbd{s b} that fits the image to both the window height and width.  To scale the image specifying a scale factor, use the command @code{image-transform-set-scale} bound to @kbd{s s}.  To reset all transformations to the initial state, use @code{image-transform-reset} bound to @kbd{s 0}."
-msgstr ""
+msgstr "手動でイメージをリサイズするには、イメージをウィンドウの幅と高さにフィットさせる、@kbd{s b}にバインドさているコマンド@code{image-transform-fit-both}を使用できます。スケール因子(scale factor)を指定してイメージをスケールするには、@kbd{s s}にバインドされたコマンド@code{image-transform-set-scale}を使用します。すべての変換を初期状態にリセットするには、@kbd{s 0}にバイドされた@code{image-transform-reset}を使用してください。"
 
 #. type: findex
 #: original_texis/files.texi:2148
@@ -4030,32 +3985,30 @@ msgstr "image-previous-file"
 #. type: Plain text
 #: original_texis/files.texi:2153
 msgid "You can press @kbd{n} (@code{image-next-file}) and @kbd{p} (@code{image-previous-file}) to visit the next image file and the previous image file in the same directory, respectively."
-msgstr ""
+msgstr "@kbd{n} (@code{image-next-file})や@kbd{p} (@code{image-previous-file})を押下して、同一ディレクトリー内の次または前のイメージファイルをvisitできます。"
 
 #. type: findex
 #: original_texis/files.texi:2154
-#, fuzzy, no-wrap
-#| msgid "image-next-file"
+#, no-wrap
 msgid "image-mode-mark-file"
-msgstr "image-next-file"
+msgstr "image-mode-mark-file"
 
 #. type: findex
 #: original_texis/files.texi:2155
-#, fuzzy, no-wrap
-#| msgid "image-next-file"
+#, no-wrap
 msgid "image-mode-unmark-file"
-msgstr "image-next-file"
+msgstr "image-mode-unmark-file"
 
 #. type: findex
 #: original_texis/files.texi:2156
 #, no-wrap
 msgid "image-mode-copy-file-name-as-kill"
-msgstr ""
+msgstr "image-mode-copy-file-name-as-kill"
 
 #. type: Plain text
 #: original_texis/files.texi:2167
 msgid "When looking through images, it's sometimes convenient to be able to mark the files for later processing (for instance, if you want to select a group of images to copy somewhere else).  The @kbd{m} (@code{image-mode-mark-file}) command will mark the current file in any Dired buffer(s) that display the current file's directory.  If no such buffer is open, the directory is opened in a new buffer.  To unmark files, use the @kbd{u} (@code{image-mode-mark-file}) command.  Finally, if you just want to copy the current buffers file name to the kill ring, you can use the @kbd{w} (@code{image-mode-copy-file-name-as-kill}) command."
-msgstr ""
+msgstr "イメージの閲覧時に、後で処理するために(たとえば別の場所へコピーするために一群のイメージを選択したいとき)ファイルをマークできると便利なことがあります。@kbd{m} (@code{image-mode-mark-file})コマンドは、カレントファイルのディレクトリーを表示中のすべてのDiredバッファーのカレントファイルをマークします。そのようなバッファーがオープンされていなければ、新たなバッファーにディレクトリーがオープンされます。ファイルのマークをオフにするにはコマンド@kbd{u} (@code{image-mode-mark-file})を使用します。最後にカレントバッファーのファイル名だけをkillリングにコピーしたければ、コマンド@kbd{w} (@code{image-mode-copy-file-name-as-kill})を使用できます。"
 
 #. type: findex
 #: original_texis/files.texi:2168
@@ -4155,12 +4108,12 @@ msgstr "EmacsがImageMagickのサポートつきでコンパイルされてい�
 #: original_texis/files.texi:2210
 #, no-wrap
 msgid "image-use-external-converter"
-msgstr ""
+msgstr "image-use-external-converter"
 
 #. type: Plain text
 #: original_texis/files.texi:2217
 msgid "If Emacs doesn't have native support for the image format in question, and @code{image-use-external-converter} is non-@code{nil}, Emacs will try to determine whether there are external utilities that can be used to transform the image in question to @acronym{PNG} before displaying.  GraphicsMagick, ImageMagick and @command{ffmpeg} are currently supported for image conversions."
-msgstr ""
+msgstr "要求されるイメージフォーマットにたいするネイティブサポートをEmacsがもたず、かつ@code{image-use-external-converter}が非@code{nil}なら、Emacsは表示の前に要求されるイメージを@acronym{PNG}に変換するために使用可能な外部ユーティリティーの存在有無の判定を試みます。このイメージ変換には現在のところGraphicsMagick、ImageMagick、@command{ffmpeg}がサポートされています。"
 
 #. type: findex
 #: original_texis/files.texi:2218
