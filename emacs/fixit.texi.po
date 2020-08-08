@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-08 17:18+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  fixit.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  fixit.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.FeJsNSG2fg (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.Y6fBxfk37T.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.9IVDkCa0Bh.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/fixit.texi:5
@@ -232,17 +224,13 @@ msgstr "バッファーにたいするundo情報が大きくなりすぎたと�
 
 #. type: Plain text
 #: original_texis/fixit.texi:129
-#, fuzzy
-#| msgid "The variable @code{undo-limit} sets a soft limit: Emacs keeps undo data for enough commands to reach this size, and perhaps exceed it, but does not keep data for any earlier commands beyond that.  Its default value is 80000.  The variable @code{undo-strong-limit} sets a stricter limit: any previous command (though not the most recent one)  that pushes the size past this amount is forgotten.  The default value of @code{undo-strong-limit} is 120000."
 msgid "The variable @code{undo-limit} sets a soft limit: Emacs keeps undo data for enough commands to reach this size, and perhaps exceed it, but does not keep data for any earlier commands beyond that.  Its default value is 160000.  The variable @code{undo-strong-limit} sets a stricter limit: any previous command (though not the most recent one)  that pushes the size past this amount is forgotten.  The default value of @code{undo-strong-limit} is 240000."
-msgstr "変数@code{undo-limit}は、ソフトリミットをセットします。Emacsはこのサイズに達するまでのコマンドのundoデータを保持します。制限を超えることもあり得ますが、これを超える古いデータは保持しません。デフォルト値は80000です。変数@code{undo-strong-limit}は、厳密なリミット(stricter limit)をセットします。この制限を超えるような以前のコマンド(一番最近のコマンドではない)は記憶されません。@code{undo-strong-limit}のデフォルト値は120000です。"
+msgstr "変数@code{undo-limit}は、ソフトリミットをセットします。Emacsはこのサイズに達するまでのコマンドのundoデータを保持します。制限を超えることもあり得ますが、これを超える古いデータは保持しません。デフォルト値は160000です。変数@code{undo-strong-limit}は、厳密なリミット(stricter limit)をセットします。この制限を超えるような以前のコマンド(一番最近のコマンドではない)は記憶されません。@code{undo-strong-limit}のデフォルト値は240000です。"
 
 #. type: Plain text
 #: original_texis/fixit.texi:139
-#, fuzzy
-#| msgid "Regardless of the values of those variables, the most recent change is never discarded unless it gets bigger than @code{undo-outer-limit} (normally 12,000,000).  At that point, Emacs discards the undo data and warns you about it.  This is the only situation in which you cannot undo the last command.  If this happens, you can increase the value of @code{undo-outer-limit} to make it even less likely to happen in the future.  But if you didn't expect the command to create such large undo data, then it is probably a bug and you should report it.  @xref{Bugs,, Reporting Bugs}."
 msgid "Regardless of the values of those variables, the most recent change is never discarded unless it gets bigger than @code{undo-outer-limit} (normally 24,000,000).  At that point, Emacs discards the undo data and warns you about it.  This is the only situation in which you cannot undo the last command.  If this happens, you can increase the value of @code{undo-outer-limit} to make it even less likely to happen in the future.  But if you didn't expect the command to create such large undo data, then it is probably a bug and you should report it.  @xref{Bugs,, Reporting Bugs}."
-msgstr "これらの変数の値にかかわらず、一番最近の変更はundo情報が@code{undo-outer-limit}(通常は12,000,000)より大きくならない限り、廃棄されることはありません。もしこれを超えるような場合、Emacsはundoデータを廃棄して、それにたいする警告を発します。これは一番最近のコマンドをundoできない唯一の状況です。これが発生した場合、将来同じことが起こらないように@code{undo-outer-limit}の値を増やすことができます。しかしコマンドがそのような大きなundoデータを作るとは考えられない場合、それは多分バグなので、それを報告すべきです。@ref{Bugs,, Reporting Bugs}を参照してください。"
+msgstr "これらの変数の値にかかわらず、一番最近の変更はundo情報が@code{undo-outer-limit}(通常は24,000,000)より大きくならない限り、廃棄されることはありません。もしこれを超えるような場合、Emacsはundoデータを廃棄して、それにたいする警告を発します。これは一番最近のコマンドをundoできない唯一の状況です。これが発生した場合、将来同じことが起こらないように@code{undo-outer-limit}の値を増やすことができます。しかしコマンドがそのような大きなundoデータを作るとは考えられない場合、それは多分バグなので、それを報告すべきです。@ref{Bugs,, Reporting Bugs}を参照してください。"
 
 #. type: section
 #: original_texis/fixit.texi:141
@@ -296,43 +284,36 @@ msgstr "2つの行を入れ替えます(@code{transpose-lines})。"
 
 #. type: item
 #: original_texis/fixit.texi:152
-#, fuzzy, no-wrap
-#| msgid "transpose-lines"
+#, no-wrap
 msgid "M-x transpose-sentences"
-msgstr "transpose-lines"
+msgstr "M-x transpose-sentences"
 
 #. type: table
 #: original_texis/fixit.texi:154
-#, fuzzy
-#| msgid "Transpose two lines (@code{transpose-lines})."
 msgid "Transpose two sentences (@code{transpose-sentences})."
-msgstr "2つの行を入れ替えます(@code{transpose-lines})。"
+msgstr "2つのセンテンスを入れ替えます(@code{transpose-sentences})。"
 
 #. type: item
 #: original_texis/fixit.texi:154
-#, fuzzy, no-wrap
-#| msgid "transpose-chars"
+#, no-wrap
 msgid "M-x transpose-paragraphs"
-msgstr "transpose-chars"
+msgstr "M-x transpose-paragraphs"
 
 #. type: table
 #: original_texis/fixit.texi:156
-#, fuzzy
-#| msgid "Transpose two characters (@code{transpose-chars})."
 msgid "Transpose two paragraphs (@code{transpose-paragraphs})."
-msgstr "2つの文字を入れ替えます(@code{transpose-chars})。"
+msgstr "2つのパラグラフを入れ替えます(@code{transpose-paragraphs})。"
 
 #. type: item
 #: original_texis/fixit.texi:156
-#, fuzzy, no-wrap
-#| msgid "transpose-lines"
+#, no-wrap
 msgid "M-x transpose-regions"
-msgstr "transpose-lines"
+msgstr "M-x transpose-regions"
 
 #. type: table
 #: original_texis/fixit.texi:158
 msgid "Transpose two regions."
-msgstr ""
+msgstr "2つのリージョンを入れ替えます。"
 
 #. type: findex
 #: original_texis/fixit.texi:161
@@ -364,31 +345,25 @@ msgstr "@kbd{M-t}は、ポイントの前にある単語と、後にある単語
 
 #. type: findex
 #: original_texis/fixit.texi:192
-#, fuzzy, no-wrap
-#| msgid "transpose-lines"
+#, no-wrap
 msgid "transpose-sentences"
-msgstr "transpose-lines"
+msgstr "transpose-sentences"
 
 #. type: findex
 #: original_texis/fixit.texi:193
-#, fuzzy, no-wrap
-#| msgid "transpose-chars"
+#, no-wrap
 msgid "transpose-paragraphs"
-msgstr "transpose-chars"
+msgstr "transpose-paragraphs"
 
 #. type: Plain text
 #: original_texis/fixit.texi:200
-#, fuzzy
-#| msgid "@kbd{C-M-t} (@code{transpose-sexps}) is a similar command for transposing two expressions (@pxref{Expressions}), and @kbd{C-x C-t} (@code{transpose-lines}) exchanges lines.  They work like @kbd{M-t} except as regards the units of text they transpose."
 msgid "@kbd{C-M-t} (@code{transpose-sexps}) is a similar command for transposing two expressions (@pxref{Expressions}), and @kbd{C-x C-t} (@code{transpose-lines}) exchanges lines.  @kbd{M-x transpose-sentences} and @kbd{M-x transpose-paragraphs} transpose sentences and paragraphs, respectively.  These commands work like @kbd{M-t} except as regards the units of text they transpose."
-msgstr "@kbd{C-M-t} (@code{transpose-sexps})も似ていますが、これは2つの式(@ref{Expressions}を参照してください)を入れ替えます。そして@kbd{C-x C-t} (@code{transpose-lines})は、行を入れ替えます。これらは@kbd{M-t}と同様に動作しますが、入れ替えを行うテキスト単位が異なります。"
+msgstr "@kbd{C-M-t} (@code{transpose-sexps})も似ていますが、これは2つの式(@ref{Expressions}を参照してください)、@kbd{C-x C-t} (@code{transpose-lines})は行を入れ替えます。@kbd{M-x transpose-sentences}と@kbd{M-x transpose-paragraphs}はそれぞれセンテンスとパラグラフを入れ替えます。これらのコマンドは@kbd{M-t}と同様に動作しますが、入れ替えを行うテキスト単位が異なります。"
 
 #. type: Plain text
 #: original_texis/fixit.texi:211
-#, fuzzy
-#| msgid "A numeric argument to a transpose command serves as a repeat count: it tells the transpose command to move the character (or word or expression or line) before or containing point across several other characters (or words or expressions or lines).  For example, @kbd{C-u 3 C-t} moves the character before point forward across three other characters.  It would change @samp{f@point{}oobar} into @samp{oobf@point{}ar}.  This is equivalent to repeating @kbd{C-t} three times.  @kbd{C-u - 4 M-t} moves the word before point backward across four words.  @kbd{C-u - C-M-t} would cancel the effect of plain @kbd{C-M-t}."
 msgid "A numeric argument to a transpose command serves as a repeat count: it tells the transpose command to move the character (or word or expression or line) before or containing point across several other characters (or words or expressions or lines).  For example, @w{@kbd{C-u 3 C-t}} moves the character before point forward across three other characters.  It would change @samp{f@point{}oobar} into @samp{oobf@point{}ar}.  This is equivalent to repeating @kbd{C-t} three times.  @kbd{C-u - 4 M-t} moves the word before point backward across four words.  @kbd{C-u - C-M-t} would cancel the effect of plain @kbd{C-M-t}."
-msgstr "入れ替えコマンドに数引数を指定すると、反復回数になります。これは入れ替えコマンドに、ポイントより前(またはポイントがある)の移動させる文字(または単語、式、行)を、何文字(または単語、式、行)後に移動させるか指示します。たとえば@kbd{C-u 3 C-t}は、ポイントの前にある文字を3文字後ろに移動します。つまり@samp{f@point{}oobar}は@samp{oobf@point{}ar}に変更されます。これは@kbd{C-t}を3回繰り返したのと同じです@kbd{C-u - 4 M-t}はポイントの前にある単語を、後方に単語4つ分移動します。@kbd{C-u - C-M-t}は、引数を指定しない@kbd{C-M-t}の効果を取り消します。"
+msgstr "入れ替えコマンドに数引数を指定すると、反復回数になります。これは入れ替えコマンドに、ポイントより前(またはポイントがある)の移動させる文字(または単語、式、行)を、何文字(または単語、式、行)後に移動させるか指示します。たとえば@w{@kbd{C-u 3 C-t}}は、ポイントの前にある文字を3文字後ろに移動します。つまり@samp{f@point{}oobar}は@samp{oobf@point{}ar}に変更されます。これは@kbd{C-t}を3回繰り返したのと同じです@kbd{C-u - 4 M-t}はポイントの前にある単語を、後方に単語4つ分移動します。@kbd{C-u - C-M-t}は、引数を指定しない@kbd{C-M-t}の効果を取り消します。"
 
 #. type: Plain text
 #: original_texis/fixit.texi:216
@@ -397,15 +372,14 @@ msgstr "数引数0には特別な意味が割り当てられています(繰り�
 
 #. type: findex
 #: original_texis/fixit.texi:217
-#, fuzzy, no-wrap
-#| msgid "transpose-lines"
+#, no-wrap
 msgid "transpose-regions"
-msgstr "transpose-lines"
+msgstr "transpose-regions"
 
 #. type: Plain text
 #: original_texis/fixit.texi:225
 msgid "@kbd{M-x transpose-regions} transposes the text between point and mark with the text between the last two marks pushed to the mark ring (@pxref{Setting Mark}).  With a numeric prefix argument, it transposes the text between point and mark with the text between two successive marks that many entries back in the mark ring.  This command is best used for transposing multiple characters (or words or sentences or paragraphs) in one go."
-msgstr ""
+msgstr "@kbd{M-x transpose-regions}はポイントとマークの間のテキストを、マークリングに最後にpushされた2つのマークの間のテキストと入れ替えます(@ref{Setting Mark}を参照)。プレフィクス数引数を与えるとポイントとマークの間のテキストを、その個数分マークリングを戻ってから連続する2つのマークの間のテキストと入れ替えます。このコマンドは複数の文字(や単語、センテンス、パラグラフ)を一度に行うために最適です。"
 
 #. type: section
 #: original_texis/fixit.texi:227
@@ -662,10 +636,8 @@ msgstr "spell-checking the active region"
 
 #. type: Plain text
 #: original_texis/fixit.texi:313
-#, fuzzy
-#| msgid "Similarly, the command @kbd{M-x ispell} performs spell-checking in the region if one is active, or in the entire buffer otherwise.  The commands @kbd{M-x ispell-buffer} and @kbd{M-x ispell-region} explicitly perform spell-checking on the entire buffer or the region respectively.  To check spelling in an email message you are writing, use @kbd{M-x ispell-message}; that command checks the whole buffer, except for material that is indented or appears to be cited from other messages.  @xref{Sending Mail}."
 msgid "Similarly, the command @kbd{M-x ispell} performs spell-checking in the region if one is active, or in the entire buffer otherwise.  The commands @w{@kbd{M-x ispell-buffer}} and @w{@kbd{M-x ispell-region}} explicitly perform spell-checking on the entire buffer or the region respectively.  To check spelling in an email message you are writing, use @w{@kbd{M-x ispell-message}}; that command checks the whole buffer, except for material that is indented or appears to be cited from other messages.  @xref{Sending Mail}."
-msgstr "同様に、コマンド@kbd{M-x ispell}はリージョンがアクティブのときはリージョン、それ以外のときはバッファー全体にたいして、スペルチェックを行います。コマンド@kbd{M-x ispell-buffer}および@kbd{M-x ispell-region}は、スペルチェックをバッファー全体にたいして行うのか、リージョンにたいして行うかを明示します。このコマンドはバッファー全体をチェックしますが、インデントされているテキストと、以前のメッセージの引用と思われるテキストはチェックしません。@ref{Sending Mail}を参照してください。"
+msgstr "同様に、コマンド@w{@kbd{M-x ispell}}はリージョンがアクティブのときはリージョン、それ以外のときはバッファー全体にたいして、スペルチェックを行います。コマンド@w{@kbd{M-x ispell-buffer}}および@w{@kbd{M-x ispell-region}}は、スペルチェックをバッファー全体にたいして行うのか、リージョンにたいして行うかを明示します。このコマンドはバッファー全体をチェックしますが、インデントされているテキストと、以前のメッセージの引用と思われるテキストはチェックしません。@ref{Sending Mail}を参照してください。"
 
 #. type: Plain text
 #: original_texis/fixit.texi:319
@@ -796,10 +768,8 @@ msgstr "X"
 
 #. type: table
 #: original_texis/fixit.texi:370
-#, fuzzy
-#| msgid "Quit interactive spell-checking, leaving point at the word that was being checked.  You can restart checking again afterward with @kbd{C-u M-$}."
 msgid "Quit interactive spell-checking, leaving point at the word that was being checked.  You can restart checking again afterward with @w{@kbd{C-u M-$}}."
-msgstr "対話的なスペルチェックを終了します(ポイントはチェックされた単語の位置に残されます)。@kbd{C-u M-$}でチェックを再開できます。"
+msgstr "対話的なスペルチェックを終了します(ポイントはチェックされた単語の位置に残されます)。@w{@kbd{C-u M-$}}でチェックを再開できます。"
 
 #. type: item
 #: original_texis/fixit.texi:371
@@ -842,10 +812,8 @@ msgstr "ispell-complete-word"
 
 #. type: Plain text
 #: original_texis/fixit.texi:390
-#, fuzzy
-#| msgid "In Text mode and related modes, @kbd{M-@key{TAB}} (@code{ispell-complete-word}) performs in-buffer completion based on spelling correction.  Insert the beginning of a word, and then type @kbd{M-@key{TAB}}; this shows a list of completions.  (If your window manager intercepts @kbd{M-@key{TAB}}, type @kbd{@key{ESC} @key{TAB}} or @kbd{C-M-i}.)  Each completion is listed with a digit or character; type that digit or character to choose it."
 msgid "In Text mode and related modes, @kbd{M-@key{TAB}} (@code{ispell-complete-word}) performs in-buffer completion based on spelling correction.  Insert the beginning of a word, and then type @kbd{M-@key{TAB}}; this shows a list of completions.  (If your window manager intercepts @kbd{M-@key{TAB}}, type @w{@kbd{@key{ESC} @key{TAB}}} or @kbd{C-M-i}.)  Each completion is listed with a digit or character; type that digit or character to choose it."
-msgstr "Textモードおよびそれに関連するモードでは、@kbd{M-@key{TAB}} (@code{ispell-complete-word})で、スペル訂正にもとづくバッファー内補完を行います。単語の最初の部分を入力してから@kbd{M-@key{TAB}}をタイプすると、補完一覧が表示されます(ウィンドウマネージャーが@kbd{M-@key{TAB}}を横取りしてしまう場合は、@kbd{@key{ESC} @key{TAB}}または@kbd{C-M-i}をタイプします)。補完対象には番号か文字が振られているので、その番号か文字をタイプして選択します。"
+msgstr "Textモードおよびそれに関連するモードでは、@kbd{M-@key{TAB}} (@code{ispell-complete-word})で、スペル訂正にもとづくバッファー内補完を行います。単語の最初の部分を入力してから@kbd{M-@key{TAB}}をタイプすると、補完一覧が表示されます(ウィンドウマネージャーが@kbd{M-@key{TAB}}を横取りしてしまう場合は、@w{@kbd{@key{ESC} @key{TAB}}}または@kbd{C-M-i}をタイプします)。補完対象には番号か文字が振られているので、その番号か文字をタイプして選択します。"
 
 #. type: cindex
 #: original_texis/fixit.texi:391
@@ -861,10 +829,8 @@ msgstr "ispell-kill-ispell"
 
 #. type: Plain text
 #: original_texis/fixit.texi:399
-#, fuzzy
-#| msgid "Once started, the spell-checker subprocess continues to run, waiting for something to do, so that subsequent spell-checking commands complete more quickly.  If you want to get rid of the process, use @kbd{M-x ispell-kill-ispell}.  This is not usually necessary, since the process uses no processor time except when you do spelling correction."
 msgid "Once started, the spell-checker subprocess continues to run, waiting for something to do, so that subsequent spell-checking commands complete more quickly.  If you want to get rid of the process, use @w{@kbd{M-x ispell-kill-ispell}}.  This is not usually necessary, since the process uses no processor time except when you do spelling correction."
-msgstr "1度プロセスが開始されれば、スペルチェッカーのサブプロセスは待機状態で実行を続けるので、一連のスペルチェックコマンドは素早く完了します。プロセスを終了させたいときは@kbd{M-x ispell-kill-ispell}を使います。スペルの訂正を行うとき以外プロセスがCPU時間を使うことはないので、これは通常必要ありません。"
+msgstr "1度プロセスが開始されれば、スペルチェッカーのサブプロセスは待機状態で実行を続けるので、一連のスペルチェックコマンドは素早く完了します。プロセスを終了させたいときは@w{@kbd{M-x ispell-kill-ispell}}を使います。スペルの訂正を行うとき以外プロセスがCPU時間を使うことはないので、これは通常必要ありません。"
 
 #. type: vindex
 #: original_texis/fixit.texi:400
@@ -892,10 +858,8 @@ msgstr "ispell-change-dictionary"
 
 #. type: Plain text
 #: original_texis/fixit.texi:416
-#, fuzzy
-#| msgid "Spell-checkers look up spelling in two dictionaries: the standard dictionary and your personal dictionary.  The standard dictionary is specified by the variable @code{ispell-local-dictionary} or, if that is @code{nil}, by the variable @code{ispell-dictionary}.  If both are @code{nil}, the spelling program's default dictionary is used.  The command @kbd{M-x ispell-change-dictionary} sets the standard dictionary for the buffer and then restarts the subprocess, so that it will use a different standard dictionary.  Your personal dictionary is specified by the variable @code{ispell-personal-dictionary}.  If that is @code{nil}, the spelling program looks for a personal dictionary in a default location, which is specific to each spell-checker."
 msgid "Spell-checkers look up spelling in two dictionaries: the standard dictionary and your personal dictionary.  The standard dictionary is specified by the variable @code{ispell-local-dictionary} or, if that is @code{nil}, by the variable @code{ispell-dictionary}.  If both are @code{nil}, the spelling program's default dictionary is used.  The command @w{@kbd{M-x ispell-change-dictionary}} sets the standard dictionary for the buffer and then restarts the subprocess, so that it will use a different standard dictionary.  Your personal dictionary is specified by the variable @code{ispell-personal-dictionary}.  If that is @code{nil}, the spelling program looks for a personal dictionary in a default location, which is specific to each spell-checker."
-msgstr "スペルチェッカーは、スペルを2つの辞書から探します。それは標準辞書と個人用辞書です。標準辞書は変数@code{ispell-local-dictionary}で指定されます。これが@code{nil}のときは、変数@code{ispell-dictionary}で指定されます。両方が@code{nil}のとき、スペルプログラムは既定の辞書を使います。コマンド@kbd{M-x ispell-change-dictionary}は、バッファーにたいする標準辞書をセットしてからサブプロセスを再起動することにより、これにより異なる標準辞書を使うことができます。個人用の辞書は、変数@code{ispell-personal-dictionary}で指定します。これが@code{nil}のとき、スペルプログラムは個人辞書を、各スペルチェッカーが指定する既定の場所から探します。"
+msgstr "スペルチェッカーは、スペルを2つの辞書から探します。それは標準辞書と個人用辞書です。標準辞書は変数@code{ispell-local-dictionary}で指定されます。これが@code{nil}のときは、変数@code{ispell-dictionary}で指定されます。両方が@code{nil}のとき、スペルプログラムは既定の辞書を使います。コマンド@w{@kbd{M-x ispell-change-dictionary}}は、バッファーにたいする標準辞書をセットしてからサブプロセスを再起動することにより、これにより異なる標準辞書を使うことができます。個人用の辞書は、変数@code{ispell-personal-dictionary}で指定します。これが@code{nil}のとき、スペルプログラムは個人辞書を、各スペルチェッカーが指定する既定の場所から探します。"
 
 #. type: vindex
 #: original_texis/fixit.texi:417
@@ -928,10 +892,8 @@ msgstr "flyspell-mode"
 
 #. type: Plain text
 #: original_texis/fixit.texi:439
-#, fuzzy
-#| msgid "Flyspell mode is a minor mode that performs automatic spell-checking of the text you type as you type it.  When it finds a word that it does not recognize, it highlights that word.  Type @kbd{M-x flyspell-mode} to toggle Flyspell mode in the current buffer.  To enable Flyspell mode in all text mode buffers, add @code{flyspell-mode} to @code{text-mode-hook}.  @xref{Hooks}.  Note that, as Flyspell mode needs to check each word across which you move, it will slow down cursor motion and scrolling commands.  It also doesn't automatically check the text you didn't type or move across; use @code{flyspell-region} or @code{flyspell-buffer} for that."
 msgid "Flyspell mode is a minor mode that performs automatic spell-checking of the text you type as you type it.  When it finds a word that it does not recognize, it highlights that word.  Type @w{@kbd{M-x flyspell-mode}} to toggle Flyspell mode in the current buffer.  To enable Flyspell mode in all text mode buffers, add @code{flyspell-mode} to @code{text-mode-hook}.  @xref{Hooks}.  Note that, as Flyspell mode needs to check each word across which you move, it will slow down cursor motion and scrolling commands.  It also doesn't automatically check the text you didn't type or move across; use @code{flyspell-region} or @code{flyspell-buffer} for that."
-msgstr "Flyspellモードは、タイプしたテキストのスペルをタイプ時に自動的にチェックするマイナーモードです。認識できない単語を見つけると、その単語をハイライトします。@kbd{M-x flyspell-mode}とタイプすると、カレントバッファーのFlyspellモードを切り替えます。すべてのTextバッファーでFlyspellモードを有効にするには、@code{text-mode-hook}に、@code{flyspell-mode}を追加します。@ref{Hooks}を参照してください。Flyspellモードは、ユーザーの移動にしたがって各単語をチェックする必要があるので、カーソル移動やスクロールコマンドにより速度低下するかもしれないことに注意してください。タイプしていないテキストや移動と関係ないテキストの自動チェックも行いません。それを行うためには、@code{flyspell-region}や@code{flyspell-buffer}を使用してください。"
+msgstr "Flyspellモードは、タイプしたテキストのスペルをタイプ時に自動的にチェックするマイナーモードです。認識できない単語を見つけると、その単語をハイライトします。@w{@kbd{M-x flyspell-mode}}とタイプすると、カレントバッファーのFlyspellモードを切り替えます。すべてのTextバッファーでFlyspellモードを有効にするには、@code{text-mode-hook}に、@code{flyspell-mode}を追加します。@ref{Hooks}を参照してください。Flyspellモードは、ユーザーの移動にしたがって各単語をチェックする必要があるので、カーソル移動やスクロールコマンドにより速度低下するかもしれないことに注意してください。タイプしていないテキストや移動と関係ないテキストの自動チェックも行いません。それを行うためには、@code{flyspell-region}や@code{flyspell-buffer}を使用してください。"
 
 #. type: findex
 #: original_texis/fixit.texi:440
@@ -953,10 +915,8 @@ msgstr "flyspell-correct-word-before-point"
 
 #. type: Plain text
 #: original_texis/fixit.texi:451
-#, fuzzy
-#| msgid "When Flyspell mode highlights a word as misspelled, you can click on it with @kbd{mouse-2} (@code{flyspell-correct-word}) to display a menu of possible corrections and actions.  In addition, @kbd{C-.} or @kbd{@key{ESC}-@key{TAB}} (@code{flyspell-auto-correct-word}) will propose various successive corrections for the word at point, and @kbd{C-c $} (@code{flyspell-correct-word-before-point}) will pop up a menu of possible corrections.  Of course, you can always correct the misspelled word by editing it manually in any way you like."
 msgid "When Flyspell mode highlights a word as misspelled, you can click on it with @kbd{mouse-2} (@code{flyspell-correct-word}) to display a menu of possible corrections and actions.  In addition, @kbd{C-.} or @kbd{@key{ESC}-@key{TAB}} (@code{flyspell-auto-correct-word}) will propose various successive corrections for the word at point, and @w{@kbd{C-c $}} (@code{flyspell-correct-word-before-point}) will pop up a menu of possible corrections.  Of course, you can always correct the misspelled word by editing it manually in any way you like."
-msgstr "Flyspellモードが間違ったスペルの単語をハイライトしているとき、それを@kbd{mouse-2} (@code{flyspell-correct-word})でクリックして、可能な定性とアクションを表示するメニューを表示できます。加えて@kbd{C-.}、または@kbd{@key{ESC}-@key{TAB}} (@code{flyspell-auto-correct-word})はポイント位置の単語にたいする可能な訂正を提案し、@kbd{C-c $} (@code{flyspell-correct-word-before-point})は可能な訂正のメニューをポップアップします。もちろん、間違ったスペルの単語を、常にお好みの方法で手修正できます。"
+msgstr "Flyspellモードが間違ったスペルの単語をハイライトしているとき、それを@kbd{mouse-2} (@code{flyspell-correct-word})でクリックして、可能な定性とアクションを表示するメニューを表示できます。加えて@kbd{C-.}、または@kbd{@key{ESC}-@key{TAB}} (@code{flyspell-auto-correct-word})はポイント位置の単語にたいする可能な訂正を提案し、@w{@kbd{C-c $}} (@code{flyspell-correct-word-before-point})は可能な訂正のメニューをポップアップします。もちろん、間違ったスペルの単語を、常にお好みの方法で手修正できます。"
 
 #. type: findex
 #: original_texis/fixit.texi:452
@@ -966,7 +926,5 @@ msgstr "flyspell-prog-mode"
 
 #. type: Plain text
 #: original_texis/fixit.texi:458
-#, fuzzy
-#| msgid "Flyspell Prog mode works just like ordinary Flyspell mode, except that it only checks words in comments and string constants.  This feature is useful for editing programs.  Type @kbd{M-x flyspell-prog-mode} to enable or disable this mode in the current buffer.  To enable this mode in all programming mode buffers, add @code{flyspell-prog-mode} to @code{prog-mode-hook} (@pxref{Hooks})."
 msgid "Flyspell Prog mode works just like ordinary Flyspell mode, except that it only checks words in comments and string constants.  This feature is useful for editing programs.  Type @w{@kbd{M-x flyspell-prog-mode}} to enable or disable this mode in the current buffer.  To enable this mode in all programming mode buffers, add @code{flyspell-prog-mode} to @code{prog-mode-hook} (@pxref{Hooks})."
-msgstr "Flyspell Progモードは通常のFlyspellモードと同じように機能しますが、コメントと文字列に含まれた単語だけをチェックします。この機能はプログラムを編集する場合に便利です。@kbd{M-x flyspell-prog-mode}をタイプして、現在のバッファーにたいするこのモードの有効と無効を切り替えます。すべてのプログラミングに関連したモードでこのモードを有効にするには、@code{prog-mode-hook}に@code{flyspell-prog-mode}を追加します(@ref{Hooks}を参照してください)。"
+msgstr "Flyspell Progモードは通常のFlyspellモードと同じように機能しますが、コメントと文字列に含まれた単語だけをチェックします。この機能はプログラムを編集する場合に便利です。@w{@kbd{M-x flyspell-prog-mode}}をタイプして、現在のバッファーにたいするこのモードの有効と無効を切り替えます。すべてのプログラミングに関連したモードでこのモードを有効にするには、@code{prog-mode-hook}に@code{flyspell-prog-mode}を追加します(@ref{Hooks}を参照してください)。"

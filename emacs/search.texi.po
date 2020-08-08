@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-09-22 14:07+0900\n"
+"PO-Revision-Date: 2020-08-08 16:50+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -497,10 +497,8 @@ msgstr "isearch-repeat-backward"
 
 #. type: Plain text
 #: original_texis/search.texi:179
-#, fuzzy
-#| msgid "Suppose you search forward for @samp{FOO} and find a match, but not the one you expected to find: the @samp{FOO} you were aiming for occurs later in the buffer.  In this event, type another @kbd{C-s} (@code{isearch-repeat-forward}) to move to the next occurrence of the search string.  You can repeat this any number of times.  If you overshoot, you can cancel some @kbd{C-s} commands with @key{DEL}.  Similarly, each @kbd{C-r} (@code{isearch-repeat-backward}) in a backward incremental search repeats the backward search."
 msgid "Suppose you search forward for @samp{FOO} and find a match, but not the one you expected to find: the @samp{FOO} you were aiming for occurs later in the buffer.  In this event, type another @kbd{C-s} (@code{isearch-repeat-forward}) to move to the next occurrence of the search string, or @kbd{C-r} (@code{isearch-repeat-backward}) to move to the previous occurrence.  You can repeat these commands any number of times.  Alternatively, you can supply a numeric prefix argument of @var{n} to @kbd{C-s} and @kbd{C-r} to find the @var{n}th next or previous occurrence.  If you overshoot, you can cancel some @kbd{C-s} commands with @key{DEL}.  Similarly, each @kbd{C-r} (@code{isearch-repeat-backward}) in a backward incremental search repeats the backward search."
-msgstr "前方に@samp{FOO}を検索してマッチしたが、それは探しているマッチではなく、探しているのはバッファーのもっと前方に出現する@samp{FOO}だとしましょう。ここでもう1度@kbd{C-s} (@code{isearch-repeat-forward})をタイプすることにより、検索文字列が次に出現する場所に移動します。これは何回でも繰り返すことができます。もしタイプしすぎたときは、@kbd{C-s}コマンドを@key{DEL}で取り消すことができます。同様に後方へのインクリメンタル検索では、@kbd{C-r} (@code{isearch-repeat-backward})により後方検索が繰り返されます。"
+msgstr "前方に@samp{FOO}を検索してマッチしたが探しているマッチではなく、探しているのはバッファーのもっと前方に出現する@samp{FOO}だとしましょう。ここでもう1度@kbd{C-s} (@code{isearch-repeat-forward})をタイプすることにより、検索文字列が次に出現する場所、@kbd{C-r} (@code{isearch-repeat-backward})とタイプすれば検索文字列が前に出現した場所に移動します。これは何回でも繰り返すことができます。次、または前へ@var{n}個目の出現場所を見つけるために@kbd{C-s}と@kbd{C-r}にプレフィクス数引数@var{n}をかわりに供給することもできます。もしタイプしすぎたときは、@kbd{C-s}コマンドを@key{DEL}で取り消すことができます。同様に後方へのインクリメンタル検索では、@kbd{C-r} (@code{isearch-repeat-backward})により後方検索が繰り返されます。"
 
 #. type: cindex
 #: original_texis/search.texi:180
@@ -653,10 +651,8 @@ msgstr "isearch-yank-word-or-char"
 
 #. type: Plain text
 #: original_texis/search.texi:261
-#, fuzzy
-#| msgid "@kbd{C-w} (@code{isearch-yank-word-or-char}) appends the next character or word at point to the search string.  This is an easy way to search for another occurrence of the text at point.  (The decision of whether to copy a character or a word is heuristic.)"
 msgid "@kbd{C-w} (@code{isearch-yank-word-or-char}) appends the next character or word at point to the search string.  This is an easy way to search for another occurrence of the text at point.  (The decision of whether to copy a character or a word is heuristic.)  With a prefix numeric argument of @var{n}, append the next @var{n} characters or words."
-msgstr "@kbd{C-w} (@code{isearch-yank-word-or-char})は、検索された文字列のポイントの次の文字または単語を、検索文字列に追加します。これはポイント位置にあるテキストを検索する、簡単な方法です(コピーする対象を文字または単語のどちらにするかの決定は、発見的に行われます)。"
+msgstr "@kbd{C-w} (@code{isearch-yank-word-or-char})は検索された文字列のポイントの次の文字または単語を検索文字列に追加します。これはポイント位置にあるテキストを検索する簡単な方法です(コピーする対象を文字または単語のどちらにするかの決定は発見的に行われます)。プレフィクス数引数@var{n}を与えると次の@var{n}個の文字または単語を追加します。"
 
 #. type: kindex
 #: original_texis/search.texi:262
@@ -666,17 +662,14 @@ msgstr "C-M-w @r{(Incremental search)}"
 
 #. type: findex
 #: original_texis/search.texi:263
-#, fuzzy, no-wrap
-#| msgid "isearch-yank-word-or-char"
+#, no-wrap
 msgid "isearch-yank-symbol-or-char"
-msgstr "isearch-yank-word-or-char"
+msgstr "isearch-yank-symbol-or-char"
 
 #. type: Plain text
 #: original_texis/search.texi:270
-#, fuzzy
-#| msgid "@kbd{C-w} (@code{isearch-yank-word-or-char}) appends the next character or word at point to the search string.  This is an easy way to search for another occurrence of the text at point.  (The decision of whether to copy a character or a word is heuristic.)"
 msgid "@kbd{C-M-w} (@code{isearch-yank-symbol-or-char}) appends the next character or symbol at point to the search string.  This is an easy way to search for another occurrence of the symbol at point.  (The decision of whether to copy a character or a symbol is heuristic.)  With a prefix numeric argument of @var{n}, append the next @var{n} characters or symbols."
-msgstr "@kbd{C-w} (@code{isearch-yank-word-or-char})は、検索された文字列のポイントの次の文字または単語を、検索文字列に追加します。これはポイント位置にあるテキストを検索する、簡単な方法です(コピーする対象を文字または単語のどちらにするかの決定は、発見的に行われます)。"
+msgstr "@kbd{C-M-w} (@code{isearch-yank-symbol-or-char})は、検索された文字列のポイントの次の文字またはシンボルを検索文字列に追加します。これはポイント位置にあるシンボルを検索する簡単な方法です(コピーする対象を文字またはシンボルのどちらにするかの決定は発見的に行われます)。プレフィクス数引数@var{n}を与えると次の@var{n}個の文字またはシンボルを追加します。"
 
 #. type: kindex
 #: original_texis/search.texi:271
@@ -692,29 +685,25 @@ msgstr "isearch-yank-line"
 
 #. type: Plain text
 #: original_texis/search.texi:277
-#, fuzzy
-#| msgid "Similarly, @kbd{M-s C-e} (@code{isearch-yank-line}) appends the rest of the current line to the search string.  If point is already at the end of a line, it appends the next line.  With a prefix argument @var{n}, it appends the next @var{n} lines."
 msgid "@kbd{M-s C-e} (@code{isearch-yank-line}) appends the rest of the current line to the search string.  If point is already at the end of a line, it appends the next line.  With a prefix argument @var{n}, it appends the next @var{n} lines."
-msgstr "同様に@kbd{M-s C-e} (@code{isearch-yank-line})は、検索文字列にカレント行の残りの部分を追加します。ポイントが既に行末にある場合、次の行が追加されます。プレフィクス引数@var{n}を指定すると、次の@var{n}行を追加します。"
+msgstr "@kbd{M-s C-e} (@code{isearch-yank-line})は、検索文字列にカレント行の残りの部分を追加します。ポイントが既に行末にある場合には次の行が追加されます。プレフィクス引数@var{n}を指定すると次の@var{n}行を追加します。"
 
 #. type: kindex
 #: original_texis/search.texi:278
-#, fuzzy, no-wrap
-#| msgid "C-M-w @r{(Incremental search)}"
+#, no-wrap
 msgid "C-M-z @r{(Incremental search)}"
-msgstr "C-M-w @r{(Incremental search)}"
+msgstr "C-M-z @r{(Incremental search)}"
 
 #. type: findex
 #: original_texis/search.texi:279
-#, fuzzy, no-wrap
-#| msgid "isearch-yank-char"
+#, no-wrap
 msgid "isearch-yank-until-char"
-msgstr "isearch-yank-char"
+msgstr "isearch-yank-until-char"
 
 #. type: Plain text
 #: original_texis/search.texi:287
 msgid "Similarly, @kbd{C-M-z} (@code{isearch-yank-until-char}) appends to the search string everything from point until the next occurrence of a specified character (not including that character).  This is especially useful for keyboard macros, for example in programming languages or markup languages in which that character marks a token boundary.  With a prefix numeric argument of @var{n}, the command appends everything from point to the @var{n}th occurrence of the specified character."
-msgstr ""
+msgstr "同様に@kbd{C-M-z} (@code{isearch-yank-until-char})はポイントから指定した文字の次の出現場所(その文字を含まず)までのすべてを検索文字列に追加します。これはたとえばプログラミング言語やマークアップ言語でその文字が字句境界をマークするようなときのキーボードマクロにとって有用です。プレフィクス数引数@var{n}を与えると、このコマンドはポイントから@var{n}個目の指定した文字までのすべてを追加します。"
 
 #. type: kindex
 #: original_texis/search.texi:288
@@ -759,10 +748,9 @@ msgstr "インクリメンタル検索での@kbd{C-y} (@code{isearch-yank-kill})
 
 #. type: kindex
 #: original_texis/search.texi:302
-#, fuzzy, no-wrap
-#| msgid "C-M-w @r{(Incremental search)}"
+#, no-wrap
 msgid "C-M-d @r{(Incremental search)}"
-msgstr "C-M-w @r{(Incremental search)}"
+msgstr "C-M-d @r{(Incremental search)}"
 
 #. type: kindex
 #: original_texis/search.texi:303
@@ -784,10 +772,8 @@ msgstr "isearch-yank-char"
 
 #. type: Plain text
 #: original_texis/search.texi:314
-#, fuzzy
-#| msgid "@kbd{C-M-w} (@code{isearch-del-char}) deletes the last character from the search string, and @kbd{C-M-y} (@code{isearch-yank-char})  appends the character after point to the search string.  An alternative method to add the character after point is to enter the minibuffer with @kbd{M-e} (@pxref{Repeat Isearch}) and type @kbd{C-f} or @kbd{@key{RIGHT}} at the end of the search string in the minibuffer.  Each @kbd{C-f} or @kbd{@key{RIGHT}} you type adds another character following point to the search string."
 msgid "@kbd{C-M-d} (@code{isearch-del-char}) deletes the last character from the search string, and @kbd{C-M-y} (@code{isearch-yank-char})  appends the character after point to the search string.  An alternative method to add the character after point is to enter the minibuffer with @kbd{M-e} (@pxref{Repeat Isearch}) and type @kbd{C-f} or @kbd{@key{RIGHT}} at the end of the search string in the minibuffer.  Each @kbd{C-f} or @kbd{@key{RIGHT}} you type adds another character following point to the search string."
-msgstr "@kbd{C-M-w} (@code{isearch-del-char})は検索文字列の最後の文字を削除し、@kbd{C-M-y} (@code{isearch-yank-char})は検索されたポイントの後の文字を追加します。ポイントの後ろの文字を追加する他の方法は、@kbd{M-e}(@ref{Repeat Isearch}を参照してください)でミニバッファーに移動してから、検索文字列の最後で@kbd{C-f}か@kbd{@key{RIGHT}}をタイプします。@kbd{C-f}か@kbd{@key{RIGHT}}をタイプするたびに、ポイントの後の文字が検索文字列に順次追加されます。"
+msgstr "@kbd{C-M-d} (@code{isearch-del-char})は検索文字列の最後の文字を削除し、@kbd{C-M-y} (@code{isearch-yank-char})は検索されたポイントの後の文字を追加します。ポイントの後ろの文字を追加する他の方法は、@kbd{M-e}(@ref{Repeat Isearch}を参照してください)でミニバッファーに移動してから、検索文字列の最後で@kbd{C-f}か@kbd{@key{RIGHT}}をタイプします。@kbd{C-f}か@kbd{@key{RIGHT}}をタイプするたびに、ポイントの後の文字が検索文字列に順次追加されます。"
 
 #. type: Plain text
 #: original_texis/search.texi:321
@@ -813,10 +799,8 @@ msgstr "文字列が見つからなかった場合、エコーエリアに@samp{
 
 #. type: Plain text
 #: original_texis/search.texi:344
-#, fuzzy
-#| msgid "At this point, there are several things you can do.  If your string was mistyped, use @key{DEL} to cancel a previous input item (@pxref{Basic Isearch}), @kbd{C-M-w} to erase one character at a time, or @kbd{M-e} to edit it.  If you like the place you have found, you can type @key{RET} to remain there.  Or you can type @kbd{C-g}, which removes from the search string the characters that could not be found (the @samp{T} in @samp{FOOT}), leaving those that were found (the @samp{FOO} in @samp{FOOT}).  A second @kbd{C-g} at that point cancels the search entirely, returning point to where it was when the search started."
 msgid "At this point, there are several things you can do.  If your string was mistyped, use @key{DEL} to cancel a previous input item (@pxref{Basic Isearch}), @kbd{C-M-d} to erase one character at a time, or @kbd{M-e} to edit it.  If you like the place you have found, you can type @key{RET} to remain there.  Or you can type @kbd{C-g}, which removes from the search string the characters that could not be found (the @samp{T} in @samp{FOOT}), leaving those that were found (the @samp{FOO} in @samp{FOOT}).  A second @kbd{C-g} at that point cancels the search entirely, returning point to where it was when the search started."
-msgstr "その時に行うことができる、いくつかの選択肢があります。もし文字列が間違っている場合は、文字列を訂正するために、@key{DEL}で前の入力アイテム(@ref{Basic Isearch}を参照)を削除、一度に一文字削除するなら@kbd{C-M-w}、編集する場合は@kbd{M-e}とタイプします。もし見つかった位置が望む位置なら、@key{RET}をタイプしてその位置に留まることができます。または@kbd{C-g}をタイプして、検索文字列から検索できなかった文字(@samp{FOOT}の中の@samp{T})を取り除き、検索された部分の文字列(@samp{FOOT}の中の@samp{FOO})を残します。その位置でもう1回@kbd{C-g}をタイプすると、検索全体を取り消し、ポイントは検索を開始した位置に戻ります。"
+msgstr "その時に行うことができる選択肢がいくつかあります。もし文字列が間違っている場合には、文字列を訂正するために、@key{DEL}で前の入力アイテム(@ref{Basic Isearch}を参照)を削除、一度に一文字削除するなら@kbd{C-M-d}、編集する場合は@kbd{M-e}とタイプします。もし見つかった位置が望む位置なら、@key{RET}をタイプしてその位置に留まることができます。または@kbd{C-g}をタイプして、検索文字列から検索できなかった文字(@samp{FOOT}の中の@samp{T})を取り除き、検索された部分の文字列(@samp{FOOT}の中の@samp{FOO})を残します。その位置でもう1回@kbd{C-g}をタイプすると、検索全体を取り消し、ポイントは検索を開始した位置に戻ります。"
 
 #. type: cindex
 #: original_texis/search.texi:345
@@ -1067,24 +1051,20 @@ msgstr "isearch-highlight-regexp"
 
 #. type: kindex
 #: original_texis/search.texi:474
-#, fuzzy, no-wrap
-#| msgid "M-s h r @r{(Incremental Search)}"
+#, no-wrap
 msgid "M-s h l @r{(Incremental Search)}"
-msgstr "M-s h r @r{(Incremental Search)}"
+msgstr "M-s h l @r{(Incremental Search)}"
 
 #. type: findex
 #: original_texis/search.texi:475
-#, fuzzy, no-wrap
-#| msgid "isearch-highlight-regexp"
+#, no-wrap
 msgid "isearch-highlight-lines-matching-regexp"
-msgstr "isearch-highlight-regexp"
+msgstr "isearch-highlight-lines-matching-regexp"
 
 #. type: Plain text
 #: original_texis/search.texi:484
-#, fuzzy
-#| msgid "You can exit the search while leaving the matches for the last search string highlighted on display.  To this end, type @kbd{M-s h r} (@code{isearch-highlight-regexp}), which will run @code{highlight-regexp} (@pxref{Highlight Interactively}) passing it the regexp derived from the last search string and prompting you for the face to use for highlighting.  To remove the highlighting, type @kbd{M-s h u} (@code{unhighlight-regexp})."
 msgid "You can exit the search while leaving the matches highlighted by typing @kbd{M-s h r} (@code{isearch-highlight-regexp}).  This runs @code{highlight-regexp} (@pxref{Highlight Interactively}), passing it the regexp derived from the search string and prompting you for the face to use for highlighting.  To highlight @emph{whole lines} containing matches (rather than @emph{just} the matches), type @kbd{M-s h l} (@code{isearch-highlight-lines-matching-regexp}).  In either case, to remove the highlighting, type @kbd{M-s h u} (@code{unhighlight-regexp})."
-msgstr "ディスプレーで最後に検索した文字列にたいするマッチをハイライトしたまま、検索をexitできます。これを行なうには、@kbd{M-s h r} (@code{isearch-highlight-regexp})とタイプします。これは最後の検索文字列を継承するregexpと、ハイライトに表示するフェイスの入力を求めて、それらを引数として@code{highlight-regexp} (@ref{Highlight Interactively}を参照してください)を実行します。ハイライトを除去するには、@kbd{M-s h u} (@code{unhighlight-regexp})とタイプしてください。"
+msgstr "@kbd{M-s h r} (@code{isearch-highlight-regexp})とタイプすればマッチをハイライトしたまま検索をexitできます。これはハイライトに使用するフェイスの入力を求める@code{highlight-regexp} (@ref{Highlight Interactively}を参照)に、検索文字列から継承したregexpをに渡して実行します。(@emph{マッチだけ}ではなく)マッチを含む@emph{行全体}をハイライトするには、@kbd{M-s h l} (@code{isearch-highlight-lines-matching-regexp})とタイプします。いずれの場合でも、ハイライトを除去するには@kbd{M-s h u} (@code{unhighlight-regexp})とタイプしてください。"
 
 #. type: cindex
 #: original_texis/search.texi:485
@@ -1119,26 +1099,24 @@ msgstr "インクリメンタル検索がアクティブのとき、@kbd{C-h C-h
 #: original_texis/search.texi:494
 #, no-wrap
 msgid "incremental search, go to first or last occurrence"
-msgstr ""
+msgstr "incremental search, go to first or last occurrence"
 
 #. type: kindex
 #: original_texis/search.texi:495
-#, fuzzy, no-wrap
-#| msgid "M-s M-w"
+#, no-wrap
 msgid "M-s M->"
-msgstr "M-s M-w"
+msgstr "M-s M->"
 
 #. type: kindex
 #: original_texis/search.texi:496
-#, fuzzy, no-wrap
-#| msgid "M-s M-w"
+#, no-wrap
 msgid "M-s M-<"
-msgstr "M-s M-w"
+msgstr "M-s M-<"
 
 #. type: Plain text
 #: original_texis/search.texi:503
 msgid "When incremental search is active, typing @kbd{M-s M->} will go to the last occurrence of the search string, and @kbd{M-s M-<} will go to the first occurrence.  With a prefix numeric argument of @var{n}, these commands will go to the @var{n}th occurrence of the search string counting from the beginning or end of the buffer, respectively."
-msgstr ""
+msgstr "インクリメンタル検索がアクティブな際に@kbd{M-s M->}とタイプすると検索文字列の最後の出現位置、@kbd{M-s M-<}とタイプすると最初の出現位置に移動します。プレフィクス数引数@var{n}を与えると、これらのコマンドはそれぞれバッファーの先頭または最後から数えて@var{n}個目の検索文字列の出現位置へ移動します。"
 
 #. type: subsection
 #: original_texis/search.texi:505
@@ -1148,10 +1126,8 @@ msgstr "インクリメンタル検索を終了させない"
 
 #. type: Plain text
 #: original_texis/search.texi:512
-#, fuzzy
-#| msgid "This subsection describes how to control whether typing a command not specifically meaningful in searches exits the search before executing the command.  It also describes two categories of commands which you can type without exiting the current incremental search, even though they are not themselves part of incremental search."
 msgid "This subsection describes how to control whether typing a command not specifically meaningful in searches exits the search before executing the command.  It also describes three categories of commands which you can type without exiting the current incremental search, even though they are not themselves part of incremental search."
-msgstr "このサブセクションでは、検索で特別な意味をもたないコマンドが、そのコマンドを実行する前に、検索をexitするかどうかを制御する方法を説明します。また、(たとえそれらがインクリメンタル検索の一部ではなくても)カレントのインクリメンタル検索をexitせずにタイプできる、2つのカテゴリーに属するコマンドを説明します。"
+msgstr "このサブセクションでは検索で特別な意味をもたないコマンドがコマンドを実行する前に、検索をexitするかどうかを制御する方法を説明します。また、(たとえそれらがインクリメンタル検索の一部ではなくても)カレントのインクリメンタル検索をexitせずにタイプできる、3つのカテゴリーに属するコマンドを説明します。"
 
 #. type: vindex
 #: original_texis/search.texi:513
@@ -1161,10 +1137,8 @@ msgstr "search-exit-option"
 
 #. type: Plain text
 #: original_texis/search.texi:523
-#, fuzzy
-#| msgid "Normally, typing a command that is not bound by the incremental search exits the search before executing the command.  Thus, the command operates on the buffer from which you invoked the search.  However, if you customize the variable @code{search-exit-option} to @code{nil}, the characters which you type that are not interpreted by the incremental search are simply appended to the search string.  This is so you could include in the search string control characters, such as @kbd{C-a}, that would normally exit the search and invoke the command bound to them on the buffer."
 msgid "Normally, typing a command that is not bound by the incremental search exits the search before executing the command.  Thus, the command operates on the buffer from which you invoked the search.  However, if you customize the variable @code{search-exit-option} to @code{append}, the characters which you type that are not interpreted by the incremental search are simply appended to the search string.  This is so you could include in the search string control characters, such as @kbd{C-a}, that would normally exit the search and invoke the command bound to them on the buffer."
-msgstr "インクリメンタル検索によりバインドされていないコマンドをタイプすると通常、そのコマンドを実行する前に検索をexitします。したがって、そのコマンドは検索を呼び出したときのバッファーにたいして処理を行なうことになります。しかし、変数@code{search-exit-option}を@code{nil}にカスタマイズした場合、(インクリメンタル検索により解釈されないような)タイプした文字は、単に検索文字列に追加されます。これにより、通常は検索をexitして、その文字にバインドされているコマンドをそのバッファーにたいして呼び出す、@kbd{C-a}のような制御文字を検索文字列に含めることができるようになります。"
+msgstr "インクリメンタル検索によりバインドされていないコマンドをタイプすると通常、そのコマンドを実行する前に検索をexitします。したがって、そのコマンドは検索を呼び出したときのバッファーにたいして処理を行なうことになります。しかし、変数@code{search-exit-option}を@code{append}にカスタマイズした場合、(インクリメンタル検索により解釈されないような)タイプした文字は、単に検索文字列に追加されます。これにより、通常は検索をexitして、その文字にバインドされているコマンドをそのバッファーにたいして呼び出す、@kbd{C-a}のような制御文字を検索文字列に含めることができるようになります。"
 
 #. type: item
 #: original_texis/search.texi:525
@@ -1219,10 +1193,8 @@ msgstr "isearch-allow-scroll"
 
 #. type: table
 #: original_texis/search.texi:556
-#, fuzzy
-#| msgid "Normally, scrolling commands exit incremental search.  If you change the variable @code{isearch-allow-scroll} to a non-@code{nil} value, that enables the use of the scroll-bar, as well as keyboard scrolling commands like @kbd{C-v}, @kbd{M-v}, and @kbd{C-l} (@pxref{Scrolling}).  This applies only to calling these commands via their bound key sequences---typing @kbd{M-x} will still exit the search.  You can give prefix arguments to these commands in the usual way.  This feature won't let you scroll the current match out of visibility, however."
 msgid "Normally, scrolling commands exit incremental search.  If you change the variable @code{isearch-allow-scroll} to a non-@code{nil} value, that enables the use of the scroll-bar, as well as keyboard scrolling commands like @kbd{C-v}, @kbd{M-v}, and @kbd{C-l} (@pxref{Scrolling}).  This applies only to calling these commands via their bound key sequences---typing @kbd{M-x} will still exit the search.  You can give prefix arguments to these commands in the usual way.  This feature normally won't let you scroll the current match out of visibility; but if you customize @code{isearch-allow-scroll} to the special value @code{unlimited}, that restriction is lifted."
-msgstr "通常スクロールコマンドは、インクリメンタル検索を終了させます。変数@code{isearch-allow-scroll}を非@code{nil}値に変更すると、スクロールバーや@kbd{C-v}、@kbd{M-v}、@kbd{C-l}のようなスクロールコマンド(@ref{Scrolling}を参照してください)が利用可能になります。これは、これらのコマンドをバウンドされたキーシーケンスで呼び出したときだけ適用されます。つまり@kbd{M-x}は依然として検索を終了させます。これらのコマンドには、通常の方法でプレフィクス引数を与えることができます。この機能ではカレントマッチが表示されない位置にスクロールすることはできません。"
+msgstr "通常スクロールコマンドは、インクリメンタル検索を終了させます。変数@code{isearch-allow-scroll}を非@code{nil}値に変更すると、スクロールバーや@kbd{C-v}、@kbd{M-v}、@kbd{C-l}のようなスクロールコマンド(@ref{Scrolling}を参照してください)が利用可能になります。これは、これらのコマンドをバウンドされたキーシーケンスで呼び出したときだけ適用されます。つまり@kbd{M-x}は依然として検索を終了させます。これらのコマンドには、通常の方法でプレフィクス引数を与えることができます。この機能では通常はカレントマッチが表示されない位置にスクロールすることはできません。しかし@code{isearch-allow-scroll}を特別な値@code{unlimited}にカスタマイズすることにより、この制限は解除されます。"
 
 #. type: table
 #: original_texis/search.texi:564
@@ -1253,27 +1225,25 @@ msgstr "この機能はポイント、バッファー内容、マッチデータ
 
 #. type: item
 #: original_texis/search.texi:582
-#, fuzzy, no-wrap
-#| msgid "Scrolling Commands"
+#, no-wrap
 msgid "Motion Commands"
-msgstr "スクロールコマンド"
+msgstr "移動コマンド"
 
 #. type: cindex
 #: original_texis/search.texi:583
-#, fuzzy, no-wrap
-#| msgid "scrolling commands, during incremental search"
+#, no-wrap
 msgid "motion commands, during incremental search"
-msgstr "scrolling commands, during incremental search"
+msgstr "motion commands, during incremental search"
 
 #. type: table
 #: original_texis/search.texi:588
 msgid "When @code{isearch-yank-on-move} is customized to @code{shift}, you can extend the search string by holding down the shift key while typing cursor motion commands.  It will yank text that ends at the new position after moving point in the current buffer."
-msgstr ""
+msgstr "@code{isearch-yank-on-move}を@code{shift}にカスタマイズしている際には、カーソル移動コマンドをタイプ中にシフトキーを押下することにより検索文字列を拡張できます。これはポイント移動後にカレントバッファーの新たな位置で終了するテキストをyankします。"
 
 #. type: table
 #: original_texis/search.texi:593
 msgid "When @code{isearch-yank-on-move} is @code{t}, you can extend the search string without using the shift key for cursor motion commands, but it applies only for certain motion command that have the @code{isearch-move} property on their symbols."
-msgstr ""
+msgstr "@code{isearch-yank-on-move}が@code{t}の際にはカーソル移動コマンドにシフトキーを使用せずに検索文字列を拡張できますが、それはコマンドのシンボルに@code{isearch-move}プロパティをもつ特定の移動コマンドだけに適用されます。"
 
 #. type: subsection
 #: original_texis/search.texi:596
@@ -1570,10 +1540,8 @@ msgstr "isearch-forward-symbol-at-point"
 
 #. type: Plain text
 #: original_texis/search.texi:776
-#, fuzzy
-#| msgid "To begin a forward incremental symbol search, type @kbd{M-s _} (or @kbd{M-s .} if the symbol to search is near point).  If incremental search is not already active, this runs the command @code{isearch-forward-symbol}.  If incremental search is already active, @kbd{M-s _} switches to a symbol search, preserving the direction of the search and the current search string; you can disable symbol search by typing @kbd{M-s _} again.  In incremental symbol search, while you are typing the search string, only the beginning of the search string is required to match the beginning of a symbol, and @samp{Pending} appears in the search prompt until you use a search repeating key like @kbd{C-s}."
 msgid "To begin a forward incremental symbol search, type @kbd{M-s _} (or @kbd{M-s .} if the symbol to search is near point).  If incremental search is not already active, @kbd{M-s _} runs the command @code{isearch-forward-symbol} and @kbd{M-s .} runs the command @code{isearch-forward-symbol-at-point}.  With a numeric prefix argument of @var{n}, @kbd{M-s .} will search for the @var{n}the next occurrence of the symbol at point; negative values of @var{n} search backwards.  If incremental search is already active, @kbd{M-s _} switches to a symbol search, preserving the direction of the search and the current search string; you can disable symbol search by typing @kbd{M-s _} again.  In incremental symbol search, while you are typing the search string, only the beginning of the search string is required to match the beginning of a symbol, and @samp{Pending} appears in the search prompt until you use a search repeating key like @kbd{C-s}."
-msgstr "前方へのインクリメンタルなシンボル検索を開始するには、@kbd{M-s _}(ポイントの近くにシンボルがあるときは@kbd{M-s .})をタイプします。インクリメンタル検索が非アクティブのときは、コマンド@code{isearch-forward-symbol}が実行されます。すでにインクリメンタル前方へのインクリメンタルなシンボル検索を開始するには、@kbd{M-s _}(ポイントの近くにシンボルがあるときは@kbd{M-s .})をタイプします。インクリメンタル検索が非アクティブのときは、コマンド@code{isearch-forward-symbol}が実行されます。すでにインクリメンタル検索がアクティブのとき、@kbd{M-s _}は検索方向と現在の検索文字列を維持した状態で、シンボル検索に切り替えます(もう一度@kbd{M-s _}をタイプすると、シンボル検索を無効にできます)。インクリメンタルなシンボル検索では、検索み文字列をタイプする間は、検索文字列の先頭がシンボルの先頭にマッチだけが必要であり、@kbd{C-s}のような検索繰り返しキーを使用するまでは検索プロンプトに@samp{Pending}が表示されます。"
+msgstr "前方へのインクリメンタルなシンボル検索を開始するには、@kbd{M-s _} (ポイントの近くにシンボルがあるときは@kbd{M-s .})をタイプします。インクリメンタル検索がまだアクティブでなければ@kbd{M-s _}はコマンド@code{isearch-forward-symbol}、@kbd{M-s .}はコマンド@code{isearch-forward-symbol-at-point}を実行します。プレフィクス数引数@var{n}を与えると@kbd{M-s .}はポイント位置のシンボルにたいして次の@var{n}番目の出現位置を検索します。負の@var{n}では後方に検索します。すでにインクリメンタル検索がアクティブのとき、@kbd{M-s _}は検索方向と現在の検索文字列を維持した状態で、シンボル検索に切り替えます(もう一度@kbd{M-s _}をタイプすると、シンボル検索を無効にできます)。インクリメンタルなシンボル検索では、検索み文字列をタイプする間は、検索文字列の先頭がシンボルの先頭にマッチだけが必要であり、@kbd{C-s}のような検索繰り返しキーを使用するまでは検索プロンプトに@samp{Pending}が表示されます。"
 
 #. type: Plain text
 #: original_texis/search.texi:782
@@ -1875,10 +1843,8 @@ msgstr "いくつかの特別な@dfn{文字クラス(character classes)}を、�
 
 #. type: table
 #: original_texis/search.texi:1017
-#, fuzzy
-#| msgid "To include a @samp{]} in a character set, you must make it the first character.  For example, @samp{[]a]} matches @samp{]} or @samp{a}.  To include a @samp{-}, write @samp{-} as the first or last character of the set, or put it after a range.  Thus, @samp{[]-]} matches both @samp{]} and @samp{-}."
 msgid "To include a @samp{]} in a character set, you must make it the first character.  For example, @samp{[]a]} matches @samp{]} or @samp{a}.  To include a @samp{-}, write @samp{-} as the last character of the set, tho you can also put it first or after a range.  Thus, @samp{[]-]} matches both @samp{]} and @samp{-}."
-msgstr "文字集合に@samp{]}を含めるには、それを最初に記述しなければなりません。たとえば@samp{[]a]}は、@samp{]}または@samp{a}にマッチします。文字集合に@samp{-}を含めるには、@samp{-}を、文字集合の最初または最後に記述するか、文字範囲の外に記述します。したがって@samp{[]-]}は、@samp{]}と@samp{-}の両方にマッチします。"
+msgstr "文字集合に@samp{]}を含めるには、それを最初に記述しなければなりません。たとえば@samp{[]a]}は、@samp{]}または@samp{a}にマッチします。文字集合に@samp{-}を含めるには、@samp{-}を文字集合の最後に記述しますが、範囲の先頭や後にも記述できます。したがって@samp{[]-]}は、@samp{]}と@samp{-}の両方にマッチします。"
 
 #. type: table
 #: original_texis/search.texi:1020
@@ -2230,10 +2196,8 @@ msgstr "\\s@var{c}"
 
 #. type: table
 #: original_texis/search.texi:1229
-#, fuzzy
-#| msgid "matches any character whose syntax is @var{c}.  Here @var{c} is a character that designates a particular syntax class: thus, @samp{w} for word constituent, @samp{-} or @samp{ } for whitespace, @samp{.} for ordinary punctuation, etc.  @xref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}."
 msgid "matches any character whose syntax is @var{c}.  Here @var{c} is a character that designates a particular syntax class: thus, @samp{w} for word constituent, @samp{-} or @samp{ } for whitespace, @samp{.} for ordinary punctuation, etc.  @xref{Syntax Class Table,, Syntax Class Table, elisp, The Emacs Lisp Reference Manual}."
-msgstr "構文が@var{c}である、任意の文字にマッチします。ここで@var{c}とは、特定の構文クラスを表す文字です。したがって@samp{w}は単語構成文字、@samp{-}または@samp{ }は空白文字、@samp{.}は通常の区切り文字、などとなります。@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr "構文が@var{c}である、任意の文字にマッチします。ここで@var{c}とは、特定の構文クラスを表す文字です。したがって@samp{w}は単語構成文字、@samp{-}または@samp{ }は空白文字、@samp{.}は通常の区切り文字、などとなります。@ref{Syntax Class Table,, Syntax Class Table, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: item
 #: original_texis/search.texi:1230
@@ -2406,10 +2370,8 @@ msgstr "search-upper-case"
 
 #. type: Plain text
 #: original_texis/search.texi:1335
-#, fuzzy
-#| msgid "An upper-case letter anywhere in the search string makes the search case-sensitive.  Thus, searching for @samp{Foo} does not find @samp{foo} or @samp{FOO}.  This applies to regular expression search as well as to literal string search.  The effect ceases if you delete the upper-case letter from the search string.  The variable @code{search-upper-case} controls this: if it is non-@code{nil} (the default), an upper-case character in the search string makes the search case-sensitive; setting it to @code{nil} disables this effect of upper-case characters."
 msgid "An upper-case letter anywhere in the search string makes the search case-sensitive.  Thus, searching for @samp{Foo} does not find @samp{foo} or @samp{FOO}.  This applies to regular expression search as well as to literal string search.  The effect ceases if you delete the upper-case letter from the search string.  The variable @code{search-upper-case} controls this: if it is non-@code{nil}, an upper-case character in the search string makes the search case-sensitive; setting it to @code{nil} disables this effect of upper-case characters.  The default value of this variable is @code{not-yanks}, which makes search case-sensitive if there are upper-case letters in the search string, and also causes text yanked into the search string (@pxref{Isearch Yank}) to be down-cased, so that such searches are case-insensitive by default."
-msgstr "検索文字列のどこかに大文字があると、検索はcase-sensitive(大文字小文字を区別する)になります。したがって@samp{Foo}を検索すると、@samp{foo}や@samp{FOO}は検索されません。これは正規表現検索でもリテラル文字列検索と同様に適用されます。検索文字列から大文字を削除すると、効果はなくなります。変数@code{search-upper-case}がこれを制御します。この変数が非@code{nil}(デフォルト)の場合、検索文字列の中の大文字は、検索をcase-sensitiveにします。これを@code{nil}にセットすることにより、大文字によるこの効果は無効になります。"
+msgstr "検索文字列のどこかに大文字があると、検索はcase-sensitive(大文字小文字を区別する)になります。したがって@samp{Foo}を検索すると、@samp{foo}や@samp{FOO}は検索されません。これは正規表現検索でもリテラル文字列検索と同様に適用されます。検索文字列から大文字を削除すると、効果はなくなります。変数@code{search-upper-case}がこれを制御します。この変数が非@code{nil}の場合、検索文字列の中の大文字は検索をcase-sensitiveにします。これを@code{nil}にセットすることにより、大文字によるこの効果は無効になります。この変数のデフォルト値は検索文字列中に大文字があれば検索をcase-sensitiveにして、検索文字列にyankするテキスト(@ref{Isearch Yank}を参照)を小文字にする(そうすればデフォルトで検索がcase-insensitiveになる)@code{not-yanks}です。"
 
 #. type: vindex
 #: original_texis/search.texi:1336
@@ -2486,33 +2448,31 @@ msgstr "一般的にEmacsの検索コマンドは、デフォルトでは等価�
 
 #. type: vindex
 #: original_texis/search.texi:1394
-#, fuzzy, no-wrap
-#| msgid "case-fold-search"
+#, no-wrap
 msgid "char-fold-symmetric"
-msgstr "case-fold-search"
+msgstr "char-fold-symmetric"
 
 #. type: Plain text
 #: original_texis/search.texi:1403
 msgid "By default, typing an explicit variant of a character, such as @code{@\"a}, as part of the search string doesn't match its base character, such as @code{a}.  But if you customize the variable @code{char-fold-symmetric} to @code{t}, then search commands treat equivalent characters the same and use of any of a set of equivalent characters in a search string finds any of them in the text being searched, so typing an accented character @code{@\"a} matches the letter @code{a} as well as all the other variants like @code{@'a}."
-msgstr ""
+msgstr "デフォルトでは@code{@\"a}のような文字の明示的な変種を検索文字列の一部としてタイプしても、それは@code{a}のようなベース文字とはマッチしません。しかし変数@code{char-fold-symmetric}を@code{t}にカスタマイズすれば、検索コマンドは等価な文字を同一に扱い、検索文字列内での等価な文字集合の使用により、検索するテキスト内の等価な文字を検索するので、アクセントつきの文字@code{@\"a}は文字@code{a}と同じように@code{@'a}のようなすべての変種にもマッチします。"
 
 #. type: vindex
 #: original_texis/search.texi:1404
 #, no-wrap
 msgid "char-fold-include"
-msgstr ""
+msgstr "char-fold-include"
 
 #. type: vindex
 #: original_texis/search.texi:1405
-#, fuzzy, no-wrap
-#| msgid "case-fold-search"
+#, no-wrap
 msgid "char-fold-exclude"
-msgstr "case-fold-search"
+msgstr "char-fold-exclude"
 
 #. type: Plain text
 #: original_texis/search.texi:1409
 msgid "You can add new foldings using the customizable variable @code{char-fold-include}, or remove the existing ones using the customizable variable @code{char-fold-exclude}."
-msgstr ""
+msgstr "カスタマイズ可能な変数@code{char-fold-include}を使用して新たなfoldingを追加したり、カスタマイズ可能な変数@code{char-fold-exclude}を使用して既存のfoldingを削除できます。"
 
 #. type: section
 #: original_texis/search.texi:1411
@@ -2800,10 +2760,8 @@ msgstr "case folding in replace commands"
 
 #. type: Plain text
 #: original_texis/search.texi:1586
-#, fuzzy
-#| msgid "If the first argument of a replace command is all lower case, the command ignores case while searching for occurrences to replace---provided @code{case-fold-search} is non-@code{nil}.  If @code{case-fold-search} is set to @code{nil}, case is always significant in all searches."
 msgid "If the first argument of a replace command is all lower case, the command ignores case while searching for occurrences to replace---provided @code{case-fold-search} is non-@code{nil} and @code{search-upper-case} is also non-@code{nil}.  If @code{search-upper-case} (@pxref{Lax Search, search-upper-case}) is @code{nil}, whether searching ignores case is determined by @code{case-fold-search} alone, regardless of letter-case of the command's first argument.  If @code{case-fold-search} is set to @code{nil}, case is always significant in all searches."
-msgstr "置換コマンドの最初の引数がすべて小文字の場合、置換のための検索において大文字小文字の違いを無視します。これは@code{case-fold-search}が非@code{nil}の場合です。@code{case-fold-search}を@code{nil}にセットすると、すべての検索において常に大文字小文字の違いが有効になります。"
+msgstr "置換コマンドの最初の引数がすべて小文字の場合、置換のための検索において大文字小文字の違いを無視します。これは@code{case-fold-search}と@code{search-upper-case}がいずれも非@code{nil}の場合です。@code{search-upper-case} (@ref{Lax Search, search-upper-case}を参照)が@code{nil}なら、検索が大文字小文字を無視するかどうかは、コマンドの1つ目の引数が小文字かどうかと無関係に@code{case-fold-search}単独で決定されます。@code{case-fold-search}を@code{nil}にセットすると、すべての検索において常に大文字小文字の違いが有効になります。"
 
 #. type: vindex
 #: original_texis/search.texi:1587
@@ -3462,10 +3420,8 @@ msgstr "C-o @r{(Occur mode)}"
 
 #. type: table
 #: original_texis/search.texi:1897
-#, fuzzy
-#| msgid "In the @file{*Occur*} buffer, you can click on each entry, or move point there and type @key{RET}, to visit the corresponding position in the buffer that was searched.  @kbd{o} and @kbd{C-o} display the match in another window; @kbd{C-o} does not select it.  Alternatively, you can use the @kbd{C-x `} (@code{next-error}) command to visit the occurrences one by one (@pxref{Compilation Mode})."
 msgid "In the @file{*Occur*} buffer, you can click on each entry, or move point there and type @key{RET}, to visit the corresponding position in the buffer that was searched.  @kbd{o} and @kbd{C-o} display the match in another window; @kbd{C-o} does not select it.  Alternatively, you can use the @kbd{M-g M-n} (@code{next-error}) command to visit the occurrences one by one (@pxref{Compilation Mode})."
-msgstr "@file{*Occur*}バッファーでは、エントリーをクリックするか、ポイントをそこに移動して@key{RET}をタイプすることにより、検索されたバッファーの対応する位置をvisitします。@kbd{o}と@kbd{C-o}はマッチを他のウィンドウに表示します(@kbd{C-o}はそのウィンドウを選択しません)。かわりに@kbd{C-x `} (@code{next-error})コマンドを使うことにより、マッチした場所を1つ1つvisitできます(@ref{Compilation Mode}を参照してください)。"
+msgstr "@file{*Occur*}バッファーでは、エントリーをクリックするか、ポイントをそこに移動して@key{RET}をタイプすることにより、検索されたバッファーの対応する位置をvisitします。@kbd{o}と@kbd{C-o}はマッチを他のウィンドウに表示します(@kbd{C-o}はそのウィンドウを選択しません)。かわりに@kbd{M-g M-n} (@code{next-error})コマンドを使うことにより、マッチした場所を1つ1つvisitできます(@ref{Compilation Mode}を参照してください)。"
 
 #. type: cindex
 #: original_texis/search.texi:1898
@@ -3560,17 +3516,13 @@ msgstr "M-x flush-lines"
 
 #. type: table
 #: original_texis/search.texi:1933
-#, fuzzy
-#| msgid "Prompt for a regexp, and print the number of matches for it in the buffer after point.  If the region is active, this operates on the region instead."
 msgid "Prompt for a regexp, and delete each line that contains a match for it, operating on the text after point.  When the command finishes, it prints the number of deleted matching lines."
-msgstr "regexpの入力を求め、バッファーのポイント位置以降に、何個のマッチがあるか表示します。リージョンがアクティブのときは、リージョンにたいして操作を行います。"
+msgstr "regexpの入力を求めて、ポイントの後のテキストでマッチを含む各行を削除します。コマンドの終了時には削除したマッチ行の行数をプリントします。"
 
 #. type: table
 #: original_texis/search.texi:1938
-#, fuzzy
-#| msgid "Prompt for a regexp, and delete each line that contains a match for it, operating on the text after point.  This command deletes the current line if it contains a match starting after point.  If the region is active, it operates on the region instead; if a line partially contained in the region contains a match entirely contained in the region, it is deleted."
 msgid "This command deletes the current line if it contains a match starting after point.  If the region is active, it operates on the region instead; if a line partially contained in the region contains a match entirely contained in the region, it is deleted."
-msgstr "regexpの入力を求め、ポイント以降にあるテキストにたいして、マッチが含まれている行を削除します。カレント行のポイント以降にマッチする文字列が含まれているときは、カレント行を削除します。リージョンがアクティブのときは、リージョンにたいして操作を行います。行の一部ににリージョンが含まれていて、さらにマッチの全体がリージョンに含まれているとき、その行は削除されます。"
+msgstr "カレント行のポイント以降にマッチする文字列が含まれているときはカレント行を削除します。リージョンがアクティブのときはリージョンにたいして操作を行います。行の一部ににリージョンが含まれていて、さらにマッチの全体がリージョンに含まれているときには行は削除されます。"
 
 #. type: table
 #: original_texis/search.texi:1943
@@ -3702,32 +3654,31 @@ msgstr "入力をチェックする前にハイライトする、マッチの最
 
 #. type: vindex
 #: original_texis/search.texi:2006 original_texis/search.texi:2007
-#, fuzzy, no-wrap
-#| msgid "isearch-abort"
+#, no-wrap
 msgid "isearch-lazy-count"
-msgstr "isearch-abort"
+msgstr "isearch-lazy-count"
 
 #. type: table
 #: original_texis/search.texi:2010
 msgid "Show the current match number and the total number of matches in the search prompt."
-msgstr ""
+msgstr "検索プロンプトにカレントマッチ数とマッチ総数を表示します。"
 
 #. type: vindex
 #: original_texis/search.texi:2011 original_texis/search.texi:2013
 #, no-wrap
 msgid "lazy-count-prefix-format"
-msgstr ""
+msgstr "lazy-count-prefix-format"
 
 #. type: vindex
 #: original_texis/search.texi:2012 original_texis/search.texi:2014
 #, no-wrap
 msgid "lazy-count-suffix-format"
-msgstr ""
+msgstr "lazy-count-suffix-format"
 
 #. type: table
 #: original_texis/search.texi:2017
 msgid "These two variables determine the format of showing the current and the total number of matches for @code{isearch-lazy-count}."
-msgstr ""
+msgstr "これらの2つの変数は@code{isearch-lazy-count}の表示にたいするカレントマッチ数とマッチ総数のフォーマットを決定します。"
 
 #. type: vindex
 #: original_texis/search.texi:2019
