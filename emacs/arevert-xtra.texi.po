@@ -3,32 +3,23 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-08 17:41+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  arevert-xtra.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  arevert-xtra.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.sgOQVUyNkM (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.ywSAr5WIkZ.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.D05lVNxteO.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/arevert-xtra.texi:8
-#, fuzzy, no-wrap
-#| msgid "Auto Reverting Non-File Buffers"
+#, no-wrap
 msgid "Non-File Buffers"
-msgstr "非ファイルバッファーの自動リバート"
+msgstr "Non-File Buffers"
 
 #. type: subsection
 #: original_texis/arevert-xtra.texi:9
@@ -60,12 +51,12 @@ msgstr "それとは反対に、特定のバッファーは@code{auto-revert-int
 #: original_texis/arevert-xtra.texi:38
 #, no-wrap
 msgid "buffer-auto-revert-by-notification"
-msgstr ""
+msgstr "buffer-auto-revert-by-notification"
 
 #. type: Plain text
 #: original_texis/arevert-xtra.texi:45
 msgid "Some non-file buffers can be updated reliably by file notification on their default directory; Dired buffers is an example.  The major mode can indicate this by setting @code{buffer-auto-revert-by-notification} to a non-@code{nil} value in that buffer, allowing Auto Revert to avoid periodic polling.  Such notification does not include changes to files in that directory, only to the directory itself."
-msgstr ""
+msgstr "いくつかの非ファイルバッファーは、バッファーのデフォルトディレクトリーのファイル通知によって信頼性をもって更新が可能です。Diredがその例です。メジャーモードはそのバッファーで@code{buffer-auto-revert-by-notification}に非@code{nil}をセットしてこれを示すことができ、Auto Revertが定期的なポーリングを行わなくすることができます。このような通知はディレクトリー自身にたいしてだけであり、ディレクトリーのファイルは含まれません。"
 
 #. type: Plain text
 #: original_texis/arevert-xtra.texi:48
