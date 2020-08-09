@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-10 04:34+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  indent.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  indent.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.PxTjkPVJpZ (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.KuVqUSKjck.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.kigdbCED7S.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: chapter
 #: original_texis/indent.texi:5 original_texis/indent.texi:6
@@ -250,7 +242,7 @@ msgstr "fillプレフィクスが存在して、それが改行の後ろにあ�
 #. type: table
 #: original_texis/indent.texi:116
 msgid "With a prefix argument, join the current line to the following line.  If the region is active, and no prefix argument is given, join all lines in the region instead."
-msgstr ""
+msgstr "プレフィクス引数を与えると、カレント行を後続行に結合します。リージョンがアクティブでプレフィクス引数が与えられなければ、かわりにリージョン内の全行を結合します。"
 
 #. type: kindex
 #: original_texis/indent.texi:117 original_texis/indent.texi:118
