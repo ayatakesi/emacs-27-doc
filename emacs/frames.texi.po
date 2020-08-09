@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-10 04:08+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  frames.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  frames.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.0sJOempZEm (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.wCxGtUS15p.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.GjkxQHs1KS.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/frames.texi:5
@@ -265,17 +257,14 @@ msgstr "ツールバーの有効と無効。"
 #. type: section
 #: original_texis/frames.texi:67 original_texis/frames.texi:1242
 #: original_texis/frames.texi:1243
-#, fuzzy, no-wrap
-#| msgid "Tool Bars"
+#, no-wrap
 msgid "Tab Bars"
-msgstr "Tool Bars"
+msgstr "Tab Bars"
 
 #. type: menuentry
 #: original_texis/frames.texi:67
-#, fuzzy
-#| msgid "Enabling and disabling the tool bar."
 msgid "Enabling and disabling the tab bar."
-msgstr "ツールバーの有効と無効。"
+msgstr "タブバーの有効と無効。"
 
 #. type: node
 #: original_texis/frames.texi:67 original_texis/frames.texi:1429
@@ -402,17 +391,14 @@ msgstr "リージョンがアクティブなときは、近くにあるリージ
 
 #. type: item
 #: original_texis/frames.texi:95
-#, fuzzy, no-wrap
-#| msgid "C-mouse-1"
+#, no-wrap
 msgid "C-M-mouse-1"
-msgstr "C-mouse-1"
+msgstr "C-M-mouse-1"
 
 #. type: table
 #: original_texis/frames.texi:98
-#, fuzzy
-#| msgid "Activate the region around the text selected by dragging, and put the text in the primary selection (@code{mouse-set-region})."
 msgid "Activate a rectangular region around the text selected by dragging.  @xref{Rectangles}."
-msgstr "ドラッグにより選択されたテキストを取り囲むリージョンをアクティブ化して、そのテキストをプライマリー選択に置きます(@code{mouse-set-region})。"
+msgstr "ドラッグにより選択されたテキストを取り囲む矩形リージョンをアクティブにします。@ref{Rectangles}を参照してください。"
 
 #. type: findex
 #: original_texis/frames.texi:100
@@ -588,10 +574,8 @@ msgstr "mouse-wheel-progressive-speed"
 
 #. type: Plain text
 #: original_texis/frames.texi:216
-#, fuzzy
-#| msgid "Some mice have a ``wheel'' which can be used for scrolling.  Emacs supports scrolling windows with the mouse wheel, by default, on most graphical displays.  To toggle this feature, use @kbd{M-x mouse-wheel-mode}.  The variables @code{mouse-wheel-follow-mouse} and @code{mouse-wheel-scroll-amount} determine where and by how much buffers are scrolled.  The variable @code{mouse-wheel-progressive-speed} determines whether the scroll speed is linked to how fast you move the wheel."
 msgid "Some mice have a ``wheel'' which can be used for scrolling.  Emacs supports scrolling windows with the mouse wheel, by default, on most graphical displays.  To toggle this feature, use @kbd{M-x mouse-wheel-mode}.  The variables @code{mouse-wheel-follow-mouse} and @code{mouse-wheel-scroll-amount} determine where and by how much buffers are scrolled.  The variable @code{mouse-wheel-progressive-speed} determines whether the scroll speed is linked to how fast you move the wheel.  This mode also supports increasing or decreasing the height of the default face, by default bound to scrolling with the @key{Ctrl} modifier."
-msgstr "スクロールに使うことができる``ホイール''があるマウスもいくつかあります。Emacsはデフォルトで、マウスホイールによるウィンドウのスクロールを、ほとんどのグラフィカルなディスプレーでサポートします。この機能を切り替えるには、@kbd{M-x mouse-wheel-mode}を使います。変数@code{mouse-wheel-follow-mouse}および@code{mouse-wheel-scroll-amount}は、(どこでホイールによるスクロール操作が行われたかによる)スクロール対象の選択方法と、バッファーがスクロールされる量を決定します。変数@code{mouse-wheel-progressive-speed}は、スクロールの早さがホイールを移動した早さにリンクするかを決定します。"
+msgstr "スクロールに使うことができる``ホイール''があるマウスもいくつかあります。ほとんどのグラフィカルなディスプレーでEmacsはデフォルトでマウスホイールによるウィンドウのスクロールをサポートします。この機能を切り替えるには@kbd{M-x mouse-wheel-mode}を使います。変数@code{mouse-wheel-follow-mouse}および@code{mouse-wheel-scroll-amount}は、(どこでホイールによるスクロール操作が行われたかによる)スクロール対象の選択方法と、バッファーがスクロールされる量を決定します。変数@code{mouse-wheel-progressive-speed}は、スクロールの早さがホイールを移動した早さにリンクするかを決定します。このモードはデフォルトフェイス高さの増加と減少もサポートしており、デフォルトでは@key{Ctrl}修飾によるスクロールにバインドされています。"
 
 #. type: vindex
 #: original_texis/frames.texi:217
@@ -607,15 +591,13 @@ msgstr "mouse-wheel-flip-direction"
 
 #. type: Plain text
 #: original_texis/frames.texi:229
-#, fuzzy
-#| msgid "Emacs can also support horizontal scrolling if your mouse's wheel can be tilted.  This feature is off by default; the variable @code{mouse-wheel-tilt-scroll} turns it on.  If you'd like to reverse the direction of horizontal scrolling, customize the variable @code{mouse-wheel-flip-direction} to a non-@code{nil} value."
 msgid "Emacs can also support horizontal scrolling if your mouse's wheel can be tilted, or if your touchpad supports it.  This feature is off by default; the variable @code{mouse-wheel-tilt-scroll} turns it on, if you customize it to a non-@code{nil} value.  By default, tilting the mouse wheel scrolls the window's view horizontally in the direction of the tilt: e.g., tilting to the right scrolls the window to the right, so that the text displayed in the window moves horizontally to the left.  If you'd like to reverse the direction of horizontal scrolling, customize the variable @code{mouse-wheel-flip-direction} to a non-@code{nil} value."
-msgstr "チルトホイール(横スクロール)つきのマウスの場合、Emacsは水平スクロールもサポートします。この機能はデフォルトではオフで、変数@code{mouse-wheel-tilt-scroll}でオンになります。水平スクロールの方向を逆転したい場合は、変数@code{mwheel-flip-direction}を非@code{nil}値にカスタマイズしてください。"
+msgstr "チルトホイール(横スクロール)つきのマウス、あるいはタッチパッドがサポートしていれば、Emacsは水平スクロールもサポートします。この機能はデフォルトではオフです。変数@code{mouse-wheel-tilt-scroll}を非@code{nil}値にカスタミズすればオンになります。デフォルトではマウスホイールをチルトするとチルトした方向にウィンドウのビューがスクロールします。つまり右にチルトするとウィンドウは右にスクロールするのでウィンドウに表示されていたテキストは水平左方向に移動します。水平スクロールの方向を逆転したい場合は、変数@code{mwheel-flip-direction}を非@code{nil}値にカスタマイズしてください。"
 
 #. type: Plain text
 #: original_texis/frames.texi:233
 msgid "When the mouse pointer is over an image in Image mode, @pxref{Image Mode}, scrolling the mouse wheel with the @key{Ctrl} modifier scales the image under the mouse pointer."
-msgstr ""
+msgstr "Imageモード(@ref{Image Mode}を参照)ではイメージ上にマウスポインターがあるときには、@key{Ctrl}修飾とともにマウスホイールのスクロールはマウスポインター下のイメージをスケーリングします。"
 
 #. type: section
 #: original_texis/frames.texi:236
@@ -1190,15 +1172,13 @@ msgstr "fonts"
 
 #. type: Plain text
 #: original_texis/frames.texi:552
-#, fuzzy
-#| msgid "By default, Emacs displays text on graphical displays using a 10-point monospace font.  There are several different ways to specify a different font:"
 msgid "By default, Emacs displays text on graphical displays using a 10-point monospace font, and the font size can be changed interactively (@pxref{Text Scale})."
-msgstr "デフォルトでは、Emacsはグラフィカルなディスプレーでテキストを表示するのに、10ポイントのmonospaceフォントを使います。違うフォントを指定する異なる方法がいくつかあります:"
+msgstr "デフォルトではEmacsはグラフィカルなディスプレーでテキストを表示するのに10ポイントのmonospaceフォントを使います。フォントのサイズはインタラクティブに変更可能です(@ref{Text Scale}を参照)。"
 
 #. type: Plain text
 #: original_texis/frames.texi:554
 msgid "There are several different ways to specify a different font:"
-msgstr ""
+msgstr "異なるフォントを指定するために複数の異なる方法があります:"
 
 #. type: itemize
 #: original_texis/frames.texi:561
@@ -1276,10 +1256,8 @@ msgstr "fontconfig"
 
 #. type: Plain text
 #: original_texis/frames.texi:611
-#, fuzzy
-#| msgid "On X, there are four different ways to express a font name.  The first is to use a @dfn{Fontconfig pattern}.  Fontconfig patterns have the following form:"
 msgid "There are four different ways to express a font name.  The first is to use a @dfn{Fontconfig pattern}.  Fontconfig patterns have the following form:"
-msgstr "Xでは、フォント名を表現する異なる方法がいくつか存在します。1番目は@dfn{Fontconfigパターン}を使う方法です。Fontconfigパターンは以下の形式をもちます:"
+msgstr "フォント名を表現する異なる方法がいくつか存在します。1番目は@dfn{Fontconfigパターン}を使う方法です。Fontconfigパターンは以下の形式をもちます:"
 
 #. type: example
 #: original_texis/frames.texi:614
@@ -1381,7 +1359,7 @@ msgstr "Fontconfigパターンの、より詳細な説明は、Fontconfigのマ�
 #. type: Plain text
 #: original_texis/frames.texi:669
 msgid "On MS-Windows, only the subset of the form @var{fontname}[-@var{fontsize}] is supported for all fonts; the full Fontconfig pattern might not work for all of them."
-msgstr ""
+msgstr "MS-Windowsではすべてのフォントにたいして@var{fontname}[-@var{fontsize}]形式のサブセットだけがサポートされています。これらの形式すべてにたいして完全なFontconfigパターンは機能しないかもしれません。"
 
 #. type: cindex
 #: original_texis/frames.texi:670
@@ -1438,7 +1416,7 @@ msgstr ""
 #. type: Plain text
 #: original_texis/frames.texi:706
 msgid "On MS-Windows, only the subset @var{fontname} is supported."
-msgstr ""
+msgstr "MS-Windowsでは@var{fontname}のサブセットだけがサポートされています。"
 
 #. type: cindex
 #: original_texis/frames.texi:707
@@ -1454,10 +1432,8 @@ msgstr "X Logical Font Description"
 
 #. type: Plain text
 #: original_texis/frames.texi:714
-#, fuzzy
-#| msgid "The third way to specify a font is to use an @dfn{XLFD} (@dfn{X Logical Font Description}).  This is the traditional method for specifying fonts under X@.  Each XLFD consists of fourteen words or numbers, separated by dashes, like this:"
 msgid "The third way to specify a font is to use an @dfn{XLFD} (@dfn{X Logical Font Description}).  This is the traditional method for specifying fonts under X, and is also supported on MS-Windows.  Each XLFD consists of fourteen words or numbers, separated by dashes, like this:"
-msgstr "フォントを指定する3番目の方法は、@dfn{XLFD}(@dfn{X Logical Font Description})を使う方法です。これはXでフォントを指定する際の伝統的な手法です。以下のように、各XLFDは14の単語か数字をダッシュで区切ったものからなります:"
+msgstr "フォントを指定する3番目の方法は@dfn{XLFD(X Logical Font Description)}を使う方法であり、MS-Windowsでもサポートされています。これはXでフォントを指定する際の伝統的な手法です。以下のように、各XLFDは14の単語か数字をダッシュで区切ったものからなります:"
 
 #. type: example
 #: original_texis/frames.texi:717 original_texis/frames.texi:795
@@ -1612,7 +1588,7 @@ msgstr "フォントを指定する4番目の方法は、フォントニック�
 #. type: Plain text
 #: original_texis/frames.texi:798
 msgid "This form is not supported on MS-Windows."
-msgstr ""
+msgstr "この形式はMS-Windowsではサポートされていません。"
 
 #. type: cindex
 #: original_texis/frames.texi:799
@@ -1784,26 +1760,24 @@ msgstr "異なるXサーバーでフレームを開いた場合、Emacsは各サ
 #. type: Plain text
 #: original_texis/frames.texi:931
 msgid "On multi-monitor displays it is possible to use the command @code{make-frame-on-monitor}:"
-msgstr ""
+msgstr "マルチモニターディスプレイではコマンド@code{make-frame-on-monitor}が使用可能です:"
 
 #. type: findex
 #: original_texis/frames.texi:932
-#, fuzzy, no-wrap
-#| msgid "make-frame-command"
+#, no-wrap
 msgid "make-frame-on-monitor"
-msgstr "make-frame-command"
+msgstr "make-frame-on-monitor"
 
 #. type: item
 #: original_texis/frames.texi:934
-#, fuzzy, no-wrap
-#| msgid "M-x make-frame-on-display @key{RET} @var{display} @key{RET}"
+#, no-wrap
 msgid "M-x make-frame-on-monitor @key{RET} @var{monitor} @key{RET}"
-msgstr "M-x make-frame-on-display @key{RET} @var{display} @key{RET}"
+msgstr "M-x make-frame-on-monitor @key{RET} @var{monitor} @key{RET}"
 
 #. type: table
 #: original_texis/frames.texi:937
 msgid "Create a new frame on monitor @var{monitor} whose screen area is a part of the current display."
-msgstr ""
+msgstr "モニター@var{monitor}上にスクリーン領域がカレントディスプレイの一部であるようなフレームを新たに作成します。"
 
 #. type: vindex
 #: original_texis/frames.texi:941
@@ -1917,10 +1891,8 @@ msgstr "垂直スクロールバーの使用を切り替えるには、@kbd{M-x 
 
 #. type: Plain text
 #: original_texis/frames.texi:1025
-#, fuzzy
-#| msgid "To control the use of vertical scroll bars at startup, customize the variable @code{scroll-bar-mode}.  Its value should be either @code{right} (put scroll bars on the right side of windows), @code{left} (put them on the left), or @code{nil} (disable vertical scroll bars).  By default, Emacs puts scroll bars on the right if it was compiled with GTK+ support on the X Window System, and on MS-Windows or macOS; Emacs puts scroll bars on the left if compiled on the X Window System without GTK+ support (following the old convention for X applications)."
 msgid "To control the use of vertical scroll bars at startup, customize the variable @code{scroll-bar-mode} (@pxref{Customization}).  Its value should be either @code{right} (put scroll bars on the right side of windows), @code{left} (put them on the left), or @code{nil} (disable vertical scroll bars).  By default, Emacs puts scroll bars on the right if it was compiled with GTK+ support on the X Window System, and on MS-Windows or macOS; Emacs puts scroll bars on the left if compiled on the X Window System without GTK+ support (following the old convention for X applications)."
-msgstr "起動時に垂直スクロールバーの使用を制御するには、変数@code{scroll-bar-mode}をカスタマイズします。この変数の値は、@code{right}(ウィンドウの右にスクロールバーを配します)、@code{left}(ウィンドウの左にスクロールバーを配します)、@code{nil}(垂直スクロールバーを無効にします)のどれかです。EmacsがXウィンドウシステム上でGTK+サポートつきでコンパイルされている、またはMS-Windows、macOSの場合、デフォルトでは右にスクロールバーを配します。EmacsがXウィンドウシステム上でGTK+サポートなしでコンパイルされている場合、(古いXアプリケーションの慣例にしたがって)スクロールバーを左に配します。"
+msgstr "起動時に垂直スクロールバーの使用を制御するには、変数@code{scroll-bar-mode} (@ref{Customization}を参照)をカスタマイズします。この変数の値は、@code{right}(ウィンドウの右にスクロールバーを配します)、@code{left}(ウィンドウの左にスクロールバーを配します)、@code{nil}(垂直スクロールバーを無効にします)のどれかです。EmacsがXウィンドウシステム上でGTK+サポートつきでコンパイルされている、またはMS-Windows、macOSの場合、デフォルトでは右にスクロールバーを配します。EmacsがXウィンドウシステム上でGTK+サポートなしでコンパイルされている場合、(古いXアプリケーションの慣例にしたがって)スクロールバーを左に配します。"
 
 #. type: vindex
 #: original_texis/frames.texi:1026
@@ -2162,10 +2134,9 @@ msgstr "ドラッグ元とドロップ先が異なるバッファーのときに
 
 #. type: cindex
 #: original_texis/frames.texi:1179
-#, fuzzy, no-wrap
-#| msgid "Menu Bar mode"
+#, no-wrap
 msgid "menu bar mode"
-msgstr "Menu Bar mode"
+msgstr "menu bar mode"
 
 #. type: cindex
 #: original_texis/frames.texi:1180
@@ -2202,10 +2173,9 @@ msgstr "メニューバーのコマンドを呼び出す方法については、
 
 #. type: cindex
 #: original_texis/frames.texi:1204
-#, fuzzy, no-wrap
-#| msgid "Tool Bar mode"
+#, no-wrap
 msgid "tool bar mode"
-msgstr "Tool Bar mode"
+msgstr "tool bar mode"
 
 #. type: cindex
 #: original_texis/frames.texi:1205
@@ -2275,422 +2245,386 @@ msgstr "NSビルドはツールバーをウィンドウ装飾と判断するた�
 
 #. type: cindex
 #: original_texis/frames.texi:1244
-#, fuzzy, no-wrap
-#| msgid "Menu Bar mode"
+#, no-wrap
 msgid "tab bar mode"
-msgstr "Menu Bar mode"
+msgstr "tab bar mode"
 
 #. type: cindex
 #: original_texis/frames.texi:1245
-#, fuzzy, no-wrap
-#| msgid "mode, Tool Bar"
+#, no-wrap
 msgid "mode, Tab Bar"
-msgstr "mode, Tool Bar"
+msgstr "mode, Tab Bar"
 
 #. type: cindex
 #: original_texis/frames.texi:1246
 #, no-wrap
 msgid "tabs, tabbar"
-msgstr ""
+msgstr "tabs, tabbar"
 
 #. type: Plain text
 #: original_texis/frames.texi:1252
-#, fuzzy
-#| msgid "On graphical displays, Emacs puts a @dfn{tool bar} at the top of each frame, just below the menu bar.  This is a row of icons which you can click on with the mouse to invoke various commands."
 msgid "On graphical displays and on text terminals, Emacs can optionally display a @dfn{Tab Bar} at the top of each frame, just below the menu bar.  The Tab Bar is a row of @dfn{tabs}---buttons that you can click to switch between window configurations on that frame."
-msgstr "グラフィカルなディスプレーでは、Emacsはフレームのトップ、メニューバーの直下に@dfn{ツールバー(tool bar)}を配します。これはマウスでクリックすることにより、さまざまなコマンドを呼び出すことができるアイコンが1列に並んだものです。"
+msgstr "グラフィカルなディスプレーとテキスト端末では、Emacsはオプションでフレームのトップ、メニューバーの直下に@dfn{タブバー(Tab Bar)}を表示できます。タブバーとは@dfn{タブ(tabs)}の行(そのフレーム上のウィンドウ設定間を切り替えるためにクリック可能)です。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1259
 msgid "Each tab on the Tab Bar represents a named persistent window configuration.  Its name is composed from the list of names of buffers visible in windows of that window configuration.  Clicking on the tab switches to the window configuration recorded by the tab; it is a configuration of windows and buffers which was previously used in the frame when that tab was the current tab."
-msgstr ""
+msgstr "タブバー上の各タブは永続的なウィンドウ設定を表します。タブの名前はウィンドウ設定で可視なバッファーの名前のリストから構成されます。タブをクリックすることによってタブに記録されたウィンドウ設定(以前そのタブがカレントタブだったときにフレームで使用されたウィンドウとバッファーの設定)に切り替わります。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1264
 msgid "If you are using the desktop library to save and restore your sessions (@pxref{Saving Emacs Sessions}), the tabs from the Tab Bar are recorded in the desktop file, together with their associated window configurations, and will be available after restoring the session."
-msgstr ""
+msgstr "セッションの保存とリストアにデスクトップライブラリー(@ref{Saving Emacs Sessions}を参照)を使用している場合には、タブバーのタブは関連付けられたウィンドウ設定とともにデスクトップファイルに記録されて、それはセッションをリストアした後に利用することができます。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1270
 msgid "Note that the Tab Bar is different from the Tab Line (@pxref{Tab Line}).  Whereas tabs on the Tab Line at the top of each window are used to switch between buffers, tabs on the Tab Bar at the top of each frame are used to switch between window configurations containing several windows with buffers."
-msgstr ""
+msgstr "タブバーはタブラインとは異なることに注意してください(@ref{Tab Line}を参照)。各ウィンドウ上端にあるタブラインのタブはバッファーの切り替え、各フレーム上端にあるタブバーのタブは複数のウィンドウとバッファーを含むウィンドウ設定の切り替えに使用します。"
 
 #. type: findex
 #: original_texis/frames.texi:1271
-#, fuzzy, no-wrap
-#| msgid "tool-bar-mode"
+#, no-wrap
 msgid "tab-bar-mode"
-msgstr "tool-bar-mode"
+msgstr "tab-bar-mode"
 
 #. type: Plain text
 #: original_texis/frames.texi:1276
-#, fuzzy
-#| msgid "To toggle the use of tool bars, type @kbd{M-x tool-bar-mode}.  This command applies to all frames, including frames yet to be created.  To control the use of tool bars at startup, customize the variable @code{tool-bar-mode}."
 msgid "To toggle the use of tab bars, type @kbd{M-x tab-bar-mode}.  This command applies to all frames, including frames yet to be created.  To control the use of tab bars at startup, customize the variable @code{tab-bar-mode}."
-msgstr "ツールバーの使用を切り替えるには、@kbd{M-x tool-bar-mode}とタイプします。このコマンドは、まだ作成されていないフレームを含むすべてのフレームに適用されます。起動時にツールバーの使用を制御するには、変数@code{tool-bar-mode}をカスタマイズします。"
+msgstr "タブバーの使用を切り替えるには、@kbd{M-x tab-bar-mode}とタイプします。このコマンドは、まだ作成されていないフレームを含むすべてのフレームに適用されます。起動時にタブバーの使用を制御するには、変数@code{tab-bar-mode}をカスタマイズします。"
 
 #. type: vindex
 #: original_texis/frames.texi:1277
 #, no-wrap
 msgid "tab-bar-show"
-msgstr ""
+msgstr "tab-bar-show"
 
 #. type: Plain text
 #: original_texis/frames.texi:1289
 msgid "The variable @code{tab-bar-show} controls whether the Tab Bar mode is turned on automatically.  If the value is @code{t}, then @code{tab-bar-mode} is enabled when using the commands that create new tabs.  The value @code{1} hides the tab bar when it has only one tab, and shows it again when more tabs are created.  The value @code{nil} always keeps the tab bar hidden; in this case it's still possible to switch between named window configurations without the tab bar by using @kbd{M-x tab-next}, @kbd{M-x tab-switcher}, and other commands that provide completion on tab names.  Also it's possible to create and close tabs without the tab bar by using commands @kbd{M-x tab-new}, @kbd{M-x tab-close}, etc."
-msgstr ""
+msgstr "変数@code{tab-bar-show}はTab Barモードを自動的にオンにするかどうかを制御します。この値が@code{t}なら、新たなタブを作成するコマンドの使用時に@code{tab-bar-mode}モードが有効に成増。値が@code{1}ならタブが1つだけのときはタブバーを隠して、さらにタブが作成されたら再び表示します。値@code{nil}は常にタブバーを非表示にします。この場合でも@kbd{M-x tab-next}、@kbd{M-x tab-switcher}、およびタブ名の補完を提供するその他のコマンドを使用することによってタブバーなしで名前つきのウィンドウ設定を切り替えることができます。@kbd{M-x tab-new}、@kbd{M-x tab-close}等のコマンドを使用することにより、タブバーの作成やクローズも可能です。"
 
 #. type: kindex
 #: original_texis/frames.texi:1290
-#, fuzzy, no-wrap
-#| msgid "C-x 5"
+#, no-wrap
 msgid "C-x t"
-msgstr "C-x 5"
+msgstr "C-x t"
 
 #. type: Plain text
 #: original_texis/frames.texi:1295
 msgid "The prefix key @kbd{C-x t} is analogous to @kbd{C-x 5}.  Whereas each @kbd{C-x 5} command pops up a buffer in a different frame (@pxref{Creating Frames}), the @kbd{C-x t} commands use a different tab with a different window configuration in the selected frame."
-msgstr ""
+msgstr "プレフィクスキー@kbd{C-x t}は@kbd{C-x 5}と似ています。@kbd{C-x 5}コマンドはバッファーを別フレームにポップアップしますが(@ref{Creating Frames}を参照)、@kbd{C-x t}コマンドは選択されたフレームで異なるウィンドウ設定に別のタブを使用します。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1299
-#, fuzzy
-#| msgid "The various @kbd{C-x 5} commands differ in how they find or create the buffer to select:"
 msgid "The various @kbd{C-x t} commands differ in how they find or create the buffer to select.  The following commands can be used to select a buffer in a new tab:"
-msgstr "以下の@kbd{C-x 5}コマンドは、選択するバッファーを検索したり作成する方法が異なります。"
+msgstr "以下の@kbd{C-x t}コマンドは選択するバッファーを検索したり作成する方法が異なります。以下のコマンドは新たなタブでのバッファーの選択に使用できます。:"
 
 #. type: kindex
 #: original_texis/frames.texi:1301 original_texis/frames.texi:1302
-#, fuzzy, no-wrap
-#| msgid "C-x 5 2"
+#, no-wrap
 msgid "C-x t 2"
-msgstr "C-x 5 2"
+msgstr "C-x t 2"
 
 #. type: findex
 #: original_texis/frames.texi:1303
 #, no-wrap
 msgid "tab-new"
-msgstr ""
+msgstr "tab-new"
 
 #. type: table
 #: original_texis/frames.texi:1307
 msgid "Add a new tab (@code{tab-new}).  You can control the choice of the buffer displayed in a new tab by customizing the variable @code{tab-bar-new-tab-choice}."
-msgstr ""
+msgstr "タブを新たに追加します(@code{tab-new})。変数@code{tab-bar-new-tab-choice}のカスタマイズによって新たなタブに表示するバッファーの選択を制御できます。"
 
 #. type: item
 #: original_texis/frames.texi:1308
-#, fuzzy, no-wrap
-#| msgid "C-x 5 b @var{bufname} @key{RET}"
+#, no-wrap
 msgid "C-x t b @var{bufname} @key{RET}"
-msgstr "C-x 5 b @var{bufname} @key{RET}"
+msgstr "C-x t b @var{bufname} @key{RET}"
 
 #. type: table
 #: original_texis/frames.texi:1311
-#, fuzzy
-#| msgid "Select buffer @var{bufname} in another frame.  This runs @code{switch-to-buffer-other-frame}."
 msgid "Select buffer @var{bufname} in another tab.  This runs @code{switch-to-buffer-other-tab}."
-msgstr "バッファー@var{bufname}を他のフレームで選択します。これは@code{switch-to-buffer-other-frame}を実行します。"
+msgstr "バッファー@var{bufname}を他のタブで選択します。これは@code{switch-to-buffer-other-tab}を実行します。"
 
 #. type: item
 #: original_texis/frames.texi:1312
-#, fuzzy, no-wrap
-#| msgid "C-x 5 f @var{filename} @key{RET}"
+#, no-wrap
 msgid "C-x t f @var{filename} @key{RET}"
-msgstr "C-x 5 f @var{filename} @key{RET}"
+msgstr "C-x t f @var{filename} @key{RET}"
 
 #. type: table
 #: original_texis/frames.texi:1315
-#, fuzzy
-#| msgid "Visit file @var{filename} and select its buffer in another frame.  This runs @code{find-file-other-frame}.  @xref{Visiting}."
 msgid "Visit file @var{filename} and select its buffer in another tab.  This runs @code{find-file-other-tab}.  @xref{Visiting}."
-msgstr "ファイル@var{filename}をvisitして、そのバッファーを他のフレームで選択します。これは@code{find-file-other-frame}を実行します。@ref{Visiting}を参照してください。"
+msgstr "ファイル@var{filename}をvisitして、そのバッファーを他のタブで選択します。これは@code{find-file-other-tab}を実行します。@ref{Visiting}を参照してください。"
 
 #. type: item
 #: original_texis/frames.texi:1316
-#, fuzzy, no-wrap
-#| msgid "C-x 5 d @var{directory} @key{RET}"
+#, no-wrap
 msgid "C-x t d @var{directory} @key{RET}"
-msgstr "C-x 5 d @var{directory} @key{RET}"
+msgstr "C-x t d @var{directory} @key{RET}"
 
 #. type: table
 #: original_texis/frames.texi:1319
-#, fuzzy
-#| msgid "Select a Dired buffer for directory @var{directory} in another frame.  This runs @code{dired-other-frame}.  @xref{Dired}."
 msgid "Select a Dired buffer for directory @var{directory} in another tab.  This runs @code{dired-other-tab}.  @xref{Dired}."
-msgstr "ディレクトリー@var{directory}にたいするDiredバッファーを、他のフレームで選択します。これは@code{dired-other-frame}を実行します。@ref{Dired}を参照してください。"
+msgstr "ディレクトリー@var{directory}にたいするDiredバッファーを、他のタブで選択します。これは@code{dired-other-tab}を実行します。@ref{Dired}を参照してください。"
 
 #. type: vindex
 #: original_texis/frames.texi:1321
 #, no-wrap
 msgid "tab-bar-new-tab-choice"
-msgstr ""
+msgstr "tab-bar-new-tab-choice"
 
 #. type: Plain text
 #: original_texis/frames.texi:1326
 msgid "By default, a new tab starts with the buffer that was current before calling the command that adds a new tab.  To start a new tab with other buffers, customize the variable @code{tab-bar-new-tab-choice}."
-msgstr ""
+msgstr "デフォルトでは新たなタブを追加したコマンドの呼び出し前にカレントだったバッファーとともに新たなタブが開始されます。別のバッファーとともに新たなタブを開始するには、変数@code{tab-bar-new-tab-choice}をカスタマイズしてください。"
 
 #. type: vindex
 #: original_texis/frames.texi:1327
 #, no-wrap
 msgid "tab-bar-new-tab-to"
-msgstr ""
+msgstr "tab-bar-new-tab-to"
 
 #. type: Plain text
 #: original_texis/frames.texi:1330
 msgid "The variable @code{tab-bar-new-tab-to} defines where to place a new tab.  By default, a new tab is added on the right side of the current tab."
-msgstr ""
+msgstr "変数@code{tab-bar-new-tab-to}は新たなタブを配置する場所を定義します。デフォルトでは新たなタブはカレントタブの右側に追加されます。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1332
-#, fuzzy
-#| msgid "The following commands are used to delete and operate on frames:"
 msgid "The following commands can be used to delete tabs:"
-msgstr "以下のコマンドは、フレームを削除したり操作するために使われます:"
+msgstr "以下のコマンドはタブの削除に使用されます:"
 
 #. type: kindex
 #: original_texis/frames.texi:1334 original_texis/frames.texi:1335
-#, fuzzy, no-wrap
-#| msgid "C-x 5 0"
+#, no-wrap
 msgid "C-x t 0"
-msgstr "C-x 5 0"
+msgstr "C-x t 0"
 
 #. type: findex
 #: original_texis/frames.texi:1336
 #, no-wrap
 msgid "tab-close"
-msgstr ""
+msgstr "tab-close"
 
 #. type: table
 #: original_texis/frames.texi:1340
 msgid "Close the selected tab (@code{tab-close}).  It has no effect if there is only one tab, unless the variable @code{tab-bar-close-last-tab-choice} is customized to a non-default value."
-msgstr ""
+msgstr "選択されたタブをクローズします(@code{tab-close})。変数@code{tab-bar-close-last-tab-choice}がデフォルト値なら、1つのタブの場合には効果はありません。"
 
 #. type: kindex
 #: original_texis/frames.texi:1341 original_texis/frames.texi:1342
-#, fuzzy, no-wrap
-#| msgid "C-x 5 1"
+#, no-wrap
 msgid "C-x t 1"
-msgstr "C-x 5 1"
+msgstr "C-x t 1"
 
 #. type: findex
 #: original_texis/frames.texi:1343
 #, no-wrap
 msgid "tab-close-other"
-msgstr ""
+msgstr "tab-close-other"
 
 #. type: table
 #: original_texis/frames.texi:1345
-#, fuzzy
-#| msgid "Delete all frames on the current terminal, except the selected one."
 msgid "Close all tabs on the selected frame, except the selected one."
-msgstr "現在の端末の、選択されたフレーム以外のすべてのフレームを削除します。"
+msgstr "選択されたフレームの、選択されたタブ以外のすべてのタブを削除します。"
 
 #. type: vindex
 #: original_texis/frames.texi:1347
 #, no-wrap
 msgid "tab-bar-close-tab-select"
-msgstr ""
+msgstr "tab-bar-close-tab-select"
 
 #. type: Plain text
 #: original_texis/frames.texi:1351
 msgid "The variable @code{tab-bar-close-tab-select} defines what tab to select after closing the current tab.  By default, it selects a recently used tab."
-msgstr ""
+msgstr "変数@code{tab-bar-close-tab-select}はカレントタブをクローズ後に選択するタブを定義します。デフォルトではもっとも最近使用したタブを選択します。"
 
 #. type: findex
 #: original_texis/frames.texi:1352
 #, no-wrap
 msgid "tab-undo"
-msgstr ""
+msgstr "tab-undo"
 
 #. type: Plain text
 #: original_texis/frames.texi:1354
 msgid "The command @code{tab-undo} restores the last closed tab."
-msgstr ""
+msgstr "コマンド@code{tab-undo}は最後にクローズしたタブをリストアします。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1356
-#, fuzzy
-#| msgid "The following commands are used to delete and operate on frames:"
 msgid "The following commands can be used to switch between tabs:"
-msgstr "以下のコマンドは、フレームを削除したり操作するために使われます:"
+msgstr "以下のコマンドはタブ間を切り替えるために使用されます:"
 
 #. type: kindex
 #: original_texis/frames.texi:1358 original_texis/frames.texi:1360
-#, fuzzy, no-wrap
-#| msgid "C-x 5 o"
+#, no-wrap
 msgid "C-x t o"
-msgstr "C-x 5 o"
+msgstr "C-x t o"
 
 #. type: itemx
 #: original_texis/frames.texi:1359
-#, fuzzy, no-wrap
-#| msgid "M-@key{F10}"
+#, no-wrap
 msgid "C-@key{TAB}"
-msgstr "M-@key{F10}"
+msgstr "C-@key{TAB}"
 
 #. type: kindex
 #: original_texis/frames.texi:1361
 #, no-wrap
 msgid "C-TAB"
-msgstr ""
+msgstr "C-TAB"
 
 #. type: findex
 #: original_texis/frames.texi:1362
 #, no-wrap
 msgid "tab-next"
-msgstr ""
+msgstr "tab-next"
 
 #. type: table
 #: original_texis/frames.texi:1368
 msgid "Switch to the next tab.  If you repeat this command, it cycles through all the tabs on the selected frame.  With a positive numeric argument @var{n}, it switches to the next @var{n}th tab; with a negative argument @minus{}@var{n}, it switches back to the previous @var{n}th tab."
-msgstr ""
+msgstr "次のタブに切り替えます。このコマンドを繰り返すと選択されたフレームのすべてのタブを巡回します。正の数引数@var{n}では次の@var{n}番目のタブ、負の引数@minus{}@var{n}では前の@var{n}番目のタブに切り替えます。"
 
 #. type: item
 #: original_texis/frames.texi:1369
 #, no-wrap
 msgid "S-C-@key{TAB}"
-msgstr ""
+msgstr "S-C-@key{TAB}"
 
 #. type: kindex
 #: original_texis/frames.texi:1370
 #, no-wrap
 msgid "S-C-TAB"
-msgstr ""
+msgstr "S-C-TAB"
 
 #. type: findex
 #: original_texis/frames.texi:1371
 #, no-wrap
 msgid "tab-previous"
-msgstr ""
+msgstr "tab-previous"
 
 #. type: table
 #: original_texis/frames.texi:1375
 msgid "Switch to the previous tab.  With a positive numeric argument @var{n}, it switches to the previous @var{n}th tab; with a negative argument @minus{}@var{n}, it switches back to the next @var{n}th tab."
-msgstr ""
+msgstr "前のタブに切り替えます。正に数引数@var{n}では前の@var{n}番目のタブ、負の引数@minus{}@var{n}では次の@var{n}番目のタブに切り替えます。"
 
 #. type: item
 #: original_texis/frames.texi:1376
-#, fuzzy, no-wrap
-#| msgid "C-x 5 b @var{bufname} @key{RET}"
+#, no-wrap
 msgid "C-x t @key{RET} @var{tabname} @key{RET}"
-msgstr "C-x 5 b @var{bufname} @key{RET}"
+msgstr "C-x t @key{RET} @var{tabname} @key{RET}"
 
 #. type: table
 #: original_texis/frames.texi:1381
 msgid "Switch to the tab by its name, with completion on all tab names.  Default values are tab names sorted by recency, so you can use @kbd{M-n} (@code{next-history-element}) to get the name of the last visited tab, the second last, and so on."
-msgstr ""
+msgstr "すべてのタブの名前の補完つきで名前でタブを切り替えます。デフォルト値はもっとも最近使用された順にソートされたタブ名なので、@kbd{M-n} (@code{next-history-element})で最後にvisitしたタブ、その前のタブ、...を取得します。"
 
 #. type: item
 #: original_texis/frames.texi:1382
 #, no-wrap
 msgid "@var{modifier}-@var{tabnumber}"
-msgstr ""
+msgstr "@var{modifier}-@var{tabnumber}"
 
 #. type: findex
 #: original_texis/frames.texi:1383
 #, no-wrap
 msgid "tab-select"
-msgstr ""
+msgstr "tab-select"
 
 #. type: table
 #: original_texis/frames.texi:1391
 msgid "Switch to the tab by its number.  After customizing the variable @code{tab-bar-select-tab-modifiers} to specify a @var{modifier} key, you can select a tab by its ordinal number using the specified modifier in combination with the tab number to select.  To display the tab number alongside the tab name, you can customize another variable @code{tab-bar-tab-hints}.  This will help you to decide what key to press to select the tab by its number."
-msgstr ""
+msgstr "タブ名でタブを切り替えます。@var{modifier}キーを指定するために変数@code{tab-bar-select-tab-modifiers}をカスタマイズした後には、タブの序数と指定した修飾キーを組み合わせてタブを選択できます。別の変数@code{tab-bar-tab-hints}をカスタマイズして、タブ名とともにタブ番号を表示できます。これは番号でタブを選択するためにどのキーを押下すれば判断する助けになるでしょう。"
 
 #. type: item
 #: original_texis/frames.texi:1392
 #, no-wrap
 msgid "@var{modifier}-@kbd{0}"
-msgstr ""
+msgstr "@var{modifier}-@kbd{0}"
 
 #. type: findex
 #: original_texis/frames.texi:1393
 #, no-wrap
 msgid "tab-recent"
-msgstr ""
+msgstr "tab-recent"
 
 #. type: table
 #: original_texis/frames.texi:1397
 msgid "Switch to the recent tab.  The key combination is the modifier key defined by @code{tab-bar-select-tab-modifiers} and the key @kbd{0}.  With a numeric argument @var{n}, switch to the @var{n}th recent tab."
-msgstr ""
+msgstr "最近使用したタブに切り替えます。キーの組み合わせは@code{tab-bar-select-tab-modifiers}で指定した修飾キーと@kbd{0}です。数引数@var{n}では@var{n}番目に最近使用したタブに切り替えます。"
 
 #. type: Plain text
 #: original_texis/frames.texi:1400
-#, fuzzy
-#| msgid "The following commands are used to delete and operate on frames:"
 msgid "The following commands can be used to operate on tabs:"
-msgstr "以下のコマンドは、フレームを削除したり操作するために使われます:"
+msgstr "以下のコマンドはタブを操作するために使用されます:"
 
 #. type: item
 #: original_texis/frames.texi:1402
-#, fuzzy, no-wrap
-#| msgid "C-x 5 b @var{bufname} @key{RET}"
+#, no-wrap
 msgid "C-x t r @var{tabname} @key{RET}"
-msgstr "C-x 5 b @var{bufname} @key{RET}"
+msgstr "C-x t r @var{tabname} @key{RET}"
 
 #. type: findex
 #: original_texis/frames.texi:1403
 #, no-wrap
 msgid "tab-rename"
-msgstr ""
+msgstr "tab-rename"
 
 #. type: table
 #: original_texis/frames.texi:1407
 msgid "Rename the current tab to @var{tabname}.  You can control the programmatic name given to a tab by default by customizing the variable @code{tab-bar-tab-name-function}."
-msgstr ""
+msgstr "カレントタブを@var{tabname}にリネームします。変数@code{tab-bar-tab-name-function}をカスタマイズして、デフォルトでタブに与えるプログラム的な名前を制御できます。"
 
 #. type: item
 #: original_texis/frames.texi:1408
-#, fuzzy, no-wrap
-#| msgid "C-x 5 m"
+#, no-wrap
 msgid "C-x t m"
-msgstr "C-x 5 m"
+msgstr "C-x t m"
 
 #. type: findex
 #: original_texis/frames.texi:1409
 #, no-wrap
 msgid "tab-move"
-msgstr ""
+msgstr "tab-move"
 
 #. type: table
 #: original_texis/frames.texi:1413
 msgid "Move the current tab @var{n} positions to the right with a positive numeric argument @var{n}.  With a negative argument @minus{}@var{n}, move the current tab @var{n} positions to the left."
-msgstr ""
+msgstr "正の数引数@var{n}ではカレントタブから右に@var{n}個目のタブ、負の引数@minus{}@var{n}ではカレントタブから左に@var{n}個目のタブに移動します。"
 
 #. type: findex
 #: original_texis/frames.texi:1415
-#, fuzzy, no-wrap
-#| msgid "tool-bar-mode"
+#, no-wrap
 msgid "tab-bar-history-mode"
-msgstr "tool-bar-mode"
+msgstr "tab-bar-history-mode"
 
 #. type: Plain text
 #: original_texis/frames.texi:1418
 msgid "You can enable @code{tab-bar-history-mode} to remember window configurations used in every tab, and restore them."
-msgstr ""
+msgstr "すべてのタブに使用されたウィンドウ設定の記録とリストアのために@code{tab-bar-history-mode}を有効にできます。"
 
 #. type: item
 #: original_texis/frames.texi:1420
 #, no-wrap
 msgid "tab-bar-history-back"
-msgstr ""
+msgstr "tab-bar-history-back"
 
 #. type: table
 #: original_texis/frames.texi:1423
 msgid "Restore a previous window configuration used in the current tab.  This navigates back in the history of window configurations."
-msgstr ""
+msgstr "カレントタブで前に仕様されたウィンドウ設定をリストアします。これによりウィンドウ設定のヒストリーを戻ります。"
 
 #. type: item
 #: original_texis/frames.texi:1424
 #, no-wrap
 msgid "tab-bar-history-forward"
-msgstr ""
+msgstr "tab-bar-history-forward"
 
 #. type: table
 #: original_texis/frames.texi:1427
 msgid "Cancel restoration of the previous window configuration.  This navigates forward in the history of window configurations."
-msgstr ""
+msgstr "前のウィンドウ設定のリストアを取り消します。これはウィンドウ設定のヒストリーを進めます。"
 
 #. type: section
 #: original_texis/frames.texi:1430
@@ -3064,8 +2998,6 @@ msgstr "gpm-mouse-mode"
 
 #. type: Plain text
 #: original_texis/frames.texi:1627
-#, fuzzy
-#| msgid "In the console on GNU/Linux, you can use @kbd{M-x gpm-mouse-mode} to enable mouse support.  You must have the gpm server installed and running on your system in order for this to work.  Note that when this mode is enabled, you cannot use the mouse to transfer text between Emacs and other programs which use GPM.  This is due to limitations in GPM and the Linux kernel."
 msgid "In the console on GNU/Linux, you can use @kbd{M-x gpm-mouse-mode} to enable mouse support.  You must have the gpm server installed and running on your system in order for this to work.  Note that when this mode is enabled, you cannot use the mouse to transfer text between Emacs and other programs which use GPM@.  This is due to limitations in GPM and the Linux kernel."
 msgstr "GNU/Linuxのコンソールでは、@kbd{M-x gpm-mouse-mode}を使ってマウスサポートを有効にできます。これが機能するためにはgpmサーバーがインストールされていて、システムで実行されていなければなりません。このモードが有効な場合、EmacsとGPMを使用する他のプログラムとの間で、マウスによるテキスト転送ができないことに注意してください。これはGPMとLinux kernelによる制限です。"
 
