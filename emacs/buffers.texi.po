@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-09 11:42+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  buffers.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  buffers.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.v62GQgF04n (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.r57Jv8euRG.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.C9q2JNlpdU.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/buffers.texi:5
@@ -49,7 +41,7 @@ msgstr "Emacsで編集するテキストは、@dfn{バッファー(buffer)}と�
 #. type: Plain text
 #: original_texis/buffers.texi:19
 msgid "Buffers exist as long as they are in use, and are deleted (``killed'') when no longer needed, either by you (@pxref{Kill Buffer}) or by Emacs (e.g., when you exit Emacs, @pxref{Exiting})."
-msgstr ""
+msgstr "バッファーは使用されているかぎりは存在して、ユーザー(@ref{Kill Buffer}を参照)またはEmacs(たとえばEmacsのexit時。@ref{Exiting}を参照)がもはや必要としなくなったときに削除(または``kill'')されます。"
 
 #. type: Plain text
 #: original_texis/buffers.texi:29
@@ -327,10 +319,8 @@ msgstr "previous-buffer"
 
 #. type: Plain text
 #: original_texis/buffers.texi:136
-#, fuzzy
-#| msgid "For conveniently switching between a few buffers, use the commands @kbd{C-x @key{LEFT}} and @kbd{C-x @key{RIGHT}}.  @kbd{C-x @key{LEFT}} (@code{previous-buffer}) selects the previous buffer (following the order of most recent selection in the current frame), while @kbd{C-x @key{RIGHT}} (@code{next-buffer}) moves through buffers in the reverse direction."
 msgid "For conveniently switching between a few buffers, use the commands @kbd{C-x @key{LEFT}} and @kbd{C-x @key{RIGHT}}.  @kbd{C-x @key{LEFT}} (@code{previous-buffer}) selects the previous buffer (following the order of most recent selection in the current frame), while @kbd{C-x @key{RIGHT}} (@code{next-buffer}) moves through buffers in the reverse direction.  Both commands support a numeric prefix argument that serves as a repeat count."
-msgstr "少ないバッファーの切り替えでは、コマンド@kbd{C-x @key{LEFT}}および@kbd{C-x @key{RIGHT}}を使うのが便利です。@kbd{C-x @key{LEFT}} (@code{previous-buffer})は前のバッファー(現在のフレームの一番最近選択されたバッファー順)、@kbd{C-x @key{RIGHT}} (@code{next-buffer})は逆方向のバッファーに移動します。"
+msgstr "少ないバッファーの切り替えでは、コマンド@kbd{C-x @key{LEFT}}および@kbd{C-x @key{RIGHT}}を使うのが便利です。@kbd{C-x @key{LEFT}} (@code{previous-buffer})は前のバッファー(現在のフレームの一番最近選択されたバッファー順)、@kbd{C-x @key{RIGHT}} (@code{next-buffer})は逆方向のバッファーに移動します。いずれのコマンドもプレフィクス数引数をサポートており、それは繰り返し回数として機能します。"
 
 #. type: kindex
 #: original_texis/buffers.texi:137
@@ -654,16 +644,15 @@ msgstr "C-x k"
 
 #. type: cindex
 #: original_texis/buffers.texi:315
-#, fuzzy, no-wrap
-#| msgid "killing buffers"
+#, no-wrap
 msgid "killing unsaved buffers"
-msgstr "killing buffers"
+msgstr "killing unsaved buffers"
 
 #. type: cindex
 #: original_texis/buffers.texi:316
 #, no-wrap
 msgid "unsaved buffers, killing"
-msgstr ""
+msgstr "unsaved buffers, killing"
 
 #. type: Plain text
 #: original_texis/buffers.texi:324
@@ -1322,51 +1311,47 @@ msgstr "ポイントがある列の数値にしたがって、Buffer Menu全体�
 #: original_texis/buffers.texi:560
 #, no-wrap
 msgid "@}"
-msgstr ""
+msgstr "@}"
 
 #. type: kindex
 #: original_texis/buffers.texi:561
-#, fuzzy, no-wrap
-#| msgid "d @r{(Buffer Menu)}"
+#, no-wrap
 msgid "@} @r{(Buffer Menu)}"
-msgstr "d @r{(Buffer Menu)}"
+msgstr "@} @r{(Buffer Menu)}"
 
 #. type: findex
 #: original_texis/buffers.texi:562
-#, fuzzy, no-wrap
-#| msgid "tabulated-list-sort"
+#, no-wrap
 msgid "tabulated-list-widen-current-column"
-msgstr "tabulated-list-sort"
+msgstr "tabulated-list-widen-current-column"
 
 #. type: table
 #: original_texis/buffers.texi:565
 msgid "Widen the current column width by @var{n} (the prefix numeric argument) characters."
-msgstr ""
+msgstr "カレント列の幅を@var{n}文字(プレフィクス引数)広くします。"
 
 #. type: item
 #: original_texis/buffers.texi:566
 #, no-wrap
 msgid "@{"
-msgstr ""
+msgstr "@{"
 
 #. type: kindex
 #: original_texis/buffers.texi:567
-#, fuzzy, no-wrap
-#| msgid "d @r{(Buffer Menu)}"
+#, no-wrap
 msgid "@{ @r{(Buffer Menu)}"
-msgstr "d @r{(Buffer Menu)}"
+msgstr "@{ @r{(Buffer Menu)}"
 
 #. type: findex
 #: original_texis/buffers.texi:568
-#, fuzzy, no-wrap
-#| msgid "tabulated-list-sort"
+#, no-wrap
 msgid "tabulated-list-narrow-current-column"
-msgstr "tabulated-list-sort"
+msgstr "tabulated-list-narrow-current-column"
 
 #. type: table
 #: original_texis/buffers.texi:571
 msgid "Narrow the current column width by @var{n} (the prefix numeric argument) characters."
-msgstr ""
+msgstr "カレント列の幅を@var{n}文字(プレフィクス引数)狭くします。"
 
 #. type: item
 #: original_texis/buffers.texi:572
@@ -1398,17 +1383,13 @@ msgstr "バッファー@file{*Buffer List*}は通常、バッファーの作成�
 
 #. type: iftex
 #: original_texis/buffers.texi:591
-#, fuzzy
-#| msgid "@inforef{Autorevert,, emacs-xtra}, for details."
 msgid "@inforef{Auto Reverting the Buffer Menu,, emacs-xtra}, for details."
-msgstr "詳細は、@inforef{Autorevert,, emacs-xtra}を参照してください。"
+msgstr "詳細は@inforef{Auto Reverting the Buffer Menu,, emacs-xtra}を参照してください。"
 
 #. type: ifnottex
 #: original_texis/buffers.texi:594
-#, fuzzy
-#| msgid "@xref{Autorevert, global-auto-revert-non-file-buffers}, for details."
 msgid "@xref{Auto Reverting the Buffer Menu, global-auto-revert-non-file-buffers}, for details."
-msgstr "詳細は、@ref{Autorevert, global-auto-revert-non-file-buffers}を参照してください。"
+msgstr "詳細は@ref{Auto Reverting the Buffer Menu, global-auto-revert-non-file-buffers}を参照してください。"
 
 #. type: cindex
 #: original_texis/buffers.texi:598
@@ -1642,22 +1623,20 @@ msgstr "Icompleteモードを有効にするには、@kbd{M-x icomplete-mode}と
 
 #. type: findex
 #: original_texis/buffers.texi:734
-#, fuzzy, no-wrap
-#| msgid "midnight-mode"
+#, no-wrap
 msgid "fido-mode"
-msgstr "midnight-mode"
+msgstr "fido-mode"
 
 #. type: cindex
 #: original_texis/buffers.texi:735
-#, fuzzy, no-wrap
-#| msgid "Midnight mode"
+#, no-wrap
 msgid "fido mode"
-msgstr "Midnight mode"
+msgstr "fido mode"
 
 #. type: Plain text
 #: original_texis/buffers.texi:746
 msgid "An alternative to Icomplete mode is Fido mode.  This is very similar to Icomplete mode, but retains some functionality from a popular extension called Ido mode (in fact the name is derived from ``Fake Ido'').  Among other things, in Fido mode, @kbd{C-s} and @kbd{C-r} are also used to rotate the completions list, @kbd{C-k} can be used to delete files and kill buffers in-list.  Another noteworthy aspect is that @code{flex} is used as the default completion style (@pxref{Completion Styles}).  To change this, add the following to your initialization file (@pxref{Init File}):"
-msgstr ""
+msgstr "FidoモードはIcompleteの代替えとなるモードです。このモードはIcompleteモードと非常に似ていますが、Idoモードと呼ばれるポピュラーな拡張の機能のいくつかを残しています(実際のところこのモード名は``Fake Ido''から継承された)。特にFidoモードでは@kbd{C-s}と@kbd{C-r}を補完リストのローテートにも使用し、@kbd{C-k}はリスト内のファイル削除やバッファーのkillに使用できます。他に特筆すべき観点はデフォルトの保管スタイルとして@code{flex}を使用する点です(@ref{Completion Styles}を参照)。これを変更するには初期化ファイル(@ref{Init File}を参照)に以下を追加してください:"
 
 #. type: example
 #: original_texis/buffers.texi:751
@@ -1667,13 +1646,14 @@ msgid ""
 "  (setq-local completion-styles '(initials flex)))\n"
 "(add-hook 'icomplete-minibuffer-setup-hook 'my-icomplete-styles)\n"
 msgstr ""
+"(defun my-icomplete-styles ()\n"
+"  (setq-local completion-styles '(initials flex)))\n"
+"(add-hook 'icomplete-minibuffer-setup-hook 'my-icomplete-styles)\n"
 
 #. type: Plain text
 #: original_texis/buffers.texi:756
-#, fuzzy
-#| msgid "To enable Icomplete mode, type @kbd{M-x icomplete-mode}, or customize the variable @code{icomplete-mode} to @code{t} (@pxref{Easy Customization})."
 msgid "To enable Fido mode, type @kbd{M-x fido-mode}, or customize the variable @code{fido-mode} to @code{t} (@pxref{Easy Customization})."
-msgstr "Icompleteモードを有効にするには、@kbd{M-x icomplete-mode}とタイプするか、変数@code{icomplete-mode}を@code{t}にカスタマイズします(@ref{Easy Customization}を参照してください)。"
+msgstr "Fidoモードを有効にするには@kbd{M-x fido-mode}とタイプするか、変数@code{fido-mode}を@code{t}にカスタマイズしてください(@ref{Easy Customization}を参照)。"
 
 #. type: subsection
 #: original_texis/buffers.texi:758
