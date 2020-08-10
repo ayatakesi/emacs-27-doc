@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-22 14:02+0900\n"
+"PO-Revision-Date: 2020-08-11 01:02+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  help.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  help.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.VcjlW5nURM (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.TwUyapnmw5.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.UshSru8pAe.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: chapter
 #: original_texis/help.texi:5 original_texis/help.texi:6
@@ -280,10 +272,8 @@ msgstr "ここではビルトインのドキュメントにアクセスする、
 
 #. type: table
 #: original_texis/help.texi:93
-#, fuzzy
-#| msgid "Display a list of commands whose names match @var{topics} (@code{apropos-command})."
 msgid "Display a list of commands whose names match @var{topics} (@code{apropos-command}).  @xref{Apropos}."
-msgstr "名前が@var{topics}にマッチするコマンドの一覧を表示します(@code{apropos-command})。"
+msgstr "名前が@var{topics}にマッチするコマンドの一覧を表示します(@code{apropos-command})。@ref{Apropos}を参照してください。"
 
 #. type: kindex
 #: original_texis/help.texi:93 original_texis/help.texi:586
@@ -293,10 +283,8 @@ msgstr "C-h b"
 
 #. type: table
 #: original_texis/help.texi:97
-#, fuzzy
-#| msgid "Display all active key bindings; minor mode bindings first, then those of the major mode, then global bindings (@code{describe-bindings})."
 msgid "Display all active key bindings; minor mode bindings first, then those of the major mode, then global bindings (@code{describe-bindings}).  @xref{Misc Help}."
-msgstr "有効なキーバインディングをすべて表示します。最初はマイナーモード、次にメジャーモード、それからグローバルのバインディングを表示します(@code{describe-bindings})。"
+msgstr "有効なキーバインディングをすべて表示します。最初はマイナーモード、次にメジャーモード、それからグローバルのバインディングを表示します(@code{describe-bindings})。@ref{Misc Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:97
@@ -306,10 +294,8 @@ msgstr "C-h c @var{key}"
 
 #. type: table
 #: original_texis/help.texi:102
-#, fuzzy
-#| msgid "Show the name of the command that the key sequence @var{key} is bound to (@code{describe-key-briefly}).  Here @kbd{c} stands for ``character''.  For more extensive information on @var{key}, use @kbd{C-h k}."
 msgid "Show the name of the command that the key sequence @var{key} is bound to (@code{describe-key-briefly}).  Here @kbd{c} stands for ``character''.  For more extensive information on @var{key}, use @kbd{C-h k}.  @xref{Key Help}."
-msgstr "キーシーケンス@var{key}がバインドされているコマンドの名前を表示します(@code{describe-key-briefly})。@kbd{c}は``character''からきています。@var{key}についてさらに詳しい情報を得るには、@kbd{C-h k}を使います。"
+msgstr "キーシーケンス@var{key}がバインドされているコマンドの名前を表示します(@code{describe-key-briefly})。@kbd{c}は``character''が由来です。@var{key}についてさらに詳しい情報を得るには@kbd{C-h k}を使います。@ref{Key Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:102
@@ -319,10 +305,8 @@ msgstr "C-h d @var{topics} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:105
-#, fuzzy
-#| msgid "Display the commands and variables whose documentation matches @var{topics} (@code{apropos-documentation})."
 msgid "Display the commands and variables whose documentation matches @var{topics} (@code{apropos-documentation}).  @xref{Apropos}."
-msgstr "@var{topics}にマッチするドキュメントをもつ、コマンドまたは変数を表示します(@code{apropos-documentation})。"
+msgstr "@var{topics}にマッチするドキュメントをもつ、コマンドまたは変数を表示します(@code{apropos-documentation})。@ref{Apropos}を参照してください。"
 
 #. type: kindex
 #: original_texis/help.texi:105 original_texis/help.texi:572
@@ -332,10 +316,8 @@ msgstr "C-h e"
 
 #. type: table
 #: original_texis/help.texi:108
-#, fuzzy
-#| msgid "Display the @file{*Messages*} buffer (@code{view-echo-area-messages})."
 msgid "Display the @file{*Messages*} buffer (@code{view-echo-area-messages}).  @xref{Misc Help}."
-msgstr "バッファー@file{*Messages*}を表示します(@code{view-echo-area-messages})。"
+msgstr "バッファー@file{*Messages*}を表示します(@code{view-echo-area-messages})。@ref{Misc Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:108
@@ -345,10 +327,8 @@ msgstr "C-h f @var{function} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:112
-#, fuzzy
-#| msgid "Display documentation on the Lisp function named @var{function} (@code{describe-function}).  Since commands are Lisp functions, this works for commands too."
 msgid "Display documentation on the Lisp function named @var{function} (@code{describe-function}).  Since commands are Lisp functions, this works for commands too.  @xref{Name Help}."
-msgstr "@var{function}という名前の、Lisp関数のドキュメントを表示します(@code{describe-function})。コマンドもLisp関数なので、これはコマンドにも使用できます。"
+msgstr "@var{function}という名前のLisp関数のドキュメントを表示します(@code{describe-function})。コマンドもLisp関数なのでコマンドにも使用できます。@ref{Name Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:112
@@ -369,10 +349,8 @@ msgstr "C-h i"
 
 #. type: table
 #: original_texis/help.texi:118
-#, fuzzy
-#| msgid "Run Info, the GNU documentation browser (@code{info}).  The Emacs manual is available in Info."
 msgid "Run Info, the GNU documentation browser (@code{info}).  The Emacs manual is available in Info.  @xref{Misc Help}."
-msgstr "GNUドキュメントブラウザー(@code{info})を実行します。Emacsのマニュアルはinfoで利用できます。"
+msgstr "GNUドキュメントブラウザー(@code{info})を実行します。Emacsのマニュアルはinfoで利用できます。@ref{Misc Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:118
@@ -382,10 +360,8 @@ msgstr "C-h k @var{key}"
 
 #. type: table
 #: original_texis/help.texi:121
-#, fuzzy
-#| msgid "Display the name and documentation of the command that @var{key} runs (@code{describe-key})."
 msgid "Display the name and documentation of the command that @var{key} runs (@code{describe-key}).  @xref{Key Help}."
-msgstr "@var{key}で実行されるコマンドの名前と、ドキュメントを表示します(@code{describe-key})。"
+msgstr "@var{key}で実行されるコマンドの名前と、ドキュメントを表示します(@code{describe-key})。@ref{Key Help}を参照してください。"
 
 #. type: kindex
 #: original_texis/help.texi:121 original_texis/help.texi:564
@@ -395,10 +371,8 @@ msgstr "C-h l"
 
 #. type: table
 #: original_texis/help.texi:124
-#, fuzzy
-#| msgid "Display a description of your last 300 keystrokes (@code{view-lossage})."
 msgid "Display a description of your last 300 keystrokes (@code{view-lossage}).  @xref{Misc Help}."
-msgstr "最近のキーストローク300回分のの説明を表示します(@code{view-lossage})。"
+msgstr "最近のキーストローク300回分のの説明を表示します(@code{view-lossage})。@ref{Misc Help}を参照してください。"
 
 #. type: kindex
 #: original_texis/help.texi:124 original_texis/help.texi:578
@@ -408,10 +382,8 @@ msgstr "C-h m"
 
 #. type: table
 #: original_texis/help.texi:127
-#, fuzzy
-#| msgid "Display documentation of the current major mode and minor modes (@code{describe-mode})."
 msgid "Display documentation of the current major mode and minor modes (@code{describe-mode}).  @xref{Misc Help}."
-msgstr "カレントのメジャーモード、およびマイナーモードのドキュメントを表示します(@code{describe-mode})。"
+msgstr "カレントのメジャーモード、およびマイナーモードのドキュメントを表示します(@code{describe-mode})。@ref{Misc Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:127
@@ -421,10 +393,8 @@ msgstr "C-h n"
 
 #. type: table
 #: original_texis/help.texi:130
-#, fuzzy
-#| msgid "Display news of recent Emacs changes (@code{view-emacs-news})."
 msgid "Display news of recent Emacs changes (@code{view-emacs-news}).  @xref{Help Files}."
-msgstr "最近のEmacsの変更に関するニュースを表示します(@code{view-emacs-news})。"
+msgstr "最近のEmacsの変更に関するニュースを表示します(@code{view-emacs-news})。@ref{Help Files}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:130
@@ -434,17 +404,13 @@ msgstr "C-h o @var{symbol}"
 
 #. type: table
 #: original_texis/help.texi:134
-#, fuzzy
-#| msgid "Display documentation of the Lisp symbol named @var{symbol} (@code{describe-symbol}).  This will show the documentation of all kinds of symbols: functions, variables, and faces."
 msgid "Display documentation of the Lisp symbol named @var{symbol} (@code{describe-symbol}).  This will show the documentation of all kinds of symbols: functions, variables, and faces.  @xref{Name Help}."
-msgstr "@var{symbol}という名前のLispシンボルのドキュメントを表示します(@code{describe-symbol})。これはすべての種類のシンボル、すなわち関数、変数、フェイスのドキュメントも表示します。"
+msgstr "@var{symbol}という名前のLispシンボルのドキュメントを表示します(@code{describe-symbol})。これはすべての種類のシンボル、すなわち関数、変数、フェイスのドキュメントも表示します。@ref{Name Help}を参照してください。"
 
 #. type: table
 #: original_texis/help.texi:138
-#, fuzzy
-#| msgid "Find packages by topic keyword (@code{finder-by-keyword}).  This lists packages using a package menu buffer.  @xref{Packages}."
 msgid "Find packages by topic keyword (@code{finder-by-keyword}).  @xref{Package Keywords}.  This lists packages using a package menu buffer.  @xref{Packages}."
-msgstr "トピックのキーワードでパッケージを見つけます(@code{finder-by-keyword})。これはパッケージメニューバッファーを使ってパッケージを一覧します。@ref{Packages}を参照してください。"
+msgstr "トピックのキーワードでパッケージを見つけます(@code{finder-by-keyword})。@ref{Package Keywords}を参照してください。これはパッケージメニューバッファーを使ってパッケージを一覧します。@ref{Packages}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:138
@@ -454,10 +420,8 @@ msgstr "C-h P @var{package} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:141
-#, fuzzy
-#| msgid "Display documentation about the specified package (@code{describe-package})."
 msgid "Display documentation about the specified package (@code{describe-package}).  @xref{Package Keywords}."
-msgstr "指定したパッケージのドキュメントを表示します(@code{describe-package})。"
+msgstr "指定したパッケージのドキュメントを表示します(@code{describe-package})。@ref{Package Keywords}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:141
@@ -478,10 +442,8 @@ msgstr "C-h s"
 
 #. type: table
 #: original_texis/help.texi:149
-#, fuzzy
-#| msgid "Display the contents of the current @dfn{syntax table} (@code{describe-syntax}).  The syntax table says which characters are opening delimiters, which are parts of words, and so on.  @xref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}, for details."
 msgid "Display the contents of the current @dfn{syntax table} (@code{describe-syntax}).  @xref{Misc Help}.  The syntax table says which characters are opening delimiters, which are parts of words, and so on.  @xref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}, for details."
-msgstr "現在の@dfn{構文テーブル(syntax table)}を表示します(@code{describe-syntax})。構文テーブルは、どの文字が開始デリミッターで、その文字が単語の一部なのかを定義します。詳細については、@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr "現在の@dfn{構文テーブル(syntax table)}を表示します(@code{describe-syntax})。@ref{Misc Help}を参照してください。構文テーブルはどの文字が開始デリミッターで、その文字が単語の一部なのかを定義します。詳細については@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:149
@@ -502,10 +464,8 @@ msgstr "C-h v @var{var} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:154
-#, fuzzy
-#| msgid "Display the documentation of the Lisp variable @var{var} (@code{describe-variable})."
 msgid "Display the documentation of the Lisp variable @var{var} (@code{describe-variable}).  @xref{Name Help}."
-msgstr "Lisp変数@var{var}のドキュメントを表示します(@code{describe-variable})。"
+msgstr "Lisp変数@var{var}のドキュメントを表示します(@code{describe-variable})。@ref{Name Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:154
@@ -515,10 +475,8 @@ msgstr "C-h w @var{command} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:157
-#, fuzzy
-#| msgid "Show which keys run the command named @var{command} (@code{where-is})."
 msgid "Show which keys run the command named @var{command} (@code{where-is}).  @xref{Key Help}."
-msgstr "@var{command}という名前のコマンドを実行するキーを表示します(@code{where-is})。"
+msgstr "@var{command}という名前のコマンドを実行するキーを表示します(@code{where-is})。@ref{Key Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:157
@@ -528,10 +486,8 @@ msgstr "C-h C @var{coding} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:160
-#, fuzzy
-#| msgid "Describe the coding system @var{coding} (@code{describe-coding-system})."
 msgid "Describe the coding system @var{coding} (@code{describe-coding-system}).  @xref{Coding Systems}."
-msgstr "コーディングシステム@var{coding}を説明します(@code{describe-coding-system})。"
+msgstr "コーディングシステム@var{coding}を説明します(@code{describe-coding-system})。@ref{Coding Systems}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:160
@@ -552,10 +508,8 @@ msgstr "C-h F @var{command} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:165
-#, fuzzy
-#| msgid "Enter Info and go to the node that documents the Emacs command @var{command} (@code{Info-goto-emacs-command-node})."
 msgid "Enter Info and go to the node that documents the Emacs command @var{command} (@code{Info-goto-emacs-command-node}).  @xref{Name Help}."
-msgstr "infoを開始して、Emacsコマンド@var{command}のドキュメントのノードに移動します(@code{Info-goto-emacs-command-node})。"
+msgstr "infoを開始して、Emacsコマンド@var{command}のドキュメントのノードに移動します(@code{Info-goto-emacs-command-node})。@ref{Name Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:165
@@ -565,10 +519,8 @@ msgstr "C-h I @var{method} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:168
-#, fuzzy
-#| msgid "Describe the input method @var{method} (@code{describe-input-method})."
 msgid "Describe the input method @var{method} (@code{describe-input-method}).  @xref{Select Input Method}."
-msgstr "インプットメソッド@var{method}を説明します(@code{describe-input-method})。"
+msgstr "インプットメソッド@var{method}を説明します(@code{describe-input-method})。@ref{Select Input Method}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:168
@@ -578,10 +530,8 @@ msgstr "C-h K @var{key}"
 
 #. type: table
 #: original_texis/help.texi:171
-#, fuzzy
-#| msgid "Enter Info and go to the node that documents the key sequence @var{key} (@code{Info-goto-emacs-key-command-node})."
 msgid "Enter Info and go to the node that documents the key sequence @var{key} (@code{Info-goto-emacs-key-command-node}).  @xref{Key Help}."
-msgstr "infoを開始して、キーシーケンス@var{key}のドキュメントのノードに移動します(@code{Info-goto-emacs-key-command-node})。"
+msgstr "infoを開始して、キーシーケンス@var{key}のドキュメントのノードに移動します(@code{Info-goto-emacs-key-command-node})。@ref{Key Help}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:171
@@ -591,10 +541,8 @@ msgstr "C-h L @var{language-env} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:175
-#, fuzzy
-#| msgid "Display information on the character sets, coding systems, and input methods used in language environment @var{language-env} (@code{describe-language-environment})."
 msgid "Display information on the character sets, coding systems, and input methods used in language environment @var{language-env} (@code{describe-language-environment}).  @xref{Language Environments}."
-msgstr "言語環境(language environment)@var{language-env}で使用される文字セット、コーディングシステム、インプットメソッドに関する情報を表示します。"
+msgstr "言語環境(language environment)@var{language-env}で使用される文字セット、コーディングシステム、インプットメソッドに関する情報を表示します。@ref{Language Environments}を参照してください。"
 
 #. type: item
 #: original_texis/help.texi:175
@@ -604,10 +552,8 @@ msgstr "C-h S @var{symbol} @key{RET}"
 
 #. type: table
 #: original_texis/help.texi:179
-#, fuzzy
-#| msgid "Display the Info documentation on symbol @var{symbol} according to the programming language you are editing (@code{info-lookup-symbol})."
 msgid "Display the Info documentation on symbol @var{symbol} according to the programming language you are editing (@code{info-lookup-symbol}).  @xref{Misc Help}."
-msgstr "編集中のプログラム言語に基づいて、シンボル@var{symbol}のinfoドキュメントを表示します(@code{info-lookup-symbol})。"
+msgstr "編集中のプログラム言語に基づいて、シンボル@var{symbol}のinfoドキュメントを表示します(@code{info-lookup-symbol})。@ref{Misc Help}を参照してください。"
 
 #. type: kindex
 #: original_texis/help.texi:179 original_texis/help.texi:689
@@ -617,10 +563,8 @@ msgstr "C-h ."
 
 #. type: table
 #: original_texis/help.texi:183
-#, fuzzy
-#| msgid "Display the help message for a special text area, if point is in one (@code{display-local-help}).  (These include, for example, links in @file{*Help*} buffers.)"
 msgid "Display the help message for a special text area, if point is in one (@code{display-local-help}).  (These include, for example, links in @file{*Help*} buffers.)  @xref{Help Echo}."
-msgstr "ポイントが特別なテキスト領域のとき(これには、たとえば@file{*Help*}のリンクなどが含まれます)、ヘルプメッセージを表示します(@code{display-local-help})。"
+msgstr "ポイントが特別なテキスト領域のとき(これには、たとえば@file{*Help*}のリンクなどが含まれます)、ヘルプメッセージを表示します(@code{display-local-help})。@ref{Help Echo}を参照してください。"
 
 #. type: section
 #: original_texis/help.texi:186
@@ -1334,10 +1278,9 @@ msgstr "その他のヘルプコマンド"
 
 #. type: kindex
 #: original_texis/help.texi:532
-#, fuzzy, no-wrap
-#| msgid "C-h i"
+#, no-wrap
 msgid "C-h 4 i"
-msgstr "C-h i"
+msgstr "C-h 4 i"
 
 #. type: findex
 #: original_texis/help.texi:533
@@ -1349,7 +1292,7 @@ msgstr "info"
 #: original_texis/help.texi:534
 #, no-wrap
 msgid "info-other-window"
-msgstr ""
+msgstr "info-other-window"
 
 #. type: cindex
 #: original_texis/help.texi:535
@@ -1365,10 +1308,8 @@ msgstr "manuals, included"
 
 #. type: Plain text
 #: original_texis/help.texi:543
-#, fuzzy
-#| msgid "@kbd{C-h i} (@code{info}) runs the Info program, which browses structured documentation files.  The entire Emacs manual is available within Info, along with many other manuals for the GNU system.  Type @kbd{h} after entering Info to run a tutorial on using Info."
 msgid "@kbd{C-h i} (@code{info}) runs the Info program, which browses structured documentation files.  @kbd{C-h 4 i} (@code{info-other-window}) does the same, but shows the Info buffer in another window.  The entire Emacs manual is available within Info, along with many other manuals for the GNU system.  Type @kbd{h} after entering Info to run a tutorial on using Info."
-msgstr "@kbd{C-h i} (@code{info})は、infoプログラムを実行します。infoは構造化されたドキュメントファイルを閲覧するものです。Emacsマニュアル全体は、GNUシステムのための他のマニュアルとともに、infoで利用可能です。infoを開始した後、@kbd{h}をタイプすると、infoの使い方のチュートリアルが実行されます。"
+msgstr "@kbd{C-h i} (@code{info})はinfoプログラムを実行します。infoは構造化されたドキュメントファイルを閲覧するものです。@kbd{C-h 4 i} (@code{info-other-window})は同じことを行いますが、別のウィンドウにInfoバッファーを表示します。Emacsマニュアル全体は、GNUシステムのための他のマニュアルとともにinfoで利用可能です。infoを開始した後に@kbd{h}をタイプすると、infoの使い方のチュートリアルが実行されます。"
 
 #. type: cindex
 #: original_texis/help.texi:544
