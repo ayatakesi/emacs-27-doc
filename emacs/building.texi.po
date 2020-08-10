@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2019-09-21 19:31+0900\n"
+"PO-Revision-Date: 2020-08-10 16:09+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -524,12 +524,12 @@ msgstr "出力が@file{*compilation*}バッファー内に表示されている�
 #: original_texis/building.texi:207
 #, no-wrap
 msgid "M-x next-error-select-buffer"
-msgstr ""
+msgstr "M-x next-error-select-buffer"
 
 #. type: table
 #: original_texis/building.texi:210
 msgid "Select a buffer to be used by next invocation of @code{next-error} and @code{previous-error}."
-msgstr ""
+msgstr "@code{next-error}と@code{previous-error}の次回の呼び出しで使用されるバッファーを選択します。"
 
 #. type: findex
 #: original_texis/building.texi:215
@@ -545,17 +545,14 @@ msgstr "next-error-highlight"
 
 #. type: vindex
 #: original_texis/building.texi:217
-#, fuzzy, no-wrap
-#| msgid "next-error-highlight"
+#, no-wrap
 msgid "next-error-highlight-no-select"
-msgstr "next-error-highlight"
+msgstr "next-error-highlight-no-select"
 
 #. type: Plain text
 #: original_texis/building.texi:229
-#, fuzzy
-#| msgid "To visit errors sequentially, type @w{@kbd{C-x `}} (@code{next-error}), or equivalently @kbd{M-g M-n} or @kbd{M-g n}.  This command can be invoked from any buffer, not just a Compilation mode buffer.  The first time you invoke it after a compilation, it visits the locus of the first error message.  Each subsequent @w{@kbd{C-x `}} visits the next error, in a similar fashion.  If you visit a specific error with @key{RET} or a mouse click in the @file{*compilation*} buffer, subsequent @w{@kbd{C-x `}} commands advance from there.  When @w{@kbd{C-x `}} finds no more error messages to visit, it signals an error.  @w{@kbd{C-u C-x `}} starts again from the beginning of the compilation buffer, and visits the first locus."
 msgid "To visit errors sequentially, type @w{@kbd{C-x `}} (@code{next-error}), or equivalently @kbd{M-g M-n} or @kbd{M-g n}.  This command can be invoked from any buffer, not just a Compilation mode buffer.  The first time you invoke it after a compilation, it visits the locus of the first error message.  Each subsequent @w{@kbd{M-g M-n}} visits the next error, in a similar fashion.  If you visit a specific error with @key{RET} or a mouse click in the @file{*compilation*} buffer, subsequent @w{@kbd{M-g M-n}} commands advance from there.  When @w{@kbd{M-g M-n}} finds no more error messages to visit, it signals an error.  @w{@kbd{C-u M-g M-n}} starts again from the beginning of the compilation buffer, and visits the first locus."
-msgstr "順番にエラーをvisitするには、@w{@kbd{C-x `}} (@code{next-error})とタイプするか、これと等価な@kbd{M-g M-n}または@kbd{M-g n}とタイプします。このコマンドはCompilationモードのバッファーだけでなく、任意のバッファーから呼び出すことができます。コンパイル後に最初に呼び出すときは、最初のエラーメッセージのlocusをvisitします。連続した@w{@kbd{C-x `}}は、同じ方法で次のエラーをvisitします。@file{*compilation*}バッファーから@key{RET}またはマウスクリックで特定のエラーをvisitした場合、@w{@kbd{C-x `}}はそのエラーの次のエラーからvisitしていきます。これ以上visitするエラーメッセージがない場合、@w{@kbd{C-x `}}はエラーをシグナルします。@w{@kbd{C-u C-x `}}はcompilationバッファーの先頭から再開して、最初のlocusをvisitします。"
+msgstr "順番にエラーをvisitするには、@w{@kbd{C-x `}} (@code{next-error})とタイプするか、これと等価な@kbd{M-g M-n}または@kbd{M-g n}とタイプします。このコマンドはCompilationモードのバッファーだけでなく、任意のバッファーから呼び出すことができます。コンパイル後に最初に呼び出すときは、最初のエラーメッセージのlocusをvisitします。連続した@w{@kbd{M-g M-n}}は、同じ方法で次のエラーをvisitします。@file{*compilation*}バッファーから@key{RET}またはマウスクリックで特定のエラーをvisitした場合、@w{@kbd{M-g M-n}}はそのエラーの次のエラーからvisitしていきます。これ以上visitするエラーメッセージがない場合、@w{@kbd{M-g M-n}}はエラーをシグナルします。@w{@kbd{C-u M-g M-n}}はcompilationバッファーの先頭から再開して、最初のlocusをvisitします。"
 
 #. type: Plain text
 #: original_texis/building.texi:232
@@ -566,20 +563,18 @@ msgstr "@kbd{M-g M-p}または@kbd{M-g p} (@code{previous-error})は、反対方
 #: original_texis/building.texi:233
 #, no-wrap
 msgid "next-error-find-buffer-function"
-msgstr ""
+msgstr "next-error-find-buffer-function"
 
 #. type: findex
 #: original_texis/building.texi:234
 #, no-wrap
 msgid "next-error-select-buffer"
-msgstr ""
+msgstr "next-error-select-buffer"
 
 #. type: Plain text
 #: original_texis/building.texi:251
-#, fuzzy
-#| msgid "The @code{next-error} and @code{previous-error} commands don't just act on the errors or matches listed in @file{*compilation*} and @file{*grep*} buffers; they also know how to iterate through error or match lists produced by other commands, such as @kbd{M-x occur} (@pxref{Other Repeating Search}).  If the current buffer contains error messages or matches, these commands will iterate through them; otherwise, Emacs looks for a buffer containing error messages or matches amongst the windows of the selected frame, then for any buffer that @code{next-error} or @code{previous-error} previously visited, and finally all other buffers.  Any buffer these commands iterate through that is not currently displayed in a window will be displayed."
 msgid "The @code{next-error} and @code{previous-error} commands don't just act on the errors or matches listed in @file{*compilation*} and @file{*grep*} buffers; they also know how to iterate through error or match lists produced by other commands, such as @kbd{M-x occur} (@pxref{Other Repeating Search}).  If the current buffer contains error messages or matches, these commands will iterate through them; otherwise, Emacs looks for a buffer containing error messages or matches amongst the windows of the selected frame (if the variable @code{next-error-find-buffer-function} is customized to the value @code{next-error-buffer-on-selected-frame}), then for a buffer used previously by @code{next-error} or @code{previous-error}, and finally all other buffers.  Any buffer these commands iterate through that is not currently displayed in a window will be displayed.  You can use the @command{next-error-select-buffer} command to switch to a different buffer to be used by the subsequent invocation of @code{next-error}."
-msgstr "コマンド@code{next-error}および@code{previous-error}は、バッファー@file{*compilation*}または@file{*grep*}にリストされたエラー(またはマッチ)だけに作用されるわけではありません。これらのコマンドは@kbd{M-x occur} (@ref{Other Repeating Search}を参照のようなコマンドで生成されたエラー(またはマッチ)を巡回する方法も知っています。カレントバッファーがエラーメッセージ、またはマッチを含む場合、これらのコマンドは、それらを巡回するでしょう。そうでない場合、Emacsは選択されたフレームのウィンドウの中から、エラーメッセージ(またはマッチ)を含むバッファーを探し、次に@code{next-error}または@code{previous-error}が最後にvisitしたバッファー、最後にその他のすべてのバッファーを探します。これらのコマンドが巡回するために選択されたバッファーが、カレントでウィンドウに表示されていなければ、そのバッファーが表示されるでしょう。"
+msgstr "コマンド@code{next-error}および@code{previous-error}は、バッファー@file{*compilation*}または@file{*grep*}にリストされたエラー(またはマッチ)だけに作用されるわけではありません。これらのコマンドは@kbd{M-x occur} (@ref{Other Repeating Search}を参照のようなコマンドで生成されたエラー(またはマッチ)を巡回する方法も知っています。カレントバッファーがエラーメッセージ、またはマッチを含む場合には、これらのコマンドはそれらを巡回するでしょう。そうでなければEmacsは(変数@code{next-error-find-buffer-function}の値を@code{next-error-buffer-on-selected-frame}にカスタマイズしていれば)選択されたフレームのウィンドウの中からエラーメッセージ(またはマッチ)を含むバッファー、次に@code{next-error}または@code{previous-error}が最後に使用したバッファー、最後にその他のすべてのバッファーを探します。これらのコマンドが巡回するために選択されたバッファーがカレントでウィンドウに表示されていなければ、そのバッファーが表示されるでしょう。その後の@code{next-error}呼び出しで使用される別バッファーへの切り替えには、コマンド@command{next-error-select-buffer}を使用できます。"
 
 #. type: vindex
 #: original_texis/building.texi:252
@@ -594,10 +589,8 @@ msgstr "デフォルトでは、コマンド@code{next-error}および@code{prev
 
 #. type: Plain text
 #: original_texis/building.texi:265
-#, fuzzy
-#| msgid "When Emacs visits the locus of an error message, it momentarily highlights the relevant source line.  The duration of this highlight is determined by the variable @code{next-error-highlight}."
 msgid "When Emacs visits the locus of an error message, it momentarily highlights the relevant source line.  The duration of this highlight is determined by the variable @code{next-error-highlight} for the locus in the selected buffer, and @code{next-error-highlight-no-select} for the locus in non-selected buffers."
-msgstr "Emacsがエラーメッセージのlocusをvisitしているとき、関連するソース行が一時的にハイライトされます。このハイライトの持続時間は、変数@code{next-error-highlight}により決定されます。"
+msgstr "Emacsがエラーメッセージのlocusをvisitしているとき、関連するソース行が一時的にハイライトされます。選択されたバッファーのlocusのハイライトの持続時間は変数@code{next-error-highlight}、それ以外のバッファーでは@code{next-error-highlight-no-select}により決定されます。"
 
 #. type: vindex
 #: original_texis/building.texi:266
@@ -607,10 +600,8 @@ msgstr "compilation-context-lines"
 
 #. type: Plain text
 #: original_texis/building.texi:278
-#, fuzzy
-#| msgid "If the @file{*compilation*} buffer is shown in a window with a left fringe (@pxref{Fringes}), the locus-visiting commands put an arrow in the fringe, pointing to the current error message.  If the window has no left fringe, such as on a text terminal, these commands scroll the window so that the current message is at the top of the window.  If you change the variable @code{compilation-context-lines} to an integer value @var{n}, these commands scroll the window so that the current error message is @var{n} lines from the top, whether or not there is a fringe; the default value, @code{nil}, gives the behavior described above."
 msgid "If the @file{*compilation*} buffer is shown in a window with a left fringe (@pxref{Fringes}), the locus-visiting commands put an arrow in the fringe, pointing to the current error message.  If the window has no left fringe, such as on a text terminal, these commands scroll the window so that the current message is at the top of the window.  If you change the variable @code{compilation-context-lines} to @code{t}, a visible arrow is inserted before column zero instead.  If you change the variable to an integer value @var{n}, these commands scroll the window so that the current error message is @var{n} lines from the top, whether or not there is a fringe; the default value, @code{nil}, gives the behavior described above."
-msgstr "@file{*compilation*}バッファーが左フリンジ(@ref{Fringes}を参照してください)のあるウィンドウで表示されている場合、locusをvisitするコマンドはカレントエラーメッセージを指す矢印をフリンジに配します。テキスト端末のように、左フリンジがないウィンドウの場合、これらのコマンドは、カレントメッセージがウィンドウの一番上にくるようにウィンドウをスクロールします。変数@code{compilation-context-lines}を整数値@var{n}に変更した場合、これらのコマンドは、フリンジの有無に関わらずメッセージがウィンドウの上から@var{n}行目にくるようにウィンドウをスクロールします。デフォルト値の@code{nil}では上述したように振る舞います。"
+msgstr "@file{*compilation*}バッファーが左フリンジ(@ref{Fringes}を参照してください)のあるウィンドウで表示されている場合、locusをvisitするコマンドはカレントエラーメッセージを指す矢印をフリンジに配します。テキスト端末のように、左フリンジがないウィンドウの場合、これらのコマンドは、カレントメッセージがウィンドウの一番上にくるようにウィンドウをスクロールします。変数@code{compilation-context-lines}を@code{t}に変更すると、かわりに列0の前に可視の矢印を挿入します。整数値@var{n}に変更した場合には、これらのコマンドはフリンジの有無に関わらずメッセージがウィンドウの上から@var{n}行目にくるようにウィンドウをスクロールします。デフォルト値の@code{nil}では上述のように振る舞います。"
 
 #. type: vindex
 #: original_texis/building.texi:279
@@ -860,10 +851,8 @@ msgstr "grep -nH -e foo *.el | grep bar | grep toto\n"
 
 #. type: Plain text
 #: original_texis/building.texi:429
-#, fuzzy
-#| msgid "The output from @command{grep} goes in the @file{*grep*} buffer.  You can find the corresponding lines in the original files using @w{@kbd{C-x `}}, @key{RET}, and so forth, just like compilation errors.  @xref{Compilation Mode}, for detailed description of commands and key bindings available in the @file{*grep*} buffer."
 msgid "The output from @command{grep} goes in the @file{*grep*} buffer.  You can find the corresponding lines in the original files using @w{@kbd{M-g M-n}}, @key{RET}, and so forth, just like compilation errors.  @xref{Compilation Mode}, for detailed description of commands and key bindings available in the @file{*grep*} buffer."
-msgstr "@command{grep}コマンドの出力は、@file{*grep*}バッファーに送られます。オリジナルのファイルの対応する行は、コンパイルエラーと同様、@w{@kbd{C-x `}}、@key{RET}などで見つけることができます。コマンドのより詳細な説明と、@file{*grep*}バッファー内で利用可能なキーバインディングについては、@ref{Compilation Mode}を参照してください。"
+msgstr "@command{grep}コマンドの出力は、@file{*grep*}バッファーに送られます。オリジナルのファイルの対応する行は、コンパイルエラーと同様、@w{@kbd{M-g M-n}}、@key{RET}などで見つけることができます。コマンドのより詳細な説明と、@file{*grep*}バッファー内で利用可能なキーバインディングについては、@ref{Compilation Mode}を参照してください。"
 
 #. type: Plain text
 #: original_texis/building.texi:435
@@ -938,22 +927,20 @@ msgstr "変数@code{grep-find-ignored-directories}にリストされたディレ
 
 #. type: vindex
 #: original_texis/building.texi:480
-#, fuzzy, no-wrap
-#| msgid "grep-find"
+#, no-wrap
 msgid "grep-find-abbreviate"
-msgstr "grep-find"
+msgstr "grep-find-abbreviate"
 
 #. type: findex
 #: original_texis/building.texi:481
-#, fuzzy, no-wrap
-#| msgid "gdb-toggle-breakpoint"
+#, no-wrap
 msgid "grep-find-toggle-abbreviation"
-msgstr "gdb-toggle-breakpoint"
+msgstr "grep-find-toggle-abbreviation"
 
 #. type: Plain text
 #: original_texis/building.texi:491
 msgid "By default, the shell commands constructed for @code{lgrep}, @code{rgrep}, and @code{zgrep} are abbreviated for display by concealing the part that contains a long list of files and directories to ignore.  You can reveal the concealed part by clicking on the button with ellipsis, which represents them.  You can also interactively toggle viewing the concealed part by typing @kbd{M-x grep-find-toggle-abbreviation}.  To disable this abbreviation of the shell commands, customize the option @code{grep-find-abbreviate} to a @code{nil} value."
-msgstr ""
+msgstr "デフォルトでは@code{lgrep}、@code{rgrep}、@code{zgrep}にたいして構築されるシェルコマンドは、ファイルとディレクトリーの長いリストを含む部分を隠蔽することにより省略して表示されます。隠蔽された部分を表す省略記号のボタンをクリックすれば隠蔽部分を表示できます。@kbd{M-x grep-find-toggle-abbreviation}とタイプしてインタラクティブに隠蔽部分の表示を切り替えることもできます。このシェルコマンドの隠蔽を無効にするにはオプション@code{grep-find-abbreviate}を@code{nil}値にカスタマイズしてください。"
 
 #. type: section
 #: original_texis/building.texi:493
@@ -3049,7 +3036,7 @@ msgstr "(add-to-list 'load-path \"/path/to/my/lisp/library\")\n"
 #. type: Plain text
 #: original_texis/building.texi:1516
 msgid "It is customary to put locally installed libraries in the @file{site-lisp} directory that is already in the default value of @code{load-path}, or in some subdirectory of @file{site-lisp}.  This way, you don't need to modify the default value of @code{load-path}."
-msgstr ""
+msgstr "通例ではローカルにインストールしたライブラリーは、すでに@code{load-path}のデフォルト値である@file{site-lisp}ディレクトリーか、@file{site-lisp}のサブディレクトリーに配置します。この方法なら@code{load-path}のデフォルト値を変更する必要はありません。"
 
 #. type: cindex
 #: original_texis/building.texi:1517
@@ -3064,31 +3051,25 @@ msgstr "いくつかのコマンドは、@dfn{自動ロード(autoload)}され�
 
 #. type: vindex
 #: original_texis/building.texi:1525
-#, fuzzy, no-wrap
-#| msgid "help-enable-auto-load"
+#, no-wrap
 msgid "help-enable-autoload"
-msgstr "help-enable-auto-load"
+msgstr "help-enable-autoload"
 
 #. type: Plain text
 #: original_texis/building.texi:1532
-#, fuzzy
-#| msgid "Automatic loading can also occur when you look up the documentation of an autoloaded command (@pxref{Name Help}), if the documentation refers to other functions and variables in its library (loading the library lets Emacs properly set up the hyperlinks in the @file{*Help*} buffer).  To disable this feature, change the variable @code{help-enable-auto-load} to @code{nil}."
 msgid "Automatic loading can also occur when you look up the documentation of an autoloaded command (@pxref{Name Help}), if the documentation refers to other functions and variables in its library (loading the library lets Emacs properly set up the hyperlinks in the @file{*Help*} buffer).  To disable this feature, change the variable @code{help-enable-autoload} to @code{nil}."
-msgstr "自動的なロードは、自動ロードされたコマンドのドキュメントを探すとき(@ref{Name Help}を参照してください)にも発生します。それは、ドキュメントがライブラリーの他の関数や変数を参照する場合です(ライブラリーのロードにより@file{*Help*}バッファーのハイパーリンクが適切にセットアップされます)。この機能を無効にするには、変数@code{help-enable-auto-load}を@code{nil}に変更してください。"
+msgstr "自動的なロードは、自動ロードされたコマンドのドキュメントを探すとき(@ref{Name Help}を参照してください)にも発生します。それは、ドキュメントがライブラリーの他の関数や変数を参照する場合です(ライブラリーのロードにより@file{*Help*}バッファーのハイパーリンクが適切にセットアップされます)。この機能を無効にするには、変数@code{help-enable-autoload}を@code{nil}に変更してください。"
 
 #. type: vindex
 #: original_texis/building.texi:1533
-#, fuzzy, no-wrap
-#| msgid "help-enable-completion-auto-load"
+#, no-wrap
 msgid "help-enable-completion-autoload"
-msgstr "help-enable-completion-auto-load"
+msgstr "help-enable-completion-autoload"
 
 #. type: Plain text
 #: original_texis/building.texi:1538
-#, fuzzy
-#| msgid "Automatic loading also occurs when completing names for @code{describe-variable} and @code{describe-function}, based on the prefix being completed.  To disable this feature, change the variable @code{help-enable-completion-auto-load} to @code{nil}."
 msgid "Automatic loading also occurs when completing names for @code{describe-variable} and @code{describe-function}, based on the prefix being completed.  To disable this feature, change the variable @code{help-enable-completion-autoload} to @code{nil}."
-msgstr "@code{describe-variable}と@code{describe-function}での名前補完時にも、接頭辞が補完されたかにもとづいて、自動ロードが発生します。この機能を無効にするには、変数@code{help-enable-completion-auto-load}を@code{nil}に変更してください。"
+msgstr "@code{describe-variable}と@code{describe-function}での名前補完時にも、接頭辞が補完されたかにもとづいて、自動ロードが発生します。この機能を無効にするには、変数@code{help-enable-completion-autoload}を@code{nil}に変更してください。"
 
 #. type: vindex
 #: original_texis/building.texi:1539
@@ -3110,7 +3091,7 @@ msgstr "デフォルトではEmacsは、XEmacs ---Emacsの変更されたバー�
 #. type: Plain text
 #: original_texis/building.texi:1555
 msgid "Once you put your library in a directory where Emacs can find and load it, you may wish to make it available at startup.  This is useful when the library defines features that should be available automatically on demand, and manually loading the library is thus inconvenient.  In these cases, make sure the library will be loaded by adding suitable forms to your init file: either @code{load} or @code{require} (if you always need to load the library at startup), or @code{autoload} if you need Emacs to load the library when some command or function is invoked.  For example:"
-msgstr ""
+msgstr "Emacsが検索、ロード可能なディレクトリーにライブラリーを一度配置したら、スタートアップ時に利用可能にしたいと思うかもしれません。これはライブラリーがオンデマンドで自動的に利用可能になる必要がある機能を定義していて、手動でのライブラリーが不便な際に有用です。この場合にはinitファイルに適切なフォーム(スタートアップ時にライブライーのロードが常に必要なら@code{load}か@code{require}、あるコマンドや関数の呼び出し時にEmacsがライブラリーのロードを要するなら@code{autoload})を追加して確実にライブラリーがロードされるようにしてください。たとえば:"
 
 #. type: group
 #: original_texis/building.texi:1560
@@ -3119,6 +3100,8 @@ msgid ""
 " ;; Loads @file{my-shining-package.elc} unconditionally.\n"
 " (require 'my-shining-package)\n"
 msgstr ""
+" ;; 無条件で@file{my-shining-package.elc}をロード\n"
+" (require 'my-shining-package)\n"
 
 #. type: group
 #: original_texis/building.texi:1564
@@ -3127,11 +3110,13 @@ msgid ""
 " ;; Will load @file{my-shining-package.elc} when @code{my-func} is invoked.\n"
 " (autoload 'my-func \"my-shining-package\")\n"
 msgstr ""
+" ;; @code{my-func}呼び出し時に@file{my-shining-package.elc}をロード\n"
+" (autoload 'my-func \"my-shining-package\")\n"
 
 #. type: Plain text
 #: original_texis/building.texi:1572
 msgid "Note that installing a package using @code{package-install} (@pxref{Package Installation}) takes care of placing the package's Lisp files in a directory where Emacs will find it, and also writes the necessary initialization code into your init files, making the above manual customizations unnecessary."
-msgstr ""
+msgstr "@code{package-install} (@ref{Package Installation}を参照)を使用したパッケージのインストールでは、Emcasが探すディレクトリーにパッケージのLispファイルを配置するように配慮するとともに、上述した手動によるカスタマイズが不要となるように必要な初期化コードをinitファイルに書き込むことに注意してください。"
 
 #. type: node
 #: original_texis/building.texi:1573

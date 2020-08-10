@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-09-21 23:51+0900\n"
+"PO-Revision-Date: 2020-08-10 04:31+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -178,17 +178,13 @@ msgstr "prog-mode-hook"
 
 #. type: Plain text
 #: original_texis/modes.texi:125
-#, fuzzy
-#| msgid "Every major mode, apart from Fundamental mode, defines a @dfn{mode hook}, a customizable list of Lisp functions to run each time the mode is enabled in a buffer.  @xref{Hooks}, for more information about hooks.  Each mode hook is named after its major mode, e.g., Fortran mode has @code{fortran-mode-hook}.  Furthermore, all text-based major modes run @code{text-mode-hook}, and many programming language modes @footnote{More specifically, the modes which are ''derived'' from @code{prog-mode} (@pxref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}).} (including all those distributed with Emacs) run @code{prog-mode-hook}, prior to running their own mode hooks.  Hook functions can look at the value of the variable @code{major-mode} to see which mode is actually being entered."
 msgid "Every major mode, apart from Fundamental mode, defines a @dfn{mode hook}, a customizable list of Lisp functions to run each time the mode is enabled in a buffer.  @xref{Hooks}, for more information about hooks.  Each mode hook is named after its major mode, e.g., Fortran mode has @code{fortran-mode-hook}.  Furthermore, all text-based major modes run @code{text-mode-hook}, and many programming language modes @footnote{More specifically, the modes which are ``derived'' from @code{prog-mode} (@pxref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}).} (including all those distributed with Emacs) run @code{prog-mode-hook}, prior to running their own mode hooks.  Hook functions can look at the value of the variable @code{major-mode} to see which mode is actually being entered."
-msgstr "Fundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行される、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}を参照してください。各モードフックはメジャーモード名の後に名前がつけられます。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さらに、すべてのテキストベースのメジャーモードは、@code{text-mode-hook}を実行し、多くの、プログラミング言語のモード(Emacsとともに配布されるものを含む) は、その言語モード自身のモードフックの前に、@code{prog-mode-hook}を実行します@footnote{より具体的には、そのモードは@code{prog-mode}から''派生''したモードです(@ref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}を参照)。} 。フック関数は変数@code{major-mode}の値を調べて、どのモードに入ろうとしているか調べることができます。"
+msgstr "Fundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行される、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}を参照してください。各モードフックはメジャーモード名の後に名前がつけられます。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さらに、すべてのテキストベースのメジャーモードは、@code{text-mode-hook}を実行し、多くの、プログラミング言語のモード(Emacsとともに配布されるものを含む) は、その言語モード自身のモードフックの前に、@code{prog-mode-hook}を実行します@footnote{より具体的には、そのモードは@code{prog-mode}から``派生''したモードです(@ref{Derived Modes,,, elisp, The Emacs Lisp Reference Manual}を参照)。} 。フック関数は変数@code{major-mode}の値を調べて、どのモードに入ろうとしているか調べることができます。"
 
 #. type: Plain text
 #: original_texis/modes.texi:131
-#, fuzzy
-#| msgid "Mode hooks are commonly used to enable minor modes (@pxref{Minor Modes}).  For example, you can put the following lines in your init file to enable Flyspell minor mode in all text-based major modes (@pxref{Spelling}), and Eldoc minor mode in Emacs Lisp mode (@pxref{Lisp Doc}):"
 msgid "Mode hooks are commonly used to enable minor modes (@pxref{Minor Modes}).  For example, you can put the following lines in your init file to enable Flyspell minor mode in all text-based major modes (@pxref{Spelling}), and ElDoc minor mode in Emacs Lisp mode (@pxref{Lisp Doc}):"
-msgstr "モードフックは、一般的にマイナーモードを有効にするために使用されます(@ref{Minor Modes}を参照してください)。たとえば以下の行をinitファイルに記述すると、すべてのテキストベースのメジャーモードでFlyspellマイナーモード(@ref{Spelling}を参照してください)を、Emacs LispモードでEldocマイナーモード(@ref{Lisp Doc}を参照してください)を有効にすることができます:"
+msgstr "モードフックは、一般的にマイナーモードを有効にするために使用されます(@ref{Minor Modes}を参照してください)。たとえば以下の行をinitファイルに記述すると、すべてのテキストベースのメジャーモードでFlyspellマイナーモード(@ref{Spelling}を参照してください)を、Emacs LispモードでElDocマイナーモード(@ref{Lisp Doc}を参照してください)を有効にすることができます:"
 
 #. type: example
 #: original_texis/modes.texi:135
@@ -390,15 +386,13 @@ msgstr "Tool Barモードは、各フレームにツールバーを表示しま�
 
 #. type: itemize
 #: original_texis/modes.texi:300
-#, fuzzy
-#| msgid "Menu Bar mode gives each frame a menu bar.  It is enabled by default.  @xref{Menu Bars}."
 msgid "Tab Bar mode gives each frame a tab bar.  @xref{Tab Bars}."
-msgstr "Menu Barモードは、各フレームにメニューバーを表示します。このモードはデフォルトで有効です。@ref{Menu Bars}を参照してください。"
+msgstr "Tab Barモードは各フレームにタブバーを表示します。@ref{Tab Bars}を参照してください。"
 
 #. type: itemize
 #: original_texis/modes.texi:303
 msgid "Tab Line mode gives each window a tab line.  @xref{Tab Line}."
-msgstr ""
+msgstr "Tab Lineモードは各ウィンドウにタブラインを表示します。@ref{Tab Line}を参照してください。"
 
 #. type: itemize
 #: original_texis/modes.texi:308

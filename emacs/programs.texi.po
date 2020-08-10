@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-09-22 14:06+0900\n"
+"PO-Revision-Date: 2020-08-10 13:50+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -536,10 +536,8 @@ msgstr "( in leftmost column"
 
 #. type: Plain text
 #: original_texis/programs.texi:164
-#, fuzzy
-#| msgid "Many programming-language modes assume by default that any opening delimiter found at the left margin is the start of a top-level definition, or defun.  Therefore, @strong{don't put an opening delimiter at the left margin unless it should have that significance}.  For instance, never put an open-parenthesis at the left margin in a Lisp file unless it is the start of a top-level list."
 msgid "Many programming-language modes have traditionally assumed that any opening parenthesis or brace found at the left margin is the start of a top-level definition, or defun.  So, by default, commands which seek the beginning of a defun accept such a delimiter as signifying that position."
-msgstr "プログラミング言語のモードの多くは、デフォルトでは左端で見つかった開始区切りは、トップレベル定義、またはdefunの開始とみなします。したがって、@strong{そのような意味をもたない場合、開始区切りを左端に配してはいけません}。たとえば、それがトップレベルのリストの開始でない場合は、Lispファイルの左端に開きカッコを記述しないでください。"
+msgstr "プログラミング言語のモードの多くは、伝統的に左マージンにある開カッコや開大カッコ(opening parenthesis or brace)をトップレベルの定義やdefunの開始とみなします。そのためにdefun開始を探すコマンドは、デフォルトではそのような区切りをdefun開始位置として受け取ります。"
 
 #. type: vindex
 #: original_texis/programs.texi:165
@@ -549,10 +547,8 @@ msgstr "open-paren-in-column-0-is-defun-start"
 
 #. type: Plain text
 #: original_texis/programs.texi:175
-#, fuzzy
-#| msgid "If you need to override this convention, you can do so by setting the variable @code{open-paren-in-column-0-is-defun-start}.  If this user option is set to @code{t} (the default), opening parentheses or braces at column zero always start defuns.  When it is @code{nil}, defuns are found by searching for parens or braces at the outermost level."
 msgid "If you want to override this convention, you can do so by setting the user option @code{open-paren-in-column-0-is-defun-start} to @code{nil}.  If this option is set to @code{t} (the default), commands seeking the start of a defun will stop at opening parentheses or braces at column zero which aren't in a comment or string.  When it is @code{nil}, defuns are found by searching for parens or braces at the outermost level.  Since low-level Emacs routines no longer depend on this convention, you usually won't need to change @code{open-paren-in-column-0-is-defun-start} from its default."
-msgstr "この慣習をオーバーライドする必要がある場合、変数@code{open-paren-in-column-0-is-defun-start}をセッティングすることにより、これを行うことができます。このユーザーオプションが@code{t}(デフォルト)にセットされている場合、列0の開きカッコまたは大カッコ(braces)は常にdefunの開始となります。@code{nil}の場合、defunは最外レベルのカッコまたは大カッコを検索することにより発見されます。"
+msgstr "この慣習をオーバーライドしたければ、ユーザーオプション@code{open-paren-in-column-0-is-defun-start}を@code{nil}にセットすることによって行うことができます。このオプションが@code{t} (デフォルト)にセットされている場合には、このdefun開始の探すコマンドは、コメントや文字列中以外の列0の開カッコか開大カッコ(braces)で停止します。@code{nil}ならdefunは最外レベルのカッコまたは大カッコを検索することにより発見されます。Emacsの低レベルルーチンはもはやこの慣習に依存しないので、通常は@code{open-paren-in-column-0-is-defun-start}をデフォルトから変更する必要はないでしょう。"
 
 #. type: cindex
 #: original_texis/programs.texi:178
@@ -2434,10 +2430,9 @@ msgstr "Emacs Lispコードを編集するとき、コマンド@kbd{C-h f} (@cod
 
 #. type: cindex
 #: original_texis/programs.texi:1263
-#, fuzzy, no-wrap
-#| msgid "Eldoc mode"
+#, no-wrap
 msgid "ElDoc mode"
-msgstr "Eldoc mode"
+msgstr "ElDoc mode"
 
 #. type: findex
 #: original_texis/programs.texi:1264
@@ -2453,10 +2448,8 @@ msgstr "global-eldoc-mode"
 
 #. type: Plain text
 #: original_texis/programs.texi:1275
-#, fuzzy
-#| msgid "Eldoc is a buffer-local minor mode that helps with looking up Lisp documentation.  When it is enabled, the echo area displays some useful information whenever there is a Lisp function or variable at point; for a function, it shows the argument list, and for a variable it shows the first line of the variable's documentation string.  To toggle Eldoc mode, type @kbd{M-x eldoc-mode}.  There's also a Global Eldoc mode, which is turned on by default, and affects buffers, such as @samp{*scratch*}, whose major mode is Emacs Lisp or Lisp Interaction (@w{@kbd{M-x global-eldoc-mode}} to turn it off globally)."
 msgid "ElDoc is a buffer-local minor mode that helps with looking up Lisp documentation.  When it is enabled, the echo area displays some useful information whenever there is a Lisp function or variable at point; for a function, it shows the argument list, and for a variable it shows the first line of the variable's documentation string.  To toggle ElDoc mode, type @kbd{M-x eldoc-mode}.  There's also a Global ElDoc mode, which is turned on by default, and affects buffers, such as @samp{*scratch*}, whose major mode is Emacs Lisp or Lisp Interaction (@w{@kbd{M-x global-eldoc-mode}} to turn it off globally)."
-msgstr "Eldocモードは、Lispドキュメントを検索するのに助けとなる、バッファーローカルなマイナーモードです。これが有効な場合、ポイントがLisp関数または変数にあるときは、有用な情報がエコーエリアに表示されます。関数の場合は引数リスト、変数の場合は変数のドキュメントストリングの最初の行が表示されます。Eldocモードに切り替えるには、@kbd{M-x eldoc-mode}とタイプします。Global Eldocモードもあり、これはデフォルトでオンであり、バッファーにたいするメジャーモードがEmacs LispモードやLisp Interactionモードである、@samp{*scratch*}のようなバッファーに影響します(@w{@kbd{M-x global-eldoc-mode}}でグローバルでオフに切り替えられます)。"
+msgstr "ElDocモードは、Lispドキュメントを検索するのに助けとなる、バッファーローカルなマイナーモードです。これが有効な場合、ポイントがLisp関数または変数にあるときは、有用な情報がエコーエリアに表示されます。関数の場合は引数リスト、変数の場合は変数のドキュメントストリングの最初の行が表示されます。ElDocモードに切り替えるには、@kbd{M-x eldoc-mode}とタイプします。Global ElDocモードもあり、これはデフォルトでオンであり、バッファーにたいするメジャーモードがEmacs LispモードやLisp Interactionモードである、@samp{*scratch*}のようなバッファーに影響します(@w{@kbd{M-x global-eldoc-mode}}でグローバルでオフに切り替えられます)。"
 
 #. type: section
 #: original_texis/programs.texi:1277

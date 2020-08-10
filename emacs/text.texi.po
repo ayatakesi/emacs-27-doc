@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-09-22 16:42+0900\n"
+"PO-Revision-Date: 2020-08-10 04:52+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -974,15 +974,14 @@ msgstr "Electric Quoteモードは、このモードをどこでアクティブ�
 
 #. type: vindex
 #: original_texis/text.texi:462
-#, fuzzy, no-wrap
-#| msgid "electric-quote-mode"
+#, no-wrap
 msgid "electric-quote-replace-double"
-msgstr "electric-quote-mode"
+msgstr "electric-quote-replace-double"
 
 #. type: Plain text
 #: original_texis/text.texi:468
 msgid "You can also set the option @code{electric-quote-replace-double} to a non-@code{nil} value.  Then, typing @t{\"} insert an appropriate curved double quote depending on context: @t{“} at the beginning of the buffer or after a line break, whitespace, opening parenthesis, or quote character, and @t{”} otherwise."
-msgstr ""
+msgstr "オプション@code{electric-quote-replace-double}を非@code{nil}値にセットすることもできます。その場合には@t{\"}とタイプすることにより、コンテキストに応じて適切なcurved double quoteが挿入されます。バッファー先頭や行ブレーク、空白、開カッコ、クォート文字の後には@t{“}、それ以外なら@t{”}が挿入されます。"
 
 #. type: Plain text
 #: original_texis/text.texi:481
@@ -1307,15 +1306,13 @@ msgstr "fill-nobreak-predicate"
 
 #. type: Plain text
 #: original_texis/text.texi:646
-#, fuzzy
-#| msgid "To specify additional conditions where line-breaking is not allowed, customize the abnormal hook variable @code{fill-nobreak-predicate} (@pxref{Hooks}).  Each function in this hook is called with no arguments, with point positioned where Emacs is considering breaking a line.  If a function returns a non-@code{nil} value, Emacs will not break the line there.  Functions you can use there include: @code{fill-single-word-nobreak-p} (don't break after the first word of a sentence or before the last); @code{fill-single-char-nobreak-p} (don't break after a one-letter word); and @code{fill-french-nobreak-p} (don't break after @samp{(} or before @samp{)}, @samp{:} or @samp{?})."
 msgid "To specify additional conditions where line-breaking is not allowed, customize the abnormal hook variable @code{fill-nobreak-predicate} (@pxref{Hooks}).  Each function in this hook is called with no arguments, with point positioned where Emacs is considering breaking a line.  If a function returns a non-@code{nil} value, Emacs will not break the line there.  Functions you can use there include: @code{fill-single-word-nobreak-p} (don't break after the first word of a sentence or before the last); @code{fill-single-char-nobreak-p} (don't break after a one-letter word preceded by a whitespace character); @code{fill-french-nobreak-p} (don't break after @samp{(} or before @samp{)}, @samp{:} or @samp{?}); and @code{fill-polish-nobreak-p} (don't break after a one letter word, even if preceded by a non-whitespace character)."
-msgstr "行分割を許さない場所の条件を追加で指定するには、アブノーマルフック変数@code{fill-nobreak-predicate}をカスタマイズします(@ref{Hooks}を参照してください)。このフックの各関数は、Emacsが行を分割すべきと判断する位置で、引数なしで呼び出されます。関数が非@code{nil}値を返した場合、Emacsはその位置で行を分割しません。このフックに指定できる関数には、@code{fill-single-word-nobreak-p}(センテンスの最初の単語の後ろ、および最後の単語の前では分割しません)、@code{fill-single-char-nobreak-p}(1文字の単語の後ろでは分割しません)、@code{fill-french-nobreak-p}(@samp{(}の後ろ、および@samp{)}、@samp{:}、@samp{?}の前では分割しません)が含まれます。"
+msgstr "行分割を許さない場所の条件を追加で指定するには、アブノーマルフック変数@code{fill-nobreak-predicate}をカスタマイズします(@ref{Hooks}を参照してください)。このフックの各関数はEmacsが行を分割すべきと判断する位置で引数なしで呼び出されます。関数が非@code{nil}値を返した場合には、Emacsはその位置で行を分割しません。このフックに指定できる関数には@code{fill-single-word-nobreak-p} (センテンスの最初の単語の後ろ、および最後の単語の前では分割しません)、@code{fill-single-char-nobreak-p} (空白文字が前置された1文字の単語の後ろでは分割しません)、@code{fill-french-nobreak-p} (@samp{(}の後ろ、および@samp{)}、@samp{:}、@samp{?}の前では分割しません)、@code{fill-polish-nobreak-p} (非空白文字が前置された1文字の単語の後ろでも分割しません)が含まれます。"
 
 #. type: Plain text
 #: original_texis/text.texi:650
 msgid "Emacs can display an indicator in the @code{fill-column} position using the Display fill column indicator mode (@pxref{Displaying Boundaries, display-fill-column-indicator})."
-msgstr ""
+msgstr "EmacsはDisplay fill column indicatorモード(@ref{Displaying Boundaries, display-fill-column-indicator}を参照)を使用することによって@code{fill-column}の位置にインジケーターを表示できます。"
 
 #. type: subsection
 #: original_texis/text.texi:652
@@ -2964,10 +2961,8 @@ msgstr "アジェンダファイルのアイテムを閲覧するには、@kbd{M
 
 #. type: ifnottex
 #: original_texis/text.texi:1456
-#, fuzzy
-#| msgid "@xref{Agenda views,,,org, The Org Manual}, for details."
 msgid "@xref{Agenda Views,,,org, The Org Manual}, for details."
-msgstr "詳細は、@ref{Agenda views,,,org, The Org Manual}を参照してください。"
+msgstr "詳細は、@ref{Agenda Views,,,org, The Org Manual}を参照してください。"
 
 #. type: subsection
 #: original_texis/text.texi:1459
@@ -3632,10 +3627,8 @@ msgstr "tex-print-file-extension"
 
 #. type: Plain text
 #: original_texis/text.texi:1782
-#, fuzzy
-#| msgid "The buffer's @TeX{} variant determines what shell command @kbd{C-c C-b} actually runs.  In Plain @TeX{} mode, it is specified by the variable @code{tex-run-command}, which defaults to @code{\"tex\"}.  In @LaTeX{} mode, it is specified by @code{latex-run-command}, which defaults to @code{\"latex\"}.  The shell command that @kbd{C-c C-v} runs to view the @file{.dvi} output is determined by the variable @code{tex-dvi-view-command}, regardless of the @TeX{} variant.  The shell command that @kbd{C-c C-p} runs to print the output is determined by the variable @code{tex-dvi-print-command}.  The variable @code{tex-print-file-extension} can be set to the required file extension for viewing and printing @TeX{}-compiled files.  For example, you can set it to @file{.pdf}, and update @code{tex-dvi-view-command} and @code{tex-dvi-print-command} accordingly."
 msgid "The buffer's @TeX{} variant determines what shell command @kbd{C-c C-b} actually runs.  In Plain @TeX{} mode, it is specified by the variable @code{tex-run-command}, which defaults to @code{\"tex\"}.  In @LaTeX{} mode, it is specified by @code{latex-run-command}, which defaults to @code{\"latex\"}.  The shell command that @kbd{C-c C-v} runs to view the @file{.dvi} output is determined by the variable @code{tex-dvi-view-command}, regardless of the @TeX{} variant.  The shell command that @kbd{C-c C-p} runs to print the output is determined by the variable @code{tex-dvi-print-command}.  The variable @code{tex-print-file-extension} can be set to the required file extension for viewing and printing @TeX{}-compiled files.  For example, you can set it to @file{.pdf}, and update @code{tex-dvi-view-command} and @code{tex-dvi-print-command} accordingly, as well as @code{latex-run-command} or @code{tex-run-command}."
-msgstr "そのバッファーにたいする@TeX{}の変種は、@kbd{C-c C-b}で実際に実行されるシェルコマンドを決定します。Plain @TeX{}モードでは、これは変数@code{tex-run-command}で指定され、デフォルトは@code{\"tex\"}です。@LaTeX{}モードでは、これは@code{latex-run-command}で指定され、デフォルトは@code{\"latex\"}です。@file{.dvi}を閲覧するために@kbd{C-c C-v}で実行されるシェルコマンドは、@TeX{}の種類に関係なく、変数@code{tex-dvi-view-command}で決定されます。出力を印刷するために@kbd{C-c C-p}で実行されるシェルコマンドは、変数@code{tex-dvi-print-command}で決定されます。@TeX{}でコンパイルされたファイルを閲覧および印刷するために要求されるファイル拡張子は、変数@code{tex-print-file-extension}でセットできます。たとえば、この変数に@file{.pdf}をセットして、それに合わせて@code{tex-dvi-view-command}と@code{tex-dvi-print-command}を変更できます。"
+msgstr "そのバッファーにたいする@TeX{}の変種は、@kbd{C-c C-b}で実際に実行されるシェルコマンドを決定します。Plain @TeX{}モードでは、これは変数@code{tex-run-command}で指定され、デフォルトは@code{\"tex\"}です。@LaTeX{}モードでは、これは@code{latex-run-command}で指定され、デフォルトは@code{\"latex\"}です。@file{.dvi}を閲覧するために@kbd{C-c C-v}で実行されるシェルコマンドは、@TeX{}の種類に関係なく、変数@code{tex-dvi-view-command}で決定されます。出力を印刷するために@kbd{C-c C-p}で実行されるシェルコマンドは、変数@code{tex-dvi-print-command}で決定されます。@TeX{}でコンパイルされたファイルを閲覧および印刷するために要求されるファイル拡張子は、変数@code{tex-print-file-extension}でセットできます。たとえば、この変数に@file{.pdf}をセットして、それに合わせて@code{tex-dvi-view-command}と@code{tex-dvi-print-command}、同様に@code{latex-run-command}や@code{tex-run-command}を更新できます。"
 
 #. type: Plain text
 #: original_texis/text.texi:1791
@@ -5142,10 +5135,8 @@ msgstr "その他のテキストプロパティーのセッティング"
 
 #. type: Plain text
 #: original_texis/text.texi:2431
-#, fuzzy
-#| msgid "The Special Properties submenu of Text Properties has entries for adding or removing three other text properties: @code{read-only}, (which disallows alteration of the text), @code{invisible} (which hides text), and @code{intangible} (which disallows moving point within the text).  The @samp{Remove Special} menu item removes all of these special properties from the text in the region."
 msgid "The Special Properties submenu of Text Properties has entries for adding or removing four other text properties: @code{read-only}, (which disallows alteration of the text), @code{invisible} (which hides text), @code{intangible} (which disallows moving point within the text), and @code{charset} (which is important for selecting a proper font to display a character).  The @samp{Remove Special} menu item removes all of these special properties from the text in the region."
-msgstr "Text PropertiesメニューのSpecial Propertiesサブメニューには、3つのテキストプロパティー --- @code{read-only}(テキストの変更を不可にします)、@code{invisible}(テキストを非表示にします)、@code{intangible}(テキスト内でのポイントの移動を不可にします) --- を、追加または削除するエントリーがあります。@samp{Remove Special}メニューアイテムは、リージョン内のテキストにたいする、これらの特別なプロパティーを削除します。"
+msgstr "Text PropertiesメニューのSpecial Propertiesサブメニューには、4つのテキストプロパティー --- @code{read-only} (テキストの変更を不可にします)、@code{invisible} (テキストを非表示にします)、@code{intangible} (テキスト内でのポイントの移動を不可にします)、@code{charset} (これは文字の表示に正しいフォントを選択するために重要です) --- を追加または削除するエントリーがあります。@samp{Remove Special}メニューアイテムは、リージョン内のテキストにたいする、これらの特別なプロパティーを削除します。"
 
 #. type: Plain text
 #: original_texis/text.texi:2433
@@ -6046,10 +6037,8 @@ msgstr "table-generate-source"
 
 #. type: Plain text
 #: original_texis/text.texi:2861
-#, fuzzy
-#| msgid "@kbd{M-x table-generate-source} generates a table formatted for a specific markup language.  It asks for a language (which must be one of @code{html}, @code{latex}, or @code{cals}), a destination buffer in which to put the result, and a table caption, and then inserts the generated table into the specified buffer.  The default destination buffer is @code{table.@var{lang}}, where @var{lang} is the language you specified."
 msgid "@kbd{M-x table-generate-source} generates a table formatted for a specific markup language.  It asks for a language (which must be one of @code{html}, @code{latex}, @code{cals}, @code{wiki} or @code{mediawiki}), a destination buffer in which to put the result, and a table caption, and then inserts the generated table into the specified buffer.  The default destination buffer is @code{table.@var{lang}}, where @var{lang} is the language you specified."
-msgstr "@kbd{M-x table-generate-source}は、特定のマークアップ言語にフォーマットされたテーブルを生成します。このコマンドは言語(これは@code{html}、@code{latex}、@code{cals}のどれか1つでなければなりません)と、結果を出力するバッファー、テーブルの表題を尋ね、生成されたテーブルを指定したバッファーに出力します。デフォルトの出力バッファーは@code{table.@var{lang}}で、@var{lang}は指定された言語です。"
+msgstr "@kbd{M-x table-generate-source}は特定のマークアップ言語にフォーマットされたテーブルを生成します。このコマンドは言語(これは@code{html}、@code{latex}、@code{cals}、@code{wiki}、@code{mediawiki}のいずれかでなければなりません)と、結果を出力するバッファー、テーブルの表題を尋ね、生成されたテーブルを指定したバッファーに出力します。デフォルトの出力バッファーは@code{table.@var{lang}}で、@var{lang}は指定された言語です。"
 
 #. type: section
 #: original_texis/text.texi:2863
