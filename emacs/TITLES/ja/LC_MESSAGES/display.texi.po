@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:47+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -53,14 +53,12 @@ msgid "@section Colors for Faces"
 msgstr "@section フェイスのカラー"
 
 #: TITLES/src/display.texi.pl:16
-#, fuzzy
 msgid "@subsection Color Names"
-msgstr "@section フェイスのカラー"
+msgstr "@subsection カラー名"
 
 #: TITLES/src/display.texi.pl:17
-#, fuzzy
 msgid "@subsection RGB Triplets"
-msgstr "@section テキストのフェイス"
+msgstr "@subsection RGBトリプレット"
 
 #: TITLES/src/display.texi.pl:18
 msgid "@section Standard Faces"
