@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2020-08-12 03:39+0900\n"
+"PO-Revision-Date: 2020-08-12 03:58+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -89,10 +89,8 @@ msgstr "* Picture Mode:: Editing pictures made up of characters using the quarte
 
 #. type: iftex
 #: original_texis/emacs-xtra.texi:69
-#, fuzzy
-#| msgid "* Autorevert:: Auto Reverting non-file buffers.  * Subdir Switches:: Subdirectory switches in Dired.  * Advanced Calendar/Diary Usage:: Advanced Calendar/Diary customization.  * Emerge:: A convenient way of merging two versions of a program.  * Advanced VC Usage:: Advanced VC (version control) features.  * Fortran:: Fortran mode and its special features.  * MS-DOS:: Using Emacs on MS-DOS."
 msgid "* Non-File Buffers:: Auto Reverting non-file buffers.  * Subdir Switches:: Subdirectory switches in Dired.  * Advanced Calendar/Diary Usage:: Advanced Calendar/Diary customization.  * Emerge:: A convenient way of merging two versions of a program.  * Advanced VC Usage:: Advanced VC (version control) features.  * Fortran:: Fortran mode and its special features.  * MS-DOS:: Using Emacs on MS-DOS."
-msgstr "* Autorevert:: Auto Reverting non-file buffers.  * Subdir Switches:: Subdirectory switches in Dired.  * Advanced Calendar/Diary Usage:: Advanced Calendar/Diary customization.  * Emerge:: A convenient way of merging two versions of a program.  * Advanced VC Usage:: Advanced VC (version control) features.  * Fortran:: Fortran mode and its special features.  * MS-DOS:: Using Emacs on MS-DOS."
+msgstr "* Non-File Buffers:: Auto Reverting non-file buffers.  * Subdir Switches:: Subdirectory switches in Dired.  * Advanced Calendar/Diary Usage:: Advanced Calendar/Diary customization.  * Emerge:: A convenient way of merging two versions of a program.  * Advanced VC Usage:: Advanced VC (version control) features.  * Fortran:: Fortran mode and its special features.  * MS-DOS:: Using Emacs on MS-DOS."
 
 #. type: appendix
 #: original_texis/emacs-xtra.texi:72 original_texis/emacs-xtra.texi:131
