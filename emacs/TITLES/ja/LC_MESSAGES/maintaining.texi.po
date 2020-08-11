@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -132,7 +132,7 @@ msgstr "@subsubsection 新しいブランチの作成"
 
 #: TITLES/src/maintaining.texi.pl:35
 msgid "@section Working with Projects"
-msgstr ""
+msgstr "@section プロジェクトで作業する"
 
 #: TITLES/src/maintaining.texi.pl:36
 msgid "@section Change Logs"
