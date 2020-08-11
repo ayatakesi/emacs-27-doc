@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:52+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,9 +21,8 @@ msgid "@section The Package Menu Buffer"
 msgstr "@section Package Menuバッファー"
 
 #: TITLES/src/package.texi.pl:8
-#, fuzzy
 msgid "@section Package Statuses"
-msgstr "@section パッケージのインストール"
+msgstr "@section パッケージのステータス"
 
 #: TITLES/src/package.texi.pl:9
 msgid "@section Package Installation"
