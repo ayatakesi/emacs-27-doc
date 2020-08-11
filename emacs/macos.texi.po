@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-12 02:42+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  macos.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  macos.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.pMk12jZTrA (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.CkxV9Zojla.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.dsmgc1DF9n.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: node
 #: original_texis/macos.texi:4
@@ -133,10 +125,8 @@ msgstr "modifier keys (macOS)"
 
 #. type: Plain text
 #: original_texis/macos.texi:53
-#, fuzzy
-#| msgid "By default, the @key{Alt} and @key{Option} keys are the same as @key{Meta}.  The Mac @key{Cmd} key is the same as @key{Super}, and Emacs provides a set of key bindings using this modifier key that mimic other Mac / GNUstep applications (@pxref{Mac / GNUstep Events}).  You can change these bindings in the usual way (@pxref{Key Bindings})."
 msgid "By default, the @key{Alt} and @key{Option} keys are the same as @key{Meta}.  The Mac @key{Cmd} key is the same as @key{Super}, and Emacs provides a set of key bindings using this modifier key that mimic other Mac / GNUstep applications (@pxref{Mac / GNUstep Events}).  You can change these bindings in the usual way (@pxref{Key Bindings}).  The modifiers themselves can be customized; @pxref{Mac / GNUstep Customization}."
-msgstr "デフォルトでは、キー@key{Alt}と@key{Option}は、@key{Meta}と同じです。Macの@key{Cmd}キーは@key{Super}と同じで、Emacsは他のMac/GNUstepアプリケーション(@ref{Mac / GNUstep Events}を参照してください)を模倣するこれらの修飾キーを使用した、一連のキーバインドを提供します。これらのキーバインドは通常の方法で変更できます(@ref{Key Bindings}を参照してください)。"
+msgstr "デフォルトでは、キー@key{Alt}と@key{Option}は、@key{Meta}と同じです。Macの@key{Cmd}キーは@key{Super}と同じで、Emacsは他のMac/GNUstepアプリケーション(@ref{Mac / GNUstep Events}を参照してください)を模倣するこれらの修飾キーを使用した、一連のキーバインドを提供します。これらのキーバインドは通常の方法で変更できます(@ref{Key Bindings}を参照)。修飾キー自体はカスタマイズできます。@ref{Mac / GNUstep Customization}を参照してください。"
 
 #. type: Plain text
 #: original_texis/macos.texi:59
@@ -188,15 +178,14 @@ msgstr "多くはありませんが、Nextstepポートに特有のカスタマ�
 
 #. type: subsection
 #: original_texis/macos.texi:100
-#, fuzzy, no-wrap
-#| msgid "modifier keys (macOS)"
+#, no-wrap
 msgid "Modifier keys"
-msgstr "modifier keys (macOS)"
+msgstr "Modifier keys"
 
 #. type: Plain text
 #: original_texis/macos.texi:104
 msgid "The following variables control the behavior of the actual modifier keys:"
-msgstr ""
+msgstr "以下の変数は実際の修飾キーの挙動を制御します:"
 
 #. type: item
 #: original_texis/macos.texi:106 original_texis/macos.texi:108
@@ -213,171 +202,166 @@ msgstr "ns-right-alternate-modifier"
 #. type: table
 #: original_texis/macos.texi:111
 msgid "The left and right @key{Option} or @key{Alt} keys."
-msgstr ""
+msgstr "左および右の@key{Option}キーまたは@key{Alt}キー。"
 
 #. type: item
 #: original_texis/macos.texi:112 original_texis/macos.texi:114
-#, fuzzy, no-wrap
-#| msgid "ns-alternate-modifier"
+#, no-wrap
 msgid "ns-command-modifier"
-msgstr "ns-alternate-modifier"
+msgstr "ns-command-modifier"
 
 #. type: itemx
 #: original_texis/macos.texi:113 original_texis/macos.texi:115
-#, fuzzy, no-wrap
-#| msgid "ns-right-alternate-modifier"
+#, no-wrap
 msgid "ns-right-command-modifier"
-msgstr "ns-right-alternate-modifier"
+msgstr "ns-right-command-modifier"
 
 #. type: table
 #: original_texis/macos.texi:117
 msgid "The left and right @key{Command} keys."
-msgstr ""
+msgstr "左および右の@key{Command}キー。"
 
 #. type: item
 #: original_texis/macos.texi:118 original_texis/macos.texi:120
-#, fuzzy, no-wrap
-#| msgid "ns-alternate-modifier"
+#, no-wrap
 msgid "ns-control-modifier"
-msgstr "ns-alternate-modifier"
+msgstr "ns-control-modifier"
 
 #. type: itemx
 #: original_texis/macos.texi:119 original_texis/macos.texi:121
-#, fuzzy, no-wrap
-#| msgid "ns-right-alternate-modifier"
+#, no-wrap
 msgid "ns-right-control-modifier"
-msgstr "ns-right-alternate-modifier"
+msgstr "ns-right-control-modifier"
 
 #. type: table
 #: original_texis/macos.texi:123
 msgid "The left and right @key{Control} keys."
-msgstr ""
+msgstr "左および右の@key{Control}キー。"
 
 #. type: item
 #: original_texis/macos.texi:124 original_texis/macos.texi:125
-#, fuzzy, no-wrap
-#| msgid "ns-alternate-modifier"
+#, no-wrap
 msgid "ns-function-modifier"
-msgstr "ns-alternate-modifier"
+msgstr "ns-function-modifier"
 
 #. type: table
 #: original_texis/macos.texi:127
 msgid "The @key{Function} (fn) key."
-msgstr ""
+msgstr "@key{Function}キー(fnキー)。"
 
 #. type: Plain text
 #: original_texis/macos.texi:134
 msgid "The value of each variable is either a symbol, describing the key for any purpose, or a list of the form @code{(:ordinary @var{symbol} :function @var{symbol} :mouse @var{symbol})}, which describes the modifier when used with ordinary keys, function keys (that do not produce a character, such as arrow keys), and mouse clicks."
-msgstr ""
+msgstr "各変数の値は目的にたいしてキーを記述するシンボル、通常のキーとともに使用された際の修飾を記述する@code{(:ordinary @var{symbol} :function @var{symbol} :mouse @var{symbol})}という形式のリスト、ファンクションキー(矢印キーのように文字を生成しない)、マウスクリックのいずれかです。"
 
 #. type: Plain text
 #: original_texis/macos.texi:141
 msgid "If the @var{symbol} is one of @code{control}, @code{meta}, @code{alt}, @code{super} or @code{hyper}, this describes the Emacs modifier it represents.  If @var{symbol} is @code{none}, Emacs does not use the key, which retains its standard behavior.  For instance, the @key{Option} key in macOS is then used for composing additional characters."
-msgstr ""
+msgstr "@var{symbol}が@code{control}、@code{meta}、@code{alt}、@code{super}、@code{hyper}のいずれかなら、それを表すEmacs修飾を記述すします。@var{symbol}が@code{none}ならEmacsはそのキーを使用せず標準的な挙動のままとなります。たとえばmacOSの@key{Option}キーなら追加の文字の合成に使用されます。"
 
 #. type: Plain text
 #: original_texis/macos.texi:145
 msgid "The variables for right-hand keys, like @code{ns-right-alternate-modifier}, may also be set to @code{left}, which means to use the same behavior as the corresponding left-hand key."
-msgstr ""
+msgstr "@code{ns-right-alternate-modifier}のような右手側のキーにたいする変数は、対応する左手側のキーと同じ振る舞いの使用を意味する@code{left}にもセットできます。"
 
 #. type: subsection
 #: original_texis/macos.texi:146
 #, no-wrap
 msgid "Frame Variables"
-msgstr ""
+msgstr "Frame Variables"
 
 #. type: item
 #: original_texis/macos.texi:149 original_texis/macos.texi:150
 #, no-wrap
 msgid "ns-use-proxy-icon"
-msgstr ""
+msgstr "ns-use-proxy-icon"
 
 #. type: table
 #: original_texis/macos.texi:153
 msgid "This variable specifies whether to display the proxy icon in the titlebar."
-msgstr ""
+msgstr "この変数はtitlebarにproxyアイコンを表示するかどうかを指定します。"
 
 #. type: item
 #: original_texis/macos.texi:154 original_texis/macos.texi:155
 #, no-wrap
 msgid "ns-confirm-quit"
-msgstr ""
+msgstr "ns-confirm-quit"
 
 #. type: table
 #: original_texis/macos.texi:158
 msgid "This variable specifies whether to display a graphical confirmation dialogue on quitting."
-msgstr ""
+msgstr "この変数はquit時にグラフィカルなconfirmationダイアログを表示するかどうかを指定します。"
 
 #. type: item
 #: original_texis/macos.texi:159 original_texis/macos.texi:160
 #, no-wrap
 msgid "ns-auto-hide-menu-bar"
-msgstr ""
+msgstr "ns-auto-hide-menu-bar"
 
 #. type: table
 #: original_texis/macos.texi:164
 msgid "This variable specifies whether the macOS menu bar is hidden when an Emacs frame is selected.  If non-nil the menu bar is not shown unless the mouse pointer is moved near to the top of the screen."
-msgstr ""
+msgstr "この変数はEmacsフレーム選択時にmacOSのメニューバーを隠すかどうかを指定します。非nilならマウスポインターがスクリーン上端近傍に移動するまでメニューバーは表示されません。"
 
 #. type: item
 #: original_texis/macos.texi:165 original_texis/macos.texi:166
 #, no-wrap
 msgid "ns-use-native-fullscreen"
-msgstr ""
+msgstr "ns-use-native-fullscreen"
 
 #. type: table
 #: original_texis/macos.texi:170
 msgid "This variable controls whether to use native, or non-native fullscreen.  Native fullscreen is only available on macOS 10.7 and above."
-msgstr ""
+msgstr "この変数はネィティブフルスクリーンか非ネイティブフルスクリーンを使用するかどうかを制御します。ネイティブフルスクリーンはmacOS 10.7以降でのみ利用可能です。"
 
 #. type: subsection
 #: original_texis/macos.texi:172
 #, no-wrap
 msgid "macOS Trackpad/Mousewheel Variables"
-msgstr ""
+msgstr "macOS Trackpad/Mousewheel Variables"
 
 #. type: Plain text
 #: original_texis/macos.texi:175
 msgid "These variables only apply to macOS 10.7 (Lion) and above."
-msgstr ""
+msgstr "これらの変数はmacOS 10.7(Lion)以降にのみ適用されます。"
 
 #. type: item
 #: original_texis/macos.texi:177 original_texis/macos.texi:178
 #, no-wrap
 msgid "ns-use-mwheel-acceleration"
-msgstr ""
+msgstr "ns-use-mwheel-acceleration"
 
 #. type: table
 #: original_texis/macos.texi:184
 msgid "This variable controls whether Emacs ignores the system mousewheel acceleration.  When nil each `click' of the mousewheel will correspond exactly with one mousewheel event.  When non-nil, the default, each `click' may correspond with more than one mousewheel event, depending on the user's input."
-msgstr ""
+msgstr "この変数はEmacsがシステムのマウスホイールアクセラレーションを無視するかどうかを制御します。nilならマウスホイールの`クリック'はそれぞれ正確に1つのマウスホイールイベントに対応します。非nil(デフォルト)ならマウスホイールの`クリック'はそれぞれユーザー入力に依存して1つ以上のマウスホイールイベントに対応するかもしれません。"
 
 #. type: item
 #: original_texis/macos.texi:185 original_texis/macos.texi:186
 #, no-wrap
 msgid "ns-use-mwheel-momentum"
-msgstr ""
+msgstr "ns-use-mwheel-momentum"
 
 #. type: table
 #: original_texis/macos.texi:191
 msgid "This variable controls whether Emacs ignores the system `momentum' when scrolling using a trackpad.  When non-nil, the default, scrolling rapidly may result in the buffer continuing to scroll for a short while after the user has lifted their fingers off the trackpad."
-msgstr ""
+msgstr "この変数はトラックパッドを使用したスクロール時にEmacsがシステムの`momentum'を無視するかどうかを制御します。非nil(デフォルト)なら高速にスクロールするとユーザーがトラックパッドから指を離した後も少しの間バッファーがスクロールを継続するかもしれません。"
 
 #. type: item
 #: original_texis/macos.texi:192 original_texis/macos.texi:193
 #, no-wrap
 msgid "ns-mwheel-line-height"
-msgstr ""
+msgstr "ns-mwheel-line-height"
 
 #. type: table
 #: original_texis/macos.texi:199
 msgid "This variable controls the sensitivity of scrolling with the trackpad.  Apple trackpads scroll by pixels, not lines, so Emacs converts the system's pixel values into lines.  When set to a number, this variable sets the number of pixels Emacs will consider as one line.  When nil or a non-number the default line height is used."
-msgstr ""
+msgstr "この変数はトラックパッドによるスクロールの感度を制御します。Appleのトラックパッドは行単位ではなくピクセル単位でスクロールするので、Emacsがシステムのピクセル値を行に変換します。数値をセットすると、この変数はそれをEmacsが1行とみなすピクセル数としてセットします。nilか非数値ならデフォルトの行高さを使用します。"
 
 #. type: table
 #: original_texis/macos.texi:202
 msgid "Setting a lower number makes the trackpad more sensitive, and a higher number makes the trackpad less sensitive."
-msgstr ""
+msgstr "低い数値をセットするとトラックパッドはより高感度に、高い数値では低感度になります。"
 
 #. type: subsection
 #: original_texis/macos.texi:204
@@ -465,53 +449,51 @@ msgstr "ns-drag-n-drop"
 
 #. type: table
 #: original_texis/macos.texi:257
-#, fuzzy
-#| msgid "This event occurs when a user drags an object from another application into an Emacs frame.  The default behavior is to open a file in the window under the mouse, or to insert text at point of the window under the mouse.  It may sometimes be necessary to use the @key{Meta} key in conjunction with dragging to force text insertion."
 msgid "This event occurs when a user drags an object from another application into an Emacs frame.  The default behavior is to open a file in the window under the mouse, or to insert text at point of the window under the mouse."
-msgstr "このイベントは、ユーザーが他のアプリケーションから、Emacsフレームにファイルをドラッグしたとき発生します。デフォルトの動作は、マウスの下にあるウィンドウでファイルをオープンするか、マウスの下にあるウィンドウのポイント位置にテキストを挿入します。テキストを強制的に挿入するために、@key{Meta}キーとの併用が必要な場合もあるかもしれません。"
+msgstr "このイベントは、ユーザーが他のアプリケーションから、Emacsフレームにファイルをドラッグしたとき発生します。デフォルトの動作は、マウスの下にあるウィンドウでファイルをオープンするか、マウスの下にあるウィンドウのポイント位置にテキストを挿入します。"
 
 #. type: table
 #: original_texis/macos.texi:261
 msgid "The sending application has some limited ability to decide how Emacs handles the sent object, but the user may override the default behavior by holding one or more modifier key."
-msgstr ""
+msgstr "送信オブジェクトをEmacsが処理する方法を送信アプリケーションが判断する能力にはいくつかの制限がありますが、ユーザーは1つ以上の修飾キーを押し続けることによりデフォルトの挙動をオーバーライドできます。"
 
 #. type: item
 #: original_texis/macos.texi:263
 #, no-wrap
 msgid "control"
-msgstr ""
+msgstr "control"
 
 #. type: table
 #: original_texis/macos.texi:266
 msgid "Insert as text in the current buffer.  If the object is a file, this will insert the filename."
-msgstr ""
+msgstr "テキストとしてカレントバッファーに挿入します。オブジェクトがファイルならファイル名を挿入します。"
 
 #. type: item
 #: original_texis/macos.texi:266
 #, no-wrap
 msgid "alt/option"
-msgstr ""
+msgstr "alt/option"
 
 #. type: table
 #: original_texis/macos.texi:268
 msgid "Attempt to open the object as though it is a file or URL."
-msgstr ""
+msgstr "オブジェクトがファイルかURLであるかのようにオープンを試みます。"
 
 #. type: item
 #: original_texis/macos.texi:268
 #, no-wrap
 msgid "super/command"
-msgstr ""
+msgstr "super/command"
 
 #. type: table
 #: original_texis/macos.texi:271
 msgid "Perform the default action for the type.  This can be useful when an application is overriding the default behavior."
-msgstr ""
+msgstr "そのタイプにたいするデフォルトのアクションを行います。これはアプリケーションがデフォルトの挙動をオーバーライドしている場合に有用かもしれません。"
 
 #. type: table
 #: original_texis/macos.texi:275
 msgid "The modifier keys listed above are defined by macOS and are unaffected by user changes to the modifiers in Emacs."
-msgstr ""
+msgstr "上記にリストした修飾キーはmacOSが定義したもので、ユーザーによるEmacs内での修飾の変更は影響を受けません。"
 
 #. type: item
 #: original_texis/macos.texi:276
