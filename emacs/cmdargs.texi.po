@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2019-09-21 18:58+0900\n"
+"PO-Revision-Date: 2020-08-12 00:16+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -772,10 +772,8 @@ msgstr "deterministic build"
 
 #. type: table
 #: original_texis/cmdargs.texi:295
-#, fuzzy
-#| msgid "Omit details like system name and build time from the Emacs executable, so that builds are more deterministic."
 msgid "Omit details like system name and build time from the Emacs executable, so that builds are more deterministic.  This switch is not meant for regular (or interactive) use, since it makes commands like @code{system-name} return @code{nil}."
-msgstr "Emacs実行可能形式からシステム名やビルド日時などの詳細を取り除き、そのビルドがより決定論的になります。"
+msgstr "Emacs実行可能形式からシステム名やビルド日時などの詳細を取り除き、そのビルドがより決定論的になります。このスイッチにより@code{system-name}のようなコマンドは@code{nil}をリターンするようになるので、これは通常(またはインタラクティブ)の使用を意図していません。"
 
 #. type: opindex
 #: original_texis/cmdargs.texi:296 original_texis/cmdargs.texi:297
@@ -906,8 +904,6 @@ msgstr "--quick"
 
 #. type: table
 #: original_texis/cmdargs.texi:344
-#, fuzzy
-#| msgid "Start Emacs with minimum customizations.  This is similar to using @samp{-q}, @samp{--no-site-file}, @samp{--no-site-lisp}, @samp{--no-x-resources}, and @samp{--no-splash} together.."
 msgid "Start Emacs with minimum customizations.  This is similar to using @samp{-q}, @samp{--no-site-file}, @samp{--no-site-lisp}, @samp{--no-x-resources}, and @samp{--no-splash} together."
 msgstr "最小のカスタマイズでEmacsを開始します。これは@samp{-q}、@samp{--no-site-file}、@samp{--no-site-lisp}、@samp{--no-x-resources}、@samp{--no-splash}を一緒に使用したのと同様です。"
 
@@ -1028,28 +1024,26 @@ msgstr "動的ロードモジュールを処理する際に、高価な正当性
 
 #. type: item
 #: original_texis/cmdargs.texi:391
-#, fuzzy, no-wrap
-#| msgid "--file=@var{file}"
+#, no-wrap
 msgid "--dump-file=@var{file}"
-msgstr "--file=@var{file}"
+msgstr "--dump-file=@var{file}"
 
 #. type: opindex
 #: original_texis/cmdargs.texi:392
-#, fuzzy, no-wrap
-#| msgid "--find-file"
+#, no-wrap
 msgid "--dump-file"
-msgstr "--find-file"
+msgstr "--dump-file"
 
 #. type: cindex
 #: original_texis/cmdargs.texi:393
 #, no-wrap
 msgid "specify dump file"
-msgstr ""
+msgstr "specify dump file"
 
 #. type: table
 #: original_texis/cmdargs.texi:405
 msgid "Load the dumped Emacs state from the named @var{file}.  By default, an installed Emacs will look for its dump state in a file named @file{@var{emacs}.pdmp} in the directory where the Emacs installation puts the architecture-dependent files; the variable @code{exec-directory} holds the name of that directory.  @var{emacs} is the name of the Emacs executable file, normally just @file{emacs}.  (When you invoke Emacs from the @file{src} directory where it was built without installing it, it will look for the dump file in the directory of the executable.)  If you rename or move the dump file to a different place, you can use this option to tell Emacs where to find that file."
-msgstr ""
+msgstr "@var{file}という名前のファイルからダンプされたEmacs状態をロードします。デフォルトではインストールされたEmacsはダンプ状態を、Emacsのインストールがアーキテクチャー依存のファイルを配置するディレクトリー内で@file{@var{emacs}.pdmp}という名前のファイルから探します。変数@code{exec-directory}はそのディレクトリーの名前を保持します。@var{emacs}はEmacs実行可能ファイルの名前であり、通常は単なる@file{emacs}です(インストールせずにビルドしたディレクトリー@file{src}からEmacsを呼び出す際には実行可能形式のディレクトリーでダンプファイルを探す)。違う場所にダンプファイルのリネームや移動を行なった場合には、ファイルを探す場所をEmacsに指示するために、このオプションを使用できます。"
 
 #. type: appendixsec
 #: original_texis/cmdargs.texi:408
@@ -1357,10 +1351,8 @@ msgstr "HOME@r{, environment variable}"
 
 #. type: table
 #: original_texis/cmdargs.texi:565
-#, fuzzy
-#| msgid "The location of your files in the directory tree; used for expansion of file names starting with a tilde (@file{~}).  On MS-DOS, it defaults to the directory from which Emacs was started, with @samp{/bin} removed from the end if it was present.  On Windows, the default value of @env{HOME} is the @file{Application Data} subdirectory of the user profile directory (normally, this is @file{C:/Documents and Settings/@var{username}/Application Data}, where @var{username} is your user name), though for backwards compatibility @file{C:/} will be used instead if a @file{.emacs} file is found there."
 msgid "The location of your files in the directory tree; used for expansion of file names starting with a tilde (@file{~}).  If set, it should be set to an absolute file name.  (If set to a relative file name, Emacs interprets it relative to the directory where Emacs was started, but we don't recommend to use this feature.)  If unset, @env{HOME} normally defaults to the home directory of the user given by @env{LOGNAME}, @env{USER} or your user ID, or to @file{/} if all else fails.  On MS-DOS, it defaults to the directory from which Emacs was started, with @samp{/bin} removed from the end if it was present.  On Windows, the default value of @env{HOME} is the @file{Application Data} subdirectory of the user profile directory (normally, this is @file{C:/Documents and Settings/@var{username}/Application Data}, where @var{username} is your user name), though for backwards compatibility @file{C:/} will be used instead if a @file{.emacs} file is found there."
-msgstr "ディレクトリーツリー上で、あなたのファイルがある場所です。チルダ(@file{~})で始まるファイル名の展開に使用されます。MS-DOSでは、この変数のデフォルトはEmacsが開始されたディレクトリーで、そのディレクトリー名が@samp{/bin}で終わる場合、@samp{/bin}は取り除かれます。Windowsでは、@env{HOME}のデフォルト値は、ユーザープロファイルディレクトリーの@file{Application Data}サブディレクトリー(つまり通常は@file{C:/Documents and Settings/@var{username}/Application Data}。@var{username}はユーザー名)ですが、後方互換のため、@file{C:/}に@file{.emacs}がある場合は、かわりに@file{C:/}がデフォルト値になります。"
+msgstr "ディレクトリーツリー上で、あなたのファイルがある場所です。チルダ(@file{~})で始まるファイル名の展開に使用されます。セットする場合には絶対ファイル名をセットする必要があります(相対ファイル名をセットするとEmacsはEmacsが開始されたディレクトリーから相対的なディレクトリーと解釈するが、この機能の使用は推奨しない)。未セットなら@env{HOME}のデフォルトは@env{LOGNAME}、@env{USER}、またはユーザーIDにより与えられるユーザーのホームディレクトリー、いずれも失敗したら@file{/}になります。MS-DOSでは、この変数のデフォルトはEmacsが開始されたディレクトリーで、そのディレクトリー名が@samp{/bin}で終わる場合、@samp{/bin}は取り除かれます。Windowsでは、@env{HOME}のデフォルト値は、ユーザープロファイルディレクトリーの@file{Application Data}サブディレクトリー(つまり通常は@file{C:/Documents and Settings/@var{username}/Application Data}。@var{username}はユーザー名)ですが、後方互換のため、@file{C:/}に@file{.emacs}がある場合は、かわりに@file{C:/}がデフォルト値になります。"
 
 #. type: item
 #: original_texis/cmdargs.texi:565
@@ -2635,10 +2627,8 @@ msgstr "ジオメトリー指定で、すべてのフィールドを指定する
 
 #. type: Plain text
 #: original_texis/cmdargs.texi:1062
-#, fuzzy
-#| msgid "The default frame width is 80 characters and the default height is 36 lines.  You can omit either the width or the height or both.  If you start the geometry with an integer, Emacs interprets it as the width.  If you start with an @samp{x} followed by an integer, Emacs interprets it as the height.  Thus, @samp{81} specifies just the width; @samp{x45} specifies just the height."
 msgid "The default frame width is 80 characters and the default height is between 35 and 40 lines, depending on the OS and the window manager.  You can omit either the width or the height or both.  If you start the geometry with an integer, Emacs interprets it as the width.  If you start with an @samp{x} followed by an integer, Emacs interprets it as the height.  Thus, @samp{81} specifies just the width; @samp{x45} specifies just the height."
-msgstr "デフォルトのフレーム幅は80文字で、デフォルトの高さは36行です。幅と高さの、どちらか一方、または両方を省略できます。ジオメトリーが整数で開始される場合、Emacsはそれを幅と解釈します。ジオメトリーの開始が@samp{x}でその後に整数が続く場合、Emacsはそれを高さと解釈します。したがって@samp{81}は幅だけを指定し、@samp{x45}は高さだけを指定します。"
+msgstr "デフォルトのフレーム幅は80文字、デフォルトの高さは35行から40行です。幅と高さの、どちらか一方、または両方を省略できます。ジオメトリーが整数で開始される場合、Emacsはそれを幅と解釈します。ジオメトリーの開始が@samp{x}でその後に整数が続く場合、Emacsはそれを高さと解釈します。したがって@samp{81}は幅だけを指定し、@samp{x45}は高さだけを指定します。"
 
 #. type: Plain text
 #: original_texis/cmdargs.texi:1069
@@ -3015,10 +3005,8 @@ msgstr "--basic-display"
 
 #. type: table
 #: original_texis/cmdargs.texi:1243
-#, fuzzy
-#| msgid "Disable the menu-bar, the tool-bar, the scroll-bars, and tool tips, and turn off the blinking cursor.  This can be useful for making a test case that simplifies debugging of display problems."
 msgid "Disable the menu-bar, the tool-bar, the scroll-bars, tool tips, and turn off font-lock-mode and the blinking cursor.  This can be useful for making a test case that simplifies debugging of display problems."
-msgstr "メニューバー、ツールバー、スクロールバー、ツールチップを無効にして、点滅カーソルをオフに切り替えます。これは表示問題のデバッグするテストケースを簡単にするのに有用です。"
+msgstr "メニューバー、ツールバー、スクロールバー、ツールチップを無効、font-lock-modeと点滅カーソルをオフに切り替えます。これは表示問題のデバッグするテストケースを簡単にするのに有用です。"
 
 #. type: Plain text
 #: original_texis/cmdargs.texi:1246
