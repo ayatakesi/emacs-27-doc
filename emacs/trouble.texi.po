@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:32+0900\n"
-"PO-Revision-Date: 2019-09-22 16:00+0900\n"
+"PO-Revision-Date: 2020-08-11 23:27+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -346,12 +346,12 @@ msgstr "Emacsが応答しなくなったとき、何を行なうべきか。"
 #: original_texis/trouble.texi:462
 #, no-wrap
 msgid "Long Lines"
-msgstr ""
+msgstr "Long Lines"
 
 #. type: menuentry
 #: original_texis/trouble.texi:156
 msgid "Mitigating slowness due to extremely long lines."
-msgstr ""
+msgstr "非常に長い行による低速化の緩和。"
 
 #. type: subsection
 #: original_texis/trouble.texi:159
@@ -769,51 +769,51 @@ msgstr "MS-DOSでは緊急エスケープを発生させるために、@kbd{C-@k
 #: original_texis/trouble.texi:463
 #, no-wrap
 msgid "long lines"
-msgstr ""
+msgstr "long lines"
 
 #. type: Plain text
 #: original_texis/trouble.texi:471
 msgid "For a variety of reasons (some of which are fundamental to the Emacs redisplay code and the complex range of possibilities it handles; others of which are due to modes and features which do not scale well in unusual circumstances), Emacs can perform poorly when extremely long lines are present (where ``extremely long'' usually means at least many thousands of characters)."
-msgstr ""
+msgstr "種々の理由(いくつかはEmacsの再表示コードと処理する可能性がある複雑な範囲が根本にあり、それ以外は稀な状況では同様に調整されないモードと機能にある)により、非常に長い行が存在するとEmacsのパフォーマンスは貧弱になり得ます(``非常に長い''とは通常は少なくとも数千文字を意味する)。"
 
 #. type: cindex
 #: original_texis/trouble.texi:472
 #, no-wrap
 msgid "@code{so-long} mode"
-msgstr ""
+msgstr "@code{so-long} mode"
 
 #. type: findex
 #: original_texis/trouble.texi:473
 #, no-wrap
 msgid "global-so-long-mode"
-msgstr ""
+msgstr "global-so-long-mode"
 
 #. type: vindex
 #: original_texis/trouble.texi:474
 #, no-wrap
 msgid "so-long-action"
-msgstr ""
+msgstr "so-long-action"
 
 #. type: Plain text
 #: original_texis/trouble.texi:485
 msgid "A particular problem is that Emacs may ``hang'' for a long time at the point of visiting a file with extremely long lines.  This can be mitigated by enabling the @file{so-long} library, which detects when a visited file contains abnormally long lines, and takes steps to disable features which are liable to cause slowness in that situation.  To enable this library, type @kbd{M-x global-so-long-mode @key{RET}}, or turn on the @code{global-so-long-mode} in your init file (@pxref{Init File}), or customize the @code{global-so-long-mode} option.  You can tailor this mode's operation by customizing the variable @code{so-long-action}."
-msgstr ""
+msgstr "特に問題となるのは非常に長い行のファイルをvisitした時点でEmacsが長時間``hang''するかもしれないことです。これは@file{so-long}ライブラリーを有効にして緩和される可能性があります。このライブラリーは異常に長い行を含むファイルのvisit時に検知して、その状況下で低速化をもたらす原因となる機能を無効化するステップを実行します。このライブラリーを有効にするには@kbd{M-x global-so-long-mode @key{RET}}とタイプするか、initファイルで@code{global-so-long-mode}をオンにしたり(@ref{Init File}を参照)、@code{global-so-long-mode}オプションをカスタマイズしてください。変数@code{so-long-action}をカスタマイズすることによって、このモードの操作を調整できます。"
 
 #. type: Plain text
 #: original_texis/trouble.texi:491
 msgid "The @file{so-long} library can also significantly improve performance when moving and editing in a buffer with long lines.  Performance is still likely to degrade as you get deeper into the long lines, but the improvements from using this library can nevertheless be substantial."
-msgstr ""
+msgstr "@file{so-long}ライブラリーは長い行をもつバッファーでの移動や編集の際にもパフォーマンスを有意に改善できます。依然として行が長くなるほどパフォーマンスはおそらく劣化するでしょうが、それにも関わらずライブラリーの使用によって実質的に改善される可能性があります。"
 
 #. type: findex
 #: original_texis/trouble.texi:492
 #, no-wrap
 msgid "so-long-commentary"
-msgstr ""
+msgstr "so-long-commentary"
 
 #. type: Plain text
 #: original_texis/trouble.texi:495
 msgid "Use @kbd{M-x so-long-commentary} to view the documentation for this library and learn more about how to enable and configure it."
-msgstr ""
+msgstr "このライブラリーのドキュメントの閲覧と、有効化と設定の方法に関する詳細は@kbd{M-x so-long-commentary}を使用してください。"
 
 #. type: node
 #: original_texis/trouble.texi:496
@@ -1812,26 +1812,22 @@ msgstr "提案されたプロジェクトを尋ねたり、あなたのアイデ
 #. type: Plain text
 #: original_texis/trouble.texi:1304
 msgid "If you have a feature request or a suggestion for how to improve Emacs, the best place to send it is to"
-msgstr ""
+msgstr "Emacsにたいする機能の要望や改善方法についての提案を送る場合には、"
 
 #. type: email{#1}
 #: original_texis/trouble.texi:1306
-#, fuzzy
-#| msgid "@email{bug-gnu-emacs@@gnu.org}."
 msgid "bug-gnu-emacs@@gnu.org"
-msgstr "@email{bug-gnu-emacs@@gnu.org}に送られます"
+msgstr "bug-gnu-emacs@@gnu.orgが最善の場所です。"
 
 #. type: ifhtml
 #: original_texis/trouble.texi:1309
-#, fuzzy
-#| msgid "@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}."
 msgid "@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}"
-msgstr "@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}に送られます"
+msgstr "@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}が最善の場所です。"
 
 #. type: Plain text
 #: original_texis/trouble.texi:1312
 msgid ".  Please explain as clearly as possible what change you would like to see, and why and how you think it would improve Emacs."
-msgstr ""
+msgstr "どのような変更を望むのか、そしてなぜ、どのようにすればそれがEmacsを改善すると思うかを、可能なかぎり明快に説明するようにお願いします。"
 
 #. type: Plain text
 #: original_texis/trouble.texi:1315
