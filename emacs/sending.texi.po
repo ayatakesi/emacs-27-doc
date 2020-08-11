@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-11 16:22+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  sending.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  sending.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.XMKZ82HGRn (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.NBMt0U1hjv.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.7prw0R2gWr.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: chapter
 #: original_texis/sending.texi:5 original_texis/sending.texi:6
@@ -121,10 +113,8 @@ msgstr "メールバッファーでは、メッセージを送信して、その
 
 #. type: Plain text
 #: original_texis/sending.texi:43
-#, fuzzy
-#| msgid "The mail buffer is an ordinary Emacs buffer, so you can switch to other buffers while composing the mail.  If you want to send another mail before finishing the current one, type @kbd{C-x m} again to open a new mail buffer whose name has a different numeric suffix (@pxref{Misc Buffer}).  If you invoke the command with a prefix argument, @w{@kbd{C-u C-x m}}, Emacs switches back to the last mail buffer, and asks if you want to erase the message in that buffer; if you answer no, this lets you pick up editing the message where you left off."
 msgid "The mail buffer is an ordinary Emacs buffer, so you can switch to other buffers while composing the mail.  If you want to send another message before finishing the current one, type @kbd{C-x m} again to open a new mail buffer whose name has a different numeric suffix (@pxref{Misc Buffer}).  (This only works if you use the default Message mode to compose email; see @ref{Mail Commands}.)  If you know that you'd like to continue composing the unsent message you were editing, invoke this command with a prefix argument, @w{@kbd{C-u C-x m}}, and Emacs will switch to the last mail buffer you used and let you pick up editing the message where you left off."
-msgstr "メールバッファーは通常のEmacsバッファーなので、メールの作成中に他のバッファーに切り替えることができます。現在のメールを終了する前に他のメールを送信したい場合は、再度@kbd{C-x m}とタイプして新しいメールバッファーを開きます、このバッファーは異なる数字が後ろについた名前をもちます(@ref{Misc Buffer}を参照してください)。@w{@kbd{C-u C-x m}}のように、プレフィクス引数を指定してコマンドを呼び出した場合、Emacsは最後のメールバッファーに戻って、そのバッファーのメッセージを削除したいか尋ねます。これにnoと答えると、中止した場所から編集を再開できます。"
+msgstr "メールバッファーは通常のEmacsバッファーなので、メールの作成中に他のバッファーに切り替えることができます。現在のメールを終了する前に他のメールを送信したい場合は、再度@kbd{C-x m}とタイプして新しいメールバッファーを開きます、このバッファーは異なる数字が後ろについた名前をもちます(@ref{Misc Buffer}を参照)。(これはメール作成にデフォルトのMessageモードを使用する場合のみ機能する。@ref{Mail Commands}を参照のこと。) 編集中の未送信メッセージの作成を継続したいと判っている場合には、@w{@kbd{C-u C-x m}}のようにコマンドにプレフィクス引数を与えれば、Emacsは使用していた最後のメールバッファーに切り替えて、終了する前にメッセージの編集ができるように計らいます。"
 
 #. type: findex
 #: original_texis/sending.texi:45
@@ -237,15 +227,7 @@ msgstr "以下はメールバッファーの内容の例です(訳注: 出典は
 
 #. type: example
 #: original_texis/sending.texi:80
-#, fuzzy, no-wrap
-#| msgid ""
-#| "To: subotai@@example.org\n"
-#| "Cc: mongol.soldier@@example.net, rms@@gnu.org\n"
-#| "Subject: Re: What is best in life?\n"
-#| "From: conan@@example.org\n"
-#| "--text follows this line--\n"
-#| "To crush your enemies, see them driven before you, and to\n"
-#| "hear the lamentation of their women.\n"
+#, no-wrap
 msgid ""
 "To: subotai@@example.org\n"
 "CC: mongol.soldier@@example.net, rms@@gnu.org\n"
@@ -256,7 +238,7 @@ msgid ""
 "hear the lamentation of their women.\n"
 msgstr ""
 "To: subotai@@example.org\n"
-"Cc: mongol.soldier@@example.net, rms@@gnu.org\n"
+"CC: mongol.soldier@@example.net, rms@@gnu.org\n"
 "Subject: Re: What is best in life?\n"
 "From: conan@@example.org\n"
 "--text follows this line--\n"
@@ -385,10 +367,9 @@ msgstr "送信されたメッセージのコピーが追加されるべき、フ
 
 #. type: item
 #: original_texis/sending.texi:154
-#, fuzzy, no-wrap
-#| msgid "Reply-to"
+#, no-wrap
 msgid "Reply-To"
-msgstr "Reply-to"
+msgstr "Reply-To"
 
 #. type: table
 #: original_texis/sending.texi:158
@@ -397,17 +378,14 @@ msgstr "@samp{From}のかわりとなる、返信が送信されるべきアド�
 
 #. type: item
 #: original_texis/sending.texi:159
-#, fuzzy, no-wrap
-#| msgid "Mail-reply-to"
+#, no-wrap
 msgid "Mail-Reply-To"
-msgstr "Mail-reply-to"
+msgstr "Mail-Reply-To"
 
 #. type: table
 #: original_texis/sending.texi:163
-#, fuzzy
-#| msgid "This field takes precedence over @samp{Reply-to}.  It is used because some mailing lists set the @samp{Reply-to} field for their own purposes (a somewhat controversial practice)."
 msgid "This field takes precedence over @samp{Reply-To}.  It is used because some mailing lists set the @samp{Reply-To} field for their own purposes (a somewhat controversial practice)."
-msgstr "このフィールドは@samp{Reply-to}より優先されます。メーリングリストの中には、@samp{Reply-to}を独自の目的(問題の多い、何らかの方法)のために使用しているものがあるため、これが使用されます。"
+msgstr "このフィールドは@samp{Reply-To}より優先されます。メーリングリストの中には、@samp{Reply-To}を独自の目的(問題の多い、何らかの方法)のために使用しているものがあるため、これが使用されます。"
 
 #. type: item
 #: original_texis/sending.texi:164
@@ -422,10 +400,9 @@ msgstr "follow-upメッセージのための、デフォルトの受取人のた
 
 #. type: item
 #: original_texis/sending.texi:170
-#, fuzzy, no-wrap
-#| msgid "In-reply-to"
+#, no-wrap
 msgid "In-Reply-To"
-msgstr "In-reply-to"
+msgstr "In-Reply-To"
 
 #. type: table
 #: original_texis/sending.texi:175
@@ -440,10 +417,8 @@ msgstr "References"
 
 #. type: table
 #: original_texis/sending.texi:179
-#, fuzzy
-#| msgid "Identifiers for previous related messages.  Like @samp{In-reply-to}, this is normally filled in automatically for you."
 msgid "Identifiers for previous related messages.  Like @samp{In-Reply-To}, this is normally filled in automatically for you."
-msgstr "以前の関連するメッセージのための識別子です。@samp{In-reply-to}と同じように、これは通常、自動的に充填されます。"
+msgstr "以前の関連するメッセージのための識別子です。@samp{In-reply-To}と同じように、これは通常、自動的に充填されます。"
 
 #. type: Plain text
 #: original_texis/sending.texi:189
@@ -468,23 +443,18 @@ msgstr "mail-default-headers"
 
 #. type: Plain text
 #: original_texis/sending.texi:206
-#, fuzzy
-#| msgid "You can direct Emacs to insert certain default headers into the mail buffer by setting the variable @code{mail-default-headers} to a string.  Then @kbd{C-x m} inserts this string into the message headers.  For example, here is how to add a @samp{Reply-to} and @samp{FCC} header to each message:"
 msgid "You can direct Emacs to insert certain default headers into the mail buffer by setting the variable @code{mail-default-headers} to a string.  Then @kbd{C-x m} inserts this string into the message headers.  For example, here is how to add a @samp{Reply-To} and @samp{FCC} header to each message:"
-msgstr "変数@code{mail-default-headers}に文字列をセットすることにより、特定のデフォルトヘッダーを挿入するよう、Emacsに指示できます。これにより@kbd{C-x m}でメッセージヘッダーにその文字列が挿入されます。たとえば以下は、各メッセージにヘッダー@samp{Reply-to}と@samp{FCC}を追加する例です:"
+msgstr "変数@code{mail-default-headers}に文字列をセットすることにより、特定のデフォルトヘッダーを挿入するよう、Emacsに指示できます。これにより@kbd{C-x m}でメッセージヘッダーにその文字列が挿入されます。たとえば以下は、各メッセージにヘッダー@samp{Reply-To}と@samp{FCC}を追加する例です:"
 
 #. type: smallexample
 #: original_texis/sending.texi:210
-#, fuzzy, no-wrap
-#| msgid ""
-#| "(setq mail-default-headers\n"
-#| "      \"Reply-to: foo@@example.com\\nFCC: ~/Mail/sent\")\n"
+#, no-wrap
 msgid ""
 "(setq mail-default-headers\n"
 "      \"Reply-To: foo@@example.com\\nFCC: ~/Mail/sent\")\n"
 msgstr ""
 "(setq mail-default-headers\n"
-"      \"Reply-to: foo@@example.com\\nFCC: ~/Mail/sent\")\n"
+"      \"Reply-To: foo@@example.com\\nFCC: ~/Mail/sent\")\n"
 
 #. type: Plain text
 #: original_texis/sending.texi:215
@@ -588,10 +558,8 @@ msgstr "mail-abbrev-insert-alias"
 
 #. type: Plain text
 #: original_texis/sending.texi:280
-#, fuzzy
-#| msgid "Mail aliases expand as abbrevs---that is to say, as soon as you type a word-separator character after an alias (@pxref{Abbrevs}).  This expansion takes place only within the @samp{To}, @samp{From}, @samp{CC}, @samp{BCC}, and @samp{Reply-to} header fields (plus their @samp{Resent-} variants); it does not take place in other header fields, such as @samp{Subject}."
 msgid "Mail aliases expand as abbrevs---that is to say, as soon as you type a word-separator character after an alias (@pxref{Abbrevs}).  This expansion takes place only within the @samp{To}, @samp{From}, @samp{CC}, @samp{BCC}, and @samp{Reply-To} header fields (plus their @samp{Resent-} variants); it does not take place in other header fields, such as @samp{Subject}."
-msgstr "メールエイリアスはabbrevのように --- つまり、エイリアスの後で単語区切り文字をタイプするとすぐに --- 展開されます。この展開はヘッダーフィールド@samp{To}、@samp{From}、@samp{CC}、@samp{BCC}、@samp{Reply-to}(およびそれらの@samp{Resent-}の変種)だけで展開されます。@samp{Subject}のような、他のヘッダーフィールドでは展開されません。"
+msgstr "メールエイリアスはabbrevのように --- つまり、エイリアスの後で単語区切り文字をタイプするとすぐに --- 展開されます。この展開はヘッダーフィールド@samp{To}、@samp{From}、@samp{CC}、@samp{BCC}、@samp{Reply-To}(およびそれらの@samp{Resent-}の変種)だけで展開されます。@samp{Subject}のような、他のヘッダーフィールドでは展開されません。"
 
 #. type: Plain text
 #: original_texis/sending.texi:284
@@ -719,10 +687,8 @@ msgstr "message-kill-buffer-on-exit"
 
 #. type: Plain text
 #: original_texis/sending.texi:329
-#, fuzzy
-#| msgid "The usual command to send a message is @kbd{C-c C-c} (@code{mail-send-and-exit}).  This sends the message and then buries the mail buffer, putting it at the lowest priority for reselection.  If you want it to kill the mail buffer instead, change the variable @code{message-kill-buffer-on-exit} to @code{t}."
 msgid "The usual command to send a message is @kbd{C-c C-c} (@code{message-send-and-exit}).  This sends the message and then buries the mail buffer, putting it at the lowest priority for reselection.  If you want it to kill the mail buffer instead, change the variable @code{message-kill-buffer-on-exit} to @code{t}."
-msgstr "メッセージを送信するために通常使用されるコマンドは、@kbd{C-c C-c} (@code{mail-send-and-exit})です。これはメッセージを送信して、メールバッファーを隠す(bury) --- つまりバッファーを再選択するときもっとも低い優先順位になるようにします。かわりにメールバッファーをkillしたい場合は、変数@code{message-kill-buffer-on-exit}を@code{t}に変更してください。"
+msgstr "メッセージを送信するために通常使用されるコマンドは、@kbd{C-c C-c} (@code{message-send-and-exit})です。これはメッセージを送信して、メールバッファーを隠す(bury) --- つまりバッファーを再選択するときもっとも低い優先順位になるようにします。かわりにメールバッファーをkillしたい場合は、変数@code{message-kill-buffer-on-exit}を@code{t}に変更してください。"
 
 #. type: Plain text
 #: original_texis/sending.texi:333
@@ -766,10 +732,9 @@ msgstr "Mailclient"
 
 #. type: vindex
 #: original_texis/sending.texi:345
-#, fuzzy, no-wrap
-#| msgid "send-mail-function"
+#, no-wrap
 msgid "message-send-mail-function"
-msgstr "send-mail-function"
+msgstr "message-send-mail-function"
 
 #. type: vindex
 #: original_texis/sending.texi:346
@@ -779,10 +744,8 @@ msgstr "send-mail-function"
 
 #. type: Plain text
 #: original_texis/sending.texi:351
-#, fuzzy
-#| msgid "The variable @code{send-mail-function} controls how the message is delivered.  Its value should be one of the following functions:"
 msgid "The variable @code{message-send-mail-function} controls how the message is delivered (@code{send-mail-function} is used for Mail mode).  The value of @code{send-mail-function} should be one of the following functions:"
-msgstr "変数@code{send-mail-function}は、メッセージの配送方法を制御します。値には、以下の関数のどれか1つを指定します:"
+msgstr "変数@code{message-send-mail-function}はメッセージの配送方法を制御します(@code{send-mail-function}はMailモードで使用される)。@code{send-mail-function}の値は以下の関数のいずれかを指定します:"
 
 #. type: item
 #: original_texis/sending.texi:353
@@ -907,10 +870,8 @@ msgstr "C-c C-f C-r"
 
 #. type: table
 #: original_texis/sending.texi:410
-#, fuzzy
-#| msgid "Move to the @samp{Reply-to} header (@code{message-goto-reply-to})."
 msgid "Move to the @samp{Reply-To} header (@code{message-goto-reply-to})."
-msgstr "@samp{Reply-to}ヘッダーに移動します(@code{message-goto-reply-to})。"
+msgstr "@samp{Reply-To}ヘッダーに移動します(@code{message-goto-reply-to})。"
 
 #. type: item
 #: original_texis/sending.texi:410
