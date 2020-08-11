@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-12 03:36+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  msdos.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  msdos.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.xcWXyJAS5U (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.5iIRpEKU1r.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.Ug6ETqMrgy.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: cindex
 #: original_texis/msdos.texi:5 original_texis/msdos.texi:7
@@ -637,10 +629,8 @@ msgstr "ls-lisp-verbosity"
 
 #. type: ifnottex
 #: original_texis/msdos.texi:402
-#, fuzzy
-#| msgid "The variable @code{ls-lisp-verbosity} controls the file attributes that @file{ls-lisp.el} displays.  The value should be a list that contains one or more of the symbols @code{links}, @code{uid}, and @code{gid}.  @code{links} means display the count of different file names that are associated with (a.k.a.@: @dfn{links to}) the file's data; this is only useful on NTFS volumes.  @code{uid} means display the numerical identifier of the user who owns the file.  @code{gid} means display the numerical identifier of the file owner's group.  The default value is @code{(links uid gid)} i.e., all the 3 optional attributes are displayed."
 msgid "The variable @code{ls-lisp-verbosity} controls the file attributes that @file{ls-lisp.el} displays.  The value should be either @code{nil} or a list that contains one or more of the symbols @code{links}, @code{uid}, and @code{gid}.  @code{links} means display the count of different file names that are associated with (a.k.a.@: @dfn{links to}) the file's data; this is only useful on NTFS volumes.  @code{uid} means display the numerical identifier of the user who owns the file.  @code{gid} means display the numerical identifier of the file owner's group.  The default value is @code{(links uid gid)} i.e., all the 3 optional attributes are displayed.  The value @code{nil} means not to display any of these attributes."
-msgstr "変数@code{ls-lisp-verbosity}は、@file{ls-lisp.el}が表示するファイル属性を制御します。値にはシンボル@code{links}、@code{uid}、@code{gid}を1つ以上含むリストを指定します。@code{links}は、そのファイルデータに関連付けられている(@dfn{links to}とも言います)別のファイルの数を表示することを意味し、これはNTFSボリュームでのみ有用です。@code{uid}はそのファイルを所有するユーザーの、数字による識別子を表示することを意味します。@code{gid}はそのファイルの所有者のグループの、数字による識別子を表示することを意味します。デフォルト値は@code{(links uid gid)}で、3つのすべてのオプション属性が表示されます。"
+msgstr "変数@code{ls-lisp-verbosity}は、@file{ls-lisp.el}が表示するファイル属性を制御します。値には@code{nil}、またはシンボル@code{links}、@code{uid}、@code{gid}を1つ以上含むリストを指定します。@code{links}は、そのファイルデータに関連付けられている(@dfn{links to}とも言います)別のファイルの数を表示することを意味し、これはNTFSボリュームでのみ有用です。@code{uid}はそのファイルを所有するユーザーの、数字による識別子を表示することを意味します。@code{gid}はそのファイルの所有者のグループの、数字による識別子を表示することを意味します。デフォルト値は@code{(links uid gid)}で、3つのすべてのオプション属性が表示されます。値@code{nil}はこれらの属性を何も表示しないことを意味します。"
 
 #. type: vindex
 #: original_texis/msdos.texi:403
@@ -1211,15 +1201,14 @@ msgstr "変数@code{w32-pipe-buffer-size}は、サブプロセスとの通信の
 
 #. type: vindex
 #: original_texis/msdos.texi:812
-#, fuzzy, no-wrap
-#| msgid "w32-pipe-buffer-size"
+#, no-wrap
 msgid "w32-pipe-read-delay"
-msgstr "w32-pipe-buffer-size"
+msgstr "w32-pipe-read-delay"
 
 #. type: ifnottex
 #: original_texis/msdos.texi:818
 msgid "If you need to invoke MS-DOS programs as Emacs subprocesses, you may see low rate of reading data from such programs.  Setting the variable @code{w32-pipe-read-delay} to a non-zero value may improve throughput in these cases; we suggest the value of 50 for such situations.  The default is zero."
-msgstr ""
+msgstr "EmacsサブプロセスとしてMS-DOSプログラムの呼び出しが必要な場合には、そのようなプログラムからのデータ読み取りレートが低いことを目にするかもしれません。変数@code{w32-pipe-read-delay}を非0にセットすることにより、そのような場合のスループットを向上できます。そのような状況では値に50を推奨します。デフォルトは0です。"
 
 #. type: findex
 #: original_texis/msdos.texi:819
@@ -1456,15 +1445,13 @@ msgstr "font backend selection (MS-Windows)"
 
 #. type: Plain text
 #: original_texis/msdos.texi:1017
-#, fuzzy
-#| msgid "Emacs 23 and later supports a number of font backends.  Currently, the @code{gdi} and @code{uniscribe} backends are supported on Windows.  The @code{gdi} font backend is available on all versions of Windows, and supports all fonts that are natively supported by Windows.  The @code{uniscribe} font backend is available on Windows 2000 and later, and supports TrueType and OpenType fonts.  Some languages requiring complex layout can only be properly supported by the Uniscribe backend.  By default, both backends are enabled if supported, with @code{uniscribe} taking priority over @code{gdi}.  To override that and use the GDI backend even if Uniscribe is available, invoke Emacs with the @kbd{-xrm Emacs.fontBackend:gdi} command-line argument, or add a @code{Emacs.fontBackend} resource with the value @code{gdi} in the Registry under either the @samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs} or the @samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs} key (@pxref{Resources})."
 msgid "Emacs on MS-Windows supports a number of font backends.  Currently, the @code{gdi}, @code{uniscribe}, and @code{harfbuzz} backends are available.  The @code{gdi} font backend is available on all versions of Windows, and supports all fonts that are natively supported by Windows.  The @code{uniscribe} font backend is available on Windows 2000 and later, and supports TrueType and OpenType fonts.  The @code{harfbuzz} font backend is available if Emacs was built with HarfBuzz support, and if the HarfBuzz DLL is installed on your system; like @code{uniscribe}, this backend supports only TrueType and OpenType fonts.  Some languages requiring complex layout can only be properly supported by the Uniscribe or HarfBuzz backends.  By default, two backends are enabled for each frame: @code{gdi} and either @code{harfbuzz} or @code{uniscribe}, depending on which one is available (if both are available, only @code{harfbuzz} is enabled by default).  The @code{harfbuzz} and @code{uniscribe} backends take priority over @code{gdi} when Emacs looks for a suitable font.  To override that and use the GDI backend even if Uniscribe is available, invoke Emacs with the @kbd{-xrm Emacs.fontBackend:gdi} command-line argument, or add a @code{Emacs.fontBackend} resource with the value @code{gdi} in the Registry under either the @samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs} or the @samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs} key (@pxref{Resources}).  Similarly, to use the Uniscribe backend even if HarfBuzz is available, use @kbd{-xrm Emacs.fontBackend:uniscribe} on the command line that invokes Emacs.  You can also request all the 3 backends via the @code{font-backend} frame parameter, but be warned that in that case font searches for characters for which no fonts are available on the system will take longer."
-msgstr "Emacs23以降では、いくつかのフォントバックエンドがサポートされています。現在のところ、Windowsではバックエンドとして、@code{gdi}と@code{uniscribe}がサポートされます。@code{gdi}フォントバックエンドは、すべてのバージョンのWindowsで利用でき、Windowsでネイティブにサポートされるすべてのフォントをサポートします。@code{uniscribe}フォントバックエンドはWindows 2000以降で利用でき、TrueTypeフォントとOpenTypeフォントをサポートします。複雑なレイアウトを要求するいくつかの言語は、Uniscribeバックエンドだけが正しくサポートできる言語もあります。デフォルトでは、どちらのバックエンドもサポートされていれば有効になり、@code{gdi}より@code{uniscribe}が優先されます。これをオーバーライドして、Uniscribeが利用できる場合もGDIバックエンドを使用するには、コマンドライン引数@kbd{-xrm Emacs.fontBackend:gdi}を指定してEmacsを呼び出すか、レジストリーのキー@samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs}または@samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs}のいずれかの下に、リソース@code{Emacs.fontBackend}を追加して値を@code{gdi}にセットします(@ref{Resources}を参照してください)。"
+msgstr "Emacs on MS-Windowsでは、いくつかのフォントバックエンドがサポートされています。Windowsでは現在のところバックエンドとして@code{gdi}、@code{uniscribe}、および@code{harfbuzz}が利用可能です。@code{gdi}フォントバックエンドは、すべてのバージョンのWindowsで利用でき、Windowsでネイティブにサポートされるすべてのフォントをサポートします。@code{uniscribe}フォントバックエンドはWindows 2000以降で利用できTrueTypeフォント、OpenTypeフォントをサポートします。@code{harfbuzz}フォントバックエンドはEmacsがHarfBuzzサポートつきでビルドされた場合に利用可能で、システムにHarfBuzz DLLがインストールされていれば、このバックエンドは@code{uniscribe}のようにTrueTypeフォントとOpenTypeフォントをサポートします。複雑なレイアウトを要求するいくつかの言語は、UniscribeバックエンドかHarfBuzzバックエンドだけが正しくサポートできます。デフォルトでは@code{gdi}、および@code{harfbuzz}か@code{uniscribe}のいずれかのバックエンドはすべてのフレームで有効であり、どれが有効かは利用可能なバックエンドに依存します(両方が利用可能ならデフォルトでは@code{harfbuzz}だけが有効)。Emacsが適切なフォントを探す際には、@code{gdi}より@code{harfbuzz}および@code{uniscribe}のバックエンドが優先されます。これをオーバーライドして、Uniscribeが利用できる場合もGDIバックエンドを使用するには、コマンドライン引数@kbd{-xrm Emacs.fontBackend:gdi}を指定してEmacsを呼び出すか、レジストリーのキー@samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs}または@samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs}のいずれかの下に、リソース@code{Emacs.fontBackend}を追加して値を@code{gdi}にセットします(@ref{Resources}を参照)。同様にHarfBuzzが利用可能であってもUniscribeバックエンドを使用するには、Emacsを呼び出すコマンドラインで@kbd{-xrm Emacs.fontBackend:uniscribe}を使用してください。フレームパラメーターを通じて3つのバックエンドすべてを要求することもできますが、その場合にはシステムに利用可能なフォントがない文字にたいするフォント検索には時間を要すると警告されます。"
 
 #. type: Plain text
 #: original_texis/msdos.texi:1026
 msgid "Alternatively, you could specify a font backend for a frame via the @code{font-backend} frame parameter, using @code{modify-frame-parameters} (@pxref{Parameter Access,,, elisp, The Emacs Lisp Reference Manual}).  You can also request specific font backend(s) for all your frames via @code{default-frame-alist} and @code{initial-frame-alist} (@pxref{Frame Parameters}).  Note that the value of the @code{font-backend} parameter should be a list of symbols, as in @code{(uniscribe)} or @w{@code{(harfbuzz uniscribe gdi)}}."
-msgstr ""
+msgstr "かわりに@code{modify-frame-parameters}を使用して@code{font-backend}フレームパラメーターを通じてフレームにたいするフォントバックエンドを指定できます(@ref{Parameter Access,,, elisp, The Emacs Lisp Reference Manual}を参照)。@code{default-frame-alist}と@code{initial-frame-alist}を通じてすべてのフレームにたいするフォントバックエンド(複数可)も要求できます(@ref{Frame Parameters}を参照)。@code{font-backend}パラメーターの値は@code{(uniscribe)}や@w{@code{(harfbuzz uniscribe gdi)}}のようにシンボルのリストであることに注意してください。"
 
 #. type: cindex
 #: original_texis/msdos.texi:1027
@@ -1474,10 +1461,8 @@ msgstr "font properties (MS Windows)"
 
 #. type: Plain text
 #: original_texis/msdos.texi:1030
-#, fuzzy
-#| msgid "Optional properties common to all font backends on MS-Windows are:"
 msgid "Optional font properties supported on MS-Windows are:"
-msgstr "以下は、MS-Windowsのすべてのフォントバックエンドにたいして一般的なオプションのプロパティーです:"
+msgstr "MS-Windowsでサポートされるオプションのフォントプロパティーです:"
 
 #. type: vindex
 #: original_texis/msdos.texi:1033
@@ -1611,7 +1596,7 @@ msgstr "そのフォントがサポートすべきUnicodeの部分範囲(subrang
 #. type: table
 #: original_texis/msdos.texi:1094
 msgid "All the scripts known to Emacs (which generally means all the scripts defined by the latest Unicode Standard) are recognized on MS-Windows.  However, @code{GDI} fonts support only a subset of the known scripts: @code{greek}, @code{hangul}, @code{kana}, @code{kanbun}, @code{bopomofo}, @code{tibetan}, @code{yi}, @code{mongolian}, @code{hebrew}, @code{arabic}, and @code{thai}."
-msgstr ""
+msgstr "Emacsが知るすべてのスクリプト(一般的にはもっとも最近のUnicode標準で定義されたすべてのスクリプトを意味する)はMS-Windowsで認識されます。しかし@code{GDI}フォントは既知のスクリプトのサブセット@code{greek}、@code{hangul}、@code{kana}、@code{kanbun}、@code{bopomofo}、@code{tibetan}、@code{yi}、@code{mongolian}、@code{hebrew}、@code{arabic}、@code{thai}だけをサポートします。"
 
 #. type: cindex
 #: original_texis/msdos.texi:1095
@@ -1623,7 +1608,7 @@ msgstr "font antialiasing (MS Windows)"
 #: original_texis/msdos.texi:1096
 #, no-wrap
 msgid "Cleartype"
-msgstr ""
+msgstr "Cleartype"
 
 #. type: item
 #: original_texis/msdos.texi:1097
@@ -1633,63 +1618,59 @@ msgstr "antialias"
 
 #. type: table
 #: original_texis/msdos.texi:1104
-#, fuzzy
-#| msgid "Specifies the antialiasing method.  The value @code{none} means no antialiasing, @code{standard} means use standard antialiasing, @code{subpixel} means use subpixel antialiasing (known as Cleartype on Windows), and @code{natural} means use subpixel antialiasing with adjusted spacing between letters.  If unspecified, the font will use the system default antialiasing."
 msgid "Specifies the antialiasing method.  The value @code{none} means no antialiasing, @code{standard} means use standard antialiasing, @code{subpixel} means use subpixel antialiasing (known as @dfn{Cleartype} on Windows), and @code{natural} means use subpixel antialiasing with adjusted spacing between letters.  If unspecified, the font will use the system default antialiasing."
-msgstr "アンチエイリアシング(antialiasing)の方法を指定します。値@code{none}は、アンチエイリアシングを行なわないことを意味します。@code{standard}は、標準のアンチエイリアシングを使用することを意味します。@code{subpixel}は、subpixelアンチエイリアシング(WindowsではCleartypeとして知られます)を使用することを意味します。@code{natural}は、文字間のspacing調整つきでsubpixelアンチエイリアシングを使用することを意味します。指定されない場合、そのフォントはシステムのデフォルトのアンチエイリアシングを使用します。"
+msgstr "アンチエイリアシング(antialiasing)の方法を指定します。値@code{none}は、アンチエイリアシングを行なわないことを意味します。@code{standard}は、標準のアンチエイリアシングを使用することを意味します。@code{subpixel}は、subpixelアンチエイリアシング(Windowsでは@dfn{Cleartype}として知られる)を使用することを意味します。@code{natural}は、文字間のspacing調整つきでsubpixelアンチエイリアシングを使用することを意味します。指定されない場合、そのフォントはシステムのデフォルトのアンチエイリアシングを使用します。"
 
 #. type: cindex
 #: original_texis/msdos.texi:1106
-#, fuzzy, no-wrap
-#| msgid "frame focus policy, MS-Windows"
+#, no-wrap
 msgid "font lookup, MS-Windows"
-msgstr "frame focus policy, MS-Windows"
+msgstr "font lookup, MS-Windows"
 
 #. type: findex
 #: original_texis/msdos.texi:1107
 #, no-wrap
 msgid "w32-find-non-USB-fonts"
-msgstr ""
+msgstr "w32-find-non-USB-fonts"
 
 #. type: Plain text
 #: original_texis/msdos.texi:1119
 msgid "The method used by Emacs on MS-Windows to look for fonts suitable for displaying a given non-@sc{ascii} character might fail for some rare scripts, specifically those added by Unicode relatively recently, even if you have fonts installed on your system that support those scripts.  That is because these scripts have no Unicode Subrange Bits (USBs)  defined for them in the information used by Emacs on MS-Windows to look for fonts.  You can use the @code{w32-find-non-USB-fonts} function to overcome these problems.  It needs to be run once at the beginning of the Emacs session, and again if you install new fonts.  You can add the following line to your init file to have this function run every time you start Emacs:"
-msgstr ""
+msgstr "Emacs on MS-Windowsが与えられた非@sc{ascii}文字の表示に適切なフォントを探すために使用する手法はいくつかの希少なスクリプト、特に比較的最近Unicodeに追加されたスクリプトは、たとえそのスクリプトをサポートするフォントをインストールしていても失敗するかもしれません。これはEmacs on MS-Windowsがフォントを探すために使用する情報内でそれらのスクリプトがスクリプトにたいして定義されたUnicode Subrange Bits (USB)をもたないからです。この問題を克服するために@code{w32-find-non-USB-fonts}関数を使用できます。これはEmacsセッションの開始に一度実行して、新たにフォントをインストールしたら再度実行する必要があります。Emacs開始時に毎回この関数を実行するためにinitファイルに以下の行を追加できます:"
 
 #. type: lisp
 #: original_texis/msdos.texi:1122
 #, no-wrap
 msgid "(w32-find-non-USB-fonts)\n"
-msgstr ""
+msgstr "(w32-find-non-USB-fonts)\n"
 
 #. type: vindex
 #: original_texis/msdos.texi:1125
 #, no-wrap
 msgid "w32-non-USB-fonts"
-msgstr ""
+msgstr "w32-non-USB-fonts"
 
 #. type: Plain text
 #: original_texis/msdos.texi:1136
 msgid "Alternatively, you can run this function manually via @kbd{M-:} (@pxref{Lisp Eval}) at any time.  On a system that has many fonts installed, running @code{w32-find-non-USB-fonts} might take a couple of seconds; if you consider that to be too long to be run during startup, and if you install new fonts only rarely, run this function once via @kbd{M-:}, and then assign the value it returns, if non-@code{nil}, to the variable @code{w32-non-USB-fonts} in your init file.  (If the function returns @code{nil}, you have no fonts installed that can display characters from the scripts which need this facility.)"
-msgstr ""
+msgstr "かわりに任意のタイミングで@kbd{M-:} (@ref{Lisp Eval}を参照)からこの関数を実行できます。多くのフォントがインストールされたシステムでは@code{w32-find-non-USB-fonts}の実行に数秒かかるかもしれません。スタートアップ中に実行するには長すぎると思い、かつフォントを新たにインストールすることが稀なら、@kbd{M-:}からこの関数を一度実行してからリターン値が非@code{nil}ならinitファイルで変数@code{w32-non-USB-fonts}にそれを割り当ててください(関数が@code{nil}をリターンしたらこの機能を必要とするスクリプトから表示できるインストール済みのフォントはない)。"
 
 #. type: vindex
 #: original_texis/msdos.texi:1137
 #, no-wrap
 msgid "w32-use-w32-font-dialog"
-msgstr ""
+msgstr "w32-use-w32-font-dialog"
 
 #. type: vindex
 #: original_texis/msdos.texi:1138
-#, fuzzy, no-wrap
-#| msgid "w32-charset-info-alist"
+#, no-wrap
 msgid "w32-fixed-font-alist"
-msgstr "w32-charset-info-alist"
+msgstr "w32-fixed-font-alist"
 
 #. type: Plain text
 #: original_texis/msdos.texi:1145
 msgid "The variable @code{w32-use-w32-font-dialog} controls the way fonts can be selected via @kbd{S-mouse-1} (@code{mouse-appearance-menu}).  If the value is @code{t}, the default, Emacs uses the standard Windows font selection dialog.  If the value is @code{nil}, Emacs instead pops a menu of a fixed set of fonts.  The fonts to appear in the menu are determined by @code{w32-fixed-font-alist}."
-msgstr ""
+msgstr "変数@code{w32-use-w32-font-dialog}は@kbd{S-mouse-1}を通じてフォントを選択する方法を制御します(@code{mouse-appearance-menu})。値が@code{t}(デフォルト)ならEmacsは標準的なWindowsのフォント選択ダイアログを使用します。@code{nil}ならEmacsはかわりにフォントの固定セットのメニューをポップアップします。メニューに表示されるフォントは@code{w32-fixed-font-alist}により決定されます。"
 
 #. type: section
 #: original_texis/msdos.texi:1147
