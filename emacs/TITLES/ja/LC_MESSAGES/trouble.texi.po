@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:53+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -58,9 +58,8 @@ msgid "@subsection Emergency Escape"
 msgstr "@subsection 緊急エスケープ"
 
 #: TITLES/src/trouble.texi.pl:17
-#, fuzzy
 msgid "@subsection Long Lines"
-msgstr "@subsection テキスト内のゴミ"
+msgstr "@subsection 長い行"
 
 #: TITLES/src/trouble.texi.pl:18
 msgid "@section Reporting Bugs"
