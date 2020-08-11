@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:49+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -70,7 +70,7 @@ msgstr "@section バッファーのリバート"
 
 #: TITLES/src/files.texi.pl:20
 msgid "@section Auto Revert: Keeping buffers automatically up-to-date"
-msgstr ""
+msgstr "@section 自動リバートーバッファーを自動的に最新に保つ"
 
 #: TITLES/src/files.texi.pl:21
 msgid "@section Auto-Saving: Protection Against Disasters"
@@ -137,9 +137,8 @@ msgid "@section Convenience Features for Finding Files"
 msgstr "@section ファイル検索の便利な機能"
 
 #: TITLES/src/files.texi.pl:37
-#, fuzzy
 msgid "@section Viewing Image Files"
-msgstr "@section ファイルのvisit(訪問)"
+msgstr "@section イメージファイルのvisit"
 
 #: TITLES/src/files.texi.pl:38
 msgid "@section Filesets"
