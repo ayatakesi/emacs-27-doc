@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2019-09-21 19:31+0900\n"
+"PO-Revision-Date: 2020-08-11 22:57+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -740,15 +740,12 @@ msgstr "初期化ファイル以外の他のファイルにカスタマイズを
 
 #. type: example
 #: original_texis/custom.texi:385
-#, fuzzy, no-wrap
-#| msgid ""
-#| "(setq custom-file \"~/.emacs-custom.el\")\n"
-#| "(load custom-file)\n"
+#, no-wrap
 msgid ""
 "(setq custom-file \"~/.config/emacs-custom.el\")\n"
 "(load custom-file)\n"
 msgstr ""
-"(setq custom-file \"~/.emacs-custom.el\")\n"
+"(setq custom-file \"~/.config/emacs-custom.el\")\n"
 "(load custom-file)\n"
 
 #. type: Plain text
@@ -758,19 +755,7 @@ msgstr "以下のようにして、Emacsのバージョンごとに違うカス�
 
 #. type: example
 #: original_texis/custom.texi:401
-#, fuzzy, no-wrap
-#| msgid ""
-#| "(cond ((< emacs-major-version 22)\n"
-#| "       ;; @r{Emacs 21 customization.}\n"
-#| "       (setq custom-file \"~/.custom-21.el\"))\n"
-#| "      ((and (= emacs-major-version 22)\n"
-#| "            (< emacs-minor-version 3))\n"
-#| "       ;; @r{Emacs 22 customization, before version 22.3.}\n"
-#| "       (setq custom-file \"~/.custom-22.el\"))\n"
-#| "      (t\n"
-#| "       ;; @r{Emacs version 22.3 or later.}\n"
-#| "       (setq custom-file \"~/.emacs-custom.el\")))\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "(cond ((< emacs-major-version 22)\n"
 "       ;; @r{Emacs 21 customization.}\n"
@@ -786,14 +771,14 @@ msgid ""
 msgstr ""
 "(cond ((< emacs-major-version 22)\n"
 "       ;; @r{Emacs 21 customization.}\n"
-"       (setq custom-file \"~/.custom-21.el\"))\n"
+"       (setq custom-file \"~/.config/custom-21.el\"))\n"
 "      ((and (= emacs-major-version 22)\n"
 "            (< emacs-minor-version 3))\n"
 "       ;; @r{Emacs 22 customization, before version 22.3.}\n"
-"       (setq custom-file \"~/.custom-22.el\"))\n"
+"       (setq custom-file \"~/.config/custom-22.el\"))\n"
 "      (t\n"
 "       ;; @r{Emacs version 22.3 or later.}\n"
-"       (setq custom-file \"~/.emacs-custom.el\")))\n"
+"       (setq custom-file \"~/.config/emacs-custom.el\")))\n"
 "\n"
 
 #. type: example
@@ -1307,10 +1292,8 @@ msgstr "Emacsは内部の記録維持のために多くのLisp変数を使用し
 
 #. type: Plain text
 #: original_texis/custom.texi:760
-#, fuzzy
-#| msgid "Emacs Lisp allows any variable (with a few exceptions) to have any kind of value.  However, many variables are meaningful only if assigned values of a certain type.  For example, only numbers are meaningful values for @code{kill-ring-max}, which specifies the maximum length of the kill ring (@pxref{Earlier Kills}); if you give @code{kill-ring-max} a string value, commands such as @kbd{C-y} (@code{yank}) will signal an error.  On the other hand, some variables don't care about type; for instance, if a variable has one effect for @code{nil} values and another effect for non-@code{nil} values, then any value that is not the symbol @code{nil} induces the second effect, regardless of its type (by convention, we usually use the value @code{t}---a symbol which stands for ``true''---to specify a non-@code{nil} value).  If you set a variable using the customization buffer, you need not worry about giving it an invalid type: the customization buffer usually only allows you to enter meaningful values.  When in doubt, use @kbd{C-h v} (@code{describe-variable}) to check the variable's documentation string to see kind of value it expects (@pxref{Examining})."
 msgid "Emacs Lisp allows any variable (with a few exceptions) to have any kind of value.  However, many variables are meaningful only if assigned values of a certain type.  For example, only numbers are meaningful values for @code{kill-ring-max}, which specifies the maximum length of the kill ring (@pxref{Earlier Kills}); if you give @code{kill-ring-max} a string value, commands such as @kbd{C-y} (@code{yank}) will signal an error.  On the other hand, some variables don't care about type; for instance, if a variable has one effect for @code{nil} values and another effect for non-@code{nil} values, then any value that is not the symbol @code{nil} induces the second effect, regardless of its type (by convention, we usually use the value @code{t}---a symbol which stands for ``true''---to specify a non-@code{nil} value).  If you set a variable using the customization buffer, you need not worry about giving it an invalid type: the customization buffer usually only allows you to enter meaningful values.  When in doubt, use @kbd{C-h v} (@code{describe-variable}) to check the variable's documentation string to see what kind of value it expects (@pxref{Examining})."
-msgstr "(少数の例外を除き)Emacs Lispでは、任意の変数は任意のタイプの値をもつことができます。しかし多くの変数は、特定のタイプの値を割り当てられた場合だけ意味をもちます。たとえばkillリングの最大長さを指定する@code{kill-ring-max}の値としては、数字だけが意味をもちます。@code{kill-ring-max}の値として文字列を与えた場合、@kbd{C-y} (@code{yank})のようなコマンドはエラーをシグナルするでしょう。一方、タイプを気にしない変数もあります。たとえば、変数の値が@code{nil}のときはある効果をもたらし、非@code{nil}のときは別の効果をもたらす場合、シンボル@code{nil}以外の任意の値は、そのタイプに関わらず2番目の効果をもたらします(慣例により、非@code{nil}値を指定するために、通常は値@code{t} --- これは``true''が由来です --- を使用します)。カスタマイズバッファーを使用して変数をセットする場合、無効なタイプを与えてしまう心配はありません。カスタマイズバッファーでは通常、意味のある値しか入力できないからです。判別がつかないときは、その変数が期待する値の種類を見るために、@kbd{C-h v} (@code{describe-variable})を使用して、変数のドキュメント文字列をチェックしてください(@ref{Examining}を参照してください)。"
+msgstr "(少数の例外を除き)Emacs Lispでは、任意の変数は任意のタイプの値をもつことができます。しかし多くの変数は、特定のタイプの値を割り当てられた場合だけ意味をもちます。たとえばkillリングの最大長さを指定する@code{kill-ring-max}の値としては、数字だけが意味をもちます。@code{kill-ring-max}の値として文字列を与えた場合、@kbd{C-y} (@code{yank})のようなコマンドはエラーをシグナルするでしょう。一方、タイプを気にしない変数もあります。たとえば、変数の値が@code{nil}のときはある効果をもたらし、非@code{nil}のときは別の効果をもたらす場合、シンボル@code{nil}以外の任意の値は、そのタイプに関わらず2番目の効果をもたらします(慣例により、非@code{nil}値を指定するために、通常は値@code{t} --- これは``true''が由来です --- を使用します)。カスタマイズバッファーを使用して変数をセットする場合、無効なタイプを与えてしまう心配はありません。カスタマイズバッファーでは通常、意味のある値しか入力できないからです。判別がつかないときは、その変数が期待するどの種類の値かを見るために、@kbd{C-h v} (@code{describe-variable})を使用して、変数のドキュメント文字列をチェックしてください(@ref{Examining}を参照してください)。"
 
 #. type: node
 #: original_texis/custom.texi:770 original_texis/custom.texi:772
@@ -1370,15 +1353,14 @@ msgstr "ディレクトリーにより変数の値を指定する方法。"
 
 #. type: node
 #: original_texis/custom.texi:770 original_texis/custom.texi:1453
-#, fuzzy, no-wrap
-#| msgid "Directory Variables"
+#, no-wrap
 msgid "Connection Variables"
-msgstr "Directory Variables"
+msgstr "Connection Variables"
 
 #. type: menuentry
 #: original_texis/custom.texi:770
 msgid "Variables which are valid for buffers with a remote default directory."
-msgstr ""
+msgstr "リモートのデフォルトディレクトリーをもつバッファーにたいして有効な変数。"
 
 #. type: subsection
 #: original_texis/custom.texi:773
@@ -1444,12 +1426,7 @@ msgstr ""
 
 #. type: example
 #: original_texis/custom.texi:805
-#, fuzzy, no-wrap
-#| msgid ""
-#| "  Automatically becomes buffer-local when set.\n"
-#| "  This variable is safe as a file local variable if its value\n"
-#| "  satisfies the predicate ‘integerp’.\n"
-#| "\n"
+#, no-wrap
 msgid ""
 "  Automatically becomes buffer-local when set.\n"
 "  This variable is safe as a file local variable if its value\n"
@@ -1460,6 +1437,7 @@ msgstr ""
 "  Automatically becomes buffer-local when set.\n"
 "  This variable is safe as a file local variable if its value\n"
 "  satisfies the predicate ‘integerp’.\n"
+"  Probably introduced at or before Emacs version 18.\n"
 "\n"
 
 #. type: example
@@ -2062,10 +2040,8 @@ msgstr "これら4つのキーワードは、実際には変数ではありま�
 
 #. type: Plain text
 #: original_texis/custom.texi:1230
-#, fuzzy
-#| msgid "Do not use the @code{mode} keyword for minor modes.  To enable or disable a minor mode in a local variables list, use the @code{eval} keyword with a Lisp expression that runs the mode command (@pxref{Minor Modes}).  For example, the following local variables list enables Eldoc mode (@pxref{Lisp Doc}) by calling @code{eldoc-mode} with no argument (calling it with an argument of 1 would do the same), and disables Font Lock mode (@pxref{Font Lock}) by calling @code{font-lock-mode} with an argument of @minus{}1."
 msgid "Do not use the @code{mode} keyword for minor modes.  To enable or disable a minor mode in a local variables list, use the @code{eval} keyword with a Lisp expression that runs the mode command (@pxref{Minor Modes}).  For example, the following local variables list enables ElDoc mode (@pxref{Lisp Doc}) by calling @code{eldoc-mode} with no argument (calling it with an argument of 1 would do the same), and disables Font Lock mode (@pxref{Font Lock}) by calling @code{font-lock-mode} with an argument of @minus{}1."
-msgstr "マイナーモードにたいして@code{mode}キーワードを使用しないでください。ローカル変数リストでマイナーモードを有効または無効にするには、@code{eval}でモードコマンドを実行するLisp式を指定します(@ref{Minor Modes}を参照してください)。たとえば以下のローカル変数リストは、引数なし(引数に1を指定しても同じことを行ないます)で@code{eldoc-mode}を呼び出すことにより、Eldocモード(@ref{Lisp Doc}を参照してください)を有効にし、引数@minus{}1で@code{font-lock-mode}(@ref{Font Lock}を参照してください)を呼び出すことにより、Font Lockモードを無効にする例です。"
+msgstr "マイナーモードにたいして@code{mode}キーワードを使用しないでください。ローカル変数リストでマイナーモードを有効または無効にするには、@code{eval}でモードコマンドを実行するLisp式を指定します(@ref{Minor Modes}を参照してください)。たとえば以下のローカル変数リストは、引数なし(引数に1を指定しても同じことを行ないます)で@code{eldoc-mode}を呼び出すことにより、ElDocモード(@ref{Lisp Doc}を参照してください)を有効にし、引数@minus{}1で@code{font-lock-mode}(@ref{Font Lock}を参照してください)を呼び出すことにより、Font Lockモードを無効にする例です。"
 
 #. type: example
 #: original_texis/custom.texi:1236
@@ -2219,15 +2195,7 @@ msgstr "以下は、@file{.dir-locals.el}ファイルの例です:"
 
 #. type: example
 #: original_texis/custom.texi:1371
-#, fuzzy, no-wrap
-#| msgid ""
-#| "((nil . ((indent-tabs-mode . t)\n"
-#| "         (fill-column . 80)))\n"
-#| " (c-mode . ((c-file-style . \"BSD\")\n"
-#| "            (subdirs . nil)))\n"
-#| " (\"src/imported\"\n"
-#| "  . ((nil . ((change-log-default-name\n"
-#| "              . \"ChangeLog.local\"))))))\n"
+#, no-wrap
 msgid ""
 "((nil . ((indent-tabs-mode . t)\n"
 "         (fill-column . 80)\n"
@@ -2239,7 +2207,8 @@ msgid ""
 "              . \"ChangeLog.local\"))))))\n"
 msgstr ""
 "((nil . ((indent-tabs-mode . t)\n"
-"         (fill-column . 80)))\n"
+"         (fill-column . 80)\n"
+"         (mode . auto-fill)))\n"
 " (c-mode . ((c-file-style . \"BSD\")\n"
 "            (subdirs . nil)))\n"
 " (\"src/imported\"\n"
@@ -2248,10 +2217,8 @@ msgstr ""
 
 #. type: Plain text
 #: original_texis/custom.texi:1384
-#, fuzzy
-#| msgid "This sets @samp{indent-tabs-mode} and @code{fill-column} for any file in the directory tree, and the indentation style for any C source file.  The special @code{subdirs} element is not a variable, but a special keyword which indicates that the C mode settings are only to be applied in the current directory, not in any subdirectories.  Finally, it specifies a different @file{ChangeLog} file name for any file in the @file{src/imported} subdirectory."
 msgid "This sets the variables @samp{indent-tabs-mode} and @code{fill-column} for any file in the directory tree, and the indentation style for any C source file.  The special @code{mode} element specifies the minor mode to be enabled.  So @code{(mode . auto-fill)} specifies that the minor mode @code{auto-fill-mode} needs to be enabled.  The special @code{subdirs} element is not a variable, but a special keyword which indicates that the C mode settings are only to be applied in the current directory, not in any subdirectories.  Finally, it specifies a different @file{ChangeLog} file name for any file in the @file{src/imported} subdirectory."
-msgstr "これはディレクトリーツリーの任意のファイルにたいして、@samp{indent-tabs-mode}と@code{fill-column}をセットし、任意のCソースファイルにたいしてインデントスタイルをセットします。特別な要素@code{subdirs}は変数ではありません。これは特別なキーワードで、Cモードのセッティングがカレントディレクトリーだけに適用され、任意のサブディレクトリーには適用されないことを示します。最後に、これは@file{src/imported}サブディレクトリー内の任意のファイルにたいして、違う@file{ChangeLog}ファイル名を指定します。"
+msgstr "これはディレクトリーツリーの任意のファイルにたいして変数@samp{indent-tabs-mode}および@code{fill-column}をセットして、任意のCソースファイルにたいしてインデントスタイルをセットします。特別な要素@code{mode}は有効にするマイナーモードを指定します。したがって@code{(mode . auto-fill)え}はマイナーモード@code{auto-fill-mode}の有効化が必要なことを指定します。特別な要素@code{subdirs}は変数ではありません。これは特別なキーワードで、Cモードのセッティングがカレントディレクトリーだけに適用され、任意のサブディレクトリーには適用されないことを示します。最後に、これは@file{src/imported}サブディレクトリー内の任意のファイルにたいして、違う@file{ChangeLog}ファイル名を指定します。"
 
 #. type: Plain text
 #: original_texis/custom.texi:1390
@@ -2356,61 +2323,54 @@ msgstr "ディレクトリーローカル変数は、Diredバッファー(@ref{D
 
 #. type: subsection
 #: original_texis/custom.texi:1454
-#, fuzzy, no-wrap
-#| msgid "Per-Directory Local Variables"
+#, no-wrap
 msgid "Per-Connection Local Variables"
-msgstr "ディレクトリーごとのローカル変数"
+msgstr "Per-Connection Local Variables"
 
 #. type: cindex
 #: original_texis/custom.texi:1455
-#, fuzzy, no-wrap
-#| msgid "local variables, for all files in a directory"
+#, no-wrap
 msgid "local variables, for all remote connections"
-msgstr "local variables, for all files in a directory"
+msgstr "local variables, for all remote connections"
 
 #. type: cindex
 #: original_texis/custom.texi:1456
-#, fuzzy, no-wrap
-#| msgid "directory-local variables"
+#, no-wrap
 msgid "connection-local variables"
-msgstr "directory-local variables"
+msgstr "connection-local variables"
 
 #. type: cindex
 #: original_texis/custom.texi:1457
-#, fuzzy, no-wrap
-#| msgid "per-directory local variables"
+#, no-wrap
 msgid "per-connection local variables"
-msgstr "per-directory local variables"
+msgstr "per-connection local variables"
 
 #. type: Plain text
 #: original_texis/custom.texi:1464
 msgid "Most of the variables reflect the situation on the local machine.  Often, they must use a different value when you operate in buffers with a remote default directory.  Think about the shell to be applied when calling @code{shell} -- it might be @file{/bin/bash} on your local machine, and @file{/bin/ksh} on a remote machine."
-msgstr ""
+msgstr "ほとんどの変数はローカルマシンの状況を反映します。リモートのデフォルトディレクトリーをもつバッファー操作時には、それらの変数が異なる値を使用しなければならないときが時折あります。@code{shell}の呼び出し時に適用するシェルについて考えてみてください。ローカルマシンでは@file{/bin/bash}でリモートマシンでは@file{/bin/ksh}かもしれません。"
 
 #. type: Plain text
 #: original_texis/custom.texi:1469
-#, fuzzy
-#| msgid "If a variable has both a directory-local and file-local value specified, the file-local value takes effect.  Unsafe directory-local variables are handled in the same way as unsafe file-local variables (@pxref{Safe File Variables})."
 msgid "This can be accomplished with @dfn{connection-local variables}.  Directory and file local variables override connection-local variables.  Unsafe connection-local variables are handled in the same way as unsafe file-local variables (@pxref{Safe File Variables})."
-msgstr "変数にたいしてディレクトリーローカル値とファイルローカル値の両方が指定された場合、ファイルローカル値が効果をもちます。安全ではないディレクトリーローカル値は、安全でないファイルローカル値と同じ方法で扱われます(@ref{Safe File Variables}を参照してください)。"
+msgstr "これは@dfn{接続ローカル変数(connection-local variables)}で実現することができます。ディレクトリーローカル変数とファイルローカル変数は接続ローカル変数をオーバーライドします。安全ではない接続ローカル値は、安全でないファイルローカル値と同じ方法で扱われます(@ref{Safe File Variables}を参照してください)。"
 
 #. type: findex
 #: original_texis/custom.texi:1470
-#, fuzzy, no-wrap
-#| msgid "dir-locals-set-class-variables"
+#, no-wrap
 msgid "connection-local-set-profile-variables"
-msgstr "dir-locals-set-class-variables"
+msgstr "connection-local-set-profile-variables"
 
 #. type: findex
 #: original_texis/custom.texi:1471
 #, no-wrap
 msgid "connection-local-set-profiles"
-msgstr ""
+msgstr "connection-local-set-profiles"
 
 #. type: Plain text
 #: original_texis/custom.texi:1477
 msgid "Connection-local variables are declared as a group of variables/value pairs in a @dfn{profile}, using the @code{connection-local-set-profile-variables} function.  The function @code{connection-local-set-profiles} activates profiles for a given criteria, identifying a remote machine:"
-msgstr ""
+msgstr "接続ローカル変数は@code{connection-local-set-profile-variables}関数を使用して変数/値ペアのグループとして@dfn{プロファイル(profile)}内に宣言されます。関数@code{connection-local-set-profiles}はリモートマシンを識別する与えられた条件にたいしてプロファイルをアクティブにします。"
 
 #. type: example
 #: original_texis/custom.texi:1482
@@ -2421,6 +2381,10 @@ msgid ""
 "     (shell-command-switch . \"-c\")))\n"
 "\n"
 msgstr ""
+"(connection-local-set-profile-variables 'remote-ksh\n"
+"   '((shell-file-name . \"/bin/ksh\")\n"
+"     (shell-command-switch . \"-c\")))\n"
+"\n"
 
 #. type: example
 #: original_texis/custom.texi:1486
@@ -2431,6 +2395,10 @@ msgid ""
 "     (shell-command-switch . \"-c\")))\n"
 "\n"
 msgstr ""
+"(connection-local-set-profile-variables 'remote-bash\n"
+"   '((shell-file-name . \"/bin/bash\")\n"
+"     (shell-command-switch . \"-c\")))\n"
+"\n"
 
 #. type: example
 #: original_texis/custom.texi:1489
@@ -2439,11 +2407,13 @@ msgid ""
 "(connection-local-set-profiles\n"
 "   '(:application tramp :machine \"remotemachine\") 'remote-ksh)\n"
 msgstr ""
+"(connection-local-set-profiles\n"
+"   '(:application tramp :machine \"remotemachine\") 'remote-ksh)\n"
 
 #. type: Plain text
 #: original_texis/custom.texi:1498
 msgid "This code declares two different profiles, @code{remote-ksh} and @code{remote-bash}. The profile @code{remote-ksh} is applied to all buffers which have a remote default directory matching the regexp @code{\"remotemachine} as host name.  Such a criteria can also discriminate for the properties @code{:protocol} (this is the Tramp method) or @code{:user} (a remote user name).  The @code{nil} criteria matches all buffers with a remote default directory."
-msgstr ""
+msgstr "このコードは@code{remote-ksh}と@code{remote-bash}という2つの異なるプロファイルを宣言しています。プロファイル@code{remote-ksh}はホスト名としてregexpの@code{\"remotemachine}にマッチするリモートデフォルトディレクトリーをもつすべてのバッファーに適用されます。このような条件はプロパティ@code{:protocol} (Trampの手法)や@code{:user} (リモートユーザー名)も区別できます。@code{nil}という条件はリモートデフォルトディレクトリーをもつすべてのバッファーにマッチします。"
 
 #. type: section
 #: original_texis/custom.texi:1500
@@ -2638,10 +2608,8 @@ msgstr "一番重要なキーマップは、@dfn{グローバルキーマップ(
 
 #. type: Plain text
 #: original_texis/custom.texi:1568
-#, fuzzy
-#| msgid "For example, a self-inserting character such as @kbd{g} is self-inserting because the global keymap binds it to the command @code{self-insert-command}.  The standard Emacs editing characters such as @kbd{C-a} also get their standard meanings from the global keymap.  Commands to rebind keys, such as @kbd{M-x global-set-key}, work by storing the new binding in the proper place in the global map (@pxref{Rebinding})."
 msgid "For example, a self-inserting character such as @kbd{g} is self-inserting because the global keymap binds it to the command @code{self-insert-command}.  The standard Emacs editing characters such as @kbd{C-a} also get their standard meanings from the global keymap.  Commands to rebind keys, such as @kbd{M-x global-set-key}, work by storing the new binding in the proper place in the global map (@pxref{Rebinding}).  To view the current key bindings, use the @kbd{C-h b} command."
-msgstr "たとえば@kbd{g}のような自己挿入文字(self-inserting character)は、グローバルキーマップがそれをコマンドcommand @code{self-insert-command}にバインドするので、自己挿入を行なうのです。@kbd{C-a}のような標準的なEmacsの編集文字もグローバルキーマップから、それらの標準的な意味を取得します。@kbd{M-x global-set-key}のような、キーをリバインドするコマンドは、新しいバインディングをグローバルマップの適切な位置に保存することにより機能します(@ref{Rebinding}を参照してください)。"
+msgstr "たとえば@kbd{g}のような自己挿入文字(self-inserting character)は、グローバルキーマップがそれをコマンドcommand @code{self-insert-command}にバインドするので、自己挿入を行なうのです。@kbd{C-a}のような標準的なEmacsの編集文字もグローバルキーマップから、それらの標準的な意味を取得します。@kbd{M-x global-set-key}のような、キーをリバインドするコマンドは、新しいバインディングをグローバルマップの適切な位置に保存することにより機能します(@ref{Rebinding}を参照)。カレントのキーバインディングを閲覧するには@kbd{C-h b}コマンドを使用してください。"
 
 #. type: cindex
 #: original_texis/custom.texi:1569
@@ -2853,10 +2821,9 @@ msgstr "key rebinding, this session"
 
 #. type: cindex
 #: original_texis/custom.texi:1701
-#, fuzzy, no-wrap
-#| msgid "redefining keys, this session"
+#, no-wrap
 msgid "rebinding keys, this session"
-msgstr "redefining keys, this session"
+msgstr "rebinding keys, this session"
 
 #. type: cindex
 #: original_texis/custom.texi:1702
@@ -3141,28 +3108,17 @@ msgstr "define-key"
 
 #. type: Plain text
 #: original_texis/custom.texi:1882
-#, fuzzy
-#| msgid "As described in @ref{Local Keymaps}, major modes and minor modes can define local keymaps.  These keymaps are constructed when the mode is used for the first time in a session.  If you wish to change one of these keymaps, you must use the @dfn{mode hook} (@pxref{Hooks})."
 msgid "As described in @ref{Local Keymaps}, major modes and minor modes can define local keymaps.  These keymaps are constructed when the mode is loaded for the first time in a session.  The function @code{define-key} can be used to make changes in a specific keymap.  This function can also unset keys, when passed @code{nil} as the binding."
-msgstr "@ref{Local Keymaps}で説明したように、メジャーモードとマイナーモードはローカルキーマップを定義できます。これらのキーマップは、セッションで最初にそのモードが使用されるときに構築されます。これらのキーマップを変更したい場合は、@dfn{モードフック(mode hook)}を使用しなければなりません(@ref{Hooks}を参照してください)。"
+msgstr "@ref{Local Keymaps}で説明したように、メジャーモードとマイナーモードはローカルキーマップを定義できます。これらのキーマップは、セッションで最初にそのモードがロードされるときに構築されます。特定のキーマップで変更を行うために関数@code{define-key}を使用できます。この関数はバインディングとして@code{nil}を渡すことによりキーのセット解除もできます。これらのキーマップを変更したい場合は、@dfn{モードフック(mode hook)}を使用しなければなりません(@ref{Hooks}を参照してください)。"
 
 #. type: Plain text
 #: original_texis/custom.texi:1889
-#, fuzzy
-#| msgid "For example, Texinfo mode runs the hook @code{texinfo-mode-hook}.  Here's how you can use the hook to add local bindings for @kbd{C-c n} and @kbd{C-c p} in Texinfo mode:"
 msgid "Since a mode's keymaps are not constructed until it has been loaded, you must delay running code which modifies them, e.g., by putting it on a @dfn{mode hook} (@pxref{Hooks}).  For example, Texinfo mode runs the hook @code{texinfo-mode-hook}.  Here's how you can use the hook to add local bindings for @kbd{C-c n} and @kbd{C-c p}, and remove the one for @kbd{C-c C-x x} in Texinfo mode:"
-msgstr "たとえばTexinfoモードは、フック@code{texinfo-mode-hook}を実行します。以下はTexinfoモードで、@kbd{C-c n}と@kbd{C-c p}にローカルバインディングを追加するために、どのようにフックを使用できるかの例です:"
+msgstr "モードのキーマップはモードがロードされるまで構築されないので、キーマップを変更するコードを@dfn{モードフック(mode hook)}に配置することにより実行を遅延しなければなりません(@ref{Hooks}を参照)。たとえばTexinfoモードは、フック@code{texinfo-mode-hook}を実行します。以下はTexinfoモードで@kbd{C-c n}と@kbd{C-c p}にローカルバインディングを追加、@kbd{C-c C-x x}のローカルバインディングを削除するために、どのようにフックを使用できるかの例です:"
 
 #. type: example
 #: original_texis/custom.texi:1898
-#, fuzzy, no-wrap
-#| msgid ""
-#| "(add-hook 'texinfo-mode-hook\n"
-#| "          (lambda ()\n"
-#| "            (define-key texinfo-mode-map \"\\C-cp\"\n"
-#| "                        'backward-paragraph)\n"
-#| "            (define-key texinfo-mode-map \"\\C-cn\"\n"
-#| "                        'forward-paragraph)))\n"
+#, no-wrap
 msgid ""
 "(add-hook 'texinfo-mode-hook\n"
 "          (lambda ()\n"
@@ -3178,6 +3134,7 @@ msgstr ""
 "                        'backward-paragraph)\n"
 "            (define-key texinfo-mode-map \"\\C-cn\"\n"
 "                        'forward-paragraph)))\n"
+"            (define-key texinfo-mode-map \"\\C-c\\C-xx\" nil)\n"
 
 #. type: cindex
 #: original_texis/custom.texi:1902
@@ -3192,70 +3149,60 @@ msgstr "Emacsでは、デフォルトのキーバインディングがセット�
 
 #. type: Plain text
 #: original_texis/custom.texi:1917
-#, fuzzy
-#| msgid "A @key{Control}-modified alphabetical character is always considered case-insensitive: Emacs always treats @kbd{C-A} as @kbd{C-a}, @kbd{C-B} as @kbd{C-b}, and so forth.  The reason for this is historical."
 msgid "A @key{Control}-modified alphabetical character is generally considered case-insensitive: Emacs always treats @kbd{C-A} as @kbd{C-a}, @kbd{C-B} as @kbd{C-b}, and so forth.  The reason for this is historical: In non-graphical environments there is no distinction between those keystrokes.  However, you can bind shifted @key{Control} alphabetical keystrokes in GUI frames:"
-msgstr "@key{Control}修飾されたアルファベット文字は、常に大文字小文字が区別されません。Emacsは常に@kbd{C-A}を@kbd{C-a}、@kbd{C-B}を@kbd{C-b}、...として扱います。これは歴史的な理由によります。"
+msgstr "@key{Control}修飾されたアルファベット文字は、一般的に大文字小文字が区別されません。Emacsは常に@kbd{C-A}を@kbd{C-a}、@kbd{C-B}を@kbd{C-b}、...として扱います。これは歴史的な理由によります。非グラフィカルな環境ではこれらのキーストロークに差異はありません。しかしGUIフレームではshiftした@key{Control}のアルファベットキーストロークをバインドできます。"
 
 #. type: lisp
 #: original_texis/custom.texi:1920
-#, fuzzy, no-wrap
-#| msgid "(global-set-key (kbd \"C-z\") 'shell)\n"
+#, no-wrap
 msgid "(global-set-key (kbd \"C-S-n\") #'previous-line)\n"
-msgstr "(global-set-key (kbd \"C-z\") 'shell)\n"
+msgstr "(global-set-key (kbd \"C-S-n\") #'previous-line)\n"
 
 #. type: Plain text
 #: original_texis/custom.texi:1926
-#, fuzzy
-#| msgid "For all other modifiers, you can make the modified alphabetical characters case-sensitive when you customize Emacs.  For instance, you could make @kbd{M-a} and @kbd{M-A} run different commands."
 msgid "For all other modifiers, you can make the modified alphabetical characters case-sensitive (even on non-graphical frames) when you customize Emacs.  For instance, you could make @kbd{M-a} and @kbd{M-A} run different commands."
-msgstr "他の修飾キーでは、Emacsをカスタマイズするとき修飾されたアルファベットの大文字小文字を区別するようにできます。たとえば@kbd{M-a}と@kbd{M-A}で別のコマンドを実行できます。"
+msgstr "他の修飾キーではEmacsをカスタマイズするとき修飾されたアルファベットの大文字小文字を区別するようにできます(非グラフィカルなフレームでも可)。たとえば@kbd{M-a}と@kbd{M-A}で別のコマンドを実行できます。"
 
 #. type: cindex
 #: original_texis/custom.texi:1927
-#, fuzzy, no-wrap
-#| msgid "Using modifier keys."
+#, no-wrap
 msgid "Alt, modifier key"
-msgstr "Using modifier keys."
+msgstr "Alt, modifier key"
 
 #. type: cindex
 #: original_texis/custom.texi:1928
-#, fuzzy, no-wrap
-#| msgid "Using modifier keys."
+#, no-wrap
 msgid "Super, modifier key"
-msgstr "Using modifier keys."
+msgstr "Super, modifier key"
 
 #. type: cindex
 #: original_texis/custom.texi:1929
-#, fuzzy, no-wrap
-#| msgid "Using modifier keys."
+#, no-wrap
 msgid "Hyper, modifier key"
-msgstr "Using modifier keys."
+msgstr "Hyper, modifier key"
 
 #. type: cindex
 #: original_texis/custom.texi:1930
 #, no-wrap
 msgid "s-"
-msgstr ""
+msgstr "s-"
 
 #. type: cindex
 #: original_texis/custom.texi:1931
 #, no-wrap
 msgid "H-"
-msgstr ""
+msgstr "H-"
 
 #. type: cindex
 #: original_texis/custom.texi:1932
 #, no-wrap
 msgid "A-"
-msgstr ""
+msgstr "A-"
 
 #. type: Plain text
 #: original_texis/custom.texi:1944
-#, fuzzy
-#| msgid "Although only the @key{Control} and @key{Meta} modifier keys are commonly used, Emacs supports three other modifier keys.  These are called @key{Super}, @key{Hyper}, and @key{Alt}.  Few terminals provide ways to use these modifiers; the key labeled @key{Alt} on most keyboards usually issues the @key{Meta} modifier, not @key{Alt}.  The standard key bindings in Emacs do not include any characters with these modifiers.  However, you can customize Emacs to assign meanings to them.  The modifier bits are labeled as @samp{s-}, @samp{H-} and @samp{A-} respectively."
 msgid "Although only the @key{Control} and @key{Meta} modifier keys are commonly used, Emacs supports three other modifier keys.  These are called @key{Super}, @key{Hyper}, and @key{Alt}.  Few terminals provide ways to use these modifiers; the key labeled @key{Alt} on most keyboards usually issues the @key{Meta} modifier, not @key{Alt}.  The standard key bindings in Emacs do not include any characters with the @key{Super} and @key{Hyper} modifiers, and only a small number of standard key bindings use @key{Alt}.  However, you can customize Emacs to assign meanings to key bindings that use these modifiers.  The modifier bits are labeled as @samp{s-}, @samp{H-} and @samp{A-} respectively."
-msgstr "一般的に使用される修飾キーは@key{Control}と@key{Meta}だけですが、Emacsは他の修飾キーもサポートします。これらは@key{Super}、@key{Hyper}、@key{Alt}と呼ばれます。これらの修飾キーを使用する方法を提供する端末の数は多くありません。ほとんどのキーボードで@key{Alt}とラベルされたキーは、通常は@key{Alt}ではなく@key{Meta}修飾を発行します。Emacsの標準のキーバインディングでは、これらのキーで修飾された文字は含まれません。しかしこれらに意味を割り当てるようにEmacsをカスタマイズできます。修飾ビットは、それぞれ@samp{s-}、@samp{H-}、@samp{A-}になります。"
+msgstr "一般的に使用される修飾キーは@key{Control}と@key{Meta}だけですが、Emacsは他の修飾キーもサポートします。これらは@key{Super}、@key{Hyper}、@key{Alt}と呼ばれます。これらの修飾キーを使用する方法を提供する端末の数は多くありません。ほとんどのキーボードで@key{Alt}とラベルされたキーは、通常は@key{Alt}ではなく@key{Meta}修飾を発行します。Emacsの標準のキーバインディングには@key{Super}と@key{Hyper}は含まれず、少数の標準キーバインディングだけが@key{Alt}を使用します。これらのキーで修飾された文字は含まれません。しかしこれらの修飾を使用するキーバインディングに意味を割り当てるようにEmacsをカスタマイズできます。修飾ビットはそれぞれ@samp{s-}、@samp{H-}、@samp{A-}になります。"
 
 #. type: Plain text
 #: original_texis/custom.texi:1952
@@ -3645,28 +3592,23 @@ msgstr "マウスはメニューバーにあります。"
 #: original_texis/custom.texi:2173
 #, no-wrap
 msgid "tab-bar"
-msgstr ""
+msgstr "tab-bar"
 
 #. type: table
 #: original_texis/custom.texi:2175
-#, fuzzy
-#| msgid "The mouse was in the menu bar."
 msgid "The mouse was in a tab bar."
-msgstr "マウスはメニューバーにあります。"
+msgstr "マウスはタブバーにあります。"
 
 #. type: item
 #: original_texis/custom.texi:2175
-#, fuzzy, no-wrap
-#| msgid "vertical-line"
+#, no-wrap
 msgid "tab-line"
-msgstr "vertical-line"
+msgstr "tab-line"
 
 #. type: table
 #: original_texis/custom.texi:2177
-#, fuzzy
-#| msgid "The mouse was in a header line."
 msgid "The mouse was in a tab line."
-msgstr "マウスはヘッダーラインにあります。"
+msgstr "マウスはタブラインにあります。"
 
 #. type: item
 #: original_texis/custom.texi:2177
@@ -3791,10 +3733,9 @@ msgstr "~/.emacs file"
 
 #. type: cindex
 #: original_texis/custom.texi:2247
-#, fuzzy, no-wrap
-#| msgid "~/.emacs file"
+#, no-wrap
 msgid "~/.config/emacs/init.el file"
-msgstr "~/.emacs file"
+msgstr "~/.config/emacs/init.el file"
 
 #. type: cindex
 #: original_texis/custom.texi:2248
@@ -3812,19 +3753,17 @@ msgstr "startup (init file)"
 #: original_texis/custom.texi:2250
 #, no-wrap
 msgid "XDG_CONFIG_HOME"
-msgstr ""
+msgstr "XDG_CONFIG_HOME"
 
 #. type: Plain text
 #: original_texis/custom.texi:2258
-#, fuzzy
-#| msgid "When Emacs is started, it normally tries to load a Lisp program from an @dfn{initialization file}, or @dfn{init file} for short.  This file, if it exists, specifies how to initialize Emacs for you.  Emacs looks for your init file using the filenames @file{~/.emacs}, @file{~/.emacs.el}, or @file{~/.emacs.d/init.el}; you can choose to use any one of these three names (@pxref{Find Init}).  Here, @file{~/} stands for your home directory."
 msgid "When Emacs is started, it normally tries to load a Lisp program from an @dfn{initialization file}, or @dfn{init file} for short.  This file, if it exists, specifies how to initialize Emacs for you.  Traditionally, file @file{~/.emacs} is used as the init file, although Emacs also looks at @file{~/.emacs.el}, @file{~/.emacs.d/init.el}, @file{~/.config/emacs/init.el}, or other locations.  @xref{Find Init}."
-msgstr "Emacsを開始したとき、Emacsは通常、@dfn{初期化ファイル(initialization file)}、短くは@dfn{initファイル}から、Lispプログラムのロードを試みます。このファイルは、もし存在する場合は、Emacsをどのように初期化するかを指定します。Emacsはファイル名@file{~/.emacs}、@file{~/.emacs.el}、@file{~/.emacs.d/init.el}を使用してinitファイルを探します。これら3つのファイル名から、使用するものを選択できます(@ref{Find Init}を参照してください)。ここで@file{~/}は、ホームディレクトリーを意味します。"
+msgstr "Emacsを開始したとき、Emacsは通常、@dfn{初期化ファイル(initialization file)}、短くは@dfn{initファイル}から、Lispプログラムのロードを試みます。このファイルは、もし存在する場合は、Emacsをどのように初期化するかを指定します。Emacsが@file{~/.emacs.el}、@file{~/.emacs.d/init.el}、@file{~/.config/emacs/init.el}、またはその他の場所を探すにしても、伝統的に@file{~/.emacs}はinitファイルとして扱われます。@ref{Find Init}を参照してください。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2262
 msgid "You may find it convenient to have all your Emacs configuration in one directory, in which case you should use @file{~/.emacs.d/init.el} or the XDG-compatible @file{~/.config/emacs/init.el}."
-msgstr ""
+msgstr "Emacsのすべての設定が1つのディレクトリーにあると便利だと思うかもしれません。その場合には@file{~/.emacs.d/init.el}、またはXDG互換の@file{~/.config/emacs/init.el}を使用する必要があります。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2266
@@ -3942,15 +3881,14 @@ msgstr "initファイルでの非@acronym{ASCII}文字の使用。"
 
 #. type: node
 #: original_texis/custom.texi:2320 original_texis/custom.texi:2754
-#, fuzzy, no-wrap
-#| msgid "Init File"
+#, no-wrap
 msgid "Early Init File"
-msgstr "Init File"
+msgstr "Early Init File"
 
 #. type: menuentry
 #: original_texis/custom.texi:2320
 msgid "Another init file, which is read early on."
-msgstr ""
+msgstr "早期に読み込まれる別のinitファイル。"
 
 #. type: subsection
 #: original_texis/custom.texi:2323
@@ -3965,17 +3903,13 @@ msgstr "initファイルには、1つ以上のLisp式が含まれています。
 
 #. type: Plain text
 #: original_texis/custom.texi:2340
-#, fuzzy
-#| msgid "You can set any Lisp variable with @code{setq}, but with certain variables @code{setq} won't do what you probably want in the @file{.emacs} file.  Some variables automatically become buffer-local when set with @code{setq}; what you want in @file{.emacs} is to set the default value, using @code{setq-default}.  Some customizable minor mode variables do special things to enable the mode when you set them with Customize, but ordinary @code{setq} won't do that; to enable the mode in your @file{.emacs} file, call the minor mode command.  The following section has examples of both of these methods."
 msgid "You can set any Lisp variable with @code{setq}, but with certain variables @code{setq} won't do what you probably want in the init file.  Some variables automatically become buffer-local when set with @code{setq}; what you want in the init file is to set the default value, using @code{setq-default}.  Some customizable minor mode variables do special things to enable the mode when you set them with Customize, but ordinary @code{setq} won't do that; to enable the mode in your init file, call the minor mode command.  The following section has examples of both of these methods."
-msgstr "@code{setq}で任意のLisp変数をセットできますが、@file{.emacs}の特定の変数にたいして、@code{setq}は多分あなたの望むとおりには動作しないでしょう。いくつかの変数は@code{setq}でセットしたとき、自動的にバッファーローカルになります。あなたが望むのは、@file{.emacs}でデフォルト値をセットすることなので、@code{setq-default}を使用します。マイナーモードのカスタマイズ可能な変数のいくつかは、それをCustomizeでセットすると、そのモードを有効にするために特別なことを行ないますが、通常の@code{setq}ではそれを行ないません。@file{.emacs}ファイルでモードを有効にするには、マイナーモードコマンドを呼び出します。以下のセクションには、これらの両方の方法の例があります。"
+msgstr "@code{setq}で任意のLisp変数をセットできますが、initファイルの特定の変数にたいして、@code{setq}は多分あなたの望むとおりには動作しないでしょう。いくつかの変数は@code{setq}でセットしたとき、自動的にバッファーローカルになります。あなたが望むのは、initファイルでデフォルト値をセットすることなので、@code{setq-default}を使用します。マイナーモードのカスタマイズ可能な変数のいくつかは、それをCustomizeでセットすると、そのモードを有効にするために特別なことを行ないますが、通常の@code{setq}ではそれを行ないません。initファイルでモードを有効にするには、マイナーモードコマンドを呼び出します。以下のセクションには、これらの両方の方法の例があります。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2345
-#, fuzzy
-#| msgid "The second argument to @code{setq} is an expression for the new value of the variable.  This can be a constant, a variable, or a function call expression.  In @file{.emacs}, constants are used most of the time.  They can be:"
 msgid "The second argument to @code{setq} is an expression for the new value of the variable.  This can be a constant, a variable, or a function call expression.  In the init file, constants are used most of the time.  They can be:"
-msgstr "@code{setq}の2番目の引数は、変数にたいする新しい値の式です。これには、定数、変数、関数呼び出し式を指定できます。@file{.emacs}では、定数が使用される場合がほとんどです。これは以下のとおりです:"
+msgstr "@code{setq}の2番目の引数は、変数にたいする新しい値の式です。これには、定数、変数、関数呼び出し式を指定できます。initファイルでは、定数が使用される場合がほとんどです。これは以下のとおりです:"
 
 #. type: item
 #: original_texis/custom.texi:2347
@@ -4436,10 +4370,8 @@ msgstr "各端末タイプは、Emacsをその端末タイプで実行すると�
 
 #. type: Plain text
 #: original_texis/custom.texi:2642
-#, fuzzy
-#| msgid "The usual purpose of the terminal-specific library is to map the escape sequences used by the terminal's function keys onto more meaningful names, using @code{input-decode-map} (or @code{function-key-map} before it).  See the file @file{term/lk201.el} for an example of how this is done.  Many function keys are mapped automatically according to the information in the Termcap data base; the terminal-specific library needs to map only the function keys that Termcap does not specify."
 msgid "The usual purpose of the terminal-specific library is to map the escape sequences used by the terminal's function keys onto more meaningful names, using @code{input-decode-map}.  See the file @file{term/lk201.el} for an example of how this is done.  Many function keys are mapped automatically according to the information in the Termcap data base; the terminal-specific library needs to map only the function keys that Termcap does not specify."
-msgstr "端末固有ライブラリーの通常の目的は、@code{input-decode-map} (または、その前に@code{function-key-map})を使用して、その端末のファンクションキーで使用されるエスケープシーケンスを、より意味のある名前にマップすることです。これがどのように行なわれるかの例は、ファイル@file{term/lk201.el}を参照してください。多くのファンクションキーは、Termcapデータベースの情報にしたがい、自動的にマップされます。端末固有ライブラリーは、Termcapが指定しないファンクションキーだけをマップすればよいのです。"
+msgstr "端末固有ライブラリーの通常の目的は、@code{input-decode-map}を使用して、その端末のファンクションキーで使用されるエスケープシーケンスを、より意味のある名前にマップすることです。これがどのように行なわれるかの例は、ファイル@file{term/lk201.el}を参照してください。多くのファンクションキーは、Termcapデータベースの情報にしたがい、自動的にマップされます。端末固有ライブラリーは、Termcapが指定しないファンクションキーだけをマップすればよいのです。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2648
@@ -4477,57 +4409,53 @@ msgstr "Emacsがinitファイルを探す方法"
 #. type: Plain text
 #: original_texis/custom.texi:2668
 msgid "Emacs normally finds your init file in a location under your home directory.  @xref{Init File}."
-msgstr ""
+msgstr "Emacsは通常はホームディレクトリー配下でinitファイルを探します。@ref{Init File}を参照してください。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2674
 msgid "Emacs looks for your init file using the filenames @file{~/.emacs.el}, @file{~/.emacs}, or @file{~/.emacs.d/init.el} in that order; you can choose to use any one of these names.  (Note that only the locations directly in your home directory have a leading dot in the location's basename.)"
-msgstr ""
+msgstr "Emacsは@file{~/.emacs.el}、@file{~/.emacs}、@file{~/.emacs.d/init.el}というファイル名で、この順序でinitファイルを探します。これらの名前のどれを使用するか選択できます(ホームディレクトリー直下の場所だけが場所のベース名として先頭にドットをもつことに注意)。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2682
 msgid "Emacs can also look in an XDG-compatible location for @file{init.el}, the default is the directory @file{~/.config/emacs}.  This can be overriden by setting @env{XDG_CONFIG_HOME} in your environment, its value replaces @file{~/.config} in the name of the default XDG init file.  However @file{~/.emacs.d}, @file{~/.emacs}, and @file{~/.emacs.el} are always preferred if they exist, which means that you must delete or rename them in order to use the XDG location."
-msgstr ""
+msgstr "EmacsはXDG互換の場所でも@file{init.el}を探します。デフォルトはディレクトリー@file{~/.config/emacs}です。これは環境変数@env{XDG_CONFIG_HOME}をセットしてオーバーライドできます。この値はデフォルトのXDG initファイルの名前の@file{~/.config}を置き換えます。しかし@file{~/.emacs.d}、@file{~/.emacs}、@file{~/.emacs.el}が存在する場合には常に優先されます。これはXDGロケーションを使用するためには、それらの削除やリネームを行わなければならないことを意味します。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2686
 msgid "Note also that if neither the XDG location nor @file{~/.emacs.d} exist, then Emacs will create @file{~/.emacs.d} (and therefore use it during subsequent invocations)."
-msgstr ""
+msgstr "XDGロケーションと@file{~/.emacs.d}がいずれも存在しなければEmacsが@file{~/.emacs.d}を作成(したがって以降の呼び出しの間もそれが使用される)することにも注意してください。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2689
 msgid "Emacs will set @code{user-emacs-directory} to the directory it decides to use."
-msgstr ""
+msgstr "Emacsは使用を決定したディレクトリーを@code{user-emacs-directory}んセットします。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2697
 msgid "Although this is backward-compatible with older Emacs versions, modern POSIX platforms prefer putting your initialization files under @file{~/.config} so that troubleshooting a problem that might be due to a bad init file, or archiving a collection of init files, can be done by renaming that directory.  To help older Emacs versions find configuration files in their current default locations, you can execute the following Emacs Lisp code:"
-msgstr ""
+msgstr "これがたとえ古いバージョンのEmacsにたいする後方互換性のためだとしても、モダンなPOSIXプラットフォームは初期化ファイルを@file{~/.config}の配下に配置することを優先するので、誤ったinitファイルに起因する問題のトラブルシューティングやinitファイルコレクションのアーカイブはそのディレクトリーのリネームにより行うことができます。古いバージョンのEmacsがそれらのカレントのデフォルト位置で設定ファイルを見つけるのを助けるために、以下のEmacs Lispコードを実行することができます:"
 
 #. type: example
 #: original_texis/custom.texi:2700
 #, no-wrap
 msgid "(make-symbolic-link \".config/emacs\" \"~/.emacs.d\")\n"
-msgstr ""
+msgstr "(make-symbolic-link \".config/emacs\" \"~/.emacs.d\")\n"
 
 #. type: Plain text
 #: original_texis/custom.texi:2707
-#, fuzzy
-#| msgid "However, if you run Emacs from a shell started by @code{su}, Emacs tries to find your own @file{.emacs}, not that of the user you are currently pretending to be.  The idea is that you should get your own editor customizations even if you are running as the super user."
 msgid "However, if you run Emacs from a shell started by @code{su} and @env{XDG_CONFIG_HOME} is not set in your environment, Emacs tries to find your own initialization files, not that of the user you are currently pretending to be.  The idea is that you should get your own editor customizations even if you are running as the super user."
-msgstr "しかし、@code{su}により開始されたシェルからEmacsを実行する場合、Emacsは現在の見かけのユーザーではなく、あなた自身の@file{.emacs}を探すことを試みます。このアイデアは、たとえスーパーユーザーとして実行しているときでも、自分のエディターカスタマイズを取得するべきだという考えです。"
+msgstr "しかし@code{su}で開始されたシェルからEmacsを実行して環境変数@env{XDG_CONFIG_HOME}が未セットなら、Emacsは現在の見かけのユーザーではなく、あなた自身の初期化ファイルを探すことを試みます。このアイデアは、たとえスーパーユーザーとして実行しているときでも、自分のエディターカスタマイズを取得するべきだという考えです。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2714
-#, fuzzy
-#| msgid "More precisely, Emacs first determines which user's init file to use.  It gets your user name from the environment variables @env{LOGNAME} and @env{USER}; if neither of those exists, it uses effective user-ID@.  If that user name matches the real user-ID, then Emacs uses @env{HOME}; otherwise, it looks up the home directory corresponding to that user name in the system's data base of users."
 msgid "More precisely, Emacs first determines which user's init file to use.  It gets your user name from the environment variables @env{LOGNAME} and @env{USER}; if neither of those exists, it uses the effective user-ID@.  If that user name matches the real user-ID, then Emacs uses @env{HOME}; otherwise, it looks up the home directory corresponding to that user name in the system's data base of users."
 msgstr "より正確には、最初にEmacsはどのユーザーのinitファイルを使用するか決定します。Emacsは環境変数@env{LOGNAME}と@env{USER}からユーザー名を取得します。どちらも存在しない場合、実効ユーザーIDを使用します。ユーザー名が実ユーザーIDとマッチしたとき、Emacsは@env{HOME}を使用します。そうでない場合、Emacsはシステムのユーザーデータベースの、そのユーザー名に対応するホームディレクトリーを探します。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2719
 msgid "For brevity the rest of the Emacs documentation generally uses just the current default location @file{~/.emacs.d/init.el} for the init file."
-msgstr ""
+msgstr "簡略化のためにEmacsドキュエントの残りの部分では、一般的にはinitファイルにたいして単にカレントデフォルト位置@file{~/.emacs.d/init.el}を使用します。"
 
 #. type: subsection
 #: original_texis/custom.texi:2721
@@ -4587,34 +4515,30 @@ msgstr "@var{char}を挿入するには、@kbd{C-q}とタイプしてからバ�
 
 #. type: subsection
 #: original_texis/custom.texi:2755
-#, fuzzy, no-wrap
-#| msgid "The Emacs Initialization File"
+#, no-wrap
 msgid "The Early Init File"
-msgstr "Emacs初期化ファイル"
+msgstr "The Early Init File"
 
 #. type: cindex
 #: original_texis/custom.texi:2756
-#, fuzzy, no-wrap
-#| msgid "site init file"
+#, no-wrap
 msgid "early init file"
-msgstr "site init file"
+msgstr "early init file"
 
 #. type: Plain text
 #: original_texis/custom.texi:2770
 msgid "Most customizations for Emacs should be put in the normal init file.  @xref{Init File}.  However, it is sometimes desirable to have customizations that take effect during Emacs startup earlier than the normal init file is processed.  Such customizations can be put in the early init file, @file{~/.config/emacs/early-init.el} or @file{~/.emacs.d/early-init.el}.  This file is loaded before the package system and GUI is initialized, so in it you can customize variables that affect frame appearance as well as the package initialization process, such as @code{package-enable-at-startup}, @code{package-load-list}, and @code{package-user-dir}.  Note that variables like @code{package-archives} which only affect the installation of new packages, and not the process of making already-installed packages available, may be customized in the regular init file.  @xref{Package Installation}."
-msgstr ""
+msgstr "Emacsのほとんどのカスタマイズは通常のinitファイルに配置するべきです。@ref{Init File}を参照してください。しかしEmacsのスタートアップで通常のinitファイルを処理するより早い段階で効果をもつカスタマイズが望ましい場合があります。そのようなカスタマイゼーションは早期initファイル@file{~/.config/emacs/early-init.el}または@file{~/.emacs.d/early-init.el}に配置することができます。このファイルはパッケージシステムとGUIの初期化前にロードされるので、フレームの外見や@code{package-enable-at-startup}、@code{package-load-list}、@code{package-user-dir}のようなパッケージ初期化プロセスに影響を与える変数をカスタマイズできます。新たなパッケージのインストールだけに影響がある@code{package-archives}のような変数やインストール済みパッケージを利用可能にするプロセス以外は正規のinitファイルでカスタマイズできます。@ref{Package Installation}を参照してください。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2780
 msgid "We do not recommend that you move into @file{early-init.el} customizations that can be left in the normal init files.  That is because the early init file is read before the GUI is initialized, so customizations related to GUI features will not work reliably in @file{early-init.el}.  By contrast, the normal init files are read after the GUI is initialized.  If you must have customizations in the early init file that rely on GUI features, make them run off hooks provided by the Emacs startup, such as @code{window-setup-hook} or @code{tty-setup-hook}.  @xref{Hooks}."
-msgstr ""
+msgstr "通常のinitファイルに残すことができるカスタマイゼーションを@file{early-init.el}に移動することは推奨できません。早期initファイルはGUIの初期化前に読み込まれるので。GUI機能に関連するカスタマイゼーションは@file{early-init.el}では信頼性をもって機能しないからです。対照的に通常のinitファイルはGUIの初期化後に読み込まれます。GUI機能に依存するカスタマイズを早期initファイルで行わなければならない場合には、Emacsがスタートアップ時に提供する@code{window-setup-hook}や@code{tty-setup-hook}のようなフックを外して実行してください。@ref{Hooks}を参照してください。"
 
 #. type: Plain text
 #: original_texis/custom.texi:2783
-#, fuzzy
-#| msgid "@ref{Top, Emacs Lisp, Emacs Lisp, elisp, The Emacs Lisp Reference Manual}."
 msgid "For more information on the early init file, @pxref{Init File,,, elisp, The Emacs Lisp Reference Manual}."
-msgstr "@ref{Top, Emacs Lisp, Emacs Lisp, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr "早期initファイルの詳細な情報は@ref{Init File,,, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: section
 #: original_texis/custom.texi:2785
