@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:43+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -13,6 +13,5 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: TITLES/src/anti.texi.pl:6
-#, fuzzy
 msgid "@appendix Emacs 26 Antinews"
-msgstr "@appendix Emacs 25 アンチニュース"
+msgstr "@appendix Emacs 26 アンチニュース"
