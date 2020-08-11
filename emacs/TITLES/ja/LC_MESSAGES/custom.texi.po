@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:46+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -85,9 +85,8 @@ msgid "@subsection Per-Directory Local Variables"
 msgstr "@subsection ディレクトリーごとのローカル変数"
 
 #: TITLES/src/custom.texi.pl:24
-#, fuzzy
 msgid "@subsection Per-Connection Local Variables"
-msgstr "@subsection ディレクトリーごとのローカル変数"
+msgstr "@subsection ▼接続ごとのローカル変数"
 
 #: TITLES/src/custom.texi.pl:25
 msgid "@section Customizing Key Bindings"
@@ -164,9 +163,8 @@ msgid "@subsection Non-@acronym{ASCII} Characters in Init Files"
 msgstr "@subsection initファイル内の非@acronym{ASCII}文字"
 
 #: TITLES/src/custom.texi.pl:43
-#, fuzzy
 msgid "@subsection The Early Init File"
-msgstr "@section Emacs初期化ファイル"
+msgstr "@section 早期初期化ファイル"
 
 #: TITLES/src/custom.texi.pl:44
 msgid "@section Keeping Persistent Authentication Information"
