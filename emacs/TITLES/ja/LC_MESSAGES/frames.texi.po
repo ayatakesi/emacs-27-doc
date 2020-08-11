@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:50+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -81,9 +81,8 @@ msgid "@section Tool Bars"
 msgstr "@section ツールバー"
 
 #: TITLES/src/frames.texi.pl:23
-#, fuzzy
 msgid "@section Tab Bars"
-msgstr "@section ツールバー"
+msgstr "@section タブバー"
 
 #: TITLES/src/frames.texi.pl:24
 msgid "@section Using Dialog Boxes"
