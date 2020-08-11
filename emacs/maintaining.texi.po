@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2020-05-30 06:11+0900\n"
+"PO-Revision-Date: 2020-08-11 15:27+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -39,10 +39,8 @@ msgstr "ソースファイルにたいする変更履歴を記録するバージ
 
 #. type: itemize
 #: original_texis/maintaining.texi:18
-#, fuzzy
-#| msgid "Commands for editing change log files."
 msgid "Commands for handling programming projects."
-msgstr "変更ログファイルを編集するためのコマンド。"
+msgstr "プログラミングプロジェクトを扱うためのコマンド。"
 
 #. type: itemize
 #: original_texis/maintaining.texi:22
@@ -85,12 +83,12 @@ msgstr "バージョンコントロールシステムの使用。"
 #: original_texis/maintaining.texi:49 original_texis/maintaining.texi:1637
 #, no-wrap
 msgid "Projects"
-msgstr ""
+msgstr "Projects"
 
 #. type: menuentry
 #: original_texis/maintaining.texi:49
 msgid "Commands for handling source files in a project."
-msgstr ""
+msgstr "プロジェクト内のソースファイルを扱うコマンド。"
 
 #. type: node
 #: original_texis/maintaining.texi:49 original_texis/maintaining.texi:1708
@@ -807,10 +805,8 @@ msgstr "バージョンコントロールで管理されるプロジェクトは
 
 #. type: Plain text
 #: original_texis/maintaining.texi:406
-#, fuzzy
-#| msgid "When the policy is to use both, you typically want to write an entry for each change just once, then put it into both logs.  You can write the entry in @file{ChangeLog}, then copy it to the log buffer with @kbd{C-c C-a} when committing the change (@pxref{Log Buffer}).  Or you can write the entry in the log buffer while committing the change, and later use the @kbd{C-x v a} command to copy it to @file{ChangeLog}"
 msgid "When the policy is to use both, you typically want to write an entry for each change just once, then put it into both logs.  You can write the entry in @file{ChangeLog}, then copy it to the log buffer with @kbd{C-c C-a} when committing the change (@pxref{Log Buffer}).  Or you can write the entry in the log buffer while committing the change (with the help of @kbd{C-c C-w}), and later use the @kbd{C-x v a} command to copy it to @file{ChangeLog}"
-msgstr "両方を使うというポリシーの場合は通常、変更にたいして1度だけエントリーを書いて、それを両方のログに書き込みたいと思うでしょう。@file{ChangeLog}にエントリーを記述して、変更をコミットするとき@kbd{C-c C-a}でログバッファーにコピーできます。または変更をコミットするときログバッファーにエントリーを記述して、後で@kbd{C-x v a}コマンドでそれを@file{ChangeLog}にコピーできます"
+msgstr "両方を使うというポリシーの場合は通常、変更にたいして1度だけエントリーを書いて、それを両方のログに書き込みたいと思うでしょう。@file{ChangeLog}にエントリーを記述して、変更をコミットするときに@kbd{C-c C-a}でログバッファーにコピーできます。または変更をコミットするときログバッファーにエントリーを記述して、(@kbd{C-c C-w}の助けを借りて)後で@kbd{C-x v a}コマンドでそれを@file{ChangeLog}にコピーできます"
 
 #. type: iftex
 #: original_texis/maintaining.texi:408
@@ -1194,22 +1190,20 @@ msgstr "@file{*vc-log*}バッファーにいる間は、カレントVCファイ�
 
 #. type: kindex
 #: original_texis/maintaining.texi:685
-#, fuzzy, no-wrap
-#| msgid "C-c C-c @r{(Log Edit mode)}"
+#, no-wrap
 msgid "C-c C-w @r{(Log Edit mode)}"
-msgstr "C-c C-c @r{(Log Edit mode)}"
+msgstr "C-c C-w @r{(Log Edit mode)}"
 
 #. type: findex
 #: original_texis/maintaining.texi:686
-#, fuzzy, no-wrap
-#| msgid "log-edit-insert-changelog"
+#, no-wrap
 msgid "log-edit-generate-changelog-from-diff"
-msgstr "log-edit-insert-changelog"
+msgstr "log-edit-generate-changelog-from-diff"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:692
 msgid "To help generate ChangeLog entries, type @kbd{C-c C-w} (@code{log-edit-generate-changelog-from-diff}), to generate skeleton ChangeLog entries, listing all changed file and function names based on the diff of the VC fileset.  Consecutive entries left empty will be combined by @kbd{C-q} (@code{fill-paragraph})."
-msgstr ""
+msgstr "VCファイルセットのdiffにもとづいて変更されたすべてのファイルと関数をリストする雛形ChangeLogエントリーを生成してChangeLogエントリー生成の助けとするには、@kbd{C-c C-w} (@code{log-edit-generate-changelog-from-diff})とタイプします。空のままの連続したエントリーは@kbd{C-q} (@code{fill-paragraph})によって結合されます。"
 
 #. type: kindex
 #: original_texis/maintaining.texi:693
@@ -1442,24 +1436,20 @@ msgstr "@kbd{C-x v D} (@code{vc-root-diff})は、@kbd{C-x v =}と似ています
 
 #. type: findex
 #: original_texis/maintaining.texi:847
-#, fuzzy, no-wrap
-#| msgid "vc-root-diff"
+#, no-wrap
 msgid "vc-root-version-diff"
-msgstr "vc-root-diff"
+msgstr "vc-root-version-diff"
 
 #. type: kindex
 #: original_texis/maintaining.texi:848
-#, fuzzy, no-wrap
-#| msgid "C-u C-x v ="
+#, no-wrap
 msgid "C-u C-x v D"
-msgstr "C-u C-x v ="
+msgstr "C-u C-x v D"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:854
-#, fuzzy
-#| msgid "To compare two arbitrary revisions of the current VC fileset, call @code{vc-diff} with a prefix argument: @kbd{C-u C-x v =}.  This prompts for two revision IDs (@pxref{VCS Concepts}), and displays a diff between those versions of the fileset.  This will not work reliably for multi-file VC filesets, if the version control system is file-based rather than changeset-based (e.g., CVS), since then revision IDs for different files would not be related in any meaningful way."
 msgid "To compare two arbitrary revisions of the whole trees, call @code{vc-root-diff} with a prefix argument: @kbd{C-u C-x v D}.  This prompts for two revision IDs (@pxref{VCS Concepts}), and displays a diff between those versions of the entire version-controlled directory trees (RCS, SCCS, CVS, and SRC do not support this feature)."
-msgstr "カレントVCファイルセットの、任意の2つのリビジョンを比較するには、@kbd{C-u C-x v =}のようにプレフィクス引数を指定して、@code{vc-diff}を呼び出します。これは2つのリビジョンID(@ref{VCS Concepts}を参照してください)の入力を求め、ファイルセットのそれらのバージョンの間のdiffを表示します。このコマンドは、バージョンコントロールシステムが変更セットベースではなくファイルベースの場合(たとえばCVS)に、複数ファイルのVCファイルセットにたいして確実に動作しません。なぜなら同じリビジョンIDをもつ異なるファイル同士を、意味のある方法で関連させることができないからです。"
+msgstr "ツリー全体の任意の2つのリビジョンを比較するには、@kbd{C-u C-x v =}のようにプレフィクス引数を指定して@code{vc-root-diff}を呼び出します。これは2つのリビジョンID(@ref{VCS Concepts}を参照)の入力を求めて、バージョンコントロールされたディレクトリー全体のバージョン間のdiffを表示します(RCS、SCCS、CVS、SRCはこの機能をサポートしない)。"
 
 #. type: vindex
 #: original_texis/maintaining.texi:855
@@ -1626,10 +1616,9 @@ msgstr "注釈の表示・非表示を切り替えます。これは邪魔にな
 
 #. type: cindex
 #: original_texis/maintaining.texi:953
-#, fuzzy, no-wrap
-#| msgid "change log"
+#, no-wrap
 msgid "VC change log"
-msgstr "change log"
+msgstr "VC change log"
 
 #. type: kindex
 #: original_texis/maintaining.texi:956 original_texis/maintaining.texi:980
@@ -1683,21 +1672,19 @@ msgstr "C-x v h"
 
 #. type: table
 #: original_texis/maintaining.texi:975
-#, fuzzy
-#| msgid "Display the change history for the current fileset (@code{vc-print-log})."
 msgid "Display the history of changes made in the region of file visited by the current buffer (@code{vc-region-history})."
-msgstr "カレントファイルセットの変更履歴を表示します(@code{vc-print-log})。"
+msgstr "カレントバッファーがvisit中のファイルのリージョンにたいして行われた変更の履歴を表示します(@code{vc-region-history})。"
 
 #. type: item
 #: original_texis/maintaining.texi:976
 #, no-wrap
 msgid "M-x vc-log-search @key{RET}"
-msgstr ""
+msgstr "M-x vc-log-search @key{RET}"
 
 #. type: table
 #: original_texis/maintaining.texi:978
 msgid "Search the change history for a specified pattern."
-msgstr ""
+msgstr "指定したパターンの変更履歴を検索します。"
 
 #. type: findex
 #: original_texis/maintaining.texi:981
@@ -1730,7 +1717,7 @@ msgstr "log-view-toggle-entry-display"
 #. type: Plain text
 #: original_texis/maintaining.texi:1012
 msgid "@kbd{C-x v L} (@code{vc-print-root-log}) displays a @file{*vc-change-log*} buffer showing the history of the entire version-controlled directory tree (RCS, SCCS, CVS, and SRC do not support this feature).  With a prefix argument, the command prompts for the maximum number of revisions to display.  A numeric prefix argument specifies the maximum number of revisions without prompting.  When the numeric prefix argument is 1, as in @w{@kbd{C-1 C-x v L}} or @w{@kbd{C-u 1 C-x v L}}, the command prompts for the revision ID, and displays the log entry of that revision together with the changes (diffs) it introduced.  (Some less capable version control systems, such as RCS and CVS, don't have commands to show a revision log with its diffs; for them the command displays only the log entry, and you can request to show the diffs by typing @kbd{d} or @kbd{D}, see below.)"
-msgstr ""
+msgstr "@kbd{C-x v L} (@code{vc-print-root-log})はバージョンコントロールされたディレクトリーツリー全体の履歴を示す@file{*vc-change-log*}バッファーを表示します(RCS、SCCS、CVS、SRCはこの機能をサポートしない)。コマンドにプレフィクス引数を与えると表示するリビジョンの最大数の入力を求めます。プレフィクス数引数は入力を求めることなくリビジョンの最大数を指定します。@w{@kbd{C-1 C-x v L}}や@w{@kbd{C-u 1 C-x v L}}のようにプレフィクス数引数が1ならコマンドはリビジョンIDの入力を求めて、そのリビジョンで導入された変更(diff)とともにリビジョンのログエントリーを表示します(RCSやCVSのように機能に劣るバージョンコントロールシステムにはdiffとともにリビジョンログを表示するコマンドがなく、このコマンドはそれらにたいしてはログエントリーだけを表示するので、以下の@kbd{d}や@kbd{D}をタイプしてdiffを要求できる)。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1018
@@ -1739,16 +1726,15 @@ msgstr "@kbd{C-x v L}では履歴は簡略化された形式で表示され、�
 
 #. type: findex
 #: original_texis/maintaining.texi:1021
-#, fuzzy, no-wrap
-#| msgid "vc-log-show-limit"
+#, no-wrap
 msgid "vc-log-incoming"
-msgstr "vc-log-show-limit"
+msgstr "vc-log-incoming"
 
 #. type: findex
 #: original_texis/maintaining.texi:1022
 #, no-wrap
 msgid "vc-log-outgoing"
-msgstr ""
+msgstr "vc-log-outgoing"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1034
@@ -1759,13 +1745,13 @@ msgstr "分散型のバージョンコントロールシステムでは、@kbd{C
 #: original_texis/maintaining.texi:1035
 #, no-wrap
 msgid "VC log buffer, commands in"
-msgstr ""
+msgstr "VC log buffer, commands in"
 
 #. type: cindex
 #: original_texis/maintaining.texi:1036
 #, no-wrap
 msgid "vc-log buffer"
-msgstr ""
+msgstr "vc-log buffer"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1040
@@ -1866,36 +1852,29 @@ msgstr "vc-region-history"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1104
-#, fuzzy
-#| msgid "A useful variant of examining changes is provided by the command @kbd{vc-region-history} (by default bound to @kbd{C-x v h}), which shows a @file{*VC-history*} buffer with the history of changes to the region of the current file between point and the mark (@pxref{Mark}).  The history of changes includes the commit log messages and also the changes themselves in the Diff format."
 msgid "A useful variant of examining history of changes is provided by the command @kbd{vc-region-history} (by default bound to @kbd{C-x v h}), which shows a @file{*VC-history*} buffer with the history of changes made in the region of the current buffer's file between point and the mark (@pxref{Mark}).  The history of changes includes the commit log messages and also the changes themselves in the Diff format."
-msgstr "変更を確認する有用な変種は、コマンド@kbd{vc-region-history} (デフォルトでは@kbd{C-x v h}にバインド)により提供され、これはカレントファイルのポイントとマーク(@ref{Mark}を参照してください)の間にあるリージョンの変更履歴を、@file{*VC-history*}バッファーに表示します。変更履歴にはコミットログメッセージ(commit log messages)と、その変更自体のDiff形式も含まれます。"
+msgstr "変更履歴を確認する有用な変種はコマンド@kbd{vc-region-history} (デフォルトでは@kbd{C-x v h}にバインド)により提供されます。これはカレントバッファーのファイルのポイントとマーク(@ref{Mark}を参照)の間にあるリージョンに行われた変更の履歴を@file{*VC-history*}バッファーに表示します。変更履歴にはコミットログメッセージ(commit log messages)と変更自体のDiff形式も含まれます。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1110
-#, fuzzy
-#| msgid "Invoke this command after marking the region of the current file in whose changes you are interested.  In the @file{*VC-history*} buffer it pops up, you can use all of the commands available in the @file{*vc-change-log*} buffer described above, and also the commands defined by Diff mode (@pxref{Diff Mode})."
 msgid "Invoke this command after marking in the current buffer the region in whose changes you are interested.  In the @file{*VC-history*} buffer it pops up, you can use all of the commands available in the @file{*vc-change-log*} buffer described above, and also the commands defined by Diff mode (@pxref{Diff Mode})."
-msgstr "カレントファイルの興味がある変更にたいしてリージョンをマークした後に、このコマンドを呼び出します。このコマンドがポップアップする@file{*VC-history*}バッファーでは、上述した@file{*vc-change-log*}バッファーで利用可能なコマンドすべてと、Diffモード(@ref{Diff Mode}を参照してください)で定義されたコマンドも使用できます。"
+msgstr "カレントバッファーの興味がある変更にたいしてリージョンをマークした後に、このコマンドを呼び出します。このコマンドがポップアップする@file{*VC-history*}バッファーでは、上述した@file{*vc-change-log*}バッファーで利用可能なコマンドすべてと、Diffモード(@ref{Diff Mode}を参照)で定義されたコマンドも使用できます。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1112
-#, fuzzy
-#| msgid "This command is currently available only with Git."
 msgid "This command is currently available only with Git and Mercurial (hg)."
-msgstr "このコマンドは現在のところGitだけで利用可能です。"
+msgstr "このコマンドは現在のところGitとMercurial(hg)だけで利用可能です。"
 
 #. type: findex
 #: original_texis/maintaining.texi:1113
-#, fuzzy, no-wrap
-#| msgid "tags-search"
+#, no-wrap
 msgid "vc-log-search"
-msgstr "tags-search"
+msgstr "vc-log-search"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1119
 msgid "The command @code{vc-log-search} allows searching for a pattern in the log of changes.  It prompts for a pattern (a regular expression), and displays all entries in the change history whose log messages match the pattern.  When invoked with a prefix argument, the command will also prompt for a specific VCS shell command to run for this purpose."
-msgstr ""
+msgstr "コマンド@code{vc-log-search}により変更ログのパターンによる検索が可能になります。これはパターン(正規表現)の入力を求めて、パターンにマッチするログメッセージをもつ変更履歴内のすべてのエントリーを表示します。プレフィクス引数とともに呼び出された際には、コマンドはこの目的にたいして実行する固有のVCSシェルコマンドの入力も求めます。"
 
 #. type: subsection
 #: original_texis/maintaining.texi:1121
@@ -2227,12 +2206,12 @@ msgstr "ポイントがファイルエントリーにあるときは、同じ状
 #: original_texis/maintaining.texi:1318
 #, no-wrap
 msgid "G"
-msgstr ""
+msgstr "G"
 
 #. type: table
 #: original_texis/maintaining.texi:1323
 msgid "Add the file under point to the list of files that the VC should ignore (@code{vc-dir-ignore}).  For instance, if the VC is Git, it will append this file to the @file{.gitignore} file.  If given a prefix, do this with all the marked files."
-msgstr ""
+msgstr "ポイントの下にあるファイルをVCが無視(ignore)すべきファイルのリストに追加します(@code{vc-dir-ignore})。たとえばVCがGitなら、そのファイル@file{.gitignore}ファイルに追加します。プレフィクスが与えられたら、マークしたすべてのファイルにこれを行います。"
 
 #. type: item
 #: original_texis/maintaining.texi:1324 original_texis/maintaining.texi:2095
@@ -2400,7 +2379,7 @@ msgstr "ブランチを切り替えます(@code{vc-retrieve-tag})。@ref{Switchi
 #. type: table
 #: original_texis/maintaining.texi:1409
 msgid "Delete the marked files, or the current file if no marks (@code{vc-dir-clean-delete)}.  The files will not be marked as deleted in the version control system, so this function is mostly useful for unregistered files."
-msgstr ""
+msgstr "マークされたファイル、マークされたファイルがなければカレントファイルを削除します(@code{vc-dir-clean-delete)}。バージョンコントロールシステムではマークされたファイルが削除される訳ではないので、これは主としてバージョンコントロールシステムに未登録のファイルにたいして有用です。"
 
 #. type: cindex
 #: original_texis/maintaining.texi:1411
@@ -2498,10 +2477,8 @@ msgstr "さまざまなバージョンコントロールシステムにおいて
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1463
-#, fuzzy
-#| msgid "On some decentralized version control systems, including Bazaar and Mercurial in its normal mode of operation, each branch has its own working directory tree, so switching between branches just involves switching directories.  On Git, branches are normally @dfn{co-located} in the same directory, and switching between branches is done using the @command{git checkout} command, which changes the contents of the working tree to match the branch you switch to.  Bazaar also supports co-located branches, in which case the @command{bzr switch} command will switch branches in the current directory.  With Subversion, you switch to another branch using the @command{svn switch} command."
 msgid "On some decentralized version control systems, including Bazaar and Mercurial in its normal mode of operation, each branch has its own working directory tree, so switching between branches just involves switching directories.  On Git, branches are normally @dfn{co-located} in the same directory, and switching between branches is done using the @kbd{git checkout} command, which changes the contents of the working tree to match the branch you switch to.  Bazaar also supports co-located branches, in which case the @kbd{bzr switch} command will switch branches in the current directory.  With Subversion, you switch to another branch using the @kbd{svn switch} command.  With Mercurial, command @kbd{hg update} is used to swith to another branch."
-msgstr "BazaarとMercurialを含む分散型バージョンコントロールシステムのいくつかは、ノーマルモードの操作では、各ブランチは自身の作業ディレクトリーツリーをもつので、ブランチの切り替えは単にディレクトリーを切り替えるだけです。Gitでは、ブランチは通常、同じディレクトリーの@dfn{共通ロケーション(co-located)}を使用し、ブランチの切り替えは、作業ツリーの内容をそのブランチに一致するように変更する、@command{git checkout}を使用して行われます。Bazaarも共通ロケーションをサポートし、この場合は@command{bzr switch}コマンドによりカレントディレクトリーでブランチを切り替えます。Subversionでは他のブランチに切り替えるのに、@command{svn switch}コマンドを使用します。"
+msgstr "BazaarとMercurialを含む分散型バージョンコントロールシステムのいくつかは、ノーマルモードの操作では、各ブランチは自身の作業ディレクトリーツリーをもつので、ブランチの切り替えは単にディレクトリーを切り替えるだけです。Gitでは、ブランチは通常、同じディレクトリーの@dfn{共通ロケーション(co-located)}を使用し、ブランチの切り替えは、作業ツリーの内容をそのブランチに一致するように変更する@kbd{git checkout}を使用して行われます。Bazaarも共通ロケーションをサポートしており、この場合はコマンド@kbd{bzr switch}によりカレントディレクトリーでブランチを切り替えます。Subversionでは他のブランチへの切り替えにはコマンド@kbd{svn switch}を使用します。Mercurialでは他のブランチへの切り替えにはコマンド@kbd{hg update}を使用します。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1466
@@ -2564,10 +2541,8 @@ msgstr "vc-push"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1513
-#, fuzzy
-#| msgid "On a decentralized version control system, the command @kbd{C-x v P} (@code{vc-push}) updates another location with changes from the current branch.  With a prefix argument, it prompts for the exact version control command to run, which lets you specify where to push changes; the default is @command{bzr push} with Bazaar, @command{git push} with Git, and @command{hg push} with Mercurial.  The default commands always push to a default location determined by the version control system from your branch configuration."
 msgid "On a decentralized version control system, the command @kbd{C-x v P} (@code{vc-push}) updates another location with changes from the current branch.  With a prefix argument, it prompts for the exact version control command to run, which lets you specify where to push changes; the default is @kbd{bzr push} with Bazaar, @kbd{git push} with Git, and @kbd{hg push} with Mercurial.  The default commands always push to a default location determined by the version control system from your branch configuration."
-msgstr "分散型のバージョンコントロールシステムでは、コマンド@kbd{C-x v P} (@code{vc-push})は、カレントブランチからの変更により他のロケーションを更新します。プレフィクス引数を与えた場合、このコマンドは実行する正確なバージョンコントロールコマンドの入力をもとめます。これにより変更をどこにpushするか指定できます。デフォルトは、Bazaarでは@command{bzr push}、Gitでは@command{git push}、Mercurialでは@command{hg push}です。デフォルトのコマンドは常に、ブランチ設定からバージョンコントロールシステムにより決定されるデフォルトのロケーションにpushします。"
+msgstr "分散型のバージョンコントロールシステムでは、コマンド@kbd{C-x v P} (@code{vc-push})は、カレントブランチからの変更により他のロケーションを更新します。プレフィクス引数を与えた場合、このコマンドは実行する正確なバージョンコントロールコマンドの入力をもとめます。これにより変更をどこにpushするか指定できます。デフォルトは、Bazaarでは@kbd{bzr push}、Gitでは@kbd{git push}、Mercurialでは@kbd{hg push}です。デフォルトのコマンドは常に、ブランチ設定からバージョンコントロールシステムにより決定されるデフォルトのロケーションにpushします。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1516
@@ -2598,10 +2573,8 @@ msgstr "分散型のバージョンコントロールシステムでは、コマ
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1546
-#, fuzzy
-#| msgid "Amongst decentralized version control systems, @kbd{C-x v +} is currently supported only by Bazaar, Git, and Mercurial.  With Bazaar, it calls @command{bzr pull} for ordinary branches (to pull from a master branch into a mirroring branch), and @command{bzr update} for a bound branch (to pull from a central repository).  With Git, it calls @command{git pull} to fetch changes from a remote repository and merge it into the current branch.  With Mercurial, it calls @command{hg pull -u} to fetch changesets from the default remote repository and update the working directory."
 msgid "Amongst decentralized version control systems, @kbd{C-x v +} is currently supported only by Bazaar, Git, and Mercurial.  With Bazaar, it calls @kbd{bzr pull} for ordinary branches (to pull from a master branch into a mirroring branch), and @kbd{bzr update} for a bound branch (to pull from a central repository).  With Git, it calls @kbd{git pull} to fetch changes from a remote repository and merge it into the current branch.  With Mercurial, it calls @kbd{hg pull -u} to fetch changesets from the default remote repository and update the working directory."
-msgstr "分散型のバージョンコントロールシステムの中で、現在@kbd{C-x v +}がサポートするのはBazaar、Git、Mercurialだけです。Bazaarでは、これは通常のブランチにたいしては、(マスターブランチをミラーリングされたブランチにpullするために)@command{bzr pull}を呼び出し、バインドされたブランチにたいしては、(中心となるリポジトリーからpullするために)@command{bzr update}を呼び出します。Gitでは、これはリモートのリポジトリーから変更を取得して、それをカレントブランチにマージするために、@command{git pull}を呼び出します。Mercurialでは、デフォルトのリモートリポジトリーから変更を取得して、作業ディレクトリーを更新するために@command{hg pull -u}を呼び出します。"
+msgstr "分散型のバージョンコントロールシステムの中で、現在@kbd{C-x v +}がサポートするのはBazaar、Git、Mercurialだけです。Bazaarでは、これは通常のブランチにたいしては、(マスターブランチをミラーリングされたブランチにpullするために) @kbd{bzr pull}を呼び出し、バインドされたブランチにたいしては、(中心となるリポジトリーからpullするために) @kbd{bzr update}を呼び出します。Gitでは、これはリモートのリポジトリーから変更を取得して、それをカレントブランチにマージするために@kbd{git pull}を呼び出します。Mercurialでは、デフォルトのリモートリポジトリーから変更を取得して、作業ディレクトリーを更新するために@kbd{hg pull -u}を呼び出します。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1550
@@ -2648,10 +2621,8 @@ msgstr "ブランチで開発している場合、すでに他のブランチで
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1580
-#, fuzzy
-#| msgid "On a decentralized version control system, merging is done with the command @kbd{C-x v m} (@code{vc-merge}).  On Bazaar, this prompts for the exact arguments to pass to @command{bzr merge}, offering a sensible default if possible.  On Git, this prompts for the name of a branch to merge from, with completion (based on the branch names known to the current repository).  The output from running the merge command is shown in a separate buffer."
 msgid "On a decentralized version control system, merging is done with the command @kbd{C-x v m} (@code{vc-merge}).  On Bazaar, this prompts for the exact arguments to pass to @kbd{bzr merge}, offering a sensible default if possible.  On Git, this prompts for the name of a branch to merge from, with completion (based on the branch names known to the current repository).  With Mercurial, this prompts for argument to pass to @kbd{hg merge}.  The output from running the merge command is shown in a separate buffer."
-msgstr "分散型のバージョンコントロールシステムでは、マージはコマンド@kbd{C-x v m} (@code{vc-merge})により行われます。Bazaarでは、これは@command{bzr merge}に渡す正確な引数の入力を求めます。そのとき、可能であれば目的にかなったデフォルトを提示します。Gitでは、これはマージするブランチ名の入力を求めます。このとき、(カレントリポジトリーが知っているブランチ名にもとづく)補完を行います。マージコマンドの実行による出力は、他のバッファーに表示されます。"
+msgstr "分散型のバージョンコントロールシステムでは、マージはコマンド@kbd{C-x v m} (@code{vc-merge})により行われます。Bazaarでは、これは@kbd{bzr merge}に渡す正確な引数の入力を求めます。そのとき、可能であれば目的にかなったデフォルトを提示します。Gitでは、これはマージするブランチ名の入力を求めます。このとき、(カレントリポジトリーが知っているブランチ名にもとづく)補完を行います。Mercurialでは@kbd{hg merge}に渡す引数の入力を求めます。マージコマンドの実行による出力は、他のバッファーに表示されます。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1588
@@ -2716,102 +2687,100 @@ msgstr "vc1-xtra-ja.texi"
 #: original_texis/maintaining.texi:1638
 #, no-wrap
 msgid "Working with Projects"
-msgstr ""
+msgstr "Working with Projects"
 
 #. type: cindex
 #: original_texis/maintaining.texi:1639
 #, no-wrap
 msgid "projects"
-msgstr ""
+msgstr "projects"
 
 #. type: cindex
 #: original_texis/maintaining.texi:1641
 #, no-wrap
 msgid "project root"
-msgstr ""
+msgstr "project root"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1646
 msgid "A @dfn{project} is a collection of files used for producing one or more programs.  Files that belong to a project are typically stored in a hierarchy of directories; the top-level directory of the hierarchy is known as the @dfn{project root}."
-msgstr ""
+msgstr "@dfn{プロジェクト(project)}とは1つ以上のプログラムを生成するために使用するファイルのコレクションです。プロジェクトに属するファイルは、通常はディレクトリー階層に格納されます。この階層のトップレベルのディレクトリーは@dfn{プロジェクトルート(project root)}として知られています。"
 
 #. type: cindex
 #: original_texis/maintaining.texi:1647
 #, no-wrap
 msgid "project back-end"
-msgstr ""
+msgstr "project back-end"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1654
 msgid "Whether a given directory is a root of some project is determined by the project-specific infrastructure, known as @dfn{project back-end}.  Emacs currently supports two such back-ends: VC (@pxref{Version Control}), whereby a VCS repository is considered a project; and EDE (@pxref{EDE}).  This is expected to be extended in the future to support additional types of projects."
-msgstr ""
+msgstr "与えられたディレクトリーが何らかのプロジェクトのルートかどうかは、@dfn{プロジェクトバックエンド(project back-end)}として知られているプロジェクト固有のインフラストラクチャーにより判断されます。Emacsが現在のところサポートするバックエンドはVCSリポジトリーをプロジェクトとみなしたVC (@ref{Version Control}を参照)、およびEDE (@ref{EDE}を参照)の2つです。将来的には追加のプロジェクトタイプをサポートするように拡張される予定です。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1658
 msgid "Which files do or don't belong to a project is also determined by the project back-end.  For example, the VC back-end doesn't consider ``ignored'' files (@pxref{VC Ignore}) to be part of the project."
-msgstr ""
+msgstr "ファイルがプロジェクトに属するかどうかもプロジェクトバックエンドにより判断されます。たとえばVCバクエンドは``無視された(ignored)''ファイル(@ref{VC Ignore}を参照)をプロジェクトの一部とはみなしません。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1661
 msgid "Emacs provides commands for handling project files conveniently.  This section describes these commands."
-msgstr ""
+msgstr "Emacsはプロジェクトファイルを手軽に扱うためのコマンドを提供します。このセクションではそれらのコマンドについて説明します。"
 
 #. type: cindex
 #: original_texis/maintaining.texi:1662
 #, no-wrap
 msgid "current project"
-msgstr ""
+msgstr "current project"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1669
 msgid "All of the commands described here share the notion of the @dfn{current project}.  The current project is determined by the @code{default-directory} (@pxref{File Names}) of the buffer that is the current buffer when the command is invoked.  If that directory doesn't seem to belong to a recognizable project, these commands prompt you for the project directory."
-msgstr ""
+msgstr "ここで説明するすべてのコマンドは@dfn{カレントプロジェクト(current project)}という概念を共有します。カレントプロジェクトはコマンド呼び出し時にカレントだったバッファーの@code{default-directory} (@ref{File Names}を参照)により判断されます。そのディレクトリーが認識可能なプロジェクトに属していないようなら、これらのコマンドはプロジェクトディレクトリーの入力を求めます。"
 
 #. type: findex
 #: original_texis/maintaining.texi:1670
 #, no-wrap
 msgid "project-find-file"
-msgstr ""
+msgstr "project-find-file"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1679
 msgid "The command @code{project-find-file} is a convenient way of visiting files (@pxref{Visiting}) that belong to the current project.  Unlike @kbd{C-x C-f}, this command doesn't require to type the full file name of the file to visit, you can type only the file's base name (i.e., omit the leading directories).  In addition, the completion candidates considered by the command include only the files belonging to the current project, and nothing else.  If there's a file name at point, this command offers that file as the default to visit."
-msgstr ""
+msgstr "コマンド@code{project-find-file}はカレントプロジェクトに属するファイルをvisit(@ref{Visiting}を参照)する手軽な手段です。@kbd{C-x C-f}とは異なり、このコマンドはvisitするファイルの完全な名前のタイプを要求せず、ファイルのベース名(先頭のディレクトリー部分を省略)だけでタイプできます。それに加えてコマンドが補完候補とみなすのはカレントプロジェクトに属するファイルだけであり、それ以外は含まれません。ポイント位置にファイル名があれば、このコマンドはvisitするデフォルトとしてそのファイルを提案します。"
 
 #. type: findex
 #: original_texis/maintaining.texi:1680
 #, no-wrap
 msgid "project-find-regexp"
-msgstr ""
+msgstr "project-find-regexp"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1690
 msgid "The command @code{project-find-regexp} is similar to @code{rgrep} (@pxref{Grep Searching}), but it searches only the files that belong to the current project.  The command prompts for the regular expression to search, and pops up an Xref mode buffer with the search results, where you can select a match using the Xref mode commands (@pxref{Xref Commands}).  When invoked with a prefix argument, this command additionally prompts for the base directory from which to start the search; this allows, for example, to limit the search only to project files under a certain subdirectory of the project root."
-msgstr ""
+msgstr "コマンド@code{project-find-regexp}は@code{rgrep} (@ref{Grep Searching}を参照)と似ていますが、カレントプロジェクトに属するファイルだけを検索します。このコマンドは検索する正規表現の入力を求めて、検索結果をXrefモードのコマンドを使用してマッチの選択が可能なXrefモードのバッファーでポップアップします。このコマンドをプレフィクス引数とともに呼び出した際には、検索を開始するベースディレクトリーの入力を追加で求めます。これはたとえばプロジェクトルートの特定のサブディレクトリー配下のファイルに検索を制限することを可能にします。"
 
 #. type: findex
 #: original_texis/maintaining.texi:1691
-#, fuzzy, no-wrap
-#| msgid "tags-search"
+#, no-wrap
 msgid "project-search"
-msgstr "tags-search"
+msgstr "project-search"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1699
 msgid "@kbd{M-x project-search} is an interactive variant of @code{project-find-regexp}.  It prompts for a regular expression to search in the current project's files, but instead of finding all the matches and displaying them, it stops when it finds a match and visits the matched file at the locus of the match, allowing you to edit the matched file.  To find the rest of the matches, type @w{@kbd{M-x fileloop-continue @key{RET}}}."
-msgstr ""
+msgstr "@kbd{M-x project-search}は@code{project-find-regexp}のインタラクティブな変種です。これはカレントプロジェクトのファイルを検索するために正規表現の入力を求めますが、すべてのマッチを探して表示するかわりに、マッチしたファイルを編集できるようにマッチを見つけたら停止してマッチしたファイルのマッチしたlocusをvisitします。マッチの残りを探すには@w{@kbd{M-x fileloop-continue @key{RET}}}とタイプしてください。"
 
 #. type: findex
 #: original_texis/maintaining.texi:1700
-#, fuzzy, no-wrap
-#| msgid "xref-query-replace-in-results"
+#, no-wrap
 msgid "project-query-replace-regexp"
-msgstr "xref-query-replace-in-results"
+msgstr "project-query-replace-regexp"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1707
 msgid "@kbd{M-x project-query-replace-regexp} is similar to @code{project-search}, but it prompts you for whether to replace each match it finds, like @code{query-replace} does (@pxref{Query Replace}), and continues to the next match after you respond.  If your response causes Emacs to exit the query-replace loop, you can later continue with @w{@kbd{M-x fileloop-continue @key{RET}}}."
-msgstr ""
+msgstr "@kbd{M-x project-query-replace-regexp}は@code{project-search}と似ていますが、@code{query-replace} (@ref{Query Replace}を参照)が行うように見つかったそれぞれのマッチにたいして置き換えるかどうかを尋ねて、それに応答した後は次のマッチへと継続します。その応答によりEmacsがquery-replaceループをexitしてしまったら、@w{@kbd{M-x fileloop-continue @key{RET}}}で後から継続することができます。"
 
 #. type: section
 #: original_texis/maintaining.texi:1709
@@ -2950,17 +2919,14 @@ msgstr "変更ログファイルは、Change Logモードでvisitされます。
 
 #. type: findex
 #: original_texis/maintaining.texi:1781
-#, fuzzy, no-wrap
-#| msgid "change-log-mode"
+#, no-wrap
 msgid "change-log-goto-source"
-msgstr "change-log-mode"
+msgstr "change-log-goto-source"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1790
-#, fuzzy
-#| msgid "You can use the @code{next-error} command (by default bound to @kbd{C-x `}) to move between entries in the Change Log, when Change Log mode is on.  You will jump to the actual site in the file that was changed, not just to the next Change Log entry.  You can also use @code{previous-error} to move back in the same list."
 msgid "You can use the command @code{change-log-goto-source} (by default bound to @kbd{C-c C-c}) to go to the source location of the change log entry near point, when Change Log mode is on.  Then subsequent invocations of the @code{next-error} command (by default bound to @kbd{M-g M-n} and @kbd{C-x `}) will move between entries in the change log.  You will jump to the actual site in the file that was changed, not just to the next change log entry.  You can also use @code{previous-error} to move back through the change log entries."
-msgstr "Change Logモードがオンの場合、@code{next-error}コマンド(デフォルトでは@kbd{C-x `}にバインドされています)を使用して、変更ログのエントリー間を移動することができます。次の変更ログエントリーだけでなく、そのファイルが変更された実際の場所にジャンプすることもあるでしょう。同じリストを戻って移動するのに、@code{previous-error}を使うこともできます。"
+msgstr "Change Logモードがオンのときには、ポイント近傍の変更ログエントリーのソース位置に移動するために、(デフォルトで@kbd{C-c C-c}にバインドされている) @code{change-log-goto-source}を使用できます。その後の@code{next-error}コマンド(デフォルトで@kbd{M-g M-n}と@kbd{C-x `}にバインドされている)は、変更ログ間のエントリーを移動します。次の変更ログエントリーだけではなく、変更されたファイルの実際のサイトにジャンプするでしょう。ヘンコウログエントリーも戻るために@code{previous-error}も使用できます。"
 
 #. type: findex
 #: original_texis/maintaining.texi:1791
@@ -2975,22 +2941,19 @@ msgstr "コマンド@kbd{M-x change-log-merge}を使用して、他のログフ�
 
 #. type: vindex
 #: original_texis/maintaining.texi:1796
-#, fuzzy, no-wrap
-#| msgid "log-edit-insert-changelog"
+#, no-wrap
 msgid "add-log-dont-create-changelog-file"
-msgstr "log-edit-insert-changelog"
+msgstr "add-log-dont-create-changelog-file"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1805
 msgid "Version control systems are another way to keep track of changes in your program and keep a change log.  Many projects that use a VCS don't keep a separate versioned change log file nowadays, so you may wish to avoid having such a file in the repository.  If the value of @code{add-log-dont-create-changelog-file} is non-@code{nil}, commands like @kbd{C-x 4 a} (@code{add-change-log-entry-other-window}) will record changes in a suitably named temporary buffer instead of a file, if such a file does not already exist."
-msgstr ""
+msgstr "バージョンコントロールシステムはプログラム変更の追跡と変更ログを維持する別の手段です。VCSを使用する多くのプロジェクトは、今日ではバージョンごとの変更ログファイルを個別に保持しないので、そのようなファイルをリポジトリー内に保有することを避けたいと思うかもしれません。@code{add-log-dont-create-changelog-file}の値が非@code{nil}なら、@kbd{C-x 4 a} (@code{add-change-log-entry-other-window})のようなコマンドは、すでにそのようなファイルが存在しなければファイルではなく適切に命名された一時バッファーに変更を記録します。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1810
-#, fuzzy
-#| msgid "Version control systems are another way to keep track of changes in your program and keep a change log.  In the VC log buffer, typing @kbd{C-c C-a} (@code{log-edit-insert-changelog}) inserts the relevant Change Log entry, if one exists.  @xref{Log Buffer}."
 msgid "Whether you have a change log file or use a temporary buffer for change logs, you can type @kbd{C-c C-a} (@code{log-edit-insert-changelog}) in the VC Log buffer to insert the relevant change log entries, if they exist.  @xref{Log Buffer}."
-msgstr "プログラムの変更を追跡して変更ログを維持する他の方法として、バージョンコントロールシステムがあります。VC logバッファーでは、@kbd{C-c C-a} (@code{log-edit-insert-changelog})とタイプすると、変更ログが存在する場合は、関連する変更ログのエントリーを追加します。"
+msgstr "変更ログファイルかある場合や変更ログに一時バッファーを使用する場合のいずれにおいても、それらが存在すれば関連する変更ログエントリーを挿入するために、VC Logバッファで@kbd{C-c C-a} (@code{log-edit-insert-changelog})をタイプすることができます。@ref{Log Buffer}を参照してください。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:1822
@@ -3290,17 +3253,14 @@ msgstr "識別子の定義を探して、それを新しいフレームに表示
 
 #. type: item
 #: original_texis/maintaining.texi:1964
-#, fuzzy, no-wrap
-#| msgid "xref-find-definitions-other-frame"
+#, no-wrap
 msgid "M-x xref-find-definitions-at-mouse"
-msgstr "xref-find-definitions-other-frame"
+msgstr "M-x xref-find-definitions-at-mouse"
 
 #. type: table
 #: original_texis/maintaining.texi:1966
-#, fuzzy
-#| msgid "Find definitions of an identifier (@code{xref-find-definitions})."
 msgid "Find definition of identifier at mouse click."
-msgstr "識別子の最初の定義を探します(@code{xref-find-definitions})。"
+msgstr "マウスでクリックした識別子の最初の定義を探します。"
 
 #. type: kindex
 #: original_texis/maintaining.texi:1966 original_texis/maintaining.texi:2024
@@ -3389,7 +3349,7 @@ msgstr "バッファーを切り替えるほとんどのコマンドと同様に
 #. type: Plain text
 #: original_texis/maintaining.texi:2010
 msgid "The command @code{xref-find-definitions-at-mouse} works like @code{xref-find-definitions}, but it looks for the identifier name at or around the place of a mouse event.  This command is intended to be bound to a mouse event, such as @kbd{C-M-mouse-1}, for example."
-msgstr ""
+msgstr "コマンド@code{xref-find-definitions-at-mouse}は@code{xref-find-definitions}と同じように機能しますが、マウスイベントがあった箇所周辺の識別子を探します。このコマンドはたとえば@kbd{C-M-mouse-1}のようなマウスイベントにバインドされることを意図しています。"
 
 #. type: findex
 #: original_texis/maintaining.texi:2011
@@ -3550,23 +3510,20 @@ msgstr "@var{pattern}にマッチするリファレンスにたいしてイン�
 
 #. type: item
 #: original_texis/maintaining.texi:2089
-#, fuzzy, no-wrap
-#| msgid "hg"
+#, no-wrap
 msgid "g"
-msgstr "hg"
+msgstr "g"
 
 #. type: findex
 #: original_texis/maintaining.texi:2090
 #, no-wrap
 msgid "xref-revert-buffer"
-msgstr ""
+msgstr "xref-revert-buffer"
 
 #. type: table
 #: original_texis/maintaining.texi:2093
-#, fuzzy
-#| msgid "Quit the window showing the @file{*xref*} buffer (@code{xref-quit})."
 msgid "Refresh the contents of the @file{*xref*} buffer (@code{xref-revert-buffer}."
-msgstr "@file{*xref*}バッファーを表示しているウィンドウをquitします(@code{xref-quit})。"
+msgstr "@file{*xref*}バッファーのコンテンツをリフレッシュします(@code{xref-revert-buffer})。"
 
 #. type: findex
 #: original_texis/maintaining.texi:2094
@@ -3653,10 +3610,9 @@ msgstr "選択されたタグテーブルの各ファイルにたいして、@co
 
 #. type: item
 #: original_texis/maintaining.texi:2127
-#, fuzzy, no-wrap
-#| msgid "M-x tags-loop-continue"
+#, no-wrap
 msgid "M-x fileloop-continue"
-msgstr "M-x tags-loop-continue"
+msgstr "M-x fileloop-continue"
 
 #. type: table
 #: original_texis/maintaining.texi:2129
@@ -3698,17 +3654,14 @@ msgstr "@kbd{M-x tags-search}は、ミニバッファーを使用してregexpを
 
 #. type: findex
 #: original_texis/maintaining.texi:2163
-#, fuzzy, no-wrap
-#| msgid "tags-loop-continue"
+#, no-wrap
 msgid "fileloop-continue"
-msgstr "tags-loop-continue"
+msgstr "fileloop-continue"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:2168
-#, fuzzy
-#| msgid "Having found one match with @code{tags-search}, you probably want to find all the rest.  @kbd{M-x tags-loop-continue} resumes the @code{tags-search}, finding one more match.  This searches the rest of the current buffer, followed by the remaining files of the tags table."
 msgid "Having found one match with @code{tags-search}, you probably want to find all the rest.  @kbd{M-x fileloop-continue} resumes the @code{tags-search}, finding one more match.  This searches the rest of the current buffer, followed by the remaining files of the tags table."
-msgstr "@code{tags-search}で1つのマッチが見つかったら、おそらく残りのすべてについても検索したいと思うでしょう。@kbd{M-x tags-loop-continue}は、多くのマッチを探すために@code{tags-search}を再開します。これはカレントバッファーの残りの部分を検索して、その後タグテーブルの残りのファイルを検索します。"
+msgstr "@code{tags-search}で1つのマッチが見つかったら、おそらく残りのすべてについても検索したいと思うでしょう。@kbd{M-x fileloop-continue}は、多くのマッチを探すために@code{tags-search}を再開します。これはカレントバッファーの残りの部分を検索して、その後タグテーブルの残りのファイルを検索します。"
 
 #. type: findex
 #: original_texis/maintaining.texi:2169
@@ -3740,10 +3693,8 @@ msgstr "変数@code{tags-case-fold-search}の値をカスタマイズするこ�
 
 #. type: Plain text
 #: original_texis/maintaining.texi:2192
-#, fuzzy
-#| msgid "It is possible to get through all the files in the tags table with a single invocation of @kbd{M-x tags-query-replace}.  But often it is useful to exit temporarily, which you can do with any input event that has no special query replace meaning.  You can resume the query replace subsequently by typing @kbd{M-x tags-loop-continue}; this command resumes the last tags search or replace command that you did.  For instance, to skip the rest of the current file, you can type @w{@kbd{M-> M-x tags-loop-continue}}."
 msgid "It is possible to get through all the files in the tags table with a single invocation of @kbd{M-x tags-query-replace}.  But often it is useful to exit temporarily, which you can do with any input event that has no special query replace meaning.  You can resume the query replace subsequently by typing @kbd{M-x fileloop-continue}; this command resumes the last tags search or replace command that you did.  For instance, to skip the rest of the current file, you can type @w{@kbd{M-> M-x fileloop-continue}}."
-msgstr "1回の@kbd{M-x tags-query-replace}の呼び出しで、タグテーブルのすべてのファイルを検索することが可能です。しかし、一時的に検索を抜けられると便利なときもあります。これは、問い合わせ付き置換として特別な意味をもたない入力イベントで行うことができます。つづけて問い合わせ付き置換を再開するには、@kbd{M-x tags-loop-continue}とタイプします。このコマンドは、最後のタグ検索または置換コマンドを再開します。たとえばカレントファイルの残りをスキップするには、@w{@kbd{M-> M-x tags-loop-continue}}とタイプします。"
+msgstr "1回の@kbd{M-x tags-query-replace}の呼び出しで、タグテーブルのすべてのファイルを検索することが可能です。しかし、一時的に検索を抜けられると便利なときもあります。これは、問い合わせ付き置換として特別な意味をもたない入力イベントで行うことができます。つづけて問い合わせ付き置換を再開するには、@kbd{M-x fileloop-continue}とタイプします。このコマンドは、最後のタグ検索または置換コマンドを再開します。たとえばカレントファイルの残りをスキップするには、@w{@kbd{M-> M-x fileloop-continue}}とタイプします。"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:2201
@@ -3802,10 +3753,9 @@ msgstr "プログラムファイル@var{file}で定義されている識別子�
 
 #. type: item
 #: original_texis/maintaining.texi:2223
-#, fuzzy, no-wrap
-#| msgid "M-x next-file"
+#, no-wrap
 msgid "M-x tags-next-file"
-msgstr "M-x next-file"
+msgstr "M-x tags-next-file"
 
 #. type: table
 #: original_texis/maintaining.texi:2225
@@ -3825,10 +3775,8 @@ msgstr "list-tags"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:2243
-#, fuzzy
-#| msgid "@kbd{M-x list-tags} reads the name of one of the files covered by the selected tags table, and displays a list of tags defined in that file.  Do not include a directory as part of the file name unless the file name recorded in the tags table includes a directory.  This command works only with the etags backend, and requires a tags table for the project to be available.  @xref{Tags Tables}."
 msgid "@kbd{M-x list-tags} reads the name of one of the files covered by the selected tags table, and displays a list of tags defined in that file.  Do not include a directory as part of the file name unless the file name recorded in the tags table includes a directory.  This command works only with the etags backend, and requires a tags table for the project to be available.  @xref{Tags Tables}.  If used interactively, the default tag is file name of the current buffer if used interactively."
-msgstr "@kbd{M-x list-tags}は、選択されたタグテーブルでカバーされたファイルの名前を1つ読み取り、そのファイルで定義されたタグのリストを表示します。タグテーブルに記録されたファイル名にディレクトリーが含まれない場合は、ファイル名にディレクトリーを含めないでください。このコマンドはバックエンドがetagsのときだけ機能し、そのプロジェクトのために利用可能なタグテーブルが必要です。@ref{Tags Tables}を参照してください。"
+msgstr "@kbd{M-x list-tags}は、選択されたタグテーブルでカバーされたファイルの名前を1つ読み取り、そのファイルで定義されたタグのリストを表示します。タグテーブルに記録されたファイル名にディレクトリーが含まれない場合は、ファイル名にディレクトリーを含めないでください。このコマンドはバックエンドがetagsのときだけ機能し、そのプロジェクトのために利用可能なタグテーブルが必要です。@ref{Tags Tables}を参照してください。インタラクティブに使用すると、カレントバッファーのファイル名がデフォルトタグとして使用されます。"
 
 #. type: findex
 #: original_texis/maintaining.texi:2249
@@ -3856,17 +3804,14 @@ msgstr "tags-apropos-additional-actions"
 
 #. type: findex
 #: original_texis/maintaining.texi:2264
-#, fuzzy, no-wrap
-#| msgid "next-file"
+#, no-wrap
 msgid "tags-next-file"
-msgstr "next-file"
+msgstr "tags-next-file"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:2270
-#, fuzzy
-#| msgid "@kbd{M-x next-file} visits files covered by the selected tags table.  The first time it is called, it visits the first file covered by the table.  Each subsequent call visits the next covered file, unless a prefix argument is supplied, in which case it returns to the first file.  This command requires a tags table to be selected."
 msgid "@kbd{M-x tags-next-file} visits files covered by the selected tags table.  The first time it is called, it visits the first file covered by the table.  Each subsequent call visits the next covered file, unless a prefix argument is supplied, in which case it returns to the first file.  This command requires a tags table to be selected."
-msgstr "@kbd{M-x next-file}は、選択されたタグテーブルでカバーされるファイルをvisitします。最初に呼び出したとき、テーブルでカバーされた最初のファイルをvisitします。続けて呼び出すことにより、次のカバーされたファイルをvisitしていきます。プレフィクス引数を指定した場合、最初のファイルに戻ります。このコマンドには、選択されたタグテーブルが必要です。"
+msgstr "@kbd{M-x tags-next-file}は、選択されたタグテーブルでカバーされるファイルをvisitします。最初に呼び出したとき、テーブルでカバーされた最初のファイルをvisitします。続けて呼び出すことにより、次のカバーされたファイルをvisitしていきます。プレフィクス引数を指定した場合、最初のファイルに戻ります。このコマンドには、選択されたタグテーブルが必要です。"
 
 #. type: cindex
 #: original_texis/maintaining.texi:2273
@@ -4510,10 +4455,8 @@ msgstr "visit-tags-table"
 
 #. type: Plain text
 #: original_texis/maintaining.texi:2788
-#, fuzzy
-#| msgid "Emacs has at any time at most one @dfn{selected} tags table.  All the commands for working with tags tables use the selected one.  To select a tags table, type @kbd{M-x visit-tags-table}, which reads the tags table file name as an argument, with @file{TAGS} in the default directory as the default."
 msgid "Emacs has at any time at most one @dfn{selected} tags table.  All the commands for working with tags tables use the selected one.  To select a tags table, type @kbd{M-x visit-tags-table}, which reads the tags table file name as an argument, with @file{TAGS} defaulting to the first directory that contains a file named @file{TAGS} encountered when recursively searching upward from the default directory."
-msgstr "Emacsは常に、@dfn{選択された}タグテーブルを最大で1つもちます。タグテーブルにたいして機能するすべてのコマンドは、選択されたタグテーブルを使用します。タグテーブルを選択するには、@kbd{M-x visit-tags-table}とタイプします。これは、引数としてタグテーブルファイル名を読み取ります。デフォルトディレクトリーの@file{TAGS}がデフォルトです。"
+msgstr "Emacsは常に、@dfn{選択された}タグテーブルを最大で1つもちます。タグテーブルにたいして機能するすべてのコマンドは、選択されたタグテーブルを使用します。タグテーブルを選択するには引数としてタグテーブルファイル名を読み取る@kbd{M-x visit-tags-table}をタイプします。この引数のデフォルトはデフォルトディレクトリーからディレクトリーを上方へ再帰的に検索して@file{TAGS}という名前のファイルを含む最初のディレクトリーです。"
 
 #. type: vindex
 #: original_texis/maintaining.texi:2789
