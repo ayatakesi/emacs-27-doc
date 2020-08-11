@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:32+0900\n"
-"PO-Revision-Date: 2019-01-08 21:28+0900\n"
+"PO-Revision-Date: 2020-08-12 00:19+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  xresources.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  xresources.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.DiJnaWY7mn (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.Cplk9c15fb.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.lewg0zY70J.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: appendixsec
 #: original_texis/xresources.texi:5 original_texis/xresources.texi:35
@@ -468,10 +460,9 @@ msgstr "@code{lineSpacing} (class @code{LineSpacing})"
 
 #. type: cindex
 #: original_texis/xresources.texi:226
-#, fuzzy, no-wrap
-#| msgid "menu bar (X resource)"
+#, no-wrap
 msgid "line spacing (X resource)"
-msgstr "menu bar (X resource)"
+msgstr "line spacing (X resource)"
 
 #. type: table
 #: original_texis/xresources.texi:228
@@ -486,10 +477,9 @@ msgstr "@code{menuBackground} (class @code{Background})"
 
 #. type: cindex
 #: original_texis/xresources.texi:231
-#, fuzzy, no-wrap
-#| msgid "background for menus"
+#, no-wrap
 msgid "background for menus (X resource)"
-msgstr "background for menus"
+msgstr "background for menus (X resource)"
 
 #. type: ifnottex
 #: original_texis/xresources.texi:235
@@ -532,10 +522,9 @@ msgstr "@code{paneFont} (class @code{Font})"
 
 #. type: cindex
 #: original_texis/xresources.texi:248
-#, fuzzy, no-wrap
-#| msgid "menu bar (X resource)"
+#, no-wrap
 msgid "font for menus (X resource)"
-msgstr "menu bar (X resource)"
+msgstr "font for menus (X resource)"
 
 #. type: ifnottex
 #: original_texis/xresources.texi:252
@@ -550,10 +539,9 @@ msgstr "@code{paneForeground} (class @code{Foreground})"
 
 #. type: cindex
 #: original_texis/xresources.texi:254
-#, fuzzy, no-wrap
-#| msgid "foreground for menus"
+#, no-wrap
 msgid "foreground for menus (X resource)"
-msgstr "foreground for menus"
+msgstr "foreground for menus (X resource)"
 
 #. type: ifnottex
 #: original_texis/xresources.texi:258
@@ -601,10 +589,9 @@ msgstr "@code{screenGamma} (class @code{ScreenGamma})"
 
 #. type: cindex
 #: original_texis/xresources.texi:275
-#, fuzzy, no-wrap
-#| msgid "gamma correction"
+#, no-wrap
 msgid "gamma correction (X resource)"
-msgstr "gamma correction"
+msgstr "gamma correction (X resource)"
 
 #. type: ifnottex
 #: original_texis/xresources.texi:278
@@ -619,10 +606,9 @@ msgstr "@code{scrollBar} (class @code{ScrollBar})"
 
 #. type: cindex
 #: original_texis/xresources.texi:280
-#, fuzzy, no-wrap
-#| msgid "menu bar (X resource)"
+#, no-wrap
 msgid "scroll bar (X resource)"
-msgstr "menu bar (X resource)"
+msgstr "scroll bar (X resource)"
 
 #. type: ifnottex
 #: original_texis/xresources.texi:283
@@ -637,10 +623,9 @@ msgstr "@code{scrollBarWidth} (class @code{ScrollBarWidth})"
 
 #. type: cindex
 #: original_texis/xresources.texi:285
-#, fuzzy, no-wrap
-#| msgid "scrollbar width"
+#, no-wrap
 msgid "scrollbar width (X resource)"
-msgstr "scrollbar width"
+msgstr "scrollbar width (X resource)"
 
 #. type: ifnottex
 #: original_texis/xresources.texi:289
@@ -722,10 +707,9 @@ msgstr "@code{toolBar} (class @code{ToolBar})"
 
 #. type: cindex
 #: original_texis/xresources.texi:318
-#, fuzzy, no-wrap
-#| msgid "menu bar (X resource)"
+#, no-wrap
 msgid "tool bar (X resource)"
-msgstr "menu bar (X resource)"
+msgstr "tool bar (X resource)"
 
 #. type: table
 #: original_texis/xresources.texi:321
@@ -734,24 +718,20 @@ msgstr "このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合
 
 #. type: item
 #: original_texis/xresources.texi:322
-#, fuzzy, no-wrap
-#| msgid "@code{toolBar} (class @code{ToolBar})"
+#, no-wrap
 msgid "@code{tabBar} (class @code{TabBar})"
-msgstr "@code{toolBar} (class @code{ToolBar})"
+msgstr "@code{tabBar} (class @code{TabBar})"
 
 #. type: cindex
 #: original_texis/xresources.texi:323
-#, fuzzy, no-wrap
-#| msgid "menu bar (X resource)"
+#, no-wrap
 msgid "tab bar (X resource)"
-msgstr "menu bar (X resource)"
+msgstr "tab bar (X resource)"
 
 #. type: table
 #: original_texis/xresources.texi:326
-#, fuzzy
-#| msgid "If the value of this resource is @samp{off} or @samp{false} or @samp{0}, Emacs disables Tool Bar mode at startup (@pxref{Tool Bars})."
 msgid "If the value of this resource is @samp{on} or @samp{yes} or @samp{1}, Emacs enables Tab Bar mode at startup (@pxref{Tab Bars})."
-msgstr "このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時にTool Barモードを無効にします(@ref{Tool Bars}を参照してください)。"
+msgstr "このリソースの値が@samp{on}、@samp{yes}、@samp{1}なら、Emacsは開始時にTab Barモードを無効にします(@ref{Tab Bars}を参照してください)。"
 
 #. type: item
 #: original_texis/xresources.texi:327
@@ -761,17 +741,15 @@ msgstr "@code{useXIM} (class @code{UseXIM})"
 
 #. type: cindex
 #: original_texis/xresources.texi:328
-#, fuzzy, no-wrap
-#| msgid "X resources"
+#, no-wrap
 msgid "XIM (X resource)"
-msgstr "X resources"
+msgstr "XIM (X resource)"
 
 #. type: cindex
 #: original_texis/xresources.texi:329
-#, fuzzy, no-wrap
-#| msgid "X input methods"
+#, no-wrap
 msgid "X input methods (X resource)"
-msgstr "X input methods"
+msgstr "X input methods (X resource)"
 
 #. type: cindex
 #: original_texis/xresources.texi:330
