@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-02 07:11+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-08-12 03:45+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -13,16 +13,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: TITLES/src/arevert-xtra.texi.pl:6
-#, fuzzy
 msgid "@subsection Auto Reverting Non-File Buffers"
-msgstr "@section 非ファイルバッファーの自動リバート"
+msgstr "@subsection 非ファイルバッファーの自動リバート"
 
 #: TITLES/src/arevert-xtra.texi.pl:7
-#, fuzzy
 msgid "@subsubsection Auto Reverting the Buffer Menu"
-msgstr "@subsection Buffer Menuの自動リバート"
+msgstr "@subsubsection Buffer Menuの自動リバート"
 
 #: TITLES/src/arevert-xtra.texi.pl:8
-#, fuzzy
 msgid "@subsubsection Auto Reverting Dired buffers"
-msgstr "@subsection Diredバッファーの自動リバート"
+msgstr "@subsubsection Diredバッファーの自動リバート"
