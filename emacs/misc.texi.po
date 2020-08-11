@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:31+0900\n"
-"PO-Revision-Date: 2019-10-28 17:29+0900\n"
+"PO-Revision-Date: 2020-08-11 19:11+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -754,10 +754,8 @@ msgstr "network-security-level"
 
 #. type: Plain text
 #: original_texis/misc.texi:309
-#, fuzzy
-#| msgid "The @code{network-security-level} variable determines the security level that @acronym{NSM} enforces.  If its value is @code{low}, no security checks are performed."
 msgid "The @code{network-security-level} variable determines the security level that @acronym{NSM} enforces.  If its value is @code{low}, no security checks are performed.  This is not recommended, and will basically mean that your network connections can't be trusted.  However, the setting can be useful in limited circumstances, as when testing network issues."
-msgstr "変数@code{network-security-level}は、@acronym{NSM}が実施するセキュリティーレベルを決定します。変数の値が@code{low}の場合、セキュリティーのチェックは行なわれません。"
+msgstr "変数@code{network-security-level}は@acronym{NSM}が実施するセキュリティーレベルを決定します。変数の値が@code{low}ならセキュリティーのチェックは行なわれません。これは必須ではなく。基本的にはそのネットワーク接続が信頼できないことを意味しています。しかしネットワークの問題テスト時のように制限された状況ではこのセッティングは便利かもしれません。"
 
 #. type: Plain text
 #: original_texis/misc.texi:315
@@ -771,37 +769,34 @@ msgstr "証明されていない接続(unverified connection)にたいして、�
 
 #. type: vindex
 #: original_texis/misc.texi:320
-#, fuzzy, no-wrap
-#| msgid "network-security-level"
+#, no-wrap
 msgid "network-security-protocol-checks"
-msgstr "network-security-level"
+msgstr "network-security-protocol-checks"
 
 #. type: Plain text
 #: original_texis/misc.texi:326
 msgid "In addition to the basic certificate correctness checks, several @acronym{TLS} algorithm checks are available.  Some encryption technologies that were previously thought to be secure have shown themselves to be fragile, so Emacs (by default) warns you about some of these problems."
-msgstr ""
+msgstr "証明書の基本的な正当性チェック加えて、いくつかの@acronym{TLS}アルゴリズムによるチェックが利用可能です。  以前は安全だと思われていたいくつかの暗号化技術で脆弱性が判明しているものについては、(デフォルトでは)Emacsは問題に関して警告します。"
 
 #. type: Plain text
 #: original_texis/misc.texi:329
 msgid "The protocol network checks is controlled via the @code{network-security-protocol-checks} variable."
-msgstr ""
+msgstr "プロトコルネットワークのチェックは@code{network-security-protocol-checks}変数を介して制御されます。"
 
 #. type: Plain text
 #: original_texis/misc.texi:333
 msgid "It's an alist where the first element of each association is the name of the check, and the second element is the security level where the check should be used."
-msgstr ""
+msgstr "これは各連想値の最初の要素がチェックの名前、2つ目の要素がチェックの使用を要するセキュリティレベルであるようなalistです。"
 
 #. type: Plain text
 #: original_texis/misc.texi:339
 msgid "An element like @code{(rc4 medium)} will result in the function @code{nsm-protocol-check--rc4} being called like thus: @w{@code{(nsm-protocol-check--rc4 host port status settings)}}.  The function should return non-@code{nil} if the connection should proceed and @code{nil} otherwise."
-msgstr ""
+msgstr "関数@code{nsm-protocol-check--rc4}の結果内の@code{(rc4 medium)}のような要素は@w{@code{(nsm-protocol-check--rc4 host port status settings)}}のように呼び出します。この関数は接続を継続するなら非@code{nil}、それ以外は非@code{nil}をリターンします。"
 
 #. type: Plain text
 #: original_texis/misc.texi:341
-#, fuzzy
-#| msgid "Below is a list of the checks done on the @code{medium} level."
 msgid "Below is a list of the checks done on the default @code{medium} level."
-msgstr "以下は@code{medium}で行なわれるチェックのリストです。"
+msgstr "以下はデフォルトの@code{medium}で行なわれるチェックのリストです。"
 
 #. type: item
 #: original_texis/misc.texi:344
@@ -860,10 +855,8 @@ msgstr "Diffie-Hellmanロープライムビット(Diffie-Hellman low prime bits)
 
 #. type: table
 #: original_texis/misc.texi:384
-#, fuzzy
-#| msgid "When doing the public key exchange, the number of prime bits should be high to ensure that the channel can't be eavesdropped on by third parties.  If this number is too low, you will be warned."
 msgid "When doing the public key exchange, the number of prime bits should be high enough to ensure that the channel can't be eavesdropped on by third parties.  If this number is too low, Emacs will warn you.  (This is the @code{diffie-hellman-prime-bits} check in @code{network-security-protocol-checks})."
-msgstr "パグリックキーの交換を行なう際、そのチャンネルが第三者により盗聴できないことを確実にするために、プライムビット(prime bits)の数は高くあるべきです。この数があまりに低い(low)場合は、警告されるでしょう。"
+msgstr "パグリックキーの交換を行なう際、そのチャンネルが第三者により盗聴できないことを確実にするために、プライムビット(prime bits)の数は十分に高くあるべきです。この数があまりに低い(low)場合にはEmacsは警告を発するでしょう(これは@code{network-security-protocol-checks}の@code{diffie-hellman-prime-bits}チェック)。"
 
 #. type: item
 #: original_texis/misc.texi:385
@@ -873,21 +866,19 @@ msgstr "@acronym{RC4}ストリーム暗号(@acronym{RC4} stream cipher)"
 
 #. type: table
 #: original_texis/misc.texi:389
-#, fuzzy
-#| msgid "The @acronym{RC4} stream cipher is believed to be of low quality and may allow eavesdropping by third parties."
 msgid "The @acronym{RC4} stream cipher is believed to be of low quality and may allow eavesdropping by third parties.  (This is the @code{rc4} check in @code{network-security-protocol-checks})."
-msgstr "@acronym{RC4}ストリーム暗号は低品質とされており、第三者による盗聴を許すかもしれません。"
+msgstr "@acronym{RC4}ストリーム暗号は低品質とされており、第三者による盗聴を許すかもしれません(これは@code{network-security-protocol-checks}の@code{rc4}チェック)。"
 
 #. type: item
 #: original_texis/misc.texi:390
 #, no-wrap
 msgid "@acronym{SHA1} in the host certificate or in intermediate certificates"
-msgstr ""
+msgstr "ホスト証明書や中間証明書の@acronym{SHA1}"
 
 #. type: table
 #: original_texis/misc.texi:397
 msgid "It is believed that if an intermediate certificate uses the @acronym{SHA1} hashing algorithm, then third parties can issue certificates pretending to be that issuing instance.  These connections are therefore vulnerable to man-in-the-middle attacks.  (These are the @code{signature-sha1} and @code{intermediate-sha1} checks in @code{network-security-protocol-checks})."
-msgstr ""
+msgstr "中間証明書(intermediate certificate)が@acronym{SHA1}ハッシュアルゴリズムを使用していれば、第三者がその発行インスタンスを偽装して証明書を発行できると考えられています。したがってこれらの接続は中間者攻撃にたいして脆弱です(これらは@code{network-security-protocol-checks}の@code{signature-sha1}と@code{intermediate-sha1}チェック)。"
 
 #. type: item
 #: original_texis/misc.texi:398
@@ -897,10 +888,8 @@ msgstr "@acronym{SSL1}、@acronym{SSL2}、@acronym{SSL3}"
 
 #. type: table
 #: original_texis/misc.texi:403
-#, fuzzy
-#| msgid "The protocols older than @acronym{TLS1.0} are believed to be vulnerable to a variety of attacks, and you may want to avoid using these if what you're doing requires higher security."
 msgid "The protocols older than @acronym{TLS1.0} are believed to be vulnerable to a variety of attacks, and you may want to avoid using these if what you're doing requires higher security.  (This is the @code{ssl} check in @code{network-security-protocol-checks})."
-msgstr "@acronym{TLS1.0}より古いプロトコルは、様々な攻撃にたいして脆弱とされており、あなたが行なうことがより高いセキュリティーを要する場合は、使用を避けたいと思うかもしれません。"
+msgstr "@acronym{TLS1.0}より古いプロトコルは、様々な攻撃にたいして脆弱とされており、あなたが行なうことがより高いセキュリティーを要する場合は、使用を避けたいと思うかもしれません(これは@code{network-security-protocol-checks}の@code{ssl}チェック)。"
 
 #. type: Plain text
 #: original_texis/misc.texi:408
@@ -909,15 +898,14 @@ msgstr "@code{network-security-level}が@code{high}の場合、上記に加え�
 
 #. type: item
 #: original_texis/misc.texi:410
-#, fuzzy, no-wrap
-#| msgid "@acronym{RC4} stream cipher"
+#, no-wrap
 msgid "@acronym{3DES} cipher"
-msgstr "@acronym{RC4}ストリーム暗号(@acronym{RC4} stream cipher)"
+msgstr "@acronym{3DES}暗号"
 
 #. type: table
 #: original_texis/misc.texi:415
 msgid "The @acronym{3DES} stream cipher provides at most 112 bits of effective security, which is considered to be towards the low end.  (This is the @code{3des} check in @code{network-security-protocol-checks})."
-msgstr ""
+msgstr "@acronym{3DES}ストリーム暗号は最大112ビットの効果的なセキュリティーを提供してローエンド向きと考えられています(これは@code{network-security-protocol-checks}の@code{3des}チェック)。"
 
 #. type: item
 #: original_texis/misc.texi:416
@@ -1293,10 +1281,9 @@ msgstr "doc-view-resolution"
 
 #. type: vindex
 #: original_texis/misc.texi:571
-#, fuzzy, no-wrap
-#| msgid "doc-view-set-slice"
+#, no-wrap
 msgid "doc-view-scale-internally"
-msgstr "doc-view-set-slice"
+msgstr "doc-view-scale-internally"
 
 #. type: kindex
 #: original_texis/misc.texi:572
@@ -1312,10 +1299,8 @@ msgstr "- @r{(DocView mode)}"
 
 #. type: Plain text
 #: original_texis/misc.texi:581
-#, fuzzy
-#| msgid "You can enlarge or shrink the document with @kbd{+} (@code{doc-view-enlarge}) and @kbd{-} (@code{doc-view-shrink}).  These commands work by reconverting the document at the new size.  To specify the default size for DocView, customize the variable @code{doc-view-resolution}."
 msgid "You can enlarge or shrink the document with @kbd{+} (@code{doc-view-enlarge}) and @kbd{-} (@code{doc-view-shrink}).  By default, these commands just rescale the already-rendered image.  If you instead want the image to be re-rendered at the new size, set @code{doc-view-scale-internally} to @code{nil}.  To specify the default size for DocView, customize the variable @code{doc-view-resolution}."
-msgstr "@kbd{+} (@code{doc-view-enlarge})と@kbd{-} (@code{doc-view-shrink})で、ドキュメントを拡大したり縮小することができます。これらのコマンドはドキュメントを新しいサイズに再変換することにより機能します。DocViewにたいするデフォルトサイズを指定するには、変数@code{doc-view-resolution}をカスタマイズしてください。"
+msgstr "@kbd{+} (@code{doc-view-enlarge})と@kbd{-} (@code{doc-view-shrink})で、ドキュメントを拡大したり縮小することができます。これらのコマンドはデフォルトではすでに描画済みのイメージを再スケールします。かわりにイメージを新たなサイズに再描画するには@code{doc-view-scale-internally}を@code{nil}にセットしてください。DocViewにたいするデフォルトサイズを指定するには、変数@code{doc-view-resolution}をカスタマイズしてください。"
 
 #. type: subsection
 #: original_texis/misc.texi:582 original_texis/misc.texi:583
@@ -1386,24 +1371,18 @@ msgstr "DocViewでは、表示するページの@dfn{スライス(slice)}を選�
 
 #. type: Plain text
 #: original_texis/misc.texi:624
-#, fuzzy
-#| msgid "To specify the slice numerically, type @kbd{s s} (@code{doc-view-set-slice}); then enter the top left pixel position and the slice's width and height."
 msgid "To specify the slice numerically, type @kbd{c s} (@code{doc-view-set-slice}); then enter the top left pixel position and the slice's width and height."
-msgstr "数値でスライスを指定するには、@kbd{s s} (@code{doc-view-set-slice})とタイプします。その後、スライスの左上のピクセル位置(pixel position)と、スライスの幅(width)と高さ(height)を入力します。"
+msgstr "数値でスライスを指定するには、@kbd{c s} (@code{doc-view-set-slice})とタイプします。その後、スライスの左上のピクセル位置(pixel position)と、スライスの幅(width)と高さ(height)を入力します。"
 
 #. type: Plain text
 #: original_texis/misc.texi:631
-#, fuzzy
-#| msgid "A more convenient graphical way to specify the slice is with @kbd{s m} (@code{doc-view-set-slice-using-mouse}), where you use the mouse to select the slice.  Simply press and hold the left mouse button at the upper-left corner of the region you want to have in the slice, then move the mouse pointer to the lower-right corner and release the button."
 msgid "A more convenient graphical way to specify the slice is with @kbd{c m} (@code{doc-view-set-slice-using-mouse}), where you use the mouse to select the slice.  Simply press and hold the left mouse button at the upper-left corner of the region you want to have in the slice, then move the mouse pointer to the lower-right corner and release the button."
-msgstr "スライスを指定するための、もっと便利でグラフィカルな方法は、@kbd{s m} (@code{doc-view-set-slice-using-mouse})で、スライスの選択にマウスを使う方法です。これは単に、スライスにしたいリージョンの左上隅で左マウスボタンを押して、そのまま右下隅にマウスポインターを移動してマウスボタンを離します。"
+msgstr "スライスを指定するための、もっと便利でグラフィカルな方法は、@kbd{c m} (@code{doc-view-set-slice-using-mouse})で、スライスの選択にマウスを使う方法です。これは単に、スライスにしたいリージョンの左上隅で左マウスボタンを押して、そのまま右下隅にマウスポインターを移動してマウスボタンを離します。"
 
 #. type: Plain text
 #: original_texis/misc.texi:635
-#, fuzzy
-#| msgid "The most convenient way is to set the optimal slice by using BoundingBox information automatically determined from the document by typing @kbd{s b} (@code{doc-view-set-slice-from-bounding-box})."
 msgid "The most convenient way is to set the optimal slice by using BoundingBox information automatically determined from the document by typing @kbd{c b} (@code{doc-view-set-slice-from-bounding-box})."
-msgstr "最適なスライスをセットする一番簡単な方法は、@kbd{s b} (@code{doc-view-set-slice-from-bounding-box})とタイプすることにより、そのドキュメントから自動的に判断されるBoundingBox情報を使う方法です。"
+msgstr "最適なスライスをセットする一番簡単な方法は、@kbd{c b} (@code{doc-view-set-slice-from-bounding-box})とタイプすることにより、そのドキュメントから自動的に判断されるBoundingBox情報を使う方法です。"
 
 #. type: findex
 #: original_texis/misc.texi:636
@@ -1413,10 +1392,8 @@ msgstr "doc-view-reset-slice"
 
 #. type: Plain text
 #: original_texis/misc.texi:640
-#, fuzzy
-#| msgid "To cancel the selected slice, type @kbd{s r} (@code{doc-view-reset-slice}).  Then DocView shows the entire page including its entire margins."
 msgid "To cancel the selected slice, type @kbd{c r} (@code{doc-view-reset-slice}).  Then DocView shows the entire page including its entire margins."
-msgstr "選択されたスライスを取り消すには、@kbd{s r} (@code{doc-view-reset-slice})とタイプします。するとDocViewは、余白全体を含めたページ全体を表示します。"
+msgstr "選択されたスライスを取り消すには、@kbd{c r} (@code{doc-view-reset-slice})とタイプします。するとDocViewは、余白全体を含めたページ全体を表示します。"
 
 #. type: subsection
 #: original_texis/misc.texi:641 original_texis/misc.texi:642
@@ -1722,10 +1699,8 @@ msgstr "たとえば@file{foo.gz}という名前のファイルを解凍する1�
 
 #. type: Plain text
 #: original_texis/misc.texi:748
-#, fuzzy
-#| msgid "A numeric argument to @code{shell-command}, e.g., @kbd{M-1 M-!}, causes it to insert terminal output into the current buffer instead of a separate buffer.  It puts point before the output, and sets the mark after the output.  For instance, @kbd{M-1 M-! gunzip < foo.gz @key{RET}} would insert the uncompressed form of the file @file{foo.gz} into the current buffer."
 msgid "A numeric argument to @code{shell-command}, e.g., @kbd{M-1 M-!}, causes it to insert terminal output into the current buffer instead of a separate buffer.  By default, it puts point before the output, and sets the mark after the output (but a non-default value of @code{shell-command-dont-erase-buffer} can change that, see below).  For instance, @kbd{M-1 M-! gunzip < foo.gz @key{RET}} would insert the uncompressed form of the file @file{foo.gz} into the current buffer."
-msgstr "たとえば@kbd{M-1 M-!}のように@code{shell-command}に数引数を指定した場合、別のバッファーではなく、カレントバッファーに端末出力を挿入します。これはポイントを出力の前に配し、出力の後にマークを配します。たとえば@kbd{M-1 M-! gunzip < foo.gz @key{RET}}は、カレントバッファーにファイル@file{foo.gz}の解凍された内容を挿入します。"
+msgstr "たとえば@kbd{M-1 M-!}のように@code{shell-command}に数引数を指定した場合、別のバッファーではなく、カレントバッファーに端末出力を挿入します。これはデフォルトではポイントを出力の前、出力の後にマークを配置します(しかし以下の非デフォルト値@code{shell-command-dont-erase-buffer}でこれを変更できます)。たとえば@kbd{M-1 M-! gunzip < foo.gz @key{RET}}は、カレントバッファーにファイル@file{foo.gz}の解凍された内容を挿入します。"
 
 #. type: Plain text
 #: original_texis/misc.texi:758
@@ -1773,27 +1748,25 @@ msgstr "非同期シェルコマンドが出力を生成したときだけ出力
 
 #. type: vindex
 #: original_texis/misc.texi:784
-#, fuzzy, no-wrap
-#| msgid "async-shell-command"
+#, no-wrap
 msgid "async-shell-command-width"
-msgstr "async-shell-command"
+msgstr "async-shell-command-width"
 
 #. type: Plain text
 #: original_texis/misc.texi:790
 msgid "The option @code{async-shell-command-width} defines the number of display columns available for output of asynchronous shell commands.  A positive integer tells the shell to use that number of columns for command output.  The default value is @code{nil} that means to use the same number of columns as provided by the shell."
-msgstr ""
+msgstr "オプション@code{async-shell-command-width}は非同期シェルコマンドの出力に利用可能な表示列数を定義します。正の整数はコマンド出力にその列数を使用するようシェルに指示します。デフォルト値@code{nil}はシェルが提供する列数と同じ列数の使用を意味します。"
 
 #. type: vindex
 #: original_texis/misc.texi:791
-#, fuzzy, no-wrap
-#| msgid "shell-command-on-region"
+#, no-wrap
 msgid "shell-command-prompt-show-cwd"
-msgstr "shell-command-on-region"
+msgstr "shell-command-prompt-show-cwd"
 
 #. type: Plain text
 #: original_texis/misc.texi:795
 msgid "To make the above commands show the current directory in their prompts, customize the variable @code{shell-command-prompt-show-cwd} to a non-@code{nil} value."
-msgstr ""
+msgstr "上記コマンドにプロンプトにカレントディレクトリーを表示するようにさせるには変数@code{shell-command-prompt-show-cwd}を非@code{nil}値にカスタマイズしてください。"
 
 #. type: kindex
 #: original_texis/misc.texi:796
@@ -1831,7 +1804,7 @@ msgstr "上記のコマンドは、変数@code{shell-file-name}で指定され�
 #. type: Plain text
 #: original_texis/misc.texi:819
 msgid "If the default directory is remote (@pxref{Remote Files}), the default value is @file{/bin/sh}.  This can be changed by declaring @code{shell-file-name} connection-local (@pxref{Connection Variables})."
-msgstr ""
+msgstr "デフォルトディレクトリーがリモート(@ref{Remote Files}を参照)ならデフォルト値は@file{/bin/sh}です。これは接続ローカルに@code{shell-file-name}を宣言することにより変更可能です(@ref{Connection Variables}を参照)。"
 
 #. type: Plain text
 #: original_texis/misc.texi:822
@@ -1857,43 +1830,41 @@ msgstr "shell-command-dont-erase-buffer"
 
 #. type: Plain text
 #: original_texis/misc.texi:837
-#, fuzzy
-#| msgid "By default, the output buffer is erased between shell commands.  If you change the value of the variable @code{shell-command-dont-erase-buffer} to a non-@code{nil} value, the output buffer is not erased.  This variable also controls where to set the point in the output buffer after the command completes; see the documentation of the variable for details."
 msgid "By default, the output buffer is erased between shell commands, except when the output goes to the current buffer.  If you change the value of the option @code{shell-command-dont-erase-buffer} to @code{erase}, then the output buffer is always erased.  Other non-@code{nil} values prevent erasing of the output buffer, and---if the output buffer is not the current buffer---also control where to put point after inserting the output of the shell command:"
-msgstr "デフォルトでは、出力バッファーはシェルコマンドとシェルコマンドの間に消去されます。変数@code{shell-command-dont-erase-buffer}の値を非@code{nil}値に変更した場合、出力バッファーは消去されません。この変数は、コマンドが完了したとき、ポイントを出力バッファーのどこに配すかも制御します。詳細は変数のドキュメントを参照してください。"
+msgstr "デフォルトではカレントバッファーに出力される場合を除き、シェルコマンド間に出力バッファーは消去されます。オプション@code{shell-command-dont-erase-buffer}の値を@code{erase}に変更すると出力バッファーは常に消去されます。それ以外の非@code{nil}値なら出力バッファーの消去は抑制されて、(出力バッファーがカレントバッファーでなければ)シェルコマンドの出力の挿入後にポイントを配置する位置を制御します:"
 
 #. type: item
 #: original_texis/misc.texi:839
 #, no-wrap
 msgid "beg-last-out"
-msgstr ""
+msgstr "beg-last-out"
 
 #. type: table
 #: original_texis/misc.texi:841
 msgid "Puts point at the beginning of the last shell-command output."
-msgstr ""
+msgstr "ポイントを最後のシェルコマンドの出力の先頭に配置します。"
 
 #. type: item
 #: original_texis/misc.texi:841
 #, no-wrap
 msgid "end-last-out"
-msgstr ""
+msgstr "end-last-out"
 
 #. type: table
 #: original_texis/misc.texi:844
 msgid "Puts point at the end of the last shell-command output, i.e.@: at the end of the output buffer."
-msgstr ""
+msgstr "ポイントを最後のシェルコマンドの出力の最後(出力バッファー終端)に配置します。"
 
 #. type: item
 #: original_texis/misc.texi:844
 #, no-wrap
 msgid "save-point"
-msgstr ""
+msgstr "save-point"
 
 #. type: table
 #: original_texis/misc.texi:847
 msgid "Restores the position of point as it was before inserting the shell-command output."
-msgstr ""
+msgstr "シェルコマンドの出力の挿入前の位置にポイントをリストアします。"
 
 #. type: subsection
 #: original_texis/misc.texi:850
@@ -2422,17 +2393,15 @@ msgstr "シェルに作業ディレクトリーを尋ね、Shellバッファー�
 
 #. type: item
 #: original_texis/misc.texi:1063
-#, fuzzy, no-wrap
-#| msgid "M-x send-invisible @key{RET} @var{text} @key{RET}"
+#, no-wrap
 msgid "M-x comint-send-invisible @key{RET} @var{text} @key{RET}"
-msgstr "M-x send-invisible @key{RET} @var{text} @key{RET}"
+msgstr "M-x comint-send-invisible @key{RET} @var{text} @key{RET}"
 
 #. type: findex
 #: original_texis/misc.texi:1064
-#, fuzzy, no-wrap
-#| msgid "send-invisible"
+#, no-wrap
 msgid "comint-send-invisible"
-msgstr "send-invisible"
+msgstr "comint-send-invisible"
 
 #. type: table
 #: original_texis/misc.texi:1068
@@ -2555,10 +2524,8 @@ msgstr "comint-run"
 
 #. type: Plain text
 #: original_texis/misc.texi:1127
-#, fuzzy
-#| msgid "You can use @kbd{M-x comint-run} to execute any program of your choice in a subprocess using unmodified Comint mode---without the specializations of Shell mode."
 msgid "You can use @kbd{M-x comint-run} to execute any program of your choice in a subprocess using unmodified Comint mode---without the specializations of Shell mode.  To pass arguments to the program, use @kbd{C-u M-x comint-run}."
-msgstr "サブプロセスとして選択した任意のプログラムを実行するために、Shellモードに特化しない未修正のComintモードを使用するには、@kbd{M-x comint-run}を使用することができます。"
+msgstr "サブプロセスとして選択した任意のプログラムを実行するために、Shellモードに特化しない未修正のComintモードを使用するには、@kbd{M-x comint-run}を使用することができます。プログラムに引数を渡すには@kbd{C-u M-x comint-run}を使用します。"
 
 #. type: cindex
 #: original_texis/misc.texi:1131
@@ -2771,10 +2738,9 @@ msgstr "C-c . @r{(Shell mode)}"
 
 #. type: findex
 #: original_texis/misc.texi:1212
-#, fuzzy, no-wrap
-#| msgid "comint-input-previous-argument"
+#, no-wrap
 msgid "comint-insert-previous-argument"
-msgstr "comint-input-previous-argument"
+msgstr "comint-insert-previous-argument"
 
 #. type: table
 #: original_texis/misc.texi:1215
@@ -2826,22 +2792,19 @@ msgstr "以前に実行した一連のシェルコマンドを、同じ順番で
 
 #. type: Plain text
 #: original_texis/misc.texi:1267
-#, fuzzy
-#| msgid "The command @kbd{C-c .}@: (@code{comint-input-previous-argument})  copies an individual argument from a previous command, like @kbd{@key{ESC} .} in Bash.  The simplest use copies the last argument from the previous shell command.  With a prefix argument @var{n}, it copies the @var{n}th argument instead.  Repeating @kbd{C-c .} copies from an earlier shell command instead, always using the same value of @var{n} (don't give a prefix argument when you repeat the @kbd{C-c .} command)."
 msgid "The command @kbd{C-c .}@: (@code{comint-insert-previous-argument})  copies an individual argument from a previous command, like @kbd{@key{ESC} .}@: in Bash and @command{zsh}.  The simplest use copies the last argument from the previous shell command.  With a prefix argument @var{n}, it copies the @var{n}th argument instead.  Repeating @kbd{C-c .} copies from an earlier shell commands, always using the same value of @var{n} (don't give a prefix argument when you repeat the @kbd{C-c .} command)."
-msgstr "コマンド@kbd{C-c .} (@code{comint-input-previous-argument})は、Bashの@kbd{@key{ESC} .}のように、以前のコマンドから個別に引数をコピーします。一番簡単な使い方は、以前のシェルコマンドから最後の引数をコピーする方法です。プレフィクス引数@var{n}を指定すると、@var{n}番目の引数をコピーします。繰り返し@kbd{C-c .}とタイプすることにより、さらに古いシェルコマンドからコピーします。この場合、常に同じ@var{n}の値を使用します(@kbd{C-c .}を繰り返すときは、プレフィクス引数を与えないでください)。"
+msgstr "コマンド@kbd{C-c .} (@code{comint-insert-previous-argument})は、Bashの@kbd{@key{ESC} .}のように、以前のコマンドから個別に引数をコピーします。一番簡単な使い方は、以前のシェルコマンドから最後の引数をコピーする方法です。プレフィクス引数@var{n}を指定すると、@var{n}番目の引数をコピーします。繰り返し@kbd{C-c .}とタイプすることにより、さらに古いシェルコマンドからコピーします。この場合、常に同じ@var{n}の値を使用します(@kbd{C-c .}を繰り返すときは、プレフィクス引数を与えないでください)。"
 
 #. type: vindex
 #: original_texis/misc.texi:1268
-#, fuzzy, no-wrap
-#| msgid "comint-input-previous-argument"
+#, no-wrap
 msgid "comint-insert-previous-argument-from-end"
-msgstr "comint-input-previous-argument"
+msgstr "comint-insert-previous-argument-from-end"
 
 #. type: Plain text
 #: original_texis/misc.texi:1273
 msgid "If you set @code{comint-insert-previous-argument-from-end} to a non-@code{nil} value, @kbd{C-c .}@: will instead copy the @var{n}th argument counting from the last one; this emulates @kbd{@key{ESC} .}@: in @command{zsh}."
-msgstr ""
+msgstr "@code{comint-insert-previous-argument-from-end}を非@code{nil}値にセットすると、@kbd{C-c .}はかわりに最後から数えて@var{n}番目の引数をコピーします。これは@command{zsh}の@kbd{@key{ESC} .}をエミュレートしたものです。"
 
 #. type: Plain text
 #: original_texis/misc.texi:1278
@@ -2850,10 +2813,9 @@ msgstr "これらのコマンドは、以前のシェルコマンドのテキス
 
 #. type: vindex
 #: original_texis/misc.texi:1279
-#, fuzzy, no-wrap
-#| msgid "shell-input-ring-file-name"
+#, no-wrap
 msgid "comint-input-ring-file-name"
-msgstr "shell-input-ring-file-name"
+msgstr "comint-input-ring-file-name"
 
 #. type: Plain text
 #: original_texis/misc.texi:1285
@@ -2864,12 +2826,12 @@ msgstr "シェルの中には、コマンドヒストリーをファイルに保
 #: original_texis/misc.texi:1286
 #, no-wrap
 msgid "tramp-histfile-override"
-msgstr ""
+msgstr "tramp-histfile-override"
 
 #. type: Plain text
 #: original_texis/misc.texi:1290
 msgid "If you run the shell on a remote host, this setting might be overwritten by the variable @code{tramp-histfile-override}.  It is recommended to set this variable to @code{nil}."
-msgstr ""
+msgstr "リモートホストでシェルを実行した場合には、このセッティングは変数@code{tramp-histfile-override}に上書きされるかもしれません。この変数は@code{nil}にセットすることを推奨します。"
 
 #. type: subsubsection
 #: original_texis/misc.texi:1291 original_texis/misc.texi:1292
@@ -4048,15 +4010,11 @@ msgstr "--server-file=@var{server-file}"
 
 #. type: table
 #: original_texis/misc.texi:1974
-#, fuzzy
-#| msgid "Specify a server file (@pxref{TCP Emacs server}) for connecting to an Emacs server via TCP.  Alternatively, you can set the @env{EMACS_SERVER_FILE} environment variable to point to the server file.  (The command-line option overrides the environment variable.)"
 msgid "Specify a server file (@pxref{TCP Emacs server}) for connecting to an Emacs server via TCP@.  Alternatively, you can set the @env{EMACS_SERVER_FILE} environment variable to point to the server file.  (The command-line option overrides the environment variable.)"
 msgstr "TCPを通じてEmacsサーバーに接続するためのserverファイル(@ref{TCP Emacs server}を参照)を指定します。かわりにserverファイルを示すように、環境変数@env{EMACS_SERVER_FILE}をセットできます(コマンドラインオプションは、環境変数をオーバーライドする)。"
 
 #. type: table
 #: original_texis/misc.texi:1982
-#, fuzzy
-#| msgid "An Emacs server usually uses a local socket to listen for connections, but also supports connections over TCP.  To connect to a TCP Emacs server, @command{emacsclient} needs to read a @dfn{server file} containing the connection details of the Emacs server.  The name of this file is specified with this option, either as a file name relative to @file{~/.emacs.d/server} or as an absolute file name.  @xref{TCP Emacs server}."
 msgid "An Emacs server usually uses a local socket to listen for connections, but also supports connections over TCP@.  To connect to a TCP Emacs server, @command{emacsclient} needs to read a @dfn{server file} containing the connection details of the Emacs server.  The name of this file is specified with this option, either as a file name relative to @file{~/.emacs.d/server} or as an absolute file name.  @xref{TCP Emacs server}."
 msgstr "Emacsサーバーは通常は接続にたいしてローカルソケットをlistenしますが、TCPを通じた接続もサポートします。TCPによりEmacsサーバーに接続するためには、@command{emacsclient}がEmacsサーバーへの接続に関する詳細を含む@dfn{serverファイル(server file)}を読み込む必要があります。このオプションでserverファイル名を指定します。これは@file{~/.emacs.d/server}からの相対ファイル名か、絶対ファイル名です。@ref{TCP Emacs server}を参照してください。"
 
@@ -4141,10 +4099,8 @@ msgstr "名前が@var{server-name}のEmacsサーバーに接続します(この�
 
 #. type: table
 #: original_texis/misc.texi:2022
-#, fuzzy
-#| msgid "Specify a server file (@pxref{TCP Emacs server}) for connecting to an Emacs server via TCP.  Alternatively, you can set the @env{EMACS_SERVER_FILE} environment variable to point to the server file.  (The command-line option overrides the environment variable.)"
 msgid "Alternatively, you can set the @env{EMACS_SOCKET_NAME} environment variable to point to the server socket.  (The command-line option overrides the environment variable.)"
-msgstr "TCPを通じてEmacsサーバーに接続するためのserverファイル(@ref{TCP Emacs server}を参照)を指定します。かわりにserverファイルを示すように、環境変数@env{EMACS_SERVER_FILE}をセットできます(コマンドラインオプションは、環境変数をオーバーライドする)。"
+msgstr "かわりにserverソケットを示すように、環境変数@env{EMACS_SOCKET_NAME}をセットできます(コマンドラインオプションは環境変数をオーバーライドする)。"
 
 #. type: item
 #: original_texis/misc.texi:2023
@@ -5440,10 +5396,8 @@ msgstr "desktop restore in daemon mode"
 
 #. type: Plain text
 #: original_texis/misc.texi:2680
-#, fuzzy
-#| msgid "When Emacs starts in daemon mode, it cannot ask you any questions, so if it finds the desktop file locked, it will not load it, unless @code{desktop-load-locked-desktop} is @code{t}.  Note that restoring the desktop in daemon mode is somewhat problematic for other reasons: e.g., the daemon cannot use GUI features, so parameters such as frame position, size, and decorations cannot be restored.  For that reason, you may wish to delay restoring the desktop in daemon mode until the first client connects, by calling @code{desktop-read} in a hook function that you add to @code{after-make-frame-functions} (@pxref{Creating Frames,,, elisp, The Emacs Lisp Reference Manual})."
 msgid "When Emacs starts in daemon mode, it cannot ask you any questions, so if it finds the desktop file locked, it will not load it, unless @code{desktop-load-locked-desktop} is @code{t}.  Note that restoring the desktop in daemon mode is somewhat problematic for other reasons: e.g., the daemon cannot use GUI features, so parameters such as frame position, size, and decorations cannot be restored.  For that reason, you may wish to delay restoring the desktop in daemon mode until the first client connects, by calling @code{desktop-read} in a hook function that you add to @code{server-after-make-frame-hook} (@pxref{Creating Frames,,, elisp, The Emacs Lisp Reference Manual})."
-msgstr "Emacsがデーモンモードで起動する際はユーザーに質問することができないので、ロックされたデスクトップが見つかった場合は、@code{desktop-load-locked-desktop}が@code{t}以外であれば、それをロードしません。デーモンモードでのデスクトップのリストアは、その他の理由により問題になりがちなことに注意してください。たとえば、デーモンはGUI機能を使用できないので、フレーム位置やサイズ、装飾のようなパラメーターはリストアできません。この理由により、デスクトップのリストアを、@code{after-make-frame-functions}にフック関数@code{desktop-read}を追加して、それが呼び出されることにより、最初のクライアントが接続するまで、遅延させたいと思うかもしれません(@ref{Creating Frames,,, elisp, The Emacs Lisp Reference Manual}を参照)。"
+msgstr "Emacsがデーモンモードで起動する際はユーザーに質問することができないので、ロックされたデスクトップが見つかった場合は、@code{desktop-load-locked-desktop}が@code{t}以外であれば、それをロードしません。デーモンモードでのデスクトップのリストアは、その他の理由により問題になりがちなことに注意してください。たとえば、デーモンはGUI機能を使用できないので、フレーム位置やサイズ、装飾のようなパラメーターはリストアできません。この理由により、デスクトップのリストアを、@code{server-after-make-frame-hook}にフック関数@code{desktop-read}を追加して、それが呼び出されることにより、最初のクライアントが接続するまで、遅延させたいと思うかもしれません(@ref{Creating Frames,,, elisp, The Emacs Lisp Reference Manual}を参照)。"
 
 #. type: node
 #: original_texis/misc.texi:2681
@@ -5972,10 +5926,8 @@ msgstr "Xwidget-WebKit mode"
 
 #. type: Plain text
 #: original_texis/misc.texi:2890
-#, fuzzy
-#| msgid "If Emacs was compiled with the appropriate support packages, it is able to show browser widgets in its buffers.  The command @kbd{M-x xwidget-webkit-browse-url} asks for a URL to display in the browser widget.  The URL normally defaults to the URL at or before point, but if there is an active region (@pxref{Mark}), the default URL comes from the region instead, after removing any whitespace from it.  The command then creates a new buffer with the embedded browser showing the specified URL.  The buffer is put in the Xwidget-WebKit mode (similar to Image mode, @pxref{File Conveniences}), which provides one-key commands for scrolling the widget, changing its size, and reloading it.  Type @w{@kbd{C-h b}} in that buffer to see the key bindings."
 msgid "If Emacs was compiled with the appropriate support packages, it is able to show browser widgets in its buffers.  The command @kbd{M-x xwidget-webkit-browse-url} asks for a URL to display in the browser widget.  The URL normally defaults to the URL at or before point, but if there is an active region (@pxref{Mark}), the default URL comes from the region instead, after removing any whitespace from it.  The command then creates a new buffer with the embedded browser showing the specified URL@.  The buffer is put in the Xwidget-WebKit mode (similar to Image mode, @pxref{Image Mode}), which provides one-key commands for scrolling the widget, changing its size, and reloading it.  Type @w{@kbd{C-h b}} in that buffer to see the key bindings."
-msgstr "Emacsが適切なサポートパッケージとともにコンパイルされている場合、Emacsのバッファーにブラウザーウィジェット(browser widgets)を表示できます。コマンド@kbd{M-x xwidget-webkit-browse-url}は、ブラウザーウィジェットに表示するURLを尋ねます。通常はポイント位置、またはポイント位置の前にあるURLがデフォルトのURLになります。しかしアクティブなリージョン(@ref{Mark}を参照してください)がある場合は、余分な空白文字を削除してから、そのリージョンからデフォルトのURLを取得します。コマンドはその後、指定されたURLを表示するめ込みブラウザー(embedded browser)をもつ、新しいバッファーを作成します。このパッファーはXwidget-WebKitモード(Imageモードと似ています。@ref{File Conveniences}を参照してください)で、ウィジェットのスクロール、サイズ変更、リロードを1-keyで行なうコマンドを提供します。キーバインドを確認するには、そのバッファーで@w{@kbd{C-h b}}とタイプしてください。"
+msgstr "Emacsが適切なサポートパッケージとともにコンパイルされている場合、Emacsのバッファーにブラウザーウィジェット(browser widgets)を表示できます。コマンド@kbd{M-x xwidget-webkit-browse-url}は、ブラウザーウィジェットに表示するURLを尋ねます。通常はポイント位置、またはポイント位置の前にあるURLがデフォルトのURLになります。しかしアクティブなリージョン(@ref{Mark}を参照してください)がある場合は、余分な空白文字を削除してから、そのリージョンからデフォルトのURLを取得します。コマンドはその後、指定されたURLを表示するめ込みブラウザー(embedded browser)をもつ、新しいバッファーを作成します。このパッファーはXwidget-WebKitモード(Imageモードと似ています。@pxref{Image Mode}を参照してください)で、ウィジェットのスクロール、サイズ変更、リロードを1-keyで行なうコマンドを提供します。キーバインドを確認するには、そのバッファーで@w{@kbd{C-h b}}とタイプしてください。"
 
 #. type: subsection
 #: original_texis/misc.texi:2892
@@ -6111,10 +6063,8 @@ msgstr "@kbd{M-x goto-address-mode}とタイプすることにより、Emacsに�
 
 #. type: Plain text
 #: original_texis/misc.texi:2955
-#, fuzzy
-#| msgid "It can be useful to add @code{goto-address-mode} to mode hooks and hooks for displaying an incoming message (e.g., @code{rmail-show-message-hook} for Rmail, and @code{mh-show-mode-hook} for MH-E).  This is not needed for Gnus, which has a similar feature of its own."
 msgid "It can be useful to add @code{goto-address-mode} to mode hooks and hooks for displaying an incoming message (e.g., @code{rmail-show-message-hook} for Rmail).  This is not needed for Gnus or MH-E, which have similar features of their own."
-msgstr "モードフックや受信メッセージを表示するフック(たとえばRmailの@code{rmail-show-message-hook}や、MH-Eの@code{mh-show-mode-hook})に@code{goto-address-mode}を追加するのは便利かもしれません。Gnusには類似の機能があるので必要ありません。"
+msgstr "モードフックや受信メッセージを表示するフック(たとえばRmailの@code{rmail-show-message-hook})に@code{goto-address-mode}を追加するのは便利かもしれません。GnusやMH-Eには独自に類似の機能があるので必要ありません。"
 
 #. type: subsection
 #: original_texis/misc.texi:2957
