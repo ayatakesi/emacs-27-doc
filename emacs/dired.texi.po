@@ -3,25 +3,17 @@
 # This file is distributed under the same license as the Emacs package.
 # Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:30+0900\n"
-"PO-Revision-Date: 2019-09-22 14:00+0900\n"
+"PO-Revision-Date: 2020-08-11 16:07+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  dired.texi.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  dired.texi.po (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.4Evmwg0s4N (25.2)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.s2i1bQZHcs.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  tmp.Qnta8Z2e8T.translated (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1)  #-#-#-#-#\n"
-"#-#-#-#-#  compendium.po (26.1.91)  #-#-#-#-#\n"
 
 #. type: cindex
 #: original_texis/dired.texi:5 original_texis/dired.texi:9
@@ -1116,31 +1108,26 @@ msgstr "カレントファイルを@samp{*}でマークします(@code{dired-mar
 
 #. type: item
 #: original_texis/dired.texi:438
-#, fuzzy, no-wrap
-#| msgid "* m"
+#, no-wrap
 msgid "* N"
-msgstr "* m"
+msgstr "* N"
 
 #. type: kindex
 #: original_texis/dired.texi:439
-#, fuzzy, no-wrap
-#| msgid "* m @r{(Dired)}"
+#, no-wrap
 msgid "* N @r{(Dired)}"
-msgstr "* m @r{(Dired)}"
+msgstr "* N @r{(Dired)}"
 
 #. type: findex
 #: original_texis/dired.texi:440
-#, fuzzy, no-wrap
-#| msgid "dired-next-marked-file"
+#, no-wrap
 msgid "dired-number-of-marked-files"
-msgstr "dired-next-marked-file"
+msgstr "dired-number-of-marked-files"
 
 #. type: table
 #: original_texis/dired.texi:443
-#, fuzzy
-#| msgid "Move up to the previous marked file (@code{dired-prev-marked-file})."
 msgid "Report what the number and size of the marked files are (@code{dired-number-of-marked-files})."
-msgstr "前のマークされたファイルへ、上に移動します(@code{dired-prev-marked-file})。"
+msgstr "マークしたファイルの数とサイズを報告します(@code{dired-number-of-marked-files})。"
 
 #. type: item
 #: original_texis/dired.texi:444
@@ -1694,10 +1681,8 @@ msgstr "two directories (in Dired)"
 
 #. type: Plain text
 #: original_texis/dired.texi:666
-#, fuzzy
-#| msgid "Commands which ask for a destination directory, such as those which copy and rename files or create links for them, try to guess the default target directory for the operation.  Normally, they suggest the Dired buffer's default directory, but if the variable @code{dired-dwim-target} is non-@code{nil}, and if there is another Dired buffer displayed in the next window, that other buffer's directory is suggested instead."
 msgid "Commands which ask for a destination directory, such as those which copy and rename files or create links for them, try to guess the default target directory for the operation.  Normally, they suggest the Dired buffer's default directory, but if the option @code{dired-dwim-target} is non-@code{nil}, and if there is another Dired buffer displayed in some window, that other buffer's directory is suggested instead.  You can customize @code{dired-dwim-target} to prefer either the next window with a Dired buffer, or the most recently used window with a Dired buffer, or to use any other function.  When the value is a function, it will be called with no arguments and is expected to return a list of directories which will be used as defaults (i.e. default target and ``future history'')."
-msgstr "ファイルのコピーやリネーム、それらにたいするリンクを作成するような、対象ディレクトリーを尋ねるコマンドは、操作のためにデフォルトの対象ディレクトリーの推論を試みます。これらのコマンドは通常、Diredバッファーのデフォルトディレクトリーを提案しますが、変数@code{dired-dwim-target}が非@code{nil}で、次のウィンドウに他のDiredバッファーが存在しない場合は、その他のバッファーのディレクトリーをかわりに提案します。"
+msgstr "ファイルのコピーやリネーム、それらにたいするリンクを作成するような、対象ディレクトリーを尋ねるコマンドは、操作のためにデフォルトの対象ディレクトリーの推論を試みます。これらのコマンドは通常、Diredバッファーのデフォルトディレクトリーを提案しますが、オプション@code{dired-dwim-target}が非@code{nil}で、何らかのウィンドウに別のDiredバッファーが存在しない場合には、その他のバッファーのディレクトリーをかわりに提案します。@code{dired-dwim-target}によりDiredバッファーを表示する次のウィンドウ、Diredバッファーを表示するもっとも最近使用されたウィンドウ、あるいはそれ以外の関数の使用のどれを優先するかをカスタマイズできます。値が関数ならそれは引数なしで呼び出されて、デフォルト(デフォルトターゲットおよび``future history'')として使用するディレクトリーのリストをリターンすることが期待されます。"
 
 #. type: Plain text
 #: original_texis/dired.texi:668
@@ -1735,15 +1720,14 @@ msgstr "指定されたファイルをコピーします(@code{dired-do-copy})�
 
 #. type: vindex
 #: original_texis/dired.texi:678
-#, fuzzy, no-wrap
-#| msgid "dired-create-directory"
+#, no-wrap
 msgid "dired-create-destination-dirs"
-msgstr "dired-create-directory"
+msgstr "dired-create-destination-dirs"
 
 #. type: table
 #: original_texis/dired.texi:685
 msgid "The option @code{dired-create-destination-dirs} controls whether Dired should create non-existent directories in the destination while copying/renaming files.  The default value @code{nil} means Dired never creates such missing directories; the value @code{always}, means Dired automatically creates them; the value @code{ask} means Dired asks you for confirmation before creating them."
-msgstr ""
+msgstr "オプション@code{dired-create-destination-dirs}はDiredがファイルのコピーやリネームで対象先に存在しないディレクトリーがある場合に、それを作成するかどうかを制御します。デフォルト値の@code{nil}はそのような存在しないディレクトリーを作成しないことを意味します。値@code{always}はDiredが自動的にそれらを作成すること、値@code{ask}はそれらを作成する前にDiredが確認を求めることを意味します。"
 
 #. type: vindex
 #: original_texis/dired.texi:686
@@ -1839,7 +1823,7 @@ msgstr "指定されたファイルをリネームします(@code{dired-do-renam
 #. type: table
 #: original_texis/dired.texi:719
 msgid "The option @code{dired-create-destination-dirs} controls whether Dired should create non-existent directories in @var{new}."
-msgstr ""
+msgstr "オプション@code{dired-create-destination-dirs}はDiredが@var{new}内に存在しないディレクトリーを作成するかどうかを制御します。"
 
 #. type: table
 #: original_texis/dired.texi:722
@@ -1848,25 +1832,24 @@ msgstr "Diredはリネームされたファイルに関連付けられたバッ�
 
 #. type: vindex
 #: original_texis/dired.texi:723
-#, fuzzy, no-wrap
-#| msgid "dired-do-rename"
+#, no-wrap
 msgid "dired-vc-rename-file"
-msgstr "dired-do-rename"
+msgstr "dired-vc-rename-file"
 
 #. type: table
 #: original_texis/dired.texi:726
 msgid "If the value of the variable @code{dired-vc-rename-file} is non-@code{nil}, files are renamed using the commands of the underlying VCS, via"
-msgstr ""
+msgstr "変数@code{dired-vc-rename-file}の値が非@code{nil}なら、"
 
 #. type: ifnottex
 #: original_texis/dired.texi:728
 msgid "@code{vc-rename-file} (@pxref{VC Delete/Rename})."
-msgstr ""
+msgstr "@code{vc-rename-file} (@ref{VC Delete/Rename}を参照)を通じて背後にあるVCSのコマンドを使用してファイルをリネームします。"
 
 #. type: iftex
 #: original_texis/dired.texi:732
 msgid "@code{vc-rename-file} (@pxref{VC Delete/Rename,, Deleting and Renaming Version-Controlled Files, emacs-xtra, Specialized Emacs Features})."
-msgstr ""
+msgstr "@code{vc-rename-file} (@ref{VC Delete/Rename,, Deleting and Renaming Version-Controlled Files, emacs-xtra, Specialized Emacs Features}を参照)を通じて背後にあるVCSのコマンドを使用してファイルをリネームします。"
 
 #. type: findex
 #: original_texis/dired.texi:734
@@ -3417,10 +3400,8 @@ msgstr "image-dired"
 
 #. type: Plain text
 #: original_texis/dired.texi:1427
-#, fuzzy
-#| msgid "Image-Dired is a facility for browsing image files.  It provides viewing the images either as thumbnails or in full size, either inside Emacs or through an external viewer."
 msgid "Image-Dired is a facility for browsing image files.  It provides viewing the images either as thumbnails or in full size, either inside Emacs or through an external viewer.  This is different from Image mode (@pxref{Image Mode}) for visiting an image file in the Emacs buffer."
-msgstr "Image-Diredは、イメージファイルをブラウズする機能です。これはイメージファイルにたいして、Emacs内または外部ビューアーを用いた、サムネイルまたはフルサイズでの閲覧を提供します。"
+msgstr "Image-Diredはイメージファイルをブラウズする機能です。これはイメージファイルにたいして、Emacs内または外部ビューアーを用いたサムネイルまたはフルサイズでの閲覧を提供します。これはEmacsバッファー内でイメージファイルをvisitするImageモードとは異なります(@ref{Image Mode}を参照)。"
 
 #. type: kindex
 #: original_texis/dired.texi:1428
@@ -3516,17 +3497,14 @@ msgstr "コマンド@kbd{+} (@code{dired-create-directory})はディレクトリ
 
 #. type: findex
 #: original_texis/dired.texi:1501
-#, fuzzy, no-wrap
-#| msgid "dired-create-directory"
+#, no-wrap
 msgid "dired-create-empty-file"
-msgstr "dired-create-directory"
+msgstr "dired-create-empty-file"
 
 #. type: Plain text
 #: original_texis/dired.texi:1505
-#, fuzzy
-#| msgid "The command @kbd{+} (@code{dired-create-directory}) reads a directory's name, and creates that directory.  It signals an error if the directory already exists."
 msgid "The command (@code{dired-create-empty-file}) reads a file name, and creates that file.  It signals an error if the file already exists."
-msgstr "コマンド@kbd{+} (@code{dired-create-directory})はディレクトリー名を読み取り、そのディレクトリーを作成します。そのディレクトリーがすでに存在する場合は、エラーをシグナルします。"
+msgstr "このコマンド(@code{dired-create-empty-file})はファイル名を読み取りファイルを作成します。そのファイルがすでに存在すればエラーをシグナルします。"
 
 #. type: cindex
 #: original_texis/dired.texi:1506
