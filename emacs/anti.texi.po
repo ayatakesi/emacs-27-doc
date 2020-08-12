@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 26.1.91\n"
 "POT-Creation-Date: 2020-08-02 05:29+0900\n"
-"PO-Revision-Date: 2020-08-12 02:04+0900\n"
+"PO-Revision-Date: 2020-08-12 09:29+0900\n"
 "Last-Translator: Ayanokoji Takesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -45,7 +45,7 @@ msgstr "Emacsは複雑なテキストの整形用エンジンとしてHarfBuzz�
 #. type: itemize
 #: original_texis/anti.texi:37
 msgid "We have removed support for building with the Jansson library, and consequently the native support for JSON parsing is gone.  The importance of JSON decreases as we go back in time, so for now using the Lisp code for handling it should be good enough; in one of the past Emacs versions, we intend to remove even that, as useless bloat."
-msgstr "Janssonライブラリーつきのビルドサポートを削除して、その結果としてJSONにたいする解析サポートがなくなりました。JSONの重要性は時代を遡るにつれて現象するので、それの処理にはLispコードの使用で十分満足されるべきです。過去のEmacsバージョンでは無駄な役立たずとして、それすらも削除する予定です。"
+msgstr "Janssonライブラリーつきのビルドサポートを削除して、その結果としてJSONにたいする解析サポートがなくなりました。JSONの重要性は時代を遡るにつれて減少するので、それの処理にはLispコードの使用で十分満足されるべきです。過去のEmacsバージョンでは無駄な役立たずとして、それすらも削除する予定です。"
 
 #. type: itemize
 #: original_texis/anti.texi:40
